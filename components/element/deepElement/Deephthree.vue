@@ -1,5 +1,5 @@
 <template>
-    <h3 class="deephthreetitle">
+    <h3 :class="subtitlestyle.styleName" :style="subtitlestyle.style">
       {{subtitle}}
     </h3>
 </template>
@@ -11,15 +11,19 @@ export default {
       type: String,
       default: () => {},
     },
+    subtitlestyle : {
+      type: Object,
+      default: () => {},
+    },
   },
 }
 </script>
 
 <style>
-  .deephthreetitle{
+  /* .deephthreetitle{
     margin-top: 10px;
     font-size: 13px;
     color: white;
     z-index: 1;
-  }
+  } */
 </style>

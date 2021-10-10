@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'frontend',
+    title: 'Sparkle',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,6 +19,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {src: '~/plugins/font-awesome'}
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -32,7 +33,7 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    'nuxt-gsap-module'
+    'nuxt-gsap-module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -43,6 +44,7 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-fontawesome',
   ],
 
   // https://www.npmjs.com/package/nuxt-gsap-module
@@ -51,6 +53,26 @@ export default {
       scrollTo: true,
       scrollTrigger: true
     }
+  },
+
+  fontawesome: {
+    // icon 的標籤使用 <fa>，這邊不設定就會依照 plugin 裡的設定<font-awesome-icon>
+    component: 'fa',
+    imports:[
+      // 引入 fas、far、fab 所有的icon
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      },
+      {
+        set: '@fortawesome/free-regular-svg-icons',
+        icons: ['far']
+      },
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab']
+      },
+    ]
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -72,6 +94,6 @@ export default {
 
   // port
   server: {
-    port: '3005', // default: localhost
+    port: '3010', // default: localhost
   },
 }

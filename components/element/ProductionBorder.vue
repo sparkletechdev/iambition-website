@@ -1,41 +1,34 @@
 <template>
-  <div class="productionborder">
-    <div v-for="test in tests" :key="test.id" class="production">
-      <img :src="test.url" class="productionimages">
-      <ElementDeepElementDeephone :title="test.title" />
-      <ElementDeepElementDeephthree :subtitle="test.subtitle"/>
-      <ElementDeepElementProductionButton />
+  <div v-if="production" 
+       :class="production[0].productionBorderName" 
+       :style="production[0].productionBorderStyle[0].style">
+    <div v-for="product in production" 
+         :key="product.productionBorderId" 
+         :class="product.productionBorderName"
+         :style="product.productionBorderStyle[1].style">
+      <img :src="product.productionUrl" 
+           :class="product.productionBorderStyle[2].styleName"
+           :style="product.productionBorderStyle[2].style">
+      <ElementDeepElementDeephone :title="product.productionBorderTitle" :titlestyle="product.productionBorderStyle[3]" />
+      <ElementDeepElementDeephthree :subtitle="product.productionBorderContent" :subtitlestyle="product.productionBorderStyle[4]"/>
+      <ElementDeepElementProductionButton v-if="product" :button="product" />
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      tests:[
-        {
-          "id": '1',
-          "name": '1',
-          "url" : 'https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/technologytwo.jpg',
-          "title": "Universal Data Ingestion",
-          "subtitle" : "Nash360 can efficiently process any data in any format through any database using Distributed Computing with Spark"
-        },
-        {
-          "id": '2',
-          "name": '2',
-          "url" : 'https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/technology.jpg',
-          "title": "Predictive Behavioral Intelligence",
-          "subtitle" : "Predict provides accurate behavioral forecasts for each customer using Automated Machine Learning"
-        }
-      ],
+  props: {
+    production: {
+      type: Array,
+      default: () => [],
     }
   },
 }
 </script>
 
 <style>
-  .productionborder{
+  /* .productionborder{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -59,5 +52,5 @@ export default {
     z-index: 0;
     transform: translateY(-50%);
     width: 100%;
-  }
+  } */
 </style>

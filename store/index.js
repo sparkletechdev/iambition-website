@@ -6,6 +6,7 @@ export const state = () => ({
   url: {},
   button: {},
   majorPartAllData: [],
+  production: {}
 })
 
 // actions
@@ -63,6 +64,13 @@ export const actions = {
   actionMajorPartAllData(context,majorPartAllData){
     context.commit('mutationMajorPartAllData',majorPartAllData);
   },
+  actionProductionPart(context){
+    axios.get('http://localhost:3003/production/productionAll')
+    .then(res => {
+      const production = res.data
+      context.commit('mutationProductionPart',production)
+    })
+  }
 }
 
 // mutation
@@ -78,5 +86,8 @@ export const mutations = {
   },
   mutationMajorPartAllData(state,majorPartAllData){
     state.majorPartAllData = majorPartAllData
+  },
+  mutationProductionPart(state,production){
+    state.production = production
   },
 }

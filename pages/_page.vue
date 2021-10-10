@@ -1,9 +1,7 @@
 <template>
-  <div>
+  <main>
     <Header/>
-    <h1>{{ post.data.title }}</h1>
-    <p>{{ post.data.color }}</p>
-  </div>
+  </main>
 </template>
 
 <script>

@@ -5,7 +5,7 @@
       <div
         v-if="post.title != 'INDEX'"
         :key="post.title"
-        class="title">
+        class="title" @click.once="reload()">
           <nuxt-link :to="`/${post.title}`">
             {{post.title}}
           </nuxt-link>
@@ -34,12 +34,19 @@ export default {
       'http://localhost:3003/headerAll'
     ).then(res => res.json());
   },
+  methods: {
+    reload(){
+      setTimeout(()=>{
+        window.location.reload();
+      },50)
+    },
+  },
 }
 </script>
 
 <style>
   .headerContainer{
-    /* border: 1px solid black; */
+    box-shadow: 0 0 2px rgb(0 0 0 / 20%);
     display: flex;
     flex-direction: row;
     justify-content: center;

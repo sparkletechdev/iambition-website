@@ -8,7 +8,7 @@
 export default {
   methods: {
     indexUrl(){
-      window.location.href = 'http://localhost:50132';
+      window.location.href = 'http://localhost:3010';
     }
   },
 }

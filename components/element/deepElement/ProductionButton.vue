@@ -1,8 +1,12 @@
 <template>
-    <div ref="showbgc" class="productionbutton" @mouseenter="show()" @mouseleave="hidde()" >
-      <nuxt-link to="/">
-        <button ref="buttonfont" type="button" class="productionButton">
-          Explore Nash 360
+    <div v-if="button" :ref="button.buttonName" 
+         :class="button.buttonName"
+         :style="button.buttonStyles"
+         @mouseenter="show(button.buttonName)" 
+         @mouseleave="hidde(button.buttonName)">
+      <nuxt-link :to="`${button.buttonLink}`">
+        <button type="button">
+          {{button.buttonTitle}}
         </button>
       </nuxt-link>
     </div>
@@ -10,27 +14,34 @@
 
 <script>
 export default {
-  methods: {
-    show(){
-      const ref = this.$refs;
-      ref.showbgc.style.backgroundPosition = 'left bottom'
-      ref.showbgc.style.cursor = 'pointer'
-
-      ref.showbgc.style.color = 'white'
+  props: {
+    button : {
+      type: Object,
+      default: () => {},
     },
-    hidde(){
+  },
+  methods: {
+    show(buttonName){
       const ref = this.$refs;
-      ref.showbgc.style.backgroundPosition = 'right bottom'
-      ref.showbgc.style.cursor = 'pointer'
+      ref[buttonName].style.backgroundPosition = 'left bottom';
+      ref[buttonName].style.cursor = 'pointer';
 
-      ref.showbgc.style.color = '#114a6e'
+      ref[buttonName].style.color = 'white';
+    },
+    hidde(buttonName){
+      const ref = this.$refs;
+      ref[buttonName].style.backgroundPosition = 'right bottom';
+      ref[buttonName].style.cursor = 'pointer';
+
+      ref[buttonName].style.color = '#114a6e';
+      ref[buttonName].style.transition = '.2s';
     },
   },
 }
 </script>
 
 <style>
-  .productionbutton{
+  /* .productionbutton{
     z-index: 1;
     font-size: 16px;
     background: linear-gradient(to right, #145484 50%, white 50%);
@@ -42,8 +53,5 @@ export default {
     font-weight: 800;
     margin: 10px 0 18px 0;
     transition: .4s;
-  }
-  .productionButton{
-    transition: .2s;
-  }
+  } */
 </style>
