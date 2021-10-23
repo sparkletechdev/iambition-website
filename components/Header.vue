@@ -5,7 +5,7 @@
       <div
         v-if="post.title != 'INDEX'"
         :key="post.title"
-        class="title" @click.once="reload()">
+        class="title" @click.once="reload(post.title)">
           <nuxt-link :to="`/${post.title}`">
             {{post.title}}
           </nuxt-link>
@@ -35,10 +35,13 @@ export default {
     ).then(res => res.json());
   },
   methods: {
-    reload(){
+    reload(data){
       setTimeout(()=>{
         window.location.reload();
-      },50)
+        if (data === "SERVICES") {
+          window.location.href = "http://localhost:3010/subPage/Dedicated%20Teams";
+        }
+      },10)
     },
   },
 }

@@ -37,11 +37,11 @@
       <div class="fotterbottomborder">
         <div class="footerbottomprivacyborder">
           <p class="companyprivacy">
-            © 2022 Sparkle Technologies Pte. Ltd.
+            © 2022 Sparkle Technology Pte. Ltd.
           </p>
-          <nuxt-link to="/privacy" class="privacylink">
+          <!-- <nuxt-link to="/privacy" class="privacylink">
             Privacy Policy
-          </nuxt-link>
+          </nuxt-link> -->
         </div>
         <div class="footerbottomlocation">
           <p class="location">

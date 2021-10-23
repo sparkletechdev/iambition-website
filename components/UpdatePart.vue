@@ -43,6 +43,16 @@ export default {
           ref.updatesubscribe.style.transform = "translateY(0px)";
         },3050);
         ref.updatemail.value = "";
+
+        fetch("http://localhost:3003/getMail",{
+          method: 'PUT',
+          body: JSON.stringify({
+            mail: emailvalue
+          }),
+          headers: new Headers({
+            'Content-Type': 'application/json'
+          })
+        })
       }
     }
   },
