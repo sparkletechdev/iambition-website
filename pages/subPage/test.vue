@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h1>{{ post.id }}</h1>
+    <!-- <h1>{{ post.id }}</h1>
     <p>{{ post.responseData[0].headerBackground }}</p>
-    <h1>132</h1>
+    <h1>132</h1> -->
   </div>
 </template>
 

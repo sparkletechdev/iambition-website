@@ -122,4 +122,69 @@ export default {
   .privacylink{
     color: #1868A4;
   }
+  @media screen and (max-width: 1300px) {
+    .footercontainer .footerborder {
+      width: 900px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .footercontainer .footerborder {
+      width: 700px;
+    }
+    .footerborder .footertopborder{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .footertopborder .footertoppartnersborder{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .footercontainer .footerborder {
+      width: 100%;
+    }
+    .footerborder .footertopborder{
+      border-bottom: none;
+    }
+    .footercontainer .fotterbottomborder{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .fotterbottomborder .footerbottomprivacyborder {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .footertopborder .footertoppartnersborder{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .footerpartners{
+      margin-bottom: 20px;
+    }
+    .colorblue{
+      margin: 0 10px;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    .updatemail{
+      width: 260px;
+    }
+    .updatebutton{
+      width: 90px;
+      font-size: 1.0rem;
+      height: 50px;
+    }
+  }
 </style>

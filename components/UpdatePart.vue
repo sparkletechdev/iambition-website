@@ -121,4 +121,39 @@ export default {
   .hidden{
     display: none;
   }
+  @media screen and (max-width: 786px) {
+    .updatemail{
+      width: 400px;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .updatemail{
+      width: 300px;
+      font-size: 1.0rem;
+    }
+    .updatebutton{
+      width: 100px;
+      font-size: 1.0rem;
+      height: 50px;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    .updatepartborder{
+      height: 300px;
+    }
+    .updatesubtitle{
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 361px) {
+    .updatemail{
+      width: 260px;
+    }
+    .updatebutton{
+      width: 90px;
+      font-size: 1.0rem;
+      height: 50px;
+    }
+  }
 </style>
