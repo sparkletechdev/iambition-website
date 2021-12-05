@@ -7,7 +7,6 @@
     <DedicatedTeamsBenefitsPart />
     <DedicatedTeamsComparePart />
     <DedicatedTeamsComparePartTwo />
-    <DedicatedTeamsGoodChoice />
     <UpdatePart />
     <Footer />
   </main>

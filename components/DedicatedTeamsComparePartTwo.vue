@@ -151,6 +151,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
   .dedicatedteamscompareparttwotitle{
     padding: 0 0 80px;
@@ -266,5 +267,60 @@ export default {
   }
   .dedicatedteamscompareparttwolinkcontactus:not(:hover){
     background-position: right bottom;
+  }
+  @media screen and (max-width: 1400px) {
+    .dedicatedteamscompareparttwoteamandpriceborder{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .dedicatedteamscompareparttwotitle{
+      padding-bottom: 40px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .dedicatedteamscompareparttwotitle{
+      font-size: 3rem;
+    }
+    .dedicatedteamscompareparttwocontent {
+      padding: 0 100px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .dedicatedteamscompareparttwotitle{
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .dedicatedteamscompareparttwotitle{
+      font-size: 2rem;
+    }
+    .dedicatedteamscompareparttwoteamtitle, 
+    .dedicatedteamscompareparttwopricetitle {
+      font-size: 1.5rem;
+    }
+    .dedicatedteamscompareparttwocontent {
+      padding: 0 50px;
+    }
+    .dedicatedteamscompareparttwoteamcontent,
+    .dedicatedteamscompareparttwopricecontent{
+      width: 80%;
+      padding: 0 50px;
+    }
+    .dedicatedteamscompareparttwoteamintroductions,
+    .dedicatedteamscompareparttwopriceintroductions{
+      width: 350px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .dedicatedteamscompareparttwoteamcontent,
+    .dedicatedteamscompareparttwopricecontent{
+      width: 60%;
+    }
+    .dedicatedteamscompareparttwoteamintroductions,
+    .dedicatedteamscompareparttwopriceintroductions{
+      width: 320px;
+    }
   }
 </style>

@@ -192,4 +192,32 @@ export default {
   .dedicatedteamsbenefitspartlinkcontactus:not(:hover){
     background-position: right bottom;
   }
+  @media screen and (max-width: 1200px) {
+    .dedicatedteamsbenefitsparttitle{
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .dedicatedteamsbenefitsparttitle{
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .dedicatedteamsbenefitsparttitle{
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .dedicatedteamsbenefitspartmiddleborderhide{
+      width: 320px;
+      height: 180px;
+    }
+    .dedicatedteamsbenefitspartmiddlecontain{
+      width: 320px;
+      height: 180px;
+    }
+    .dedicatedteamsbenefitspartmiddletitle{
+      text-align: center;
+    }
+  }
 </style>

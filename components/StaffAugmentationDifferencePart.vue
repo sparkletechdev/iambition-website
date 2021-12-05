@@ -251,4 +251,53 @@ export default {
   .staffaugmentationdifferencelinkcontactus:not(:hover){
     background-position: right bottom;
   }
+  @media screen and (max-width: 1600px) {
+    .staffaugmentationdifferencepart{
+      padding: 80px 150px;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .staffaugmentationdifferencepart{
+      padding: 50px 50px;
+    }
+    .staffaugmentationdifferencetitle{
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .staffaugmentationdifferencetitle{
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+    }
+    .staffaugmentationdifferencemiddleborder{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .staffaugmentationdifferencecontainer{
+      margin: 35px 0;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .staffaugmentationdifferencetitle{
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .staffaugmentationdifferencepart{
+      padding: 50px 10px 50px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .staffaugmentationdifferencecontainer{
+      width: 350px;
+      margin: 0 0 15px 0;
+    }
+    .staffaugmentationdifferencecontainershadow{
+      transform: translateY(-400px);
+    }
+    .staffaugmentationdifferencecontainerhovertitle{
+      top: 10%;
+    }
+  }
 </style>

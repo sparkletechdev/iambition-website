@@ -94,4 +94,47 @@ export default {
     opacity: 1;
     transition: all .4s ease-in-out;
   }
+  @media screen and (max-width: 1500px) {
+    .staffaugmentationextratalentpart{
+      padding: 100px 150px 100px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .staffaugmentationextratalentpart{
+      padding: 100px 50px 100px;
+    }
+    .staffaugmentationextratalenttitle{
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .staffaugmentationextratalenttitle{
+      margin-bottom: 50px;
+    }
+    .staffaugmentationextratalentcontentborder{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .staffaugmentationextratalentcontentleftborder{
+      width: 90%;
+    }
+    .staffaugmentationextratalentcontentrightborder{
+      margin-bottom: 45px;
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .staffaugmentationextratalenttitle{
+      font-size: 2rem;
+    }
+    .staffaugmentationextratalentcontentrightimage{
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .staffaugmentationextratalentpart{
+      padding: 50px 10px 50px;
+    }
+  }
 </style>

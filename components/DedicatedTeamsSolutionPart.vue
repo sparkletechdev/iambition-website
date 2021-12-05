@@ -95,4 +95,57 @@ export default {
     opacity: 1;
     transition: all .4s ease-in-out;
   }
+  @media screen and (max-width: 1500px) {
+    .dedicatedteamssolutionpartborder{
+      padding: 100px 150px 100px;
+    }
+  }
+  @media screen and (max-width: 1300px) {
+    .dedicatedteamssolutionpartborder{
+      padding: 100px 50px 100px;
+    }
+    .dedicatedteamssolutiontitle{
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .dedicatedteamssolutioncontentborder{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .dedicatedteamssolutioncontentleftborder{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      order: 2;
+    }
+    .dedicatedteamssolutioncontentrightborder{
+      width: 100%;
+      order: 1;
+      margin-bottom: 50px;
+    }
+    .dedicatedteamssolutiontitle{
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .dedicatedteamssolutiontitle{
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .dedicatedteamssolutionpartborder{
+      padding: 50px 10px 50px;
+    }
+    .dedicatedteamssolutioncontentleftborder{
+      width: 80%;
+    }
+    .dedicatedteamssolutioncontentrightborder{
+      display: none;
+    }
+  }
 </style>

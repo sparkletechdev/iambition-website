@@ -4,10 +4,10 @@
       <h1 id="dedicatedteamscomparetitle" class="dedicatedteamscomparetitle dedicatedteamscomparetitlemove">
         Dedicated Team vs. Time and Materials Model
       </h1>
-      <p class="dedicatedteamscomparecontent dedicatedteamscomparecontentmove">
+      <p class="dedicatedteamscomparecontent">
         When outsourcing your development, you’ll have to decide on an engagement model, a structured plan that defines the basis of the collaboration between you, the client, and BairesDev, the software development company. This engagement model establishes your needs while ensuring the level of control, flexibility, and responsibility involved in the project development. Additionally, any given engagement model has its impact on pricing.
       </p>
-      <p class="dedicatedteamscomparecontent dedicatedteamscomparecontentmove">
+      <p class="dedicatedteamscomparecontent">
         There are 3 common engagement models: dedicate teams, time and materials, and fixed price.
       </p>
       <div id="dedicatedteamscompareborder" class="dedicatedteamscompareborder dedicatedteamscomparebordermove">
@@ -128,7 +128,7 @@ export default {
       window.addEventListener("scroll", ()=>{
         const dedicatedteamscomparepartborder = document.getElementById("dedicatedteamscomparepartborder");
         const dedicatedteamscomparetitle = document.getElementById("dedicatedteamscomparetitle");
-        const dedicatedteamscomparecontent = document.getElementsByClassName("dedicatedteamscomparecontent");
+        // const dedicatedteamscomparecontent = document.getElementsByClassName("dedicatedteamscomparecontent");
         const dedicatedteamscompareborder = document.getElementById("dedicatedteamscompareborder");
 
 
@@ -136,9 +136,9 @@ export default {
             (window.innerHeight) > Math.abs(dedicatedteamscomparepartborder.offsetTop - scrollY)) {
           dedicatedteamscomparepartborder.classList.remove("dedicatedteamscomparepartbordermove");
           dedicatedteamscomparetitle.classList.remove("dedicatedteamscomparetitlemove");
-          dedicatedteamscomparecontent.forEach(i => {
-            i.classList.remove("dedicatedteamscomparecontentmove");
-          });
+          // dedicatedteamscomparecontent.forEach(i => {
+          //   i.classList.remove("dedicatedteamscomparecontentmove");
+          // });
           dedicatedteamscompareborder.classList.remove("dedicatedteamscomparebordermove");
         }
       })
@@ -384,5 +384,69 @@ export default {
     font-weight: lighter;
     line-height: 1.5;
     margin: 10px 0;
+  }
+  @media screen and (max-width: 1600px) {
+    .dedicatedteamscomparepartborder {
+      padding: 50px 0;
+    }
+    .dedicatedteamscomparetitle{
+      padding: 0 250px;
+    }
+  }
+  @media screen and (max-width: 1200px) { 
+    .dedicatedteamscomparetitle{
+      padding: 0 100px;
+      font-size: 3rem;
+    }
+    .dedicatedteamscomparecontent{
+      padding: 0 100px;
+    }
+    .dedicatedteamscompareleftborder,
+    .dedicatedteamscomparerightborder {
+      width: 750px;
+    }
+    .dedicatedteamscompareleftteamborder,
+    .dedicatedteamscomparerightmodeborder{
+      justify-content: flex-start;
+    }
+    .dedicatedteamscompareleftborder:hover .dedicatedteamscompareleftteamcover ,
+    .dedicatedteamscomparerightborder:hover .dedicatedteamscomparerightmodecover{
+      right: 85%; 
+    }
+  }
+  @media screen and (max-width: 992px) { 
+    .dedicatedteamscomparetitle{
+      padding: 0 50px;
+      font-size: 2.5rem;
+    }
+    .dedicatedteamscomparecontent{
+      padding: 0 50px;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .dedicatedteamscomparetitle{
+      font-size: 2rem;
+    }
+    .dedicatedteamscompareleftborder,
+    .dedicatedteamscomparerightborder {
+      width: 350px;
+      align-items: center;
+    }
+    .dedicatedteamscompareleftteamborder,
+    .dedicatedteamscomparerightmodeborder{
+      width: 100%;
+      position: absolute;
+    }
+    .dedicatedteamscompareleftteamdetailborder,
+    .dedicatedteamscomparerightmodedetailborder{
+      width: 100%;
+    }
+    .dedicatedteamscomparerightmodedetailborder{
+      margin-top: 0;
+    }
+    .dedicatedteamscompareleftteamcover,
+    .dedicatedteamscomparerightmodecover{
+      display: none;
+    }
   }
 </style>

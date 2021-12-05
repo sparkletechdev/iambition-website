@@ -94,4 +94,30 @@ export default {
     transform: translateX(0);
     opacity: 1;
   }
+  @media screen and (max-width: 1300px) {
+    .dedicatedteamspart{
+      background-size: 150%;
+    }
+    svg text {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .dedicatedteamspart{
+      background-size: 200%;
+    }
+    svg text {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .dedicatedteamspart{
+      background-size: 200%;
+      min-height: 350px;
+      height: 50vh;
+    }
+    svg text {
+      font-size: 1rem;
+    }
+  }
 </style>

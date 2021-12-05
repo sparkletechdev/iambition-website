@@ -246,4 +246,64 @@ export default {
     text-align: center;
     padding: 0 335px 0;
   }
+  @media screen and (max-width: 1800px) {
+    .dedicatedteamsstructurecontain{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .dedicatedteamsstructuretitle{
+      padding: 0 250px;
+    }
+    .dedicatedteamsstructuremiddleborder{
+      width: 950px;
+      flex-wrap: wrap;
+    }
+    .dedicatedteamsstructuremiddle{
+      width: 305px;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .dedicatedteamsstructuretitle {
+      padding: 0 100px;
+      font-size: 3rem;
+    }
+    .dedicatedteamsstructurecontent{
+      padding: 0 100px;
+    }
+    .dedicatedteamsstructuremiddleborder {
+      margin-bottom: 40px;
+    }
+    .dedicatedteamsstructurebottomcontent {
+      padding: 0 100px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .dedicatedteamsstructuretitle {
+      font-size: 2.5rem;
+    }
+    .dedicatedteamsstructuremiddleborder{
+      width: 650px;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .dedicatedteamsstructuretitle {
+      font-size: 2rem;
+    }
+    .dedicatedteamsstructuremiddleborder{
+      width: 320px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .dedicatedteamsstructurepart {
+      padding: 50px 0;
+    }
+    .dedicatedteamsstructuretitle,
+    .dedicatedteamsstructurecontent,
+    .dedicatedteamsstructurebottomcontent {
+      padding: 0 50px;
+    }
+  }
 </style>

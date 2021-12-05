@@ -81,7 +81,7 @@ export default {
       fill: rgba(10, 40, 74, 1);
     }
   }
-  .staffaugmentationpartsubtitle{
+  .staffaugmentationpartsubtitle {
     width: 60%;
     min-width: 1140px;
     text-align: center;
@@ -93,5 +93,31 @@ export default {
   .staffaugmentationpartsubtitlemove{
     transform: translateX(0);
     opacity: 1;
+  }
+  @media screen and (max-width: 992px) {
+    .staffaugmentationpart{
+      background-size: 150%;
+    }
+    svg text {
+      font-size: 3rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .staffaugmentationpart{
+      background-size: 200%;
+    }
+    svg text {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .staffaugmentationpart{
+      background-size: 200%;
+      min-height: 350px;
+      height: 50vh;
+    }
+    svg text {
+      font-size: 1.0rem;
+    }
   }
 </style>
