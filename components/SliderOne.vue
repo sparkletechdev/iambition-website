@@ -31,4 +31,20 @@ export default {
     margin-top: 10px;
     font-size: 12px;
   }
+  @media screen and (max-width: 768px) {
+    .slideronetitle{
+      font-size: 2rem;
+      text-align: center;
+    }
+    .slideronesubtitle{
+      width: 80%;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .slideronetitle{
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
 </style>

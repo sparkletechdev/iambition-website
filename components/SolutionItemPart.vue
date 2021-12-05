@@ -72,12 +72,12 @@ export default {
     companygoingscrollitem(){
       if ( window.location.href === "http://localhost:3010/SOLUTIONS") {
         window.addEventListener("scroll", function(){
-          const solutionitemcontain = document.getElementsByClassName("solutionitemcontain");
-          const solutionitemimage = document.getElementsByClassName("solutionitemimage");
-          const solutionitem = document.getElementsByClassName("solutionitem");
-          const solutionitemtitle = document.getElementsByClassName("solutionitemtitle");
-          const solutionitemsubtitle = document.getElementsByClassName("solutionitemsubtitle");
-          const solutionitemcontent = document.getElementsByClassName("solutionitemcontent");
+          const solutionitemcontain = document.querySelectorAll(".solutionitemcontain");
+          const solutionitemimage = document.querySelectorAll(".solutionitemimage");
+          const solutionitem = document.querySelectorAll(".solutionitem");
+          const solutionitemtitle = document.querySelectorAll(".solutionitemtitle");
+          const solutionitemsubtitle = document.querySelectorAll(".solutionitemsubtitle");
+          const solutionitemcontent = document.querySelectorAll(".solutionitemcontent");
 
           solutionitemcontain.forEach((value,index) => {
             if (value.offsetTop - scrollY > 500 && value.offsetTop - scrollY < 650) {
@@ -194,5 +194,39 @@ export default {
   .solutionitemcontentactive{
     opacity: 0;
     transform: translateX(120px);
+  }
+  @media screen and (max-width: 1300px) {
+    .solutionitemborder{
+      justify-content: inherit;
+    }
+    .solutionitemitemborder{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 200px 0;
+    }
+    .solutionitemcontain{
+      display: flex;
+      flex-direction: column;
+      padding-top: 50px;
+      width: 80%;
+    }
+    .solutionitem{
+      width: auto;
+    }
+    .solutionitemimage{
+      order: 2;
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .solutionitemitemborder{
+      padding: 0 50px 0;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .solutionitemitemborder{
+      padding: 0 10px;
+    }
   }
 </style>

@@ -88,4 +88,26 @@ export default {
   .customerbutton:not(:hover){
     background-position: right bottom;
   }
+  @media screen and (max-width: 1600px) {
+    .customersborder {
+      background-size: 150%;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .customersborder {
+      background-size: 200%;
+    }
+  }
+  @media screen and (max-width: 786px) {
+    .customersborder {
+      background-size: 260%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .customersborder {
+      background-size: 270%;
+      min-height: 320px;
+      height: 65vh;
+    }
+  }
 </style>

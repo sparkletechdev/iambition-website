@@ -38,7 +38,6 @@ export default {
 
 <style>
   .solutionpartborder{
-    /* border: 1px solid black; */
     width: 100%;
     height: 100vh;
     min-height: 850px;
@@ -95,5 +94,52 @@ export default {
   .solutionpartsubtitlemove{
     transform: translateX(0);
     opacity: 1;
+  }
+  @media screen and (max-width: 1300px) {
+    .solutionpartborder {
+      background-size: 150%;
+    }
+    svg text {
+      font-size: 2.5rem;
+    }
+    .solutionpartsubtitle {
+      padding: 0 150px;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .solutionpartborder {
+      background-size: 200%;
+    }
+    svg text {
+      font-size: 2rem;
+    }
+    .solutionpartsubtitle {
+      width: 70%;
+      padding: 0 250px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .solutionpartborder {
+      background-size: 250%;
+    }
+    svg text {
+      font-size: 1.5rem;
+    }
+    .solutionpartsubtitle {
+      padding: 0 350px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .solutionpartborder {
+      background-size: 270%;
+      min-height: 320px;
+      height: 60vh;
+    }
+    svg text {
+      font-size: 1.5rem;
+    }
+    .solutionpartsubtitle {
+      padding: 0 400px;
+    }
   }
 </style>

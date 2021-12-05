@@ -235,4 +235,15 @@ export default {
   .carousel-prev-enter {
     transform: translateX(-100%);
   }
+  @media screen and (max-width: 576px) {
+    .slidercardtitle {
+      font-size: 1.5rem;
+    }
+    .slideronebordersbutitle{
+      width: 80%;
+    }
+    .slideroneborderbuttton{
+      text-align: center;
+    }
+  }
 </style>

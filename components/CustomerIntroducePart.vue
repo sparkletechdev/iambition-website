@@ -74,7 +74,7 @@ export default {
     customerscroll(){
       if (window.location.href === "http://localhost:3010/CUSTOMERS") {
         window.addEventListener("scroll", function () {
-          const customercompany = document.getElementsByClassName("customercompany");
+          const customercompany = document.querySelectorAll(".customercompany");
           customercompany.forEach(i => {
             if (i.offsetTop - scrollY > 650 && i.offsetTop - scrollY < 850) {
               i.classList.add("customercompanyactive")
@@ -95,6 +95,7 @@ export default {
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow: hidden;
   }
   .customercontain{
     /* border: 1px solid red; */
@@ -148,5 +149,29 @@ export default {
   .customercompanyactive{
     transform: translateY(0);
     opacity: 1;
+  }
+  @media screen and (max-width: 1200px) {
+    .customercontain{
+      width: 750px;
+    }
+    .customercompanyimformation {
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .customercontain{
+      width: 450px;
+    }
+    .customercompanyimformation {
+      width: 100%;
+    }
+    .customercompanylogo {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .customercontain{
+      width: 350px;
+    }
   }
 </style>
