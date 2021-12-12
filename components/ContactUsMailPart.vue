@@ -266,4 +266,37 @@ export default {
   .contactusmailrightsubtitle {
     color: white;
   }
+  @media screen and (max-width: 1200px) {
+    .contactusmailborder{
+      display: flex;
+      flex-direction: column;
+      width: 740px;
+      height: auto;
+      top: -30%;
+    }
+    .contactusmailleftborder{
+      width: 100%;
+    }
+    .contactusmailrightborder{
+      width: 100%;
+      padding: 1%;
+    }
+    .contactusmailleftcontain{
+      padding: 50px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .contactusmailborder{
+      width: 480px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .contactusmailborder{
+      width: 320px;
+      top: -10%;
+    }
+    .contactusmailleftcontain{
+      padding: 20px;
+    }
+  }
 </style>

@@ -95,4 +95,35 @@ export default {
     transform: translateX(0);
     opacity: 1;
   }
+  @media screen and (max-width: 1300px) {
+    .contactuspartborder{
+      background-size: 150%;
+    }
+    svg text {
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .contactuspartborder{
+      background-size: 200%;
+    }
+    svg text {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .contactuspartborder{
+      background-size: 250%;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .contactuspartborder{
+      background-size: 270%;
+      min-height: 320px;
+      height: 60vh;
+    }
+    .contactuspartsubtitle{
+      font-size: 12px;
+    }
+  }
 </style>

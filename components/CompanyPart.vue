@@ -76,4 +76,35 @@ export default {
       fill: rgba(10, 40, 74, 1);
     }
   }
+  @media screen and (max-width: 1300px) {
+    .companypart{
+      background-size: 150%;
+    }
+    svg text {
+      font-size: 2.5rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .companypart{
+      background-size: 200%;
+    }
+    svg text {
+      font-size: 2rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .companypart{
+      background-size: 250%;
+    }
+    svg text {
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .companypart{
+      background-size: 270%;
+      min-height: 320px;
+      height: 60vh;
+    }
+  }
 </style>

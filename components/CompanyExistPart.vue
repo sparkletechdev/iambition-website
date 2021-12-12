@@ -68,4 +68,20 @@ export default {
     line-height: 1.8;
     margin: 10px 15px;
   }
+  @media screen and (max-width: 1200px) {
+    .companyexistcontain{
+      margin: 5% 0;
+    }
+    .companyexisttitle{
+      font-size: 2rem;
+      padding: 0% 0% 0% 5%;
+    }
+    .companyexistcontentborder{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2% 5%;
+    }
+  }
 </style>

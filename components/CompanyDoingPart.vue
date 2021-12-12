@@ -81,7 +81,8 @@ export default {
   .companydoingitemborder{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
   }
   .companydoingitem{
@@ -94,6 +95,7 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2%;
   }
   .companydoingitembluebackground{
     position: absolute;
@@ -150,5 +152,15 @@ export default {
     z-index: 1;
     color: white;
     margin-bottom: 25px;
+  }
+  @media screen and (max-width: 1300px) {
+    .companydoingtitle{
+      font-size: 1.5rem;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .companydoingtitle{
+      padding: 10% 0;
+    }
   }
 </style>

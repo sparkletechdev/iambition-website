@@ -83,11 +83,11 @@ export default {
       if ( window.location.href === "http://localhost:3010/COMPANY"  || 
            window.location.href === "http://localhost:3010/subPage/About%20Us") {
         window.addEventListener("scroll", function(){
-          const companygoingitemcontain = document.getElementsByClassName("companygoingitemcontain");
-          const companygoingitemimage = document.getElementsByClassName("companygoingitemimage");
-          const companygoingitem = document.getElementsByClassName("companygoingitem");
-          const companygoingitemtitle = document.getElementsByClassName("companygoingitemtitle");
-          const companygoingitemcontent = document.getElementsByClassName("companygoingitemcontent");
+          const companygoingitemcontain = document.querySelectorAll(".companygoingitemcontain");
+          const companygoingitemimage = document.querySelectorAll(".companygoingitemimage");
+          const companygoingitem = document.querySelectorAll(".companygoingitem");
+          const companygoingitemtitle = document.querySelectorAll(".companygoingitemtitle");
+          const companygoingitemcontent = document.querySelectorAll(".companygoingitemcontent");
 
           companygoingitemcontain.forEach((value,index) => {
             if (value.offsetTop - scrollY > 300 && value.offsetTop - scrollY < 650) {
@@ -130,7 +130,7 @@ export default {
     margin-bottom: .5rem;
   }
   .companygoingsubtitle{
-    font-size: 16px;
+    font-size: .45rem;
     font-weight: lighter;
     text-align: center;
   }
@@ -239,5 +239,53 @@ export default {
   }
   .companygoingclientsbutton:not(:hover){
     background-position: right bottom;
+  }
+  @media screen and (max-width: 1300px) {
+    .companygoingtitle{
+      font-size: 1.5rem;
+    }
+    .companygoingsubtitle{
+      width: 80%;
+    }
+    .companygoingitemborder{
+      width: 100%;
+      padding: 0 50px 0;
+    }
+    .companygoingitemcontain{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 50px;
+    }
+    .companygoingitemimage{
+      width: 100%;
+      order: 1;
+    }
+    .companygoingitem{
+      width: 100%;
+      order: 2;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .companygoingtitleborder{
+      padding: 50px 50px 0;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .companygoingitemborder{
+      width: 100%;
+      padding: 0 20px;
+    }
+    .companygoingtitleborder{
+      padding: 50px 0 0;
+    }
+    .companygoingsubtitle{
+      width: 80%;
+    }
+    .companygoingclientsborder{
+      padding: 50px 20px;
+    }
   }
 </style>

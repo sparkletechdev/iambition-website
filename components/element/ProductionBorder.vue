@@ -27,7 +27,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   /* .productionborder{
     display: flex;
     justify-content: space-around;
@@ -53,4 +53,38 @@ export default {
     transform: translateY(-50%);
     width: 100%;
   } */
+  @media screen and (max-width: 1700px) {
+    .ProductionBorder{
+      width: 80% !important;
+      margin-bottom: 5%;
+    }
+    .ProductionBorder .deephthreetitle{
+      width: 80% !important;
+      text-align: center;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    .ProductionBorder{
+      width: 500px !important;
+      height: 700px !important;
+    }
+    .nash{
+      margin-bottom: 5% !important;
+    }
+    .predict{
+      margin-bottom: 10% !important;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .ProductionBorder{
+      width: 350px !important;
+      height: 600px !important;
+    }
+    .nash{
+      margin-bottom: 10% !important;
+    }
+    .predict{
+      margin-bottom: 15% !important;
+    }
+  }
 </style>

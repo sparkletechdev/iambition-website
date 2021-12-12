@@ -47,7 +47,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .majorPartImgStyle{
     position: absolute;
     width: 100%;
@@ -55,4 +55,30 @@ export default {
     object-fit: cover;
     object-position: center center;
   }
+  @media screen and (max-width: 576px) {
+    .majorPartBordercomponent{
+      min-height: 450px !important;
+      height: 60vh !important;
+    }
+    .titleBordrcomponent{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute !important;
+      top: 60% !important;
+      left: 50% !important;
+      transform: translate(-50%,-50%) !important;
+    }
+    .titlecomponent{
+      width: 100% !important;
+      text-align: center;
+      font-size: 1rem !important;
+    }
+    .contentcomponent{
+      width: 80%;
+      text-align: center;
+    }
+  }
+
 </style>

@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   /* .productionContainer{
     position: relative;
     width: 100%;
@@ -32,4 +32,20 @@ export default {
     align-items: center;
     justify-items: end;
   } */
+  @media screen and (max-width: 1700px) {
+    .productionContainer {
+      height: auto !important;
+    }
+    .ProductionBorder{
+      width: 80% !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 800px !important;
+      margin-top: 3% !important;
+    }
+    .honetitle{
+      font-size: 1rem !important;
+    }
+  }
 </style>

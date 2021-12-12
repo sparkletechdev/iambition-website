@@ -78,6 +78,7 @@ export default {
   .indexContainer{
     width: 100%;
     position: relative;
+    overflow: hidden;
   }
   .headerContainerWhite{
     border: none;
