@@ -94,6 +94,7 @@ export default {
 
   // port
   server: {
+    host: 0,
     port: '3010', // default: localhost
   },
 }
