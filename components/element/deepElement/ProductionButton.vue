@@ -1,47 +1,56 @@
 <template>
-    <div v-if="button" :ref="button.buttonName" 
-         :class="button.buttonName"
-         :style="button.buttonStyles"
-         @mouseenter="show(button.buttonName)" 
-         @mouseleave="hidde(button.buttonName)">
-      <nuxt-link :to="`${button.buttonLink}`">
-        <button type="button">
-          {{button.buttonTitle}}
-        </button>
-      </nuxt-link>
-    </div>
+  <div
+    v-if="button"
+    :ref="button.buttonName"
+    :class="button.buttonName"
+    :style="button.buttonStyles"
+    @mouseenter="show(button.buttonName)"
+    @mouseleave="hidde(button.buttonName)"
+    @click="reload"
+  >
+    <nuxt-link :to="`${button.buttonLink}`">
+      <button type="button">
+        {{ button.buttonTitle }}
+      </button>
+    </nuxt-link>
+  </div>
 </template>
 
 <script>
 export default {
   props: {
-    button : {
+    button: {
       type: Object,
       default: () => {},
     },
   },
   methods: {
-    show(buttonName){
-      const ref = this.$refs;
-      ref[buttonName].style.backgroundPosition = 'left bottom';
-      ref[buttonName].style.cursor = 'pointer';
+    show(buttonName) {
+      const ref = this.$refs
+      ref[buttonName].style.backgroundPosition = 'left bottom'
+      ref[buttonName].style.cursor = 'pointer'
 
-      ref[buttonName].style.color = 'white';
+      ref[buttonName].style.color = 'white'
     },
-    hidde(buttonName){
-      const ref = this.$refs;
-      ref[buttonName].style.backgroundPosition = 'right bottom';
-      ref[buttonName].style.cursor = 'pointer';
+    hidde(buttonName) {
+      const ref = this.$refs
+      ref[buttonName].style.backgroundPosition = 'right bottom'
+      ref[buttonName].style.cursor = 'pointer'
 
-      ref[buttonName].style.color = '#114a6e';
-      ref[buttonName].style.transition = '.2s';
+      ref[buttonName].style.color = '#114a6e'
+      ref[buttonName].style.transition = '.2s'
+    },
+    reload() {
+      setTimeout(() => {
+        window.location.reload()
+      }, 500)
     },
   },
 }
 </script>
 
 <style>
-  /* .productionbutton{
+/* .productionbutton{
     z-index: 1;
     font-size: 16px;
     background: linear-gradient(to right, #145484 50%, white 50%);
