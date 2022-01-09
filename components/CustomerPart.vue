@@ -24,7 +24,6 @@ export default {
       const ref = this.$refs;
 
       window.addEventListener("load",function (){
-        // window.console.log(window.location.href);
         ref.customerstitle.style.transform = "translateX(0)";
         ref.customerssubtitle.style.transform = "translateX(0)";
         ref.customerbutton.style.transform = "translateX(0)";
