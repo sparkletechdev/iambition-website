@@ -6,7 +6,7 @@
          :key="product.productionBorderId" 
          :class="product.productionBorderName"
          :style="product.productionBorderStyle[1].style">
-      <img :src="product.productionUrl" 
+      <img :src="require(`@/assets/images/${product.productionUrl}`)" 
            :class="product.productionBorderStyle[2].styleName"
            :style="product.productionBorderStyle[2].style">
       <ElementDeepElementDeephone :title="product.productionBorderTitle" :titlestyle="product.productionBorderStyle[3]" />
