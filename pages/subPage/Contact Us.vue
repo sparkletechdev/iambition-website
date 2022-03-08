@@ -17,9 +17,9 @@ export default {
   },
   methods: {
     animationheaderContainerBackground(){
-      this.$gsap.to('.headerContainer', {
+      this.$gsap.to('.header-container', {
         scrollTrigger: {
-          trigger: ".headerContainer",
+          trigger: ".header-container",
           start: "top 1% top",
           end: "bottom 5% top",
           // markers: true,
@@ -32,7 +32,7 @@ export default {
       const title = gsap.utils.toArray('.title');
 
       title.forEach((title) => {
-        gsap.to(".headerContainer",{
+        gsap.to(".header-container",{
           scrollTrigger:{
             trigger: title,
             start: "top 10% top",
@@ -48,7 +48,7 @@ export default {
       const triangle = gsap.utils.toArray('.triangle');
 
       triangle.forEach((triangle) => {
-        gsap.to(".headerContainer",{
+        gsap.to(".header-container",{
           scrollTrigger:{
             trigger: triangle,
             start: "top 10% top",

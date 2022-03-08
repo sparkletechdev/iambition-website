@@ -1,7 +1,7 @@
 <template>
-  <header ref="headerContainer" class="headerContainer" @load="$fetch">
+  <header ref="headerContainer" class="header-container">
     <NuxtLogo/>
-    <div v-for="post in posts" :key="post.title" class="headerLink">
+    <div v-for="post in posts" :key="post.title" class="header-link">
       <div
         v-if="post.title != 'INDEX'"
         :key="post.title"
@@ -10,7 +10,7 @@
             {{post.title}}
           </nuxt-link>
         <div v-if="post.items.length != '0'" :key="post.title" class="triangle"></div>
-        <div class="subtitleContainer">
+        <div class="subtitle-container">
           <div v-for="item in post.items" :key="item.id" class="subtitle">
             <nuxt-link v-if="item.title != 'none'" :to="`/subPage/${item.title}`">
               {{item.title}}
@@ -19,26 +19,26 @@
         </div>
       </div>
     </div>
-    <div class="hamburgerborder">
-      <div class="hamburgermiddleborder hamburgermiddlebordersmall" @click="hiddenheadercontainermove()">
-        <span class="hamburgerline"></span>
-        <span class="hamburgerline"></span>
-        <span class="hamburgerline"></span>
+    <div class="hamburger-border">
+      <div class="hamburger-middle-border hamburger-middle-border-small" @click="hiddenHeaderContainerMove()">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
       </div>
     </div>
-    <div ref="hiddenheadercontainer" class="hiddenheadercontainer">
-      <div class="hiddenheadercontainerborder">
-        <div v-for="post in posts.res" :key="post.title" class="hiddenheadercontainermiddle">
+    <div ref="hiddenHeaderContainer" class="hidden-header-container">
+      <div class="hidden-header-container-border">
+        <div v-for="post in posts" :key="post.title" class="hidden-header-container-middle">
           <div
            v-if="post.title != 'INDEX'"
            :key="post.title"
-           class="hiddenheadercontainertitleborder"
+           class="hidden-header-container-title-border"
            @click.once="reload(post.title)">
-            <nuxt-link :to="`/${post.title}`" class="hiddenheadercontainertitle">
+            <nuxt-link :to="`/${post.title}`" class="hidden-header-container-title">
               {{post.title}}
             </nuxt-link>
-            <div v-for="item in post.items" :key="item.id" class="hiddenheadercontainersubtitleborder">
-              <nuxt-link v-if="item.title != 'none'" :to="`/subPage/${item.title}`" class="hiddenheadercontainersubtitle">
+            <div v-for="item in post.items" :key="item.id" class="hidden-header-container-subtitle-border">
+              <nuxt-link v-if="item.title != 'none'" :to="`/subPage/${item.title}`" class="hidden-header-container-subtitle">
                 {{item.title}}
               </nuxt-link>
             </div>
@@ -56,11 +56,6 @@ export default {
     return {
       posts: data,
     }
-  },
-  async fetch() {
-    // this.posts = await fetch(
-    //   'http://localhost:3003/headerAll'
-    // ).then(res => res.json());
   },
   mounted() {
     this.screen();
@@ -81,17 +76,17 @@ export default {
         }
       })
     },
-    hiddenheadercontainermove(){
+    hiddenHeaderContainerMove(){
       const ref = this.$refs;
-      const hiddenheadercontainerstyle = ref.hiddenheadercontainer.style;
-      hiddenheadercontainerstyle.right = (hiddenheadercontainerstyle.right === "0%") ? "-100%" : "0%";
+      const hiddenHeaderContainerStyle = ref.hiddenHeaderContainer.style;
+      hiddenHeaderContainerStyle.right = (hiddenHeaderContainerStyle.right === "0%") ? "-100%" : "0%";
     }
   },
 }
 </script>
 
 <style>
-  .headerContainer{
+  .header-container{
     box-shadow: 0 0 2px rgb(0 0 0 / 20%);
     display: flex;
     flex-direction: row;
@@ -102,7 +97,7 @@ export default {
     transition: 1s;
     z-index: 5;
   }
-  .headerLink{
+  .header-link{
     /* border: 1px solid black; */
     margin: 0 40px 0 0;
     display: flex;  
@@ -134,7 +129,7 @@ export default {
     border-width: 10px 7px 0 7px;
     border-color: #eda905 transparent transparent transparent;
   }
-  .subtitleContainer{
+  .subtitle-container{
     /* border: 1px solid black; */
     position: absolute;
     left: 0%;
@@ -162,7 +157,7 @@ export default {
   .title:hover .subtitle{
     display: block;
   }
-  .hiddenheadercontainer{
+  .hidden-header-container{
     display: none;
   }
 
@@ -177,19 +172,16 @@ export default {
     }
   }
   @media screen and (max-width: 768px) {
-    .headerContainer{
+    .header-container{
       width: 100%;
       display: flex;
       justify-content: space-around;
       background-color: rgba(0,0,0,0);
     }
-    .addheaderContainerwhite{
-      background-color: white;
-    }
-    .headerLink{
+    .header-link{
       display: none;
     }
-    .hamburgerborder{
+    .hamburger-border{
       /* border: 1px solid black; */
       width: auto;
       display: flex;
@@ -197,7 +189,7 @@ export default {
       align-items: center;
       margin-left: 300px;
     }
-    .hamburgermiddleborder{
+    .hamburger-middle-border{
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -205,17 +197,17 @@ export default {
       height: 60%;
       justify-content: space-around;
     }
-    .hamburgermiddlebordersmall{
+    .hamburger-middle-border-small{
       width: 70px;
     }
-    .hamburgerline{
+    .hamburger-line{
       width: 75px;
       border-radius: 1.5px;
       border-top: 3px solid rgba(193, 226, 233, 0.863);
       box-shadow: .5px .5px 3px rgba(0, 0, 0, 0.24);
       position: relative;
     }
-    .hamburgerline::before{
+    .hamburger-line::before{
       content: "";
       position: absolute;
       bottom: 0%;
@@ -225,10 +217,10 @@ export default {
       border-top: 3px solid black;
       transition: all .6s ease-in-out;
     }
-    .hamburgerborder:hover{
+    .hamburger-border:hover{
       cursor: pointer;
     }
-    .hamburgerborder:hover .hamburgerline::before{
+    .hamburger-border:hover .hamburger-line::before{
       animation-name: animate;
       animation-duration: 1.5s;
       animation-fill-mode: both;
@@ -245,7 +237,7 @@ export default {
         left: 110%;
       }
     }
-    .hiddenheadercontainer{
+    .hidden-header-container{
       /* background-color: rgba(23, 75, 88, 0.815); */
       display: flex;
       justify-content: center;
@@ -260,14 +252,14 @@ export default {
       margin-top: 92px;
       transition: all .6s ease-in-out;
     }
-    .hiddenheadercontainerborder{
+    .hidden-header-container-border{
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
     }
-    .hiddenheadercontainermiddle{
+    .hidden-header-container-middle{
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -275,24 +267,24 @@ export default {
       justify-content: center;
       margin-bottom: 5%;
     }
-    .hiddenheadercontainertitleborder{
+    .hidden-header-container-title-border{
       width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       border-top: 1px solid rgba(255,255,255,0.5);
     }
-    .hiddenheadercontainertitle{
+    .hidden-header-container-title{
       color: #fff;
       text-shadow: 3px 5px 2px #474747;
       font-weight: bold;
       font-size: 2rem;
       margin-bottom: 2%;
     }
-    .hiddenheadercontainersubtitleborder{
+    .hidden-header-container-subtitle-border{
       margin: 1% 0;
     }
-    .hiddenheadercontainersubtitle{
+    .hidden-header-container-subtitle{
       color: transparent;
       background: #666;
       -webkit-background-clip: text;
@@ -304,17 +296,17 @@ export default {
     }
   }
   @media screen and (max-width: 576px) {
-    .hamburgerborder {
+    .hamburger-border {
       margin-left: 100px;
     }
-    .hamburgermiddleborder {
+    .hamburger-middle-border {
       width: 90%;
       height: 50%;
     }
     .nuxt-logo{
       height: 60px;
     }
-    .hiddenheadercontainer{
+    .hidden-header-container{
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -323,10 +315,10 @@ export default {
     }
   }
   @media screen and (max-width: 414px) {
-    .hamburgerborder{
+    .hamburger-border{
       margin-left: 70px;
     }
-    .hiddenheadercontainer{
+    .hidden-header-container{
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -334,7 +326,7 @@ export default {
     }
   }
   @media screen and (max-width: 361px) {
-    .hiddenheadercontainer{
+    .hidden-header-container{
       padding-top: 0;
     }
   }

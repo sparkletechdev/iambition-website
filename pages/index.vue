@@ -1,5 +1,5 @@
 <template>
-  <main class="indexContainer">
+  <main class="index-container">
     <Header />
     <MajorPart />
     <ProductionPart />
@@ -13,19 +13,19 @@
 <script>
 export default {
   mounted() {
-    this.animationheaderContainerBackground()
+    this.animationHeaderContainerBackground()
     this.animationBoxColor()
-    this.anmationTriangleColor()
+    this.animationTriangleColor()
   },
   methods: {
-    animationheaderContainerBackground() {
-      this.$gsap.to('.headerContainer', {
+    animationHeaderContainerBackground() {
+      this.$gsap.to('.header-container', {
         scrollTrigger: {
-          trigger: '.headerContainer',
+          trigger: '.header-container',
           start: 'top 1% top',
           end: 'bottom 5% top',
           // markers: true,
-          toggleClass: 'headerContainerWhite',
+          toggleClass: 'header-container-white',
         },
       })
     },
@@ -34,29 +34,29 @@ export default {
       const title = gsap.utils.toArray('.title')
 
       title.forEach((title) => {
-        gsap.to('.headerContainer', {
+        gsap.to('.header-container', {
           scrollTrigger: {
             trigger: title,
             start: 'top 10% top',
             end: 'bottom top',
             // markers: true,
-            toggleClass: 'titleChangeColor',
+            toggleClass: 'title-change-color',
           },
         })
       })
     },
-    anmationTriangleColor() {
+    animationTriangleColor() {
       const gsap = this.$gsap
       const triangle = gsap.utils.toArray('.triangle')
 
       triangle.forEach((triangle) => {
-        gsap.to('.headerContainer', {
+        gsap.to('.header-container', {
           scrollTrigger: {
             trigger: triangle,
             start: 'top 10% top',
             end: 'bottom top',
             // markers: true,
-            toggleClass: 'triangleChange',
+            toggleClass: 'triangle-change',
           },
         })
       })
@@ -66,20 +66,20 @@ export default {
 </script>
 
 <style>
-.indexContainer {
+.index-container {
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-.headerContainerWhite {
+.header-container-white {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   transition: 1s;
 }
-.titleChangeColor {
+.title-change-color {
   color: white;
 }
-.triangleChange {
+.triangle-change {
   border-style: solid;
   border-width: 10px 7px 0 7px;
   border-color: #fff transparent transparent transparent;
