@@ -1,7 +1,7 @@
 <template>
   <header ref="headerContainer" class="headerContainer" @load="$fetch">
     <NuxtLogo/>
-    <div v-for="post in posts.res" :key="post.title" class="headerLink">
+    <div v-for="post in posts" :key="post.title" class="headerLink">
       <div
         v-if="post.title != 'INDEX'"
         :key="post.title"
@@ -9,11 +9,11 @@
           <nuxt-link :to="`/${post.title}`">
             {{post.title}}
           </nuxt-link>
-        <div v-if="post.subheaders.length != '0'" :key="post.title" class="triangle"></div>
+        <div v-if="post.items.length != '0'" :key="post.title" class="triangle"></div>
         <div class="subtitleContainer">
-          <div v-for="subheader in post.subheaders" :key="subheader.id" class="subtitle">
-            <nuxt-link v-if="subheader.title != 'none'" :to="`/subPage/${subheader.title}`">
-              {{subheader.title}}
+          <div v-for="item in post.items" :key="item.id" class="subtitle">
+            <nuxt-link v-if="item.title != 'none'" :to="`/subPage/${item.title}`">
+              {{item.title}}
             </nuxt-link>
           </div>
         </div>
@@ -37,9 +37,9 @@
             <nuxt-link :to="`/${post.title}`" class="hiddenheadercontainertitle">
               {{post.title}}
             </nuxt-link>
-            <div v-for="subheader in post.subheaders" :key="subheader.id" class="hiddenheadercontainersubtitleborder">
-              <nuxt-link v-if="subheader.title != 'none'" :to="`/subPage/${subheader.title}`" class="hiddenheadercontainersubtitle">
-                {{subheader.title}}
+            <div v-for="item in post.items" :key="item.id" class="hiddenheadercontainersubtitleborder">
+              <nuxt-link v-if="item.title != 'none'" :to="`/subPage/${item.title}`" class="hiddenheadercontainersubtitle">
+                {{item.title}}
               </nuxt-link>
             </div>
           </div>
@@ -50,16 +50,17 @@
 </template>
 
 <script>
+import data from '~/assets/data/headers.json'
 export default {
   data() {
     return {
-      posts: [],
+      posts: data,
     }
   },
   async fetch() {
-    this.posts = await fetch(
-      'http://localhost:3003/headerAll'
-    ).then(res => res.json());
+    // this.posts = await fetch(
+    //   'http://localhost:3003/headerAll'
+    // ).then(res => res.json());
   },
   mounted() {
     this.screen();

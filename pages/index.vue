@@ -1,8 +1,8 @@
 <template>
   <main class="indexContainer">
     <Header/>
-    <MajorPart v-if="data.majorPartAllData[0] && data.majorPartAllData[1] && data.majorPartAllData[2] && data.majorPartAllData[3] && data.majorPartAllData[4] && data.url &&data.major" :major="data.major" :url="data.url" :button="data.button" :majorpartalldata="data.majorPartAllData"/>
-    <ProductionPart v-if="data.production" :production="data.production" />
+    <MajorPart />
+    <!-- <ProductionPart v-if="data.production" :production="data.production" /> -->
     <Slider/>
     <SliderOne/>
     <UpdatePart/>
@@ -12,15 +12,6 @@
 
 <script>
 export default {
-  computed: {
-    data(){
-      return this.$store.state
-    },
-  },
-  beforeMount() {
-    this.$store.dispatch('fetch');
-    this.$store.dispatch('actionProductionPart');
-  },
   mounted() {
     this.animationheaderContainerBackground();
     this.animationBoxColor();

@@ -1,0 +1,43 @@
+[
+  {
+    "title": "INDEX",
+    "items": [
+      {
+        "title": "none"
+      }
+    ]
+  },
+  {
+    "title": "SERVICES",
+    "items": [
+      {
+        "title": "Dedicated Teams"
+      },
+      {
+        "title": "Staff Augmentation"
+      },
+      {
+        "title": "Software Outsourcing"
+      }
+    ]
+  },
+  {
+    "title": "SOLUTIONS",
+    "items": []
+  },
+  {
+    "title": "CUSTOMERS",
+    "items": []
+  },
+  {
+    "title": "COMPANY",
+    "items": [
+      {
+        "title": "About Us"
+      },
+      {
+        "title": "Contact Us"
+      }
+    ]
+  }
+]

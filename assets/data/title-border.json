@@ -1,0 +1,7 @@
+{
+  "idName": "titleBordrcomponent",
+  "className": "titleBordrcomponent",
+  "idStyle": "",
+  "classStyle": "\n          position: absolute;\n          right: 21%;\n          bottom: 34%;\n          width: 450px;\n        ",
+  "style": "none"
+}

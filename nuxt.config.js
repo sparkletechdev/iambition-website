@@ -97,4 +97,12 @@ export default {
     host: 0,
     port: '3010', // default: localhost
   },
+
+  // Enable vue devtool
+  vue: {
+    config: {
+      productionTip: false,
+      devtools: true
+    }
+  }
 }

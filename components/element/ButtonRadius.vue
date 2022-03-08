@@ -1,32 +1,31 @@
 <template>
   <div
-    v-if="button.data"
-    :ref="button.data.buttonName"
-    :class="button.data.buttonstyles[0].className"
-    :style="button.data.buttonstyles[0].style"
-    @mouseenter="hover(button.data.buttonName)"
-    @mouseleave="hoverNone(button.data.buttonName)"
+    :ref="button.buttonName"
+    :class="button.buttonstyles[0].className"
+    :style="button.buttonstyles[0].style"
+    @mouseenter="hover(button.buttonName)"
+    @mouseleave="hoverNone(button.buttonName)"
   >
     <button
       type="button"
-      :class="button.data.buttonstyles[1].className"
-      :style="button.data.buttonstyles[1].style"
+      :class="button.buttonstyles[1].className"
+      :style="button.buttonstyles[1].style"
       @click="reload"
     >
-      <nuxt-link :to="`${button.data.link}`">
-        {{ button.data.title }}
+      <nuxt-link :to="`${button.link}`">
+        {{ button.title }}
       </nuxt-link>
     </button>
   </div>
 </template>
 
 <script>
+import button from '@/assets/data/button.json'
 export default {
-  props: {
-    button: {
-      type: Object,
-      default: () => {},
-    },
+  data() {
+    return {
+      button,
+    }
   },
   methods: {
     hover(buttonName) {
