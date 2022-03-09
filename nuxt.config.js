@@ -4,23 +4,27 @@ export default {
     title: 'Sparkle',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=yes' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1, user-scalable=yes',
+      },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [
-    {src: '~/plugins/font-awesome'}
-  ],
+  plugins: [{ src: '~/plugins/font-awesome' }],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -51,28 +55,28 @@ export default {
   gsap: {
     extraPlugins: {
       scrollTo: true,
-      scrollTrigger: true
-    }
+      scrollTrigger: true,
+    },
   },
 
   fontawesome: {
     // icon 的標籤使用 <fa>，這邊不設定就會依照 plugin 裡的設定<font-awesome-icon>
     component: 'fa',
-    imports:[
+    imports: [
       // 引入 fas、far、fab 所有的icon
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
+        icons: ['fas'],
       },
       {
         set: '@fortawesome/free-regular-svg-icons',
-        icons: ['far']
+        icons: ['far'],
       },
       {
         set: '@fortawesome/free-brands-svg-icons',
-        icons: ['fab']
+        icons: ['fab'],
       },
-    ]
+    ],
   },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -81,16 +85,15 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: 'en'
-    }
+      lang: 'en',
+    },
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  },
+  build: {},
 
   // port
   server: {
@@ -102,7 +105,7 @@ export default {
   vue: {
     config: {
       productionTip: false,
-      devtools: true
-    }
-  }
+      devtools: true,
+    },
+  },
 }

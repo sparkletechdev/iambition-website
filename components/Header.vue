@@ -93,7 +93,7 @@ export default {
     justify-content: center;
     position: fixed;
     width: 100%;
-    background-color: #fff;
+    background-color: #333;
     transition: 1s;
     z-index: 5;
   }
@@ -105,29 +105,29 @@ export default {
   }
   .title{
     /* border: 1px solid black; */
-    font-weight: bold;
+    font-weight: 600;
     display: flex;
     align-items: center;
-    color: black;
+    color: white;
     padding-top: 10px;
     transition: .4s;
     position: relative;
   }
   .title:hover{
-    color: #eda905;
-    border-top: 2px solid #eda905;
+    color: #0cf;
+    border-top: 2px solid #0CF;
   }
   .triangle{
     border-style: solid;
     border-width: 10px 7px 0 7px;
-    border-color: #000 transparent transparent transparent;
+    border-color: #fff transparent transparent transparent;
     margin: 0 0 0 5px;
     transition: .4s;
   }
   .title:hover .triangle{
     border-style: solid;
     border-width: 10px 7px 0 7px;
-    border-color: #eda905 transparent transparent transparent;
+    border-color: #0cf transparent transparent transparent;
   }
   .subtitle-container{
     /* border: 1px solid black; */
@@ -137,8 +137,7 @@ export default {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    border-radius: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
   .subtitle{
     /* border: 1px solid black; */
@@ -151,7 +150,7 @@ export default {
     display: none;
   }
   .subtitle:hover{
-    color: #eda905;
+    color: #0cf;
     cursor: pointer;
   }
   .title:hover .subtitle{
