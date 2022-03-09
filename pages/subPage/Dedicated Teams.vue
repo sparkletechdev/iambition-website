@@ -8,7 +8,6 @@
     <DedicatedTeamsComparePart />
     <DedicatedTeamsComparePartTwo />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 

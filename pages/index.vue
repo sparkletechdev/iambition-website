@@ -6,7 +6,6 @@
     <Slider />
     <SliderOne />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 

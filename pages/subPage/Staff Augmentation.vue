@@ -5,7 +5,6 @@
     <StaffAugmentationExtraTalentPart />
     <StaffAugmentationDifferencePart />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 

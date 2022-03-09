@@ -5,7 +5,6 @@
     <SoftwareOutsourcingEndtoEndPart />
     <SoftwareOutsourcingBenefitsPart />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 

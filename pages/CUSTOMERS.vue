@@ -5,7 +5,6 @@
     <CustomerIntroducePart />
     <SliderOne />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 

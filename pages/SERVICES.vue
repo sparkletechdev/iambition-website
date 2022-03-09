@@ -9,7 +9,6 @@
     <DedicatedTeamsComparePartTwo />
     <DedicatedTeamsGoodChoice />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 

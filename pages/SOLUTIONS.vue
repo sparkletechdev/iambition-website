@@ -4,7 +4,6 @@
     <SolutionPart />
     <SolutionItemPart />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 

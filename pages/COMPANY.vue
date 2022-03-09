@@ -6,7 +6,6 @@
     <CompanyDoingPart />
     <CompanyGoingPart />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 

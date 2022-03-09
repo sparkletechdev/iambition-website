@@ -4,7 +4,6 @@
     <ContactUsPart />
     <ContactUsMailPart />
     <UpdatePart />
-    <Footer />
   </main>
 </template>
 
