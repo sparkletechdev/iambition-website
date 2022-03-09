@@ -1,6 +1,5 @@
 <template>
   <main class="staffaugmentationborder" >
-    <Header />
     <StaffAugmentationPart />
     <StaffAugmentationExtraTalentPart />
     <StaffAugmentationDifferencePart />

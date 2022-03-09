@@ -1,6 +1,5 @@
 <template>
   <main class="dedicatedteamsborder" >
-    <Header />
     <DedicatedTeamsPart />
     <DedicatedTeamsSolutionPart />
     <DedicatedTeamsStructurePart />

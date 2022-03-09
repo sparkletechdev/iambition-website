@@ -1,6 +1,5 @@
 <template>
   <main class="solutionsborder">
-    <Header />
     <SolutionPart />
     <SolutionItemPart />
     <UpdatePart />

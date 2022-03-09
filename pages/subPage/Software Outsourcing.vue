@@ -1,6 +1,5 @@
 <template>
   <main class="softwareoutsourcingborder" >
-    <Header />
     <SoftwareOutsourcingPart />
     <SoftwareOutsourcingEndtoEndPart />
     <SoftwareOutsourcingBenefitsPart />

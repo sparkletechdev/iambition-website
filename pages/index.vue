@@ -1,6 +1,5 @@
 <template>
   <main class="index-container">
-    <Header />
     <MajorPart />
     <ProductionPart />
     <Slider />

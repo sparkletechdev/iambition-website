@@ -1,6 +1,5 @@
 <template>
   <main class="companypartborder">
-    <Header />
     <CompanyPart />
     <CompanyExistPart />
     <CompanyDoingPart />

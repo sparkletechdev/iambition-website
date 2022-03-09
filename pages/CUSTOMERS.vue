@@ -1,6 +1,5 @@
 <template>
   <main class="customerspartborder">
-    <Header />
     <CustomerPart />
     <CustomerIntroducePart />
     <SliderOne />
