@@ -90,8 +90,8 @@ export default {
 
 <style scoped>
 .company-logo {
-  height: 50px;
-  margin: 16px 50px 16px 0;
+  height: 32px;
+  margin: 16px 0 16px 0;
 }
 .company-logo:hover {
   cursor: pointer;
