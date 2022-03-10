@@ -1,6 +1,6 @@
 <template>
   <header ref="headerContainer" class="header-container">
-    <NuxtLogo/>
+    <Logo/>
     <div v-for="post in posts" :key="post.title" class="header-link">
       <div
         v-if="post.title != 'INDEX'"
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import data from '~/assets/data/headers.json'
+import data from '~/assets/data/nav.json'
 export default {
   data() {
     return {

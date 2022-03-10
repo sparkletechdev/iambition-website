@@ -1,0 +1,49 @@
+[
+  {
+    "title": "INDEX",
+    "route": "/",
+    "items": []
+  },
+  {
+    "title": "SERVICES",
+    "route": "",
+    "items": [
+      {
+        "title": "Dedicated Teams",
+        "route": ""
+      },
+      {
+        "title": "Staff Augmentation",
+        "route": ""
+      },
+      {
+        "title": "Software Outsourcing",
+        "route": ""
+      }
+    ]
+  },
+  {
+    "title": "SOLUTIONS",
+    "route": "",
+    "items": []
+  },
+  {
+    "title": "CUSTOMERS",
+    "route": "",
+    "items": []
+  },
+  {
+    "title": "COMPANY",
+    "route": "",
+    "items": [
+      {
+        "title": "About Us",
+        "route": "/about-us"
+      },
+      {
+        "title": "Contact Us",
+        "route": "/contact-us"
+      }
+    ]
+  }
+]

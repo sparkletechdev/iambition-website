@@ -1,5 +1,5 @@
 <template>
-  <main class="aboutuspartborder">
+  <main class="about-us-part-border">
     <CompanyPart />
     <CompanyExistPart />
     <CompanyDoingPart />
@@ -11,18 +11,18 @@
 <script>
 export default {
   mounted() {
-    this.animationheaderContainerBackground()
+    this.animationHeaderContainerBackground()
     this.animationBoxColor()
-    this.anmationTriangleColor()
+    this.animationTriangleColor()
   },
   methods: {
-    sliderpartbackgroundchange() {
+    sliderPartBackgroundChange() {
       if (this.$route.path === '/CUSTOMERS') {
-        const sliderbackground = document.getElementById('slideronepart')
-        sliderbackground.style.background = '#e2e2e2'
+        const sliderBackground = document.getElementById('slideronepart')
+        sliderBackground.style.background = '#e2e2e2'
       }
     },
-    animationheaderContainerBackground() {
+    animationHeaderContainerBackground() {
       this.$gsap.to('.header-container', {
         scrollTrigger: {
           trigger: '.header-container',
@@ -49,7 +49,7 @@ export default {
         })
       })
     },
-    anmationTriangleColor() {
+    animationTriangleColor() {
       const gsap = this.$gsap
       const triangle = gsap.utils.toArray('.triangle')
 
@@ -70,7 +70,7 @@ export default {
 </script>
 
 <style>
-.aboutuspartborder {
+.about-us-part-border {
   overflow: hidden;
 }
 </style>
