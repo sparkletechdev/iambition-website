@@ -86,23 +86,15 @@ export default {
     }
   },
   mounted() {
-    this.screen()
+    const headerRef = this.$refs.headerContainer
+    const hiddenRef = this.$refs.hiddenHeaderContainer
+    hiddenRef.style.top = `${headerRef.offsetHeight}px`
   },
   methods: {
     reload(data) {
       setTimeout(() => {
         window.location.reload()
       }, 10)
-    },
-    screen() {
-      const ref = this.$refs
-      window.addEventListener('scroll', () => {
-        if (window.innerWidth < 768 && scrollY !== 0) {
-          ref.headerContainer.style.backgroundColor = 'rgba(255,255,255,.8)'
-        } else if (window.innerWidth < 768 && scrollY === 0) {
-          ref.headerContainer.style.backgroundColor = ''
-        }
-      })
     },
     hiddenHeaderContainerMove() {
       const ref = this.$refs
@@ -146,14 +138,12 @@ export default {
 }
 .triangle {
   border-style: solid;
-  border-width: 10px 7px 0 7px;
+  border-width: 5px 5px 0 5px;
   border-color: #fff transparent transparent transparent;
   margin: 0 0 0 5px;
   transition: 0.4s;
 }
 .title:hover .triangle {
-  border-style: solid;
-  border-width: 10px 7px 0 7px;
   border-color: #0cf transparent transparent transparent;
 }
 .subtitle-container {
@@ -189,12 +179,12 @@ export default {
 
 @media screen and (max-width: 1200px) {
   .titleChangeColor {
-    color: #000;
+    color: #fff;
   }
 }
 @media screen and (max-width: 992px) {
   .titleChangeColor {
-    color: #000;
+    color: #fff;
   }
 }
 @media screen and (max-width: 768px) {
@@ -202,7 +192,7 @@ export default {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #333;
   }
   .header-link {
     display: none;
@@ -213,7 +203,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 300px;
+    margin-left: 10rem;
   }
   .hamburger-middle-border {
     overflow: hidden;
@@ -224,12 +214,12 @@ export default {
     justify-content: space-around;
   }
   .hamburger-middle-border-small {
-    width: 70px;
+    width: auto;
   }
   .hamburger-line {
-    width: 75px;
-    border-radius: 1.5px;
-    border-top: 3px solid rgba(193, 226, 233, 0.863);
+    width: 2.5rem;
+    border-radius: 4px;
+    border-top: 4px solid white;
     box-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.24);
     position: relative;
   }
@@ -237,10 +227,9 @@ export default {
     content: '';
     position: absolute;
     bottom: 0%;
-    left: -110%;
-    width: 100%;
-    height: 100%;
-    border-top: 3px solid black;
+    width: 0%;
+    border-radius: 4px;
+    border-top: 4px solid #0cf;
     transition: all 0.6s ease-in-out;
   }
   .hamburger-border:hover {
@@ -248,19 +237,16 @@ export default {
   }
   .hamburger-border:hover .hamburger-line::before {
     animation-name: animate;
-    animation-duration: 1.5s;
+    animation-duration: 0.6s;
     animation-fill-mode: both;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
   }
   @keyframes animate {
     0% {
-      left: -110%;
-    }
-    50% {
-      left: 0%;
+      width: 0%;
     }
     100% {
-      left: 110%;
+      width: 100%;
     }
   }
   .hidden-header-container {
@@ -268,22 +254,14 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(90, 171, 196, 0.952);
+    background-color: #333;
     position: fixed;
     right: -100%;
     top: 0%;
     width: 100%;
     min-height: 750px;
     height: 100vh;
-    margin-top: 92px;
     transition: all 0.6s ease-in-out;
-  }
-  .hidden-header-container-border {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
   .hidden-header-container-middle {
     width: 100%;
@@ -291,46 +269,32 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
   }
   .hidden-header-container-title-border {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.5);
   }
   .hidden-header-container-title {
     color: #fff;
-    text-shadow: 3px 5px 2px #474747;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-bottom: 2%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0.5%;
   }
   .hidden-header-container-subtitle-border {
     margin: 1% 0;
   }
   .hidden-header-container-subtitle {
-    color: transparent;
-    background: #666;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+    color: white;
     background-clip: text;
-    text-shadow: 0 3px 3px rgba(255, 255, 255, 0.5);
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 576px) {
   .hamburger-border {
     margin-left: 100px;
-  }
-  .hamburger-middle-border {
-    width: 90%;
-    height: 50%;
-  }
-  .nuxt-logo {
-    height: 60px;
   }
   .hidden-header-container {
     display: flex;
