@@ -3,13 +3,13 @@
     <Logo />
     <div v-for="post in posts" :key="post.title" class="header-link">
       <div
-        v-if="post.title != 'INDEX'"
+        v-if="post.title !== 'navbar.index'"
         :key="post.title"
         class="title"
-        @click.once="reload(post.title)"
+        @click.once="reload(post.route)"
       >
-        <nuxt-link :to="`/${post.title}`">
-          {{ post.title }}
+        <nuxt-link :to="`/${post.route}`">
+          {{ $t(post.title) }}
         </nuxt-link>
         <div
           v-if="post.items.length != '0'"
@@ -20,9 +20,9 @@
           <div v-for="item in post.items" :key="item.id" class="subtitle">
             <nuxt-link
               v-if="item.title != 'none'"
-              :to="`/subPage/${item.title}`"
+              :to="`/subPage/${item.route}`"
             >
-              {{ item.title }}
+              {{ $t(item.title) }}
             </nuxt-link>
           </div>
         </div>
@@ -46,16 +46,16 @@
           class="hidden-header-container-middle"
         >
           <div
-            v-if="post.title != 'INDEX'"
+            v-if="post.title !== 'navbar.index'"
             :key="post.title"
             class="hidden-header-container-title-border"
-            @click.once="reload(post.title)"
+            @click.once="reload(post.route)"
           >
             <nuxt-link
-              :to="`/${post.title}`"
+              :to="`/${post.route}`"
               class="hidden-header-container-title"
             >
-              {{ post.title }}
+              {{ $t(post.title) }}
             </nuxt-link>
             <div
               v-for="item in post.items"
@@ -64,10 +64,10 @@
             >
               <nuxt-link
                 v-if="item.title != 'none'"
-                :to="`/subPage/${item.title}`"
+                :to="`/subPage//${item.route}`"
                 class="hidden-header-container-subtitle"
               >
-                {{ item.title }}
+                {{ $t(item.title) }}
               </nuxt-link>
             </div>
           </div>

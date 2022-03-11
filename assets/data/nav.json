@@ -1,48 +1,48 @@
 [
   {
-    "title": "INDEX",
+    "title": "navbar.index",
     "route": "/",
     "items": []
   },
   {
-    "title": "SERVICES",
-    "route": "",
+    "title": "navbar.services",
+    "route": "services",
     "items": [
       {
-        "title": "Dedicated Teams",
-        "route": ""
+        "title": "navbar.dedicatedTeams",
+        "route": "dedicated teams"
       },
       {
-        "title": "Staff Augmentation",
-        "route": ""
+        "title": "navbar.staffAugmentation",
+        "route": "staff augmentation"
       },
       {
-        "title": "Software Outsourcing",
-        "route": ""
+        "title": "navbar.softwareOutsourcing",
+        "route": "software outsourcing"
       }
     ]
   },
   {
-    "title": "SOLUTIONS",
-    "route": "",
+    "title": "navbar.solutions",
+    "route": "solutions",
     "items": []
   },
   {
-    "title": "CUSTOMERS",
-    "route": "",
+    "title": "navbar.customers",
+    "route": "customers",
     "items": []
   },
   {
-    "title": "COMPANY",
-    "route": "",
+    "title": "navbar.company",
+    "route": "company",
     "items": [
       {
-        "title": "About Us",
-        "route": "/about-us"
+        "title": "navbar.aboutUs",
+        "route": "about-us"
       },
       {
-        "title": "Contact Us",
-        "route": "/contact-us"
+        "title": "navbar.contactUs",
+        "route": "contact-us"
       }
     ]
   }

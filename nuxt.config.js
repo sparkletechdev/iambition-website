@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Sparkle',
+    title: 'iAmbition Technology',
     meta: [
       { charset: 'utf-8' },
       {
@@ -49,6 +49,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     'nuxt-fontawesome',
+    '@nuxtjs/i18n',
   ],
 
   // https://www.npmjs.com/package/nuxt-gsap-module
@@ -87,6 +88,22 @@ export default {
     manifest: {
       lang: 'en',
     },
+  },
+
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        file: 'en-US.js',
+      },
+      {
+        code: 'zh',
+        file: 'zh-TW.js',
+      },
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'en',
   },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
