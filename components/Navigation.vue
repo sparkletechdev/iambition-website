@@ -86,7 +86,7 @@ export default {
   mounted() {
     this.hiddenContainerMarginTop()
     this.animationHeaderContainerBackground()
-    this.animationBoxColor()
+    // this.animationBoxColor()
   },
   methods: {
     reload(data) {
