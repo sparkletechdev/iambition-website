@@ -11,11 +11,9 @@
         <nuxt-link :to="`/${post.route}`">
           {{ $t(post.title) }}
         </nuxt-link>
-        <div
-          v-if="post.items.length != '0'"
-          :key="post.title"
-          class="triangle"
-        ></div>
+        <div v-if="post.items.length != '0'" :key="post.title">
+          <fa :icon="['fas', 'angle-down']" class="chevron-icon"/>
+        </div>
         <div class="subtitle-container">
           <div v-for="item in post.items" :key="item.id" class="subtitle">
             <nuxt-link
@@ -39,41 +37,41 @@
       </div>
     </div>
     <div ref="hiddenHeaderContainer" class="hidden-header-container">
-      <div class="hidden-header-container-border">
+      <!-- <div class="hidden-header-container-border"> -->
+      <div
+        v-for="post in posts"
+        :key="post.title"
+        class="hidden-header-container-middle"
+      >
         <div
-          v-for="post in posts"
+          v-if="post.title !== 'navbar.index'"
           :key="post.title"
-          class="hidden-header-container-middle"
+          class="hidden-header-container-title-border"
+          @click.once="reload(post.route)"
         >
+          <nuxt-link
+            :to="`/${post.route}`"
+            class="hidden-header-container-title"
+          >
+            {{ $t(post.title) }}
+          </nuxt-link>
           <div
-            v-if="post.title !== 'navbar.index'"
-            :key="post.title"
-            class="hidden-header-container-title-border"
-            @click.once="reload(post.route)"
+            v-for="item in post.items"
+            :key="item.id"
+            class="hidden-header-container-subtitle-border"
           >
             <nuxt-link
-              :to="`/${post.route}`"
-              class="hidden-header-container-title"
+              v-if="item.title != 'none'"
+              :to="`/subPage//${item.route}`"
+              class="hidden-header-container-subtitle"
             >
-              {{ $t(post.title) }}
+              {{ $t(item.title) }}
             </nuxt-link>
-            <div
-              v-for="item in post.items"
-              :key="item.id"
-              class="hidden-header-container-subtitle-border"
-            >
-              <nuxt-link
-                v-if="item.title != 'none'"
-                :to="`/subPage//${item.route}`"
-                class="hidden-header-container-subtitle"
-              >
-                {{ $t(item.title) }}
-              </nuxt-link>
-            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- </div> -->
   </header>
 </template>
 
@@ -86,9 +84,9 @@ export default {
     }
   },
   mounted() {
-    const headerRef = this.$refs.headerContainer
-    const hiddenRef = this.$refs.hiddenHeaderContainer
-    hiddenRef.style.top = `${headerRef.offsetHeight}px`
+    this.hiddenContainerMarginTop()
+    this.animationHeaderContainerBackground()
+    this.animationBoxColor()
   },
   methods: {
     reload(data) {
@@ -96,11 +94,49 @@ export default {
         window.location.reload()
       }, 10)
     },
+    hiddenContainerMarginTop() {
+    const headerRef = this.$refs.headerContainer
+    const hiddenRef = this.$refs.hiddenHeaderContainer
+    hiddenRef.style.top = `${headerRef.offsetHeight}px`
+    },
     hiddenHeaderContainerMove() {
       const ref = this.$refs
       const hiddenHeaderContainerStyle = ref.hiddenHeaderContainer.style
       hiddenHeaderContainerStyle.right =
         hiddenHeaderContainerStyle.right === '0%' ? '-100%' : '0%'
+    },
+    animationHeaderContainerBackground() {
+      const gsap = this.$gsap
+      this.$ScrollTrigger.matchMedia({
+        // eslint-disable-next-line object-shorthand
+        '(min-width: 768px)': function () {
+          gsap.to('.header-container', {
+            scrollTrigger: {
+              trigger: '.header-container',
+              start: 'top 1% top',
+              end: 'bottom 5% top',
+              // markers: true,
+              toggleClass: 'header-container-white',
+            },
+          })
+        },
+      })
+    },
+    animationBoxColor() {
+      const gsap = this.$gsap
+      const title = gsap.utils.toArray('.title')
+
+      title.forEach((title) => {
+        gsap.to('.header-container', {
+          scrollTrigger: {
+            trigger: title,
+            start: 'top 10% top',
+            end: 'bottom top',
+            // markers: true,
+            toggleClass: 'title-change-color',
+          },
+        })
+      })
     },
   },
 }
@@ -136,13 +172,11 @@ export default {
 .title:hover {
   color: #0cf;
 }
-.triangle {
-  border-style: solid;
-  border-width: 5px 5px 0 5px;
-  border-color: #fff transparent transparent transparent;
-  margin: 0 0 0 5px;
-  transition: 0.4s;
+
+.chevron-icon {
+  margin: 5px 0 0 5px;
 }
+
 .title:hover .triangle {
   border-color: #0cf transparent transparent transparent;
 }
@@ -150,7 +184,7 @@ export default {
   /* border: 1px solid black; */
   position: absolute;
   left: 0%;
-  top: 105%;
+  top: 100%;
   display: flex;
   flex-direction: column;
   background-color: #fff;
@@ -178,12 +212,12 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-  .titleChangeColor {
+  .title-change-color {
     color: #fff;
   }
 }
 @media screen and (max-width: 992px) {
-  .titleChangeColor {
+  .title-change-color {
     color: #fff;
   }
 }
@@ -252,8 +286,9 @@ export default {
   .hidden-header-container {
     /* background-color: rgba(23, 75, 88, 0.815); */
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: #333;
     position: fixed;
     right: -100%;
@@ -319,5 +354,21 @@ export default {
   .hidden-header-container {
     padding-top: 0;
   }
+}
+
+.index-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-container-white {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 1s;
+}
+
+.title-change-color {
+  color: white;
 }
 </style>
