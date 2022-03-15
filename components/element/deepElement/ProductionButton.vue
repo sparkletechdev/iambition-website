@@ -8,7 +8,7 @@
     @mouseleave="hidde(button.buttonName)"
     @click="reload"
   >
-    <nuxt-link :to="`${button.buttonLink}`">
+    <nuxt-link :to="localePath(`${button.buttonLink}`)">
       <button type="button">
         {{ button.buttonTitle }}
       </button>

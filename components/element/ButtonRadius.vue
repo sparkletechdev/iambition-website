@@ -12,7 +12,7 @@
       :style="button.buttonstyles[1].style"
       @click="reload"
     >
-      <nuxt-link :to="`${button.link}`">
+      <nuxt-link :to="localePath(`${button.link}`)">
         {{ button.title }}
       </nuxt-link>
     </button>

@@ -8,17 +8,17 @@
         class="title"
         @click.once="reload(post.route)"
       >
-        <nuxt-link :to="`/${post.route}`">
+        <nuxt-link :to="localePath(`/${post.route}`)">
           {{ $t(post.title) }}
         </nuxt-link>
         <div v-if="post.items.length != '0'" :key="post.title">
-          <fa :icon="['fas', 'angle-down']" class="chevron-icon"/>
+          <fa :icon="['fas', 'angle-down']" class="chevron-icon" />
         </div>
         <div class="subtitle-container">
           <div v-for="item in post.items" :key="item.id" class="subtitle">
             <nuxt-link
               v-if="item.title != 'none'"
-              :to="`/subPage/${item.route}`"
+              :to="localePath(`/subPage/${item.route}`)"
             >
               {{ $t(item.title) }}
             </nuxt-link>
@@ -26,6 +26,18 @@
         </div>
       </div>
     </div>
+    <div class="language">
+      <fa :icon="['fas', 'random']" class="language-switch-icon" />
+      <a
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        href="#"
+        @click.prevent.stop="$i18n.setLocale(locale.code); "
+      >
+        {{ locale.name }}
+      </a>
+    </div>
+
     <div class="hamburger-border">
       <div
         class="hamburger-middle-border hamburger-middle-border-small"
@@ -50,7 +62,7 @@
           @click.once="reload(post.route)"
         >
           <nuxt-link
-            :to="`/${post.route}`"
+            :to="localePath(`/${post.route}`)"
             class="hidden-header-container-title"
           >
             {{ $t(post.title) }}
@@ -62,7 +74,7 @@
           >
             <nuxt-link
               v-if="item.title != 'none'"
-              :to="`/subPage//${item.route}`"
+              :to="localePath(`/subPage//${item.route}`)"
               class="hidden-header-container-subtitle"
             >
               {{ $t(item.title) }}
@@ -83,21 +95,29 @@ export default {
       posts: data,
     }
   },
+  computed: {
+    availableLocales() {
+      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+    },
+  },
   mounted() {
     this.hiddenContainerMarginTop()
     this.animationHeaderContainerBackground()
     // this.animationBoxColor()
   },
   methods: {
+    switchLanguage(code) {
+      this.$i18n.switchLocalePath(code)
+    },
     reload(data) {
       setTimeout(() => {
         window.location.reload()
       }, 10)
     },
     hiddenContainerMarginTop() {
-    const headerRef = this.$refs.headerContainer
-    const hiddenRef = this.$refs.hiddenHeaderContainer
-    hiddenRef.style.top = `${headerRef.offsetHeight}px`
+      const headerRef = this.$refs.headerContainer
+      const hiddenRef = this.$refs.hiddenHeaderContainer
+      hiddenRef.style.top = `${headerRef.offsetHeight}px`
     },
     hiddenHeaderContainerMove() {
       const ref = this.$refs
@@ -370,5 +390,21 @@ export default {
 
 .title-change-color {
   color: white;
+}
+
+.language {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.language:hover {
+  color: #0cf;
+}
+
+.language-switch-icon {
+  margin: 0 5px 0 0;
 }
 </style>

@@ -91,13 +91,20 @@ export default {
   },
 
   i18n: {
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root', // recommended
+    },
     locales: [
       {
         code: 'en',
+        name: 'English',
         file: 'en-US.js',
       },
       {
         code: 'zh',
+        name: '繁體中文',
         file: 'zh-TW.js',
       },
     ],

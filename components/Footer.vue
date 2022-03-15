@@ -6,28 +6,38 @@
           <p class="footer-partners">Our Partners</p>
           <span class="footer-partners-line-hidden"></span>
           <div class="footer-partners-icon">
-            <fa :icon="['fas', 'apple-alt']" class="color-blue" />
-            <fa :icon="['fas', 'chess-knight']" class="color-blue" />
-            <fa :icon="['fas', 'dice-d20']" class="color-blue" />
-            <fa :icon="['fas', 'dice']" class="color-blue" />
-            <fa :icon="['fas', 'wind']" class="color-blue" />
+            <fa :icon="['fas', 'apple-alt']" class="partner-icon" />
+            <fa :icon="['fas', 'chess-knight']" class="partner-icon" />
+            <fa :icon="['fas', 'dice-d20']" class="partner-icon" />
+            <fa :icon="['fas', 'dice']" class="partner-icon" />
+            <fa :icon="['fas', 'wind']" class="partner-icon" />
           </div>
         </div>
-        <div class="footer-top-links-border">
-          <a href="https://www.instagram.com" class="footer-links">
-            <fa :icon="['fab', 'instagram-square']" class="color-blue-small" />
+        <div class="footer-top-partners-border">
+          <a href="https://www.instagram.com">
+            <div class="social-icon">
+              <fa :icon="['fab', 'instagram-square']" />
+            </div>
           </a>
-          <a href="https://zh-tw.facebook.com" class="footer-links">
-            <fa :icon="['fab', 'facebook-square']" class="color-blue-small" />
+          <a href="https://zh-tw.facebook.com">
+            <div class="social-icon">
+              <fa :icon="['fab', 'facebook-square']" />
+            </div>
           </a>
-          <a href="https://twitter.com" class="footer-links">
-            <fa :icon="['fab', 'twitter-square']" class="color-blue-small" />
+          <a href="https://twitter.com">
+            <div class="social-icon">
+              <fa :icon="['fab', 'twitter-square']" />
+            </div>
           </a>
-          <a href="https://tw.linkedin.com" class="footer-links">
-            <fa :icon="['fab', 'linkedin']" class="color-blue-small" />
+          <a href="https://tw.linkedin.com">
+            <div class="social-icon">
+              <fa :icon="['fab', 'linkedin']" />
+            </div>
           </a>
-          <a href="https://www.youtube.com" class="footer-links">
-            <fa :icon="['fab', 'youtube-square']" class="color-blue-small" />
+          <a href="https://www.youtube.com">
+            <div class="social-icon">
+              <fa :icon="['fab', 'youtube-square']" />
+            </div>
           </a>
         </div>
       </div>
@@ -54,7 +64,9 @@ export default {}
 <style>
 .location {
   color: white;
+  font-size: 0.8rem;
 }
+
 .footer-container {
   /* border: 1px solid black; */
   width: 100%;
@@ -62,6 +74,7 @@ export default {}
   justify-content: center;
   align-items: center;
   background-color: #333;
+  padding: 2rem 0;
 }
 .footer-container .footer-border {
   /* border: 1px solid black; */
@@ -82,6 +95,7 @@ export default {}
 .footer-top-border .footer-top-partners-border {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .footer-partners {
   font-size: 16px;
@@ -90,15 +104,18 @@ export default {}
   margin-right: 25px;
   opacity: 0.85;
 }
-.color-blue {
-  color: #369;
-  font-size: 2.6rem;
+.partner-icon {
+  color: white;
+  font-size: 2rem;
   margin-right: 32px;
 }
-.color-blue-small {
-  color: #369;
-  font-size: 1.8rem;
+.social-icon {
+  color: white;
+  font-size: 1.5rem;
   margin-left: 18px;
+}
+.social-icon :hover {
+  color: #0cf;
 }
 .footer-container .footer-bottom-border {
   display: flex;
@@ -115,9 +132,10 @@ export default {}
 .company-privacy {
   color: white;
   opacity: 0.85;
+  font-size: 0.8rem;
 }
 .privacy-link {
-  color: #369;
+  color: white;
 }
 @media screen and (max-width: 1300px) {
   .footer-container .footer-border {
@@ -170,7 +188,7 @@ export default {}
   .footer-partners {
     margin-bottom: 20px;
   }
-  .color-blue {
+  .partner-icon {
     margin: 0 10px;
   }
 }
