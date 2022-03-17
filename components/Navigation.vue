@@ -26,17 +26,7 @@
         </div>
       </div>
     </div>
-    <div class="language">
-      <fa :icon="['fas', 'random']" class="language-switch-icon" />
-      <a
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        href="#"
-        @click.prevent.stop="$i18n.setLocale(locale.code); "
-      >
-        {{ locale.name }}
-      </a>
-    </div>
+    <LanguageSwitcher />
 
     <div class="hamburger-border">
       <div
@@ -48,8 +38,8 @@
         <span class="hamburger-line"></span>
       </div>
     </div>
+
     <div ref="hiddenHeaderContainer" class="hidden-header-container">
-      <!-- <div class="hidden-header-container-border"> -->
       <div
         v-for="post in posts"
         :key="post.title"
@@ -82,8 +72,20 @@
           </div>
         </div>
       </div>
+      <div class="hidden-header-container-subtitle mt-5">
+        <div class="language">
+          <fa :icon="['fas', 'random']" class="language-switch-icon" />
+          <a
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            href="#"
+            @click.prevent.stop="$i18n.setLocale(locale.code)"
+          >
+            {{ locale.name }}
+          </a>
+        </div>
+      </div>
     </div>
-    <!-- </div> -->
   </header>
 </template>
 
@@ -197,9 +199,6 @@ export default {
   margin: 5px 0 0 5px;
 }
 
-.title:hover .triangle {
-  border-color: #0cf transparent transparent transparent;
-}
 .subtitle-container {
   /* border: 1px solid black; */
   position: absolute;
@@ -227,6 +226,7 @@ export default {
 .title:hover .subtitle {
   display: block;
 }
+
 .hidden-header-container {
   display: none;
 }
@@ -308,7 +308,7 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     background-color: #333;
     position: fixed;
     right: -100%;
@@ -316,7 +316,7 @@ export default {
     width: 100%;
     min-height: 750px;
     height: 100vh;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   .hidden-header-container-middle {
     width: 100%;
@@ -333,18 +333,24 @@ export default {
     align-items: center;
   }
   .hidden-header-container-title {
-    color: #fff;
     font-size: 1.3rem;
     font-weight: 500;
+    color: white;
     margin: 0.5%;
   }
   .hidden-header-container-subtitle-border {
     margin: 1% 0;
   }
   .hidden-header-container-subtitle {
-    color: white;
     background-clip: text;
+    color: white;
     font-size: 1rem;
+  }
+  .hidden-header-container-title:hover {
+    color: #0cf;
+  }
+  .hidden-header-container-subtitle:hover {
+    color: #0cf;
   }
 }
 @media screen and (max-width: 576px) {
@@ -390,21 +396,5 @@ export default {
 
 .title-change-color {
   color: white;
-}
-
-.language {
-  display: flex;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.8rem;
-}
-
-.language:hover {
-  color: #0cf;
-}
-
-.language-switch-icon {
-  margin: 0 5px 0 0;
 }
 </style>
