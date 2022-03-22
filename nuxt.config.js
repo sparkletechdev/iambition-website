@@ -1,4 +1,9 @@
 export default {
+  // Set static target to host on github pages
+  target: 'static',
+  router: {
+    base: '/iambition-website/'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'iAmbition Technology',
