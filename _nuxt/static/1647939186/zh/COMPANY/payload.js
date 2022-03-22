@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/zh/COMPANY", {data:[{}],fetch:{},mutations:[]});

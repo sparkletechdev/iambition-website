@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/zh/subPage/software%20outsourcing", {data:[{}],fetch:{},mutations:[]});

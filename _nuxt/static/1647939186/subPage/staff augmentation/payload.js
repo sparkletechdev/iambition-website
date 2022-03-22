@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/subPage/staff%20augmentation", {data:[{}],fetch:{},mutations:[]});
