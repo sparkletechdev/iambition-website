@@ -2,12 +2,7 @@
   <header ref="headerContainer" class="header-container">
     <Logo />
     <div v-for="post in posts" :key="post.title" class="header-link">
-      <div
-        v-if="post.title !== 'navbar.index'"
-        :key="post.title"
-        class="title"
-        @click.once="reload(post.route)"
-      >
+      <div v-if="post.title !== 'navbar.index'" :key="post.title" class="title">
         <nuxt-link :to="localePath(`/${post.route}`)">
           {{ $t(post.title) }}
         </nuxt-link>
@@ -49,7 +44,6 @@
           v-if="post.title !== 'navbar.index'"
           :key="post.title"
           class="hidden-header-container-title-border"
-          @click.once="reload(post.route)"
         >
           <nuxt-link
             :to="localePath(`/${post.route}`)"
@@ -91,10 +85,12 @@
 
 <script>
 import data from '~/assets/data/nav.json'
+
 export default {
   data() {
     return {
       posts: data,
+      currentRoute: '/',
     }
   },
   computed: {
@@ -110,11 +106,6 @@ export default {
   methods: {
     switchLanguage(code) {
       this.$i18n.switchLocalePath(code)
-    },
-    reload(data) {
-      setTimeout(() => {
-        window.location.reload()
-      }, 10)
     },
     hiddenContainerMarginTop() {
       const headerRef = this.$refs.headerContainer

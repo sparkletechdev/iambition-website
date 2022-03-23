@@ -1,6 +1,6 @@
 <template>
-  <main class="companypartborder">
-    <CompanyPart />
+  <main class="about-us-part-border">
+    <LandingComponent :title="title" :image-url="imageUrl" :contents="contents" />
     <CompanyExistPart />
     <CompanyDoingPart />
     <CompanyGoingPart />
@@ -9,11 +9,37 @@
 </template>
 
 <script>
-export default {}
+export default {
+  data() {
+    return {
+      title: 'Our History',
+      imageUrl:
+        'https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/cooperate.jpg',
+      contents: [
+        `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus
+      interdum posuere lorem. Integer eget aliquet nibh praesent tristique magna
+      sit amet purus. Metus vulputate eu scelerisque felis imperdiet. Sit amet
+      luctus venenatis lectus. Nisi porta lorem mollis aliquam ut porttitor leo
+      a diam. Habitasse platea dictumst vestibulum rhoncus. Sagittis eu volutpat
+      odio facilisis mauris. Dolor sit amet consectetur adipiscing elit duis
+      tristique sollicitudin. Netus et malesuada fames ac turpis egestas sed.`,
+        `Nibh ipsum consequat nisl vel. Sed cras ornare arcu dui vivamus. Volutpat
+      lacus laoreet non curabitur gravida arcu ac tortor. Lorem mollis aliquam
+      ut porttitor leo a diam sollicitudin. Odio ut enim blandit volutpat
+      maecenas volutpat. Nisi vitae suscipit tellus mauris a diam maecenas sed
+      enim. Enim ut tellus elementum sagittis. Tortor at auctor urna nunc id. Mi
+      in nulla posuere sollicitudin aliquam ultrices sagittis orci a. Sagittis
+      nisl rhoncus mattis rhoncus urna neque viverra justo nec. Sapien faucibus
+      et molestie ac feugiat sed.`,
+      ],
+    }
+  },
+}
 </script>
 
 <style>
-.companypartborder {
+.about-us-part-border {
   overflow: hidden;
 }
 </style>
