@@ -1,5 +1,5 @@
 <template>
-  <div class="company-part-container" :style="background">
+  <div class="company-part-container">
     <h1 class="splash-title">{{ title }}</h1>
     <p v-for="(content, index) in contents" :key="index" class="splash-content">
       {{ content }}
@@ -10,34 +10,26 @@
 <script>
 export default {
   props: {
-    imageUrl: {
-      type: String,
-      default:
-        '',
-    },
     title: {
       type: String,
-      default: '{title} props goes here'
+      default: '{title} props goes here',
     },
     contents: {
       type: Array,
-      default() {return ['{content} props needed']}
-    }
+      default() {
+        return ['{content} props needed']
+      },
+    },
   },
   computed: {
     background() {
-      return {
-        background: `linear-gradient(rgba(51, 102, 153, 0.75), rgba(39, 50, 68, 1)), url(${this.imageUrl})`,
-        'background-position': 'center',
-        'background-repeat': 'no-repeat',
-        'background-size': '100%',
-      }
+      return {}
     },
   },
 }
 </script>
 
-<style>
+<style scoped>
 .splash-title {
   font-size: 4.5rem;
   font-weight: 600;
@@ -64,6 +56,9 @@ export default {
   align-items: center;
   overflow: hidden;
   padding-top: 128px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @keyframes fadeIn {
@@ -90,24 +85,15 @@ export default {
   .company-part-container {
     background-size: 150%;
   }
-  svg text {
-    font-size: 2.5rem;
-  }
 }
 @media screen and (max-width: 992px) {
   .company-part-container {
     background-size: 200%;
   }
-  svg text {
-    font-size: 2rem;
-  }
 }
 @media screen and (max-width: 768px) {
   .company-part-container {
     background-size: 250%;
-  }
-  svg text {
-    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 576px) {

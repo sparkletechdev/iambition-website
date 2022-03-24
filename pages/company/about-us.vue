@@ -1,6 +1,9 @@
 <template>
   <main class="about-us-part-border">
-    <LandingComponent :title="title" :image-url="imageUrl" :contents="contents" />
+    <LandingComponent
+      :title="title"
+      :contents="contents"
+    />
     <CompanyExistPart />
     <CompanyDoingPart />
     <CompanyGoingPart />
@@ -13,8 +16,6 @@ export default {
   data() {
     return {
       title: 'Our History',
-      imageUrl:
-        'https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/cooperate.jpg',
       contents: [
         `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Suspendisse faucibus
@@ -38,8 +39,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .about-us-part-border {
   overflow: hidden;
+}
+
+::v-deep .company-part-container {
+  background-image: linear-gradient(rgba(51, 102, 153, 0.75), rgba(39, 50, 68, 1)),
+    url('https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/cooperate.jpg');
 }
 </style>

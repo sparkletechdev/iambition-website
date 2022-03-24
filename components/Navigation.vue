@@ -13,7 +13,7 @@
           <div v-for="item in post.items" :key="item.id" class="subtitle">
             <nuxt-link
               v-if="item.title != 'none'"
-              :to="localePath(`/subPage/${item.route}`)"
+              :to="localePath(`/${item.route}`)"
             >
               {{ $t(item.title) }}
             </nuxt-link>
@@ -58,7 +58,7 @@
           >
             <nuxt-link
               v-if="item.title != 'none'"
-              :to="localePath(`/subPage//${item.route}`)"
+              :to="localePath(`/${item.route}`)"
               class="hidden-header-container-subtitle"
             >
               {{ $t(item.title) }}

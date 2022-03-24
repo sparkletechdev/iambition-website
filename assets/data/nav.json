@@ -10,15 +10,15 @@
     "items": [
       {
         "title": "navbar.dedicatedTeams",
-        "route": "dedicated teams"
+        "route": "subPage/dedicated teams"
       },
       {
         "title": "navbar.staffAugmentation",
-        "route": "staff augmentation"
+        "route": "subPage/staff augmentation"
       },
       {
         "title": "navbar.softwareOutsourcing",
-        "route": "software outsourcing"
+        "route": "subPage/software outsourcing"
       }
     ]
   },
@@ -34,15 +34,15 @@
   },
   {
     "title": "navbar.company",
-    "route": "company",
+    "route": "company/about-us",
     "items": [
       {
         "title": "navbar.aboutUs",
-        "route": "about-us"
+        "route": "company/about-us"
       },
       {
         "title": "navbar.contactUs",
-        "route": "contact-us"
+        "route": "company/contact-us"
       }
     ]
   }

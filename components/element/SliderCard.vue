@@ -84,10 +84,10 @@ export default {
     }
   },
   mounted() {
-    this.slider();
+    // this.slider();
   },
   updated() {
-    this.slider();
+    // this.slider();
   },
   methods: {
     slider(i){
