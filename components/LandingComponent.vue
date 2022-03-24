@@ -48,17 +48,14 @@ export default {
 
 .company-part-container {
   width: 100%;
-  height: 100vh;
   min-height: 850px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  overflow: hidden;
+  overflow: scroll;
   padding-top: 128px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
 }
 
 @keyframes fadeIn {
@@ -95,12 +92,17 @@ export default {
   .company-part-container {
     background-size: 250%;
   }
+  .splash-title {
+    font-size: 3.5rem;
+  }
 }
 @media screen and (max-width: 576px) {
   .company-part-container {
     background-size: 270%;
     min-height: 320px;
-    height: 60vh;
+  }
+  .splash-title {
+    font-size: 2.5rem;
   }
 }
 </style>
