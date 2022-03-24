@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/zh/company/contact-us", {data:[{}],fetch:{},mutations:[]});
