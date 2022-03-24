@@ -7,8 +7,11 @@
 </template>
 
 <style>
-html {
+html:lang(en) {
   font-family: 'Montserrat', sans-serif;
+}
+html:lang(zh) {
+  font-family: 'Noto Sans TC', sans-serif;
 }
 
 

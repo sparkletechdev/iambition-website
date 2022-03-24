@@ -31,8 +31,8 @@ export default {
 
 <style scoped>
 .splash-title {
-  font-size: 4.5rem;
   font-weight: 600;
+  font-size: 4.5rem;
   margin-bottom: 4rem;
   color: white;
   text-align: center;
@@ -44,6 +44,7 @@ export default {
   width: 50%;
   margin: 1rem 0;
   animation: subtitleTransition 1s;
+  font-size: 1.5rem;
 }
 
 .company-part-container {

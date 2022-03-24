@@ -52,9 +52,19 @@ export default {
     url('https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/cooperate.jpg');
 }
 
+@media screen and (max-width: 768px) {
+  ::v-deep .splash-content:lang(en) {
+    font-size: 1rem;
+  }
+
+  ::v-deep .splash-title:lang(zh) {
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   ::v-deep .splash-title:lang(zh) {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 }
 </style>
