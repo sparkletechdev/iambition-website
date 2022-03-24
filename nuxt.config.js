@@ -2,33 +2,38 @@ export default {
   // Set static target to host on github pages
   target: 'static',
   router: {
-    base: '/iambition-website/'
+    base: '/iambition-website/',
   },
-  // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
-    title: 'iAmbition Technology',
-    meta: [
-      { charset: 'utf-8' },
-      {
-        name: 'viewport',
-        content: 'width=device-width, initial-scale=1, user-scalable=yes',
+  head() {
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
+    return {
+      title: 'iAmbition Technology',
+      htmlAttrs: {
+        lang: this.$i18n.locale,
       },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
-    ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap',
-      },
-    ],
+      meta: [
+        { charset: 'utf-8' },
+        {
+          name: 'viewport',
+          content: 'width=device-width, initial-scale=1, user-scalable=yes',
+        },
+        { hid: 'description', name: 'description', content: '' },
+        { name: 'format-detection', content: 'telephone=no' },
+        ...i18nHead.meta,
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap',
+        },
+        ...i18nHead.link,
+      ],
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    '@/assets/css/main.css'
-  ],
+  css: ['@/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [{ src: '~/plugins/font-awesome' }],
@@ -106,11 +111,13 @@ export default {
     locales: [
       {
         code: 'en',
+        iso: 'en-US',
         name: 'English',
         file: 'en-US.js',
       },
       {
         code: 'zh',
+        iso: 'zh-TW',
         name: '繁體中文',
         file: 'zh-TW.js',
       },

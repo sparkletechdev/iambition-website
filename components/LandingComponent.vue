@@ -54,7 +54,7 @@ export default {
   justify-content: flex-start;
   align-items: center;
   overflow: scroll;
-  padding-top: 128px;
+  padding: 8rem 0 4rem;
   background-size: cover;
 }
 
@@ -102,7 +102,7 @@ export default {
     min-height: 320px;
   }
   .splash-title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 </style>

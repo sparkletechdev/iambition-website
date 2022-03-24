@@ -1,8 +1,8 @@
 <template>
   <main class="about-us-part-border">
     <LandingComponent
-      :title="title"
-      :contents="contents"
+      :title="$t('company.aboutUs.landingTitle')"
+      :contents="$t('company.aboutUs.landingContent')"
     />
     <CompanyExistPart />
     <CompanyDoingPart />
@@ -45,7 +45,16 @@ export default {
 }
 
 ::v-deep .company-part-container {
-  background-image: linear-gradient(rgba(51, 102, 153, 0.75), rgba(39, 50, 68, 1)),
+  background-image: linear-gradient(
+      rgba(51, 102, 153, 0.75),
+      rgba(39, 50, 68, 1)
+    ),
     url('https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/cooperate.jpg');
+}
+
+@media screen and (max-width: 576px) {
+  ::v-deep .splash-title:lang(zh) {
+    font-size: 2.5rem;
+  }
 }
 </style>
