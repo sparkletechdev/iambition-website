@@ -41,10 +41,10 @@ export default {
 
 .splash-content {
   color: white;
-  width: 50%;
   margin: 1rem 0;
   animation: subtitleTransition 1s;
   font-size: 1.5rem;
+  padding: 0 25%;
 }
 
 .company-part-container {
@@ -79,14 +79,20 @@ export default {
   }
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   .company-part-container {
     background-size: 150%;
+  }
+  .splash-content {
+    padding: 0 15%;
   }
 }
 @media screen and (max-width: 992px) {
   .company-part-container {
     background-size: 200%;
+  }
+  .splash-content {
+    padding: 0 15%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -96,6 +102,9 @@ export default {
   .splash-title {
     font-size: 3.5rem;
   }
+  .splash-content {
+    padding: 0 8%;
+  }
 }
 @media screen and (max-width: 576px) {
   .company-part-container {
@@ -104,6 +113,10 @@ export default {
   }
   .splash-title {
     font-size: 3rem;
+    text-align: left;
+  }
+  .splash-content {
+    padding: 0 8%;
   }
 }
 </style>
