@@ -1,37 +1,37 @@
 <template>
-  <div class="companygoingpartborder">
-    <div class="companygoingcontain">
-      <div class="companygoingtitleborder">
-        <h1 class="companygoingtitle">Where Are We Going ?</h1>
-        <p class="companygoingsubtitle">
+  <div class="main-container">
+    <div class="content-container">
+      <div class="title-container">
+        <h1 class="going-title">Where Are We Going ?</h1>
+        <p class="going-subtitle">
           Tuple is being deployed by organizations across the globe for their
           most critical operations. Businesses are finding their best customers,
           designing the best customer experiences and developing exciting new
           products with Tuple.
         </p>
       </div>
-      <div class="companygoingitemborder">
+      <div class="item-wrapper">
         <div
           v-for="(item, index) in data"
           :key="index"
-          class="companygoingitemcontain"
+          class="items-container"
         >
-          <div class="companygoingitemimage companygoingitemimageactive">
+          <div class="item-image item-image-active">
             <img :src="item.img" />
           </div>
-          <div class="companygoingitem companygoingitemaactive">
-            <h1 class="companygoingitemtitle companygoingitemtitleactive">
+          <div class="item-container item-container-active">
+            <h1 class="g-item-title g-item-title-active">
               {{ item.title }}
             </h1>
-            <p class="companygoingitemcontent companygoingitemcontentactive">
+            <p class="item-subtitle item-subtitle-active">
               {{ item.subtitle }}
             </p>
           </div>
         </div>
       </div>
-      <div class="companygoingclientsborder">
+      <div class="clients-container">
         <div>
-          <p class="companygoingclientscontent">
+          <p class="clients-content">
             We are working with leading organizations to prepare them for a
             future where utilizing the data is a necessity. We are designing
             products which can withstand digital disruption and keep bringing
@@ -39,11 +39,11 @@
           </p>
         </div>
         <div
-          ref="companygoingclients"
-          class="companygoingclients"
-          @click="customerreload()"
+          ref="clients"
+          class="clients"
+          @click="customerReload()"
         >
-          <nuxt-link to="/CUSTOMERS" class="companygoingclientsbutton">
+          <nuxt-link to="/CUSTOMERS" class="clients-button">
             Meet Our Clients
           </nuxt-link>
         </div>
@@ -85,53 +85,52 @@ export default {
     }
   },
   mounted() {
-    this.companygoingscrollitem()
+    this.scrollItem()
   },
   methods: {
-    customerreload() {
+    customerReload() {
       if (this.$route.path === '/CUSTOMERS') {
         setTimeout(() => {
           window.location.reload()
         }, 15)
       }
     },
-    companygoingscrollitem() {
+    scrollItem() {
       if (
-        this.$route.path === '/COMPANY' ||
-        this.$route.path === '/subPage/About%20Us'
+        this.$route.path === '/company/about-us'
       ) {
         window.addEventListener('scroll', function () {
-          const companygoingitemcontain = document.querySelectorAll(
-            '.companygoingitemcontain'
+          const itemContainer = document.querySelectorAll(
+            '.items-container'
           )
-          const companygoingitemimage = document.querySelectorAll(
-            '.companygoingitemimage'
+          const itemImage = document.querySelectorAll(
+            '.item-image'
           )
-          const companygoingitem =
-            document.querySelectorAll('.companygoingitem')
-          const companygoingitemtitle = document.querySelectorAll(
-            '.companygoingitemtitle'
+          const goingItem =
+            document.querySelectorAll('.item-container')
+          const goingItemTitle = document.querySelectorAll(
+            '.g-item-title'
           )
-          const companygoingitemcontent = document.querySelectorAll(
-            '.companygoingitemcontent'
+          const goingItemContent = document.querySelectorAll(
+            '.item-subtitle'
           )
 
-          companygoingitemcontain.forEach((value, index) => {
+          itemContainer.forEach((value, index) => {
             if (
               value.offsetTop - scrollY > 300 &&
               value.offsetTop - scrollY < 650
             ) {
-              companygoingitemimage[index].classList.remove(
-                'companygoingitemimageactive'
+              itemImage[index].classList.remove(
+                'item-image-active'
               )
-              companygoingitem[index].classList.remove(
-                'companygoingitemaactive'
+              goingItem[index].classList.remove(
+                'item-container-active'
               )
-              companygoingitemtitle[index].classList.remove(
-                'companygoingitemtitleactive'
+              goingItemTitle[index].classList.remove(
+                'g-item-title-active'
               )
-              companygoingitemcontent[index].classList.remove(
-                'companygoingitemcontentactive'
+              goingItemContent[index].classList.remove(
+                'item-subtitle-active'
               )
             }
           })
@@ -142,49 +141,49 @@ export default {
 }
 </script>
 
-<style>
-.companygoingpartborder {
+<style scoped>
+.main-container {
   /* border: 1px solid black; */
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.companygoingcontain {
+.content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.companygoingtitleborder {
+.title-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 250px 0;
 }
-.companygoingtitle {
+.going-title {
   font-size: 1.75rem;
   font-weight: bolder;
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
-.companygoingsubtitle {
+.going-subtitle {
   font-size: 0.45rem;
   font-weight: lighter;
   text-align: center;
 }
-.companygoingitemborder {
+.item-wrapper {
   padding: 0 250px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.companygoingitemcontain {
+.items-container {
   display: flex;
   justify-content: space-between;
   width: 1140px;
   padding-top: 150px;
 }
-.companygoingitemimage {
+.item-image {
   width: 49%;
   max-height: 360px;
   overflow: hidden;
@@ -192,11 +191,11 @@ export default {
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
 }
-.companygoingitemcontain:nth-child(2) > .companygoingitemimage,
-.companygoingitemcontain:nth-child(4) > .companygoingitemimage {
+.items-container:nth-child(2) > .item-image,
+.items-container:nth-child(4) > .item-image {
   order: 2;
 }
-.companygoingitem {
+.item-container {
   width: 49%;
   display: flex;
   flex-direction: column;
@@ -205,15 +204,15 @@ export default {
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
 }
-.companygoingitemimageactive {
+.item-image-active {
   opacity: 0;
   transform: translateX(-270px);
 }
-.companygoingitemaactive {
+.item-container-active {
   opacity: 0;
   transform: translateX(270px);
 }
-.companygoingitemtitle {
+.g-item-title {
   color: #005592;
   font-size: 1.74rem;
   line-height: 2.5;
@@ -223,44 +222,44 @@ export default {
   transform: translateX(0);
   transition: all 1s ease;
 }
-.companygoingitemtitleactive {
+.g-item-title-active {
   opacity: 0;
   transform: translateX(70px);
 }
-.companygoingitemtitle::before {
+.g-item-title::before {
   position: absolute;
   content: '';
   width: 83px;
   height: 3px;
   background: #005592;
 }
-.companygoingitemcontent {
+.item-subtitle {
   font-size: 16px;
   font-weight: lighter;
   opacity: 1;
   transform: translateX(0);
   transition: all 1.2s ease;
 }
-.companygoingitemcontentactive {
+.item-subtitle-active {
   opacity: 0;
   transform: translateX(90px);
 }
-.companygoingclientsborder {
+.clients-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 100px 250px;
 }
-.companygoingclientscontent {
+.clients-content {
   line-height: 1.5;
   font-weight: lighter;
   text-align: center;
   margin-bottom: 1rem;
 }
-.companygoingclients {
+.clients {
   margin: 50px 0 55px 0;
 }
-.companygoingclientsbutton {
+.clients-button {
   background: linear-gradient(to right, #145484 50%, #1868a4 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -271,25 +270,25 @@ export default {
   color: white;
   outline: none;
 }
-.companygoingclientsbutton:hover {
+.clients-button:hover {
   background-position: left bottom;
   cursor: pointer;
 }
-.companygoingclientsbutton:not(:hover) {
+.clients-button:not(:hover) {
   background-position: right bottom;
 }
 @media screen and (max-width: 1300px) {
-  .companygoingtitle {
+  .title {
     font-size: 1.5rem;
   }
-  .companygoingsubtitle {
+  .subtitle {
     width: 80%;
   }
-  .companygoingitemborder {
+  .item-wrapper {
     width: 100%;
     padding: 0 50px 0;
   }
-  .companygoingitemcontain {
+  .items-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -297,32 +296,32 @@ export default {
     align-items: center;
     padding-top: 50px;
   }
-  .companygoingitemimage {
+  .item-image {
     width: 100%;
     order: 1;
   }
-  .companygoingitem {
+  .item-container {
     width: 100%;
     order: 2;
   }
 }
 @media screen and (max-width: 992px) {
-  .companygoingtitleborder {
+  .title-container {
     padding: 50px 50px 0;
   }
 }
 @media screen and (max-width: 576px) {
-  .companygoingitemborder {
+  .item-wrapper {
     width: 100%;
     padding: 0 20px;
   }
-  .companygoingtitleborder {
+  .title-container {
     padding: 50px 0 0;
   }
-  .companygoingsubtitle {
+  .subtitle {
     width: 80%;
   }
-  .companygoingclientsborder {
+  .clients-container {
     padding: 50px 20px;
   }
 }

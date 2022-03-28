@@ -76,7 +76,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #369;
+  background-color: #273244;
   padding: 4% 25%;
 }
 .company-doing-title {
@@ -89,6 +89,8 @@ export default {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 2.5rem;
+  column-gap: 2.5rem;
   justify-content: space-around;
   align-items: center;
 }
@@ -101,7 +103,6 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2%;
 }
 .item-blue-background {
   position: absolute;
@@ -128,7 +129,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 25px 0;
   transition: all 0.4s ease;
   opacity: 0;
 }
@@ -168,14 +168,14 @@ export default {
   color: white;
   margin-bottom: 25px;
 }
-@media screen and (max-width: 1300px) {
-  .company-doing-title {
-    font-size: 1.5rem;
+@media screen and (max-width: 1440px) {
+  .main-container {
+    padding: 4% 20%;
   }
 }
-@media screen and (max-width: 992px) {
-  .company-doing-title {
-    padding: 10% 0;
+@media screen and (max-width: 1200px) {
+  .main-container {
+    padding: 4% 10%;
   }
 }
 </style>
