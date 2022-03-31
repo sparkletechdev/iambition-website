@@ -22,7 +22,10 @@
       </div>
     </div>
     <LanguageSwitcher />
-    <Hamburger class="hamburger-border" @click.native="hiddenHeaderContainerMove()" />
+    <Hamburger
+      class="hamburger-border"
+      @click.native="hiddenHeaderContainerMove()"
+    />
 
     <div ref="hiddenHeaderContainer" class="hidden-header-container">
       <div

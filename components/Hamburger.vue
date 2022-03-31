@@ -34,7 +34,7 @@ export default {
 /* COLUMNS */
 
 .col {
-  display: block;
+  display: none;
   float: left;
 }
 
@@ -75,5 +75,11 @@ export default {
   -ms-transform: translateY(-13px) rotate(-45deg);
   -o-transform: translateY(-13px) rotate(-45deg);
   transform: translateY(-13px) rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .col {
+    display: block;
+  }
 }
 </style>
