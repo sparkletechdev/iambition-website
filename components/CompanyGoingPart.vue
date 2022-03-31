@@ -10,20 +10,16 @@
           products with Tuple.
         </p>
       </div>
-      <div class="item-wrapper">
-        <div
-          v-for="(item, index) in data"
-          :key="index"
-          class="items-container"
-        >
-          <div class="item-image item-image-active">
+      <div class="items-container">
+        <div v-for="(item, index) in data" :key="index" class="g-item-container">
+          <div class="g-item-image g-item-image-active">
             <img :src="item.img" />
           </div>
-          <div class="item-container item-container-active">
+          <div class="g-item-content-container g-item-content-container-active">
             <h1 class="g-item-title g-item-title-active">
               {{ item.title }}
             </h1>
-            <p class="item-subtitle item-subtitle-active">
+            <p class="g-item-subtitle g-item-subtitle-active">
               {{ item.subtitle }}
             </p>
           </div>
@@ -39,8 +35,8 @@
           </p>
         </div>
         <div
-          ref="clients"
-          class="clients"
+          ref="companyGoingClients"
+          class="client-box"
           @click="customerReload()"
         >
           <nuxt-link to="/CUSTOMERS" class="clients-button">
@@ -96,42 +92,27 @@ export default {
       }
     },
     scrollItem() {
-      if (
-        this.$route.path === '/company/about-us'
-      ) {
+      if (this.$route.path === '/company/about-us') {
         window.addEventListener('scroll', function () {
-          const itemContainer = document.querySelectorAll(
-            '.items-container'
+          const itemContainer = document.querySelectorAll('.g-item-container')
+          const itemImage = document.querySelectorAll('.g-item-image')
+          const itemContentContainer = document.querySelectorAll(
+            '.g-item-content-container'
           )
-          const itemImage = document.querySelectorAll(
-            '.item-image'
-          )
-          const goingItem =
-            document.querySelectorAll('.item-container')
-          const goingItemTitle = document.querySelectorAll(
-            '.g-item-title'
-          )
-          const goingItemContent = document.querySelectorAll(
-            '.item-subtitle'
-          )
+          const itemTitle = document.querySelectorAll('.g-item-title')
+          const itemSubtitle = document.querySelectorAll('.g-item-subtitle')
 
           itemContainer.forEach((value, index) => {
             if (
               value.offsetTop - scrollY > 300 &&
               value.offsetTop - scrollY < 650
             ) {
-              itemImage[index].classList.remove(
-                'item-image-active'
+              itemImage[index].classList.remove('g-item-image-active')
+              itemContentContainer[index].classList.remove(
+                'g-item-content-container-active'
               )
-              goingItem[index].classList.remove(
-                'item-container-active'
-              )
-              goingItemTitle[index].classList.remove(
-                'g-item-title-active'
-              )
-              goingItemContent[index].classList.remove(
-                'item-subtitle-active'
-              )
+              itemTitle[index].classList.remove('g-item-title-active')
+              itemSubtitle[index].classList.remove('g-item-subtitle-active')
             }
           })
         })
@@ -141,7 +122,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .main-container {
   /* border: 1px solid black; */
   width: 100%;
@@ -161,29 +142,28 @@ export default {
   padding: 100px 250px 0;
 }
 .going-title {
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
 .going-subtitle {
-  font-size: 0.45rem;
   font-weight: lighter;
   text-align: center;
 }
-.item-wrapper {
+.items-container {
   padding: 0 250px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.items-container {
+.g-item-container {
   display: flex;
   justify-content: space-between;
   width: 1140px;
   padding-top: 150px;
 }
-.item-image {
+.g-item-image {
   width: 49%;
   max-height: 360px;
   overflow: hidden;
@@ -191,11 +171,11 @@ export default {
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
 }
-.items-container:nth-child(2) > .item-image,
-.items-container:nth-child(4) > .item-image {
+.g-item-container:nth-child(2) > .g-item-image,
+.g-item-container:nth-child(4) > .g-item-image {
   order: 2;
 }
-.item-container {
+.g-item-content-container {
   width: 49%;
   display: flex;
   flex-direction: column;
@@ -204,11 +184,11 @@ export default {
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
 }
-.item-image-active {
+.g-item-image-active {
   opacity: 0;
   transform: translateX(-270px);
 }
-.item-container-active {
+.g-item-content-container-active {
   opacity: 0;
   transform: translateX(270px);
 }
@@ -233,14 +213,14 @@ export default {
   height: 3px;
   background: #005592;
 }
-.item-subtitle {
+.g-item-subtitle {
   font-size: 16px;
   font-weight: lighter;
   opacity: 1;
   transform: translateX(0);
   transition: all 1.2s ease;
 }
-.item-subtitle-active {
+.g-item-subtitle-active {
   opacity: 0;
   transform: translateX(90px);
 }
@@ -256,7 +236,7 @@ export default {
   text-align: center;
   margin-bottom: 1rem;
 }
-.clients {
+.client-box {
   margin: 50px 0 55px 0;
 }
 .clients-button {
@@ -278,17 +258,17 @@ export default {
   background-position: right bottom;
 }
 @media screen and (max-width: 1300px) {
-  .title {
+  .going-title {
     font-size: 1.5rem;
   }
-  .subtitle {
+  .going-subtitle {
     width: 80%;
   }
-  .item-wrapper {
+  .items-container {
     width: 100%;
     padding: 0 50px 0;
   }
-  .items-container {
+  .g-item-container {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -296,11 +276,11 @@ export default {
     align-items: center;
     padding-top: 50px;
   }
-  .item-image {
+  .g-item-image {
     width: 100%;
     order: 1;
   }
-  .item-container {
+  .g-item-content-container {
     width: 100%;
     order: 2;
   }
@@ -311,14 +291,14 @@ export default {
   }
 }
 @media screen and (max-width: 576px) {
-  .item-wrapper {
+  .items-container {
     width: 100%;
     padding: 0 20px;
   }
   .title-container {
     padding: 50px 0 0;
   }
-  .subtitle {
+  .going-subtitle {
     width: 80%;
   }
   .clients-container {
