@@ -2,7 +2,7 @@
   <div class="main-container">
     <div class="content-container">
       <div class="title-container">
-        <h1 class="going-title">Where Are We Going ?</h1>
+        <h1 class="going-title">Where Are We Going?</h1>
         <p class="going-subtitle">
           Tuple is being deployed by organizations across the globe for their
           most critical operations. Businesses are finding their best customers,
@@ -11,7 +11,11 @@
         </p>
       </div>
       <div class="items-container">
-        <div v-for="(item, index) in data" :key="index" class="g-item-container">
+        <div
+          v-for="(item, index) in data"
+          :key="index"
+          class="g-item-container"
+        >
           <div class="g-item-image g-item-image-active">
             <img :src="item.img" />
           </div>
@@ -104,8 +108,8 @@ export default {
 
           itemContainer.forEach((value, index) => {
             if (
-              value.offsetTop - scrollY > 300 &&
-              value.offsetTop - scrollY < 650
+              value.offsetTop - scrollY > 200 &&
+              value.offsetTop - scrollY < 550
             ) {
               itemImage[index].classList.remove('g-item-image-active')
               itemContentContainer[index].classList.remove(
@@ -129,6 +133,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4% 25%;
 }
 .content-container {
   display: flex;
@@ -139,20 +144,18 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 250px 0;
 }
 .going-title {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: bolder;
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
 .going-subtitle {
-  font-weight: lighter;
+  font-weight: 300;
   text-align: center;
 }
 .items-container {
-  padding: 0 250px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,8 +163,7 @@ export default {
 .g-item-container {
   display: flex;
   justify-content: space-between;
-  width: 1140px;
-  padding-top: 150px;
+  padding-top: 8rem;
 }
 .g-item-image {
   width: 49%;
@@ -193,10 +195,10 @@ export default {
   transform: translateX(270px);
 }
 .g-item-title {
-  color: #005592;
+  color: #369;
   font-size: 1.74rem;
   line-height: 2.5;
-  font-weight: bolder;
+  font-weight: 500;
   position: relative;
   opacity: 1;
   transform: translateX(0);
@@ -211,11 +213,11 @@ export default {
   content: '';
   width: 83px;
   height: 3px;
-  background: #005592;
+  background: #369;
 }
 .g-item-subtitle {
   font-size: 16px;
-  font-weight: lighter;
+  font-weight: 300;
   opacity: 1;
   transform: translateX(0);
   transition: all 1.2s ease;
@@ -228,13 +230,12 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 100px 250px;
+  margin-top: 8rem;
 }
 .clients-content {
   line-height: 1.5;
   font-weight: lighter;
   text-align: center;
-  margin-bottom: 1rem;
 }
 .client-box {
   margin: 50px 0 55px 0;
@@ -257,16 +258,12 @@ export default {
 .clients-button:not(:hover) {
   background-position: right bottom;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
+  .main-container {
+    padding: 4% 15%;
+  }
   .going-title {
-    font-size: 1.5rem;
-  }
-  .going-subtitle {
-    width: 80%;
-  }
-  .items-container {
-    width: 100%;
-    padding: 0 50px 0;
+    font-size: 3rem;
   }
   .g-item-container {
     width: 100%;
@@ -276,6 +273,12 @@ export default {
     align-items: center;
     padding-top: 50px;
   }
+  .g-item-title::before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+  }
   .g-item-image {
     width: 100%;
     order: 1;
@@ -284,25 +287,30 @@ export default {
     width: 100%;
     order: 2;
   }
+  .clients-container {
+    margin-top: 5rem;
+  }
 }
 @media screen and (max-width: 992px) {
-  .title-container {
-    padding: 50px 50px 0;
+  .main-container {
+    padding: 4% 8%;
+  }
+  .going-title {
+    font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 576px) {
-  .items-container {
-    width: 100%;
-    padding: 0 20px;
+  .main-container {
+    padding: 4% 8%;
   }
   .title-container {
-    padding: 50px 0 0;
+    padding: 0;
+  }
+  .going-title {
+    font-size: 1.75rem;
   }
   .going-subtitle {
-    width: 80%;
-  }
-  .clients-container {
-    padding: 50px 20px;
+    font-size: 0.8rem;
   }
 }
 </style>
