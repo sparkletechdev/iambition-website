@@ -22,17 +22,7 @@
       </div>
     </div>
     <LanguageSwitcher />
-
-    <div class="hamburger-border">
-      <div
-        class="hamburger-middle-border hamburger-middle-border-small"
-        @click="hiddenHeaderContainerMove()"
-      >
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
-      </div>
-    </div>
+    <Hamburger class="hamburger-border" @click.native="hiddenHeaderContainerMove()" />
 
     <div ref="hiddenHeaderContainer" class="hidden-header-container">
       <div
@@ -161,6 +151,7 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   position: fixed;
   width: 100%;
   background-color: #333;
@@ -249,42 +240,6 @@ export default {
     justify-content: center;
     align-items: center;
     margin-left: 10rem;
-  }
-  .hamburger-middle-border {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 60%;
-    justify-content: space-around;
-  }
-  .hamburger-middle-border-small {
-    width: auto;
-  }
-  .hamburger-line {
-    width: 2.5rem;
-    border-radius: 4px;
-    border-top: 4px solid white;
-    box-shadow: 0.5px 0.5px 3px rgba(0, 0, 0, 0.24);
-    position: relative;
-  }
-  .hamburger-line::before {
-    content: '';
-    position: absolute;
-    bottom: 0%;
-    width: 0%;
-    border-radius: 4px;
-    border-top: 4px solid #0cf;
-    transition: all 0.6s ease-in-out;
-  }
-  .hamburger-border:hover {
-    cursor: pointer;
-  }
-  .hamburger-border:hover .hamburger-line::before {
-    animation-name: animate;
-    animation-duration: 0.6s;
-    animation-fill-mode: both;
-    animation-iteration-count: 1;
   }
   @keyframes animate {
     0% {
