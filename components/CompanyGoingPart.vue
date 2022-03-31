@@ -109,7 +109,7 @@ export default {
           itemContainer.forEach((value, index) => {
             if (
               value.offsetTop - scrollY > 200 &&
-              value.offsetTop - scrollY < 550
+              value.offsetTop - scrollY < 50
             ) {
               itemImage[index].classList.remove('g-item-image-active')
               itemContentContainer[index].classList.remove(
@@ -247,7 +247,7 @@ export default {
   font-weight: bolder;
   padding: 15px 50px;
   border-radius: 30px;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
   color: white;
   outline: none;
 }

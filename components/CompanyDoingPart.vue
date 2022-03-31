@@ -110,7 +110,7 @@ export default {
   bottom: 0;
   width: 100%;
   height: 100%;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   background: linear-gradient(
     180deg,
     rgba(226, 226, 226, 0.1) 0%,
@@ -123,18 +123,17 @@ export default {
   );
 }
 .item-content {
-  /* border: 1px solid black; */
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
   opacity: 0;
 }
 .item:hover .item-blue-background {
   /* background: none; */
-  background-color: rgba(57, 115, 186, 0.85);
+  background-color: #273244;
 }
 .item:hover .item-content {
   opacity: 1;
@@ -149,15 +148,19 @@ export default {
 }
 .item-content-title {
   text-align: center;
+  font-weight: 500;
   z-index: 1;
   color: white;
   line-height: 1.5;
-  margin-bottom: 25px;
+  margin:12px 0 24px;
 }
 .item-content-subtitle {
   text-align: center;
+  font-weight: 300;
+  font-size: 0.9rem;
   z-index: 1;
   color: white;
+  margin: 0 12px;
 }
 .item-title-border {
   z-index: 1;

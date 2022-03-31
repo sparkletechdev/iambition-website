@@ -7,7 +7,6 @@
     <CompanyExistPart />
     <CompanyDoingPart />
     <CompanyGoingPart />
-    <UpdatePart />
   </main>
 </template>
 
