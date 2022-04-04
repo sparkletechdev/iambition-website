@@ -4,8 +4,8 @@
     <div
       id="hamburger-1"
       class="hamburger"
-      :class="{ active: isActive }"
-      @click="isActive = !isActive"
+      :class="{ active: $store.state.hamburger.isActive }"
+      @click="toggle"
     >
       <span class="line"></span>
       <span class="line"></span>
@@ -15,11 +15,11 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      isActive: false,
+  methods: {
+    toggle() {
+      this.$store.commit('toggleHamburger')
     }
-  },
+  }
 }
 </script>
 <style scoped>

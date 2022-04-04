@@ -26,8 +26,13 @@
       class="hamburger-border"
       @click.native="hiddenHeaderContainerMove()"
     />
-
-    <div ref="hiddenHeaderContainer" class="hidden-header-container">
+    <SideMenu
+      :top="offsetHeight"
+      :right="right"
+      :data="posts"
+      @sideMenuClick="hiddenHeaderContainerMove()"
+    />
+    <!-- <div ref="hiddenHeaderContainer" class="hidden-header-container">
       <div
         v-for="post in posts"
         :key="post.title"
@@ -72,7 +77,7 @@
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
   </header>
 </template>
 
@@ -84,6 +89,8 @@ export default {
     return {
       posts: data,
       currentRoute: '/',
+      offsetHeight: 0,
+      right: '-100%',
     }
   },
   computed: {
@@ -102,14 +109,10 @@ export default {
     },
     hiddenContainerMarginTop() {
       const headerRef = this.$refs.headerContainer
-      const hiddenRef = this.$refs.hiddenHeaderContainer
-      hiddenRef.style.top = `${headerRef.offsetHeight}px`
+      this.offsetHeight = headerRef.offsetHeight
     },
     hiddenHeaderContainerMove() {
-      const ref = this.$refs
-      const hiddenHeaderContainerStyle = ref.hiddenHeaderContainer.style
-      hiddenHeaderContainerStyle.right =
-        hiddenHeaderContainerStyle.right === '0%' ? '-100%' : '0%'
+      this.right = this.right === '0%' ? '-100%' : '0%'
     },
     animationHeaderContainerBackground() {
       const gsap = this.$gsap
@@ -212,10 +215,6 @@ export default {
   display: block;
 }
 
-.hidden-header-container {
-  display: none;
-}
-
 @media screen and (max-width: 1200px) {
   .title-change-color {
     color: #fff;
@@ -252,97 +251,27 @@ export default {
       width: 100%;
     }
   }
-  .hidden-header-container {
-    /* background-color: rgba(23, 75, 88, 0.815); */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #333;
-    position: fixed;
-    right: -100%;
-    top: 0%;
-    width: 100%;
-    min-height: 750px;
-    height: 100vh;
-    transition: all 0.4s ease-in-out;
-  }
-  .hidden-header-container-middle {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1%;
-  }
-  .hidden-header-container-title-border {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .hidden-header-container-title {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: white;
-    margin: 0.5%;
-  }
-  .hidden-header-container-subtitle-border {
-    margin: 1% 0;
-  }
-  .hidden-header-container-subtitle {
-    background-clip: text;
-    color: white;
-    font-size: 1rem;
-  }
-  .hidden-header-container-title:hover {
-    color: #0cf;
-  }
-  .hidden-header-container-subtitle:hover {
-    color: #0cf;
-  }
 }
 @media screen and (max-width: 576px) {
   .hamburger-border {
     margin-left: 100px;
-  }
-  .hidden-header-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 10px;
-    min-height: 720px;
   }
 }
 @media screen and (max-width: 414px) {
   .hamburger-border {
     margin-left: 70px;
   }
-  .hidden-header-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 10px;
-  }
 }
-@media screen and (max-width: 361px) {
-  .hidden-header-container {
-    padding-top: 0;
-  }
-}
-
 .index-container {
   width: 100%;
   position: relative;
   overflow: hidden;
 }
-
 .header-container-white {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   transition: 1s;
 }
-
 .title-change-color {
   color: white;
 }

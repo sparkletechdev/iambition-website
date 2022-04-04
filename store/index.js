@@ -60,6 +60,9 @@ export const state = () => ({
   },
   majorPartAllData: [],
   production: {},
+  hamburger: {
+    isActive: false
+  }
 })
 
 // actions
@@ -149,3 +152,9 @@ export const state = () => ({
 //     state.production = production
 //   },
 // }
+
+export const mutations = {
+  toggleHamburger(state) {
+    state.hamburger.isActive = !state.hamburger.isActive
+  }
+}
