@@ -4,7 +4,8 @@
     class="hidden-header-container"
     :style="style"
   >
-    <div
+    <div class="menu">
+      <div
       v-for="item in data"
       :key="item.title"
       class="hidden-header-container-middle"
@@ -36,18 +37,17 @@
         </div>
       </div>
     </div>
-    <div class="hidden-header-container-subtitle">
-      <div class="language">
-        <fa :icon="['fas', 'random']" class="language-switch-icon" />
-        <a
-          v-for="locale in availableLocales"
-          :key="locale.code"
-          href="#"
-          @click.prevent.stop="$i18n.setLocale(locale.code)"
-        >
-          {{ locale.name }}
-        </a>
-      </div>
+    </div>
+    <div class="language">
+      <fa :icon="['fas', 'random']" class="language-switch-icon" />
+      <a
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        href="#"
+        @click.prevent.stop="$i18n.setLocale(locale.code)"
+      >
+        {{ locale.name }}
+      </a>
     </div>
   </div>
 </template>
@@ -92,18 +92,22 @@ export default {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .language {
+    color: white;
+    font-size: 0.8rem;
+  }
   .hidden-header-container {
     /* background-color: rgba(23, 75, 88, 0.815); */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     background-color: #333;
     position: fixed;
     width: 100%;
     min-height: 750px;
     height: 100vh;
-    padding: 25% 0 25% 25%;
+    padding: 25% 0 25%;
     transition: all 0.4s ease-in-out;
   }
   .hidden-header-container-middle {
@@ -112,17 +116,17 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1%;
+    margin-bottom: 1.5%;
   }
   .hidden-header-container-title-border {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 2% 0 0;
+    margin: 3% 0 0;
   }
   .hidden-header-container-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
     color: white;
     margin: 0.5%;
