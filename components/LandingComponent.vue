@@ -54,7 +54,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  overflow: scroll;
+  height: 100vh;
   padding: 8rem 0 4rem;
   background-size: cover;
 }
