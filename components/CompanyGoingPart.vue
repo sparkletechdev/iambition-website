@@ -109,7 +109,7 @@ export default {
           itemContainer.forEach((value, index) => {
             if (
               value.offsetTop - scrollY > 200 &&
-              value.offsetTop - scrollY < 50
+              value.offsetTop - scrollY < 550
             ) {
               itemImage[index].classList.remove('g-item-image-active')
               itemContentContainer[index].classList.remove(

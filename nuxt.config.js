@@ -6,29 +6,54 @@ export default {
   },
   head() {
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
-    return {
-      title: 'iAmbition Technology',
-      htmlAttrs: {
-        lang: this.$i18n.locale,
-      },
-      meta: [
-        { charset: 'utf-8' },
-        {
-          name: 'viewport',
-          content: 'width=device-width, initial-scale=1, user-scalable=yes',
+    if (i18nHead) {
+      return {
+        title: 'iAmbition Technology',
+        htmlAttrs: {
+          lang: this.$i18n.locale,
         },
-        { hid: 'description', name: 'description', content: '' },
-        { name: 'format-detection', content: 'telephone=no' },
-        ...i18nHead.meta,
-      ],
-      link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC&display=swap',
+        meta: [
+          { charset: 'utf-8' },
+          {
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1, user-scalable=yes',
+          },
+          { hid: 'description', name: 'description', content: '' },
+          { name: 'format-detection', content: 'telephone=no' },
+          ...i18nHead.meta,
+        ],
+        link: [
+          { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+          {
+            rel: 'stylesheet',
+            href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC&display=swap',
+          },
+          ...i18nHead.link,
+        ],
+      }
+    } else {
+      return {
+        title: 'iAmbition Technology',
+        htmlAttrs: {
+          lang: this.$i18n.locale,
         },
-        ...i18nHead.link,
-      ],
+        meta: [
+          { charset: 'utf-8' },
+          {
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1, user-scalable=yes',
+          },
+          { hid: 'description', name: 'description', content: '' },
+          { name: 'format-detection', content: 'telephone=no' },
+        ],
+        link: [
+          { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+          {
+            rel: 'stylesheet',
+            href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC&display=swap',
+          },
+        ],
+      }
     }
   },
 
