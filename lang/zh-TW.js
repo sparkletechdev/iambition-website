@@ -1,11 +1,11 @@
 export default {
   navbar: {
     index: 'Index',
-    services: 'Services',
+    solutions: '解決方案',
     dedicatedTeams: 'Dedicated Teams',
     staffAugmentation: 'Staff Augmentation',
     softwareOutsourcing: 'Software Outsourcing',
-    solutions: '解決方案',
+    awards: '獎項',
     customers: '顧客',
     company: '公司',
     aboutUs: '關於我們',

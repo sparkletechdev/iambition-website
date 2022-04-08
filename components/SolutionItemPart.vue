@@ -86,7 +86,7 @@ export default {
   },
   methods: {
     companygoingscrollitem() {
-      if (this.$route.path === '/SOLUTIONS') {
+      if (this.$route.path === '/awards') {
         window.addEventListener('scroll', function () {
           const solutionitemcontain = document.querySelectorAll(
             '.solutionitemcontain'

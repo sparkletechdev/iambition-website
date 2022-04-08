@@ -1,11 +1,11 @@
 export default {
   navbar: {
     index: 'Index',
-    services: 'Services',
+    solutions: 'Solutions',
     dedicatedTeams: 'Dedicated Teams',
     staffAugmentation: 'Staff Augmentation',
     softwareOutsourcing: 'Software Outsourcing',
-    solutions: 'Solutions',
+    awards: 'Awards',
     customers: 'Customers',
     company: 'Company',
     aboutUs: 'About Us',

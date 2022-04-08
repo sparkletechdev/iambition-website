@@ -5,7 +5,7 @@
     "items": []
   },
   {
-    "title": "navbar.services",
+    "title": "navbar.solutions",
     "route": "services",
     "items": [
       {
@@ -23,8 +23,8 @@
     ]
   },
   {
-    "title": "navbar.solutions",
-    "route": "solutions",
+    "title": "navbar.awards",
+    "route": "awards",
     "items": []
   },
   {
