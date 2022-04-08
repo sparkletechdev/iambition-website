@@ -91,17 +91,21 @@ export default {
 .hidden-header-container {
   display: none;
 }
+.menu {
+  padding: 0 25%;
+}
 @media screen and (max-width: 768px) {
   .language {
     color: white;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    align-self: center;
   }
   .hidden-header-container {
     /* background-color: rgba(23, 75, 88, 0.815); */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-content: center;
     background-color: #333;
     position: fixed;
     width: 100%;
@@ -126,7 +130,7 @@ export default {
     margin: 3% 0 0;
   }
   .hidden-header-container-title {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: white;
     margin: 0.5%;
@@ -137,7 +141,7 @@ export default {
   .hidden-header-container-subtitle {
     background-clip: text;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .hidden-header-container-title:hover {
     color: #0cf;
@@ -148,20 +152,23 @@ export default {
 }
 
 @media screen and (max-width: 576px) {
-  .hidden-header-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 10px;
-    min-height: 720px;
+  .hidden-header-container-title {
+    font-size: 1.2rem;
+  }
+  .hidden-header-container-subtitle  {
+    font-size: 1.0rem;
+  }
+  .language {
+    font-size: 0.8rem;
   }
 }
-@media screen and (max-width: 414px) {
-  .hidden-header-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 10px;
+
+/* @media screen and (max-width: 414px) {
+  .hidden-header-container-title {
+    font-size: 1.2rem;
   }
-}
+  .hidden-header-container-subtitle  {
+    font-size: 1.0rem;
+  }
+} */
 </style>
