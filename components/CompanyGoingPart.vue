@@ -10,7 +10,7 @@
           products with Tuple.
         </p>
       </div>
-      <SlideInContent />
+      <SlideInContent :content="data"/>
       <AboutMeetClient />
     </div>
   </div>
