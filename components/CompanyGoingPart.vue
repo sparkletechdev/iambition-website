@@ -10,44 +10,8 @@
           products with Tuple.
         </p>
       </div>
-      <div class="items-container">
-        <div
-          v-for="(item, index) in data"
-          :key="index"
-          class="g-item-container"
-        >
-          <div class="g-item-image g-item-image-active">
-            <img :src="item.img" />
-          </div>
-          <div class="g-item-content-container g-item-content-container-active">
-            <h1 class="g-item-title g-item-title-active">
-              {{ item.title }}
-            </h1>
-            <p class="g-item-subtitle g-item-subtitle-active">
-              {{ item.subtitle }}
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="clients-container">
-        <div>
-          <p class="clients-content">
-            We are working with leading organizations to prepare them for a
-            future where utilizing the data is a necessity. We are designing
-            products which can withstand digital disruption and keep bringing
-            value to the companies willing to change with time.
-          </p>
-        </div>
-        <div
-          ref="companyGoingClients"
-          class="client-box"
-          @click="customerReload()"
-        >
-          <nuxt-link to="/CUSTOMERS" class="clients-button">
-            Meet Our Clients
-          </nuxt-link>
-        </div>
-      </div>
+      <SlideInContent />
+      <AboutMeetClient />
     </div>
   </div>
 </template>
@@ -88,15 +52,10 @@ export default {
     this.scrollItem()
   },
   methods: {
-    customerReload() {
-      if (this.$route.path === '/CUSTOMERS') {
-        setTimeout(() => {
-          window.location.reload()
-        }, 15)
-      }
-    },
     scrollItem() {
       if (this.$route.path === '/company/about-us') {
+        // eslint-disable-next-line no-console
+        console.log('scrolling .. scrolling ..')
         window.addEventListener('scroll', function () {
           const itemContainer = document.querySelectorAll('.g-item-container')
           const itemImage = document.querySelectorAll('.g-item-image')
@@ -225,38 +184,6 @@ export default {
 .g-item-subtitle-active {
   opacity: 0;
   transform: translateX(90px);
-}
-.clients-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 8rem;
-}
-.clients-content {
-  line-height: 1.5;
-  font-weight: lighter;
-  text-align: center;
-}
-.client-box {
-  margin: 50px 0 55px 0;
-}
-.clients-button {
-  background: linear-gradient(to right, #145484 50%, #1868a4 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  font-weight: bolder;
-  padding: 15px 50px;
-  border-radius: 30px;
-  transition: all 0.3s ease-out;
-  color: white;
-  outline: none;
-}
-.clients-button:hover {
-  background-position: left bottom;
-  cursor: pointer;
-}
-.clients-button:not(:hover) {
-  background-position: right bottom;
 }
 @media screen and (max-width: 1200px) {
   .main-container {
