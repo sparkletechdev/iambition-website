@@ -48,4 +48,10 @@
 .clients-button:not(:hover) {
   background-position: right bottom;
 }
+
+@media screen and (max-width: 1200px) {
+  .clients-container {
+    margin-top: 5rem;
+  }
+}
 </style>

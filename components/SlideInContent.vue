@@ -152,8 +152,5 @@ export default {
     width: 100%;
     order: 2;
   }
-  .clients-container {
-    margin-top: 5rem;
-  }
 }
 </style>
