@@ -1,16 +1,18 @@
+/* eslint-disable vue/no-v-html */
 <template>
   <div class="items-container">
     <div v-for="(item, index) in content" :key="index" class="g-item-container">
       <div class="g-item-image g-item-image-active">
-        <img :src="item.img" />
+        <img :src="require(`@/assets/images/${item.img}`)" class="g-img"/>
       </div>
       <div class="g-item-content-container g-item-content-container-active">
         <h1 class="g-item-title g-item-title-active">
           {{ item.title }}
         </h1>
-        <p class="g-item-subtitle g-item-subtitle-active">
-          {{ item.subtitle }}
-        </p>
+        <p
+          class="g-item-subtitle g-item-subtitle-active"
+          v-html="item.subtitle"
+        ></p>
       </div>
     </div>
   </div>
@@ -27,9 +29,11 @@ export default {
     this.scrollItem()
   },
   methods: {
+    imagePath(name) {
+      return `require(@/assets/images/${name})`
+    },
     scrollItem() {
       // eslint-disable-next-line no-console
-      console.log('scrolling .. scrolling ..')
       window.addEventListener('scroll', function () {
         const itemContainer = document.querySelectorAll('.g-item-container')
         const itemImage = document.querySelectorAll('.g-item-image')
@@ -75,9 +79,9 @@ export default {
   opacity: 1;
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
+  justify-content: center;
 }
-.g-item-container:nth-child(2) > .g-item-image,
-.g-item-container:nth-child(4) > .g-item-image {
+.g-item-container:nth-child(even) > .g-item-image {
   order: 2;
 }
 .g-item-content-container {
@@ -147,6 +151,7 @@ export default {
   .g-item-image {
     width: 100%;
     order: 1;
+    align-items: center;
   }
   .g-item-content-container {
     width: 100%;

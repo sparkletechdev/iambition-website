@@ -57,58 +57,60 @@ export default {
       },
     },
   },
-  // awards: {
-  //   exhibitions: {
-  //     title: '參展',
-  //     years: [
-  //       {
-  //         year: '2021',
-  //         names: [
-  //           'Meet Taipei and Meet 大南方',
-  //           '馬來西亞 eBizStart 國際展會',
-  //           'Smart City Show',
-  //         ],
-  //       },
-  //       {
-  //         year: '2020',
-  //         names: ['林口新創園發表會', '桃園新創日', '中軟智慧加速器發表會'],
-  //       },
-  //     ],
-  //   },
-  // },
-  // competitions: {
-  //   title: '競賽',
-  //   years: [
-  //     {
-  //       year: '2021',
-  //       names: [
-  //         'AI 新銳選拔 最高獎金優勝',
-  //         '桃園千里馬創業競賽 優勝',
-  //         '約農盃創業競賽 冠軍',
-  //         '亞灣新創園進駐選拔',
-  //       ],
-  //     },
-  //     {
-  //       year: '2020',
-  //       names: ['中科創新創業競賽 優等', '林口新創園 新創應用場域實證'],
-  //     },
-  //   ],
-  // },
-  // media: {
-  //   title: '媒體曝光',
-  //   years: [
-  //     {
-  //       year: '2021',
-  //       names: [
-  //         '經濟部科技產業園區雜誌 報導',
-  //         '正聲廣播 專題採訪',
-  //         '經貿透視周刊專題 報導',
-  //       ],
-  //     },
-  //     {
-  //       year: '2020',
-  //       names: ['工商時報 報導', '聯合報 報導', '公共電視 報導'],
-  //     },
-  //   ],
-  // },
+  awards: {
+    landingTitle: '獎項和認可',
+    landingContent: [
+      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+    anim id est laborum.`,
+    ],
+    content: [
+      {
+        title: 'Exhibitions',
+        subtitle: `
+        <em>2021</em><br/>
+        ‣ Meet Taipei and Meet 大南方<br/>
+        ‣ 馬來西亞 eBizStart 國際展會<br/>
+        ‣ Smart City Show<br/><br/>
+        <em>2020</em><br/>
+        ‣ 林口新創園發表會<br/>
+        ‣ 桃園新創日<br/>
+        ‣ 中軟智慧加速器發表會
+        `,
+        img: 'image13.png',
+      },
+      {
+        title: 'Competitions',
+        subtitle: `
+        <em>2021</em><br/>
+        ‣ AI 新銳選拔 最高獎金優勝<br/>
+        ‣ 桃園千里馬創業競賽 優勝<br/>
+        ‣ 約農盃創業競賽 冠軍<br/>
+        ‣ 亞灣新創園進駐選拔<br/><br/>
+        2020<br/>
+        ‣ 中科創新創業競賽 優等<br/>
+        ‣ 林口新創園 新創應用場域實證<br/>
+        `,
+        img: 'image12.png',
+      },
+      {
+        title: 'Media',
+        subtitle: `
+        <em>2021</em><br/>
+        ‣ 經濟部科技產業園區雜誌 報導<br/>
+        ‣ 正聲廣播 專題採訪<br/>
+        ‣ 經貿透視周刊專題 報導<br/><br/>
+        <em>2020</em><br/>
+        ‣ 工商時報 報導<br/>
+        ‣ 聯合報 報導<br/>
+        ‣ 公共電視 報導
+        `,
+        img: 'image11.png',
+      },
+    ],
+  },
 }
