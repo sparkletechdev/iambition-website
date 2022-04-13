@@ -3,7 +3,7 @@
   <div class="items-container">
     <div v-for="(item, index) in content" :key="index" class="g-item-container">
       <div class="g-item-image g-item-image-active">
-        <img :src="require(`@/assets/images/${item.img}`)" class="g-img"/>
+        <img :src="require(`@/assets/images/${item.img}`)" class="g-img" />
       </div>
       <div class="g-item-content-container g-item-content-container-active">
         <h1 class="g-item-title g-item-title-active">
@@ -156,6 +156,11 @@ export default {
   .g-item-content-container {
     width: 100%;
     order: 2;
+    align-items: center;
+  }
+  .g-img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>
