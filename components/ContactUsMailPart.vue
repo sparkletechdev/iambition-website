@@ -1,67 +1,112 @@
 <template>
-  <div class="contactusmailpartborder">
-    <div class="contactusmailborder">
-      <div class="contactusmailleftborder">
-        <div class="contactusmailleftcontain">
-          <h3 class="contactusmaillefttitle">
-            Mail
-          </h3>
-          <h5 class="contactusmailleftsubtitle">
-            We will get back to you in a flash!
-          </h5>
-          <h1 :class="{contactusmailleftsendsuccess:true,contactusmailleftsendsuccessshow:show}">
+  <div class="main-container">
+    <div class="content">
+      <div class="left-container">
+        <div class="mail-form-container">
+          <h3 class="mail-title">Mail</h3>
+          <h5 class="mail-subtitle">We will get back to you in a flash!</h5>
+          <h1
+            :class="{
+              'send-success': true,
+              'send-success-show': show,
+            }"
+          >
             Sending Mail Success
           </h1>
-          <form ref="contactusmailleftformborder" :class="{contactusmailleftformborder:true,contactusmailleftformbordernone:show}">
-            <div class="contactusmailleftformnameinput">
-              <div class="contactusleftnameborder">
-                <label for="firstnameinput" class="samelabel">
+          <form
+            ref="contactUsForm"
+            :class="{
+              'contact-form': true,
+              'contact-form-none': show,
+            }"
+          >
+            <div class="name-inputs-container">
+              <div class="name-container">
+                <label for="first-name-input" class="form-label">
                   First Name *
                 </label>
-                <input id="firstnameinput" ref="firstnameinput" class="sameinput" type="text" required pattern="[a-zA-Z]{3,}" oninvalid="this.setCustomValidity('Please Enter a Valid Name.')" oninput="this.setCustomValidity('')">
+                <input
+                  id="first-name-input"
+                  v-model="firstName"
+                  class="form-input"
+                  type="text"
+                  required
+                  pattern="[a-zA-Z]{3,}"
+                  oninvalid="this.setCustomValidity('Please Enter a Valid Name.')"
+                  oninput="this.setCustomValidity('')"
+                />
               </div>
-              <div class="contactusleftnameborder">
-                <label for="lastnameinput" class="samelabel">
+              <div class="name-container">
+                <label for="last-name-input" class="form-label">
                   Last Name *
                 </label>
-                <input id="lastnameinput" ref="lastnameinput" class="sameinput" type="text" required pattern="[a-zA-Z]{2,}" oninvalid="this.setCustomValidity('Please Enter a Valid Last Name.')" oninput="this.setCustomValidity('')">
+                <input
+                  id="last-name-input"
+                  v-model="lastName"
+                  class="form-input"
+                  type="text"
+                  required
+                  pattern="[a-zA-Z]{2,}"
+                  oninvalid="this.setCustomValidity('Please Enter a Valid Last Name.')"
+                  oninput="this.setCustomValidity('')"
+                />
               </div>
             </div>
-            <div class="contactusmailleftformmailinput contactusmailsame">
-              <label for="mailinput" class="samelabel">
+            <div class="input-container">
+              <label for="mail-input" class="form-label">
                 Email Address *
               </label>
-              <input id="mailinput" ref="mailinput" class="sameinput" type="email" required pattern="^\w.+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(.+)$" oninvalid="this.setCustomValidity('Please Enter Business Email Only.')" oninput="this.setCustomValidity('')">
+              <input
+                id="mail-input"
+                v-model="email"
+                class="form-input"
+                type="email"
+                required
+                pattern="^\w.+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(.+)$"
+                oninvalid="this.setCustomValidity('Please Enter Business Email Only.')"
+                oninput="this.setCustomValidity('')"
+              />
             </div>
-            <div class="contactusmailleftformcompanyinput contactusmailsame">
-              <label for="companyinput" class="samelabel">
-                Company *
-              </label>
-              <input id="companyinput" ref="companyinput" class="sameinput" type="text" required pattern="[A-Za-z ]{3,}" oninvalid="this.setCustomValidity('Please Enter a Valid Company Name.')" oninput="this.setCustomValidity('')">
+            <div class="input-container">
+              <label for="company-input" class="form-label"> Company * </label>
+              <input
+                id="company-input"
+                v-model="company"
+                class="form-input"
+                type="text"
+                required
+                pattern="[A-Za-z ]{3,}"
+                oninvalid="this.setCustomValidity('Please Enter a Valid Company Name.')"
+                oninput="this.setCustomValidity('')"
+              />
             </div>
-            <div class="contactusmailleftformmassageinput contactusmailsame">
-              <label for="massageinput" class="samelabel">
-                Message
-              </label>
-              <textarea id="massageinput" ref="massageinput" class="sameinput massagetextarea" rows="5" required>
+            <div class="input-container">
+              <label for="message-input" class="form-label"> Message </label>
+              <textarea
+                id="message-input"
+                v-model="message"
+                class="form-input message-text-area"
+                rows="5"
+                required
+              >
               </textarea>
             </div>
-            <div class="contactusmailleftformbuttoninput">
-              <button type="submit" class="contactusbuttoninput" @click="contactusbuttoninput($event)">
+            <div class="submit-container">
+              <button
+                type="submit"
+                class="submit-button"
+                @click="onSubmit($event)"
+              >
                 Submit
               </button>
             </div>
           </form>
         </div>
       </div>
-      <div class="contactusmailrightborder">
-        <div class="contactusmailrightcontain">
-          <h1 class="contactusmailrighttitle">
-            Contact Information
-          </h1>
-          <p class="contactusmailrightsubtitle">
-            sparkel@gmail.com
-          </p>
+      <div class="right-container">
+        <div class="information-container">
+          <h1 class="information-title">Contact Information</h1>
+          <p class="information-subtitle">sparkel@gmail.com</p>
         </div>
       </div>
     </div>
@@ -72,231 +117,226 @@
 export default {
   data() {
     return {
-      show: false
+      show: false,
+      firstName: '',
+      lastName: '',
+      email: '',
+      company: '',
+      message: '',
     }
   },
   methods: {
-    contactusbuttoninput(e){
-      const ref = this.$refs;
-      const firstnameinput = ref.firstnameinput.value;
-      const lastnameinput = ref.lastnameinput.value;
-      const mailinput = ref.mailinput.value;
-      const companyinput = ref.companyinput.value;
-      const massageinput = ref.massageinput.value;
+    onSubmit(e) {
       
-      if (massageinput) {
-        e.preventDefault();
-        this.show = true;
-        setTimeout(()=>{
-          this.show = false;
-          ref.contactusmailleftformborder.style.transform = "translateY(80px)";
-        },3000);
-        setTimeout(()=>{
-          ref.contactusmailleftformborder.style.transform = "translateY(0px)";
-        },3050)
+      const ref = this.$refs
 
-        fetch("http://localhost:3003/getMailInformation",{
-          method: 'PUT',
-          body: JSON.stringify({
-            mail: mailinput,
-            firstname: firstnameinput,
-            lastname: lastnameinput,
-            company: companyinput,
-            massage: massageinput,
-          }),
-          headers: new Headers({
-            'Content-Type': 'application/json'
-          })
-        });
-
-        ref.firstnameinput.value = "";
-        ref.lastnameinput.value = "";
-        ref.mailinput.value = "";
-        ref.companyinput.value = "";
-        ref.massageinput.value = "";
+      if (this.message) {
+        e.preventDefault()
+        this.show = true
+        setTimeout(() => {
+          this.show = false
+          ref.contactUsForm.style.transform = 'translateY(80px)'
+        }, 3000)
+        setTimeout(() => {
+          ref.contactUsForm.style.transform = 'translateY(0px)'
+        }, 3050)
+        this.message = ''
+        // fetch("http://localhost:3003/getMailInformation",{
+        //   method: 'PUT',
+        //   body: JSON.stringify({
+        //     mail: mail-input,
+        //     firstname: first-name-input,
+        //     lastname: last-name-input,
+        //     company: company-input,
+        //     massage: message-input,
+        //   }),
+        //   headers: new Headers({
+        //     'Content-Type': 'application/json'
+        //   })
+        // });
       }
-    }
+    },
   },
 }
 </script>
 
 <style>
-  .contactusmailpartborder {
-    /* border: 1px solid black; */
-    width: 100%;
-    height: 600px;
-    position: relative;
-  }
-  .contactusmailborder {
-    box-shadow: 0 0 15px 0 rgb(0 0 0 / 30%);
-    width: 1140px;
-    height: 700px;
-    position: absolute;
-    left: 50%;
-    top: -40%;
-    transform: translate(-50% ,0);
-    display: flex;
-  }
-  .contactusmailleftborder {
-    background: white;
-    width: 65%;
-  }
-  .contactusmailleftcontain {
-    padding: 50px 100px 50px 50px;
-  }
-  .contactusmaillefttitle {
-    color: rgb(21, 62, 82);
-    font-size: 1.6rem;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: .5rem;
-  }
-  .contactusmailleftsubtitle {
-    color: rgb(21, 62, 82);
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: .5rem;
-  }
-  .contactusmailleftsendsuccess{
-    display: none;
-  }
-  .contactusmailleftsendsuccessshow{
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 10;
-    color: #2c75c4;
-  }
-  .contactusmailleftformborder {
-    padding: 30px 0 0;
+.main-container {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.content {
+  box-shadow: 0 0 15px 0 rgb(0 0 0 / 30%);
+  width: 1140px;
+  height: 700px;
+  position: absolute;
+  left: 50%;
+  top: -40%;
+  transform: translate(-50%, 0);
+  display: flex;
+}
+.left-container {
+  background: white;
+  width: 65%;
+}
+.mail-form-container {
+  padding: 50px 100px 50px 50px;
+}
+.mail-title {
+  color: rgb(21, 62, 82);
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.mail-subtitle {
+  color: rgb(21, 62, 82);
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+.send-success {
+  display: none;
+}
+.send-success-show {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 10;
+  color: #2c75c4;
+}
+.contact-form {
+  padding: 30px 0 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.6s ease-in-out;
+}
+.contact-form-none {
+  display: none;
+}
+.name-inputs-container {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 0.5em;
+}
+.name-container {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.form-label {
+  width: 100%;
+  font-size: 14px !important;
+  font-weight: lighter;
+  color: rgb(123, 124, 125);
+}
+.form-input {
+  height: calc(2.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.message-text-area {
+  height: auto;
+}
+.form-input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+.submit-button {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 50px;
+  border-radius: 30px;
+  background: linear-gradient(to right, #145484 50%, #1868a4 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  text-decoration: none;
+  font-weight: bold;
+}
+.submit-button:hover {
+  background-position: left bottom;
+}
+.submit-button:not(:hover) {
+  background-position: right bottom;
+}
+.right-container {
+  background: black;
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.information-container {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.information-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.information-subtitle {
+  color: white;
+}
+@media screen and (max-width: 1200px) {
+  .content {
     display: flex;
     flex-direction: column;
-    opacity: 1;
-    transform: translateY(0);
-    transition: all .6s ease-in-out;
-  }
-  .contactusmailleftformbordernone{
-    display: none;
-  }
-  .contactusmailleftformnameinput{
-    width: 100%;
-    justify-content: space-between;
-    display: flex;
-    margin-bottom: .5em;
-  }
-  .contactusleftnameborder{
-    width: 49%;
-    display: flex;
-    flex-direction: column;
-  }
-  .samelabel{
-    width: 100%;
-    font-size: 14px !important;
-    font-weight: lighter;
-    color: rgb(123, 124, 125);
-  }
-  .sameinput{
-    height: calc(2.25rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
-  .massagetextarea{
+    width: 740px;
     height: auto;
+    top: -30%;
   }
-  .sameinput:focus{
-    color: #495057;
-    background-color: #fff;
-    border-color: #80bdff;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
-  }
-  .contactusmailsame{
+  .left-container {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: .5em;
   }
-  .contactusbuttoninput{
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 50px;
-    border-radius: 30px;
-    background: linear-gradient(to right, #145484 50%, #1868a4 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    transition: all .5s ease-out;
-    text-decoration: none;
-    font-weight: bold;
+  .right-container {
+    width: 100%;
+    padding: 1%;
   }
-  .contactusbuttoninput:hover{
-    background-position: left bottom;
+  .mail-form-container {
+    padding: 50px;
   }
-  .contactusbuttoninput:not(:hover){
-    background-position: right bottom;
+}
+@media screen and (max-width: 768px) {
+  .content {
+    width: 480px;
   }
-  .contactusmailrightborder {
-    background: black;
-    width: 35%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .content {
+    width: 320px;
+    top: -10%;
   }
-  .contactusmailrightcontain {
-    display: flex;
-    flex-direction: column;
-    height: 30%;
-    justify-content: space-evenly;
-    align-items: center;
+  .mail-form-container {
+    padding: 20px;
   }
-  .contactusmailrighttitle {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-  }
-  .contactusmailrightsubtitle {
-    color: white;
-  }
-  @media screen and (max-width: 1200px) {
-    .contactusmailborder{
-      display: flex;
-      flex-direction: column;
-      width: 740px;
-      height: auto;
-      top: -30%;
-    }
-    .contactusmailleftborder{
-      width: 100%;
-    }
-    .contactusmailrightborder{
-      width: 100%;
-      padding: 1%;
-    }
-    .contactusmailleftcontain{
-      padding: 50px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    .contactusmailborder{
-      width: 480px;
-    }
-  }
-  @media screen and (max-width: 576px) {
-    .contactusmailborder{
-      width: 320px;
-      top: -10%;
-    }
-    .contactusmailleftcontain{
-      padding: 20px;
-    }
-  }
+}
 </style>
