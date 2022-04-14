@@ -9,7 +9,7 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .contact-us-border {
   overflow: hidden;
 }
