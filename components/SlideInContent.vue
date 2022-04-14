@@ -1,4 +1,3 @@
-/* eslint-disable vue/no-v-html */
 <template>
   <div class="items-container">
     <div v-for="(item, index) in content" :key="index" class="g-item-container">
@@ -9,10 +8,12 @@
         <h1 class="g-item-title g-item-title-active">
           {{ item.title }}
         </h1>
+        <!-- eslint-disable vue/no-v-html -->
         <p
           class="g-item-subtitle g-item-subtitle-active"
           v-html="item.subtitle"
         ></p>
+        <!--eslint-enable-->
       </div>
     </div>
   </div>
@@ -33,7 +34,6 @@ export default {
       return `require(@/assets/images/${name})`
     },
     scrollItem() {
-      // eslint-disable-next-line no-console
       window.addEventListener('scroll', function () {
         const itemContainer = document.querySelectorAll('.g-item-container')
         const itemImage = document.querySelectorAll('.g-item-image')

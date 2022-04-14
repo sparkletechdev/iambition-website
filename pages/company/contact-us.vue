@@ -2,7 +2,6 @@
   <main class="contact-us-border">
     <ContactUsPart />
     <ContactUsMailPart />
-    <UpdatePart />
   </main>
 </template>
 
