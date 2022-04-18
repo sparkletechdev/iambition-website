@@ -1,10 +1,10 @@
 <template>
-  <div class="main-container">
+  <div class="contact-us-container">
     <div class="content">
       <div class="left-container">
         <div class="mail-form-container">
-          <h3 class="mail-title">Mail</h3>
-          <h5 class="mail-subtitle">We will get back to you in a flash!</h5>
+          <h3 class="mail-title">{{ $t('contact.formTitle') }}</h3>
+          <h5 class="mail-subtitle">{{ $t('contact.formSubtitle') }}</h5>
           <h1
             :class="{
               'send-success': true,
@@ -15,6 +15,7 @@
           </h1>
           <form
             ref="contactUsForm"
+            autocomplete="off"
             :class="{
               'contact-form': true,
               'contact-form-none': show,
@@ -23,7 +24,7 @@
             <div class="name-inputs-container">
               <div class="name-container">
                 <label for="first-name-input" class="form-label">
-                  First Name *
+                  {{ $t('contact.formFirstName') }}
                 </label>
                 <input
                   id="first-name-input"
@@ -38,7 +39,7 @@
               </div>
               <div class="name-container">
                 <label for="last-name-input" class="form-label">
-                  Last Name *
+                  {{ $t('contact.formLastName') }}
                 </label>
                 <input
                   id="last-name-input"
@@ -54,7 +55,7 @@
             </div>
             <div class="input-container">
               <label for="mail-input" class="form-label">
-                Email Address *
+                {{ $t('contact.formEmail') }}
               </label>
               <input
                 id="mail-input"
@@ -68,7 +69,9 @@
               />
             </div>
             <div class="input-container">
-              <label for="company-input" class="form-label"> Company * </label>
+              <label for="company-input" class="form-label">
+                {{ $t('contact.formCompany') }}
+              </label>
               <input
                 id="company-input"
                 v-model="company"
@@ -81,7 +84,9 @@
               />
             </div>
             <div class="input-container">
-              <label for="message-input" class="form-label"> Message </label>
+              <label for="message-input" class="form-label">
+                {{ $t('contact.formMessage') }}
+              </label>
               <textarea
                 id="message-input"
                 v-model="message"
@@ -97,7 +102,7 @@
                 class="submit-button"
                 @click="onSubmit($event)"
               >
-                Submit
+                {{ $t('contact.formSubmit') }}
               </button>
             </div>
           </form>
@@ -105,8 +110,38 @@
       </div>
       <div class="right-container">
         <div class="information-container">
-          <h1 class="information-title">Contact Information</h1>
-          <p class="information-subtitle">sparkel@gmail.com</p>
+          <h1 class="information-title">
+            {{ $t('contact.contactInformation') }}
+          </h1>
+          <p
+            v-for="(content, index) in $t('contact.information')"
+            :key="index"
+            class="information-content"
+          >
+            {{ content }}
+          </p>
+          <div class="social-media-container">
+            <a href="https://www.instagram.com">
+              <div class="social-icon">
+                <fa :icon="['fab', 'instagram-square']" />
+              </div>
+            </a>
+            <a href="https://zh-tw.facebook.com">
+              <div class="social-icon">
+                <fa :icon="['fab', 'facebook-square']" />
+              </div>
+            </a>
+            <a href="https://twitter.com">
+              <div class="social-icon">
+                <fa :icon="['fab', 'twitter-square']" />
+              </div>
+            </a>
+            <a href="https://tw.linkedin.com">
+              <div class="social-icon">
+                <fa :icon="['fab', 'linkedin']" />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -127,7 +162,6 @@ export default {
   },
   methods: {
     onSubmit(e) {
-      
       const ref = this.$refs
 
       if (this.message) {
@@ -161,38 +195,37 @@ export default {
 </script>
 
 <style>
-.main-container {
+.contact-us-container {
   /* border: 1px solid black; */
   width: 100%;
   height: 600px;
-  position: relative;
+  margin-top: 4rem;
+  align-items: center;
 }
 .content {
   box-shadow: 0 0 15px 0 rgb(0 0 0 / 30%);
   width: 1140px;
   height: 700px;
-  position: absolute;
-  left: 50%;
-  top: -40%;
-  transform: translate(-50%, 0);
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 .left-container {
-  background: white;
+  background: rgba(255, 255, 255, 0.5);
   width: 65%;
 }
 .mail-form-container {
   padding: 50px 100px 50px 50px;
 }
 .mail-title {
-  color: rgb(21, 62, 82);
+  color: #273244;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
 .mail-subtitle {
-  color: rgb(21, 62, 82);
+  color: #273244;
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.2;
@@ -234,7 +267,7 @@ export default {
   width: 100%;
   font-size: 14px !important;
   font-weight: lighter;
-  color: rgb(123, 124, 125);
+  color: #273244;
 }
 .form-input {
   height: calc(2.25rem + 2px);
@@ -242,22 +275,22 @@ export default {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: #273244;
+  background-color: transparent;
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 1px solid #273244;
   border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, border-width 0.15s ease-in-out;
+}
+.form-input:focus {
+  color: #273244;
+  background-color: transparent;
+  border-color: #369;
+  border-width: 2px;
+  outline: 0;
 }
 .message-text-area {
   height: auto;
-}
-.form-input:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
 }
 .input-container {
   width: 100%;
@@ -285,7 +318,7 @@ export default {
   background-position: right bottom;
 }
 .right-container {
-  background: black;
+  background: rgba(39, 50, 68, 0.5);
   width: 35%;
   display: flex;
   justify-content: center;
@@ -303,9 +336,22 @@ export default {
   font-weight: bold;
   color: white;
 }
-.information-subtitle {
+.information-content {
   color: white;
+  align-self: flex-start;
 }
+
+.social-media-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  color: white;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 1200px) {
   .content {
     display: flex;
@@ -319,7 +365,7 @@ export default {
   }
   .right-container {
     width: 100%;
-    padding: 1%;
+    padding: 8% 0;
   }
   .mail-form-container {
     padding: 50px;

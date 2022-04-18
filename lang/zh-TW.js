@@ -113,4 +113,21 @@ export default {
       },
     ],
   },
+  contact: {
+    landingTitle: '聯絡',
+    landingContent: ['使用下面的表格或通過我們的任何社交媒體帳戶給我們留言！'],
+    formTitle: '保持聯繫！',
+    formSubtitle: '我們的團隊將在 24 小時內回复您。',
+    formFirstName: '名',
+    formLastName: '姓',
+    formEmail: '電子郵件',
+    formCompany: '公司',
+    formMessage: '信息',
+    formSubmit: '發信息',
+    contactInformation: '聯繫信息',
+    information: [
+      '9 Gul Drive, Singapore 629460',
+      '+65 82884238'
+    ]
+  },
 }

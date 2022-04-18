@@ -4,6 +4,7 @@
     <p v-for="(content, index) in contents" :key="index" class="splash-content">
       {{ content }}
     </p>
+    <slot class="slot-container"></slot>
   </div>
 </template>
 
@@ -97,7 +98,7 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .company-part-container {
-    background-size: 250%;
+    background-size: 300%;
   }
   .splash-title {
     font-size: 3.5rem;
@@ -108,7 +109,7 @@ export default {
 }
 @media screen and (max-width: 576px) {
   .company-part-container {
-    background-size: 270%;
+    background-size: 400%;
     min-height: 320px;
   }
   .splash-title {

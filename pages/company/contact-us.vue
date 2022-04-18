@@ -1,7 +1,11 @@
 <template>
   <main class="contact-us-border">
-    <ContactUsPart />
-    <ContactUsMailPart />
+    <LandingComponent
+      :title="$t('contact.landingTitle')"
+      :contents="$t('contact.landingContent')"
+    >
+      <ContactUsMailPart
+    /></LandingComponent>
   </main>
 </template>
 
@@ -12,5 +16,31 @@ export default {}
 <style scoped>
 .contact-us-border {
   overflow: hidden;
+}
+
+::v-deep .company-part-container {
+  background-image: linear-gradient(
+      rgba(51, 102, 153, 0.75),
+      rgba(39, 50, 68, 1)
+    ),
+    url('~@/assets/images/contact-us.jpg');
+}
+
+@media screen and (max-width: 1200px) {
+  ::v-deep .company-part-container {
+    height: 130vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ::v-deep .company-part-container {
+    height: 120vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  ::v-deep .company-part-container {
+    height: 110vh;
+  }
 }
 </style>

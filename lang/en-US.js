@@ -111,7 +111,24 @@ export default {
         ‣ 公共電視 報導
         `,
         img: 'image11.png',
-      }
+      },
     ],
-  }
+  },
+  contact: {
+    landingTitle: 'Contact',
+    landingContent: ['Drop us a message using the form below or through any of our social media accounts!'],
+    formTitle: 'Get in touch!',
+    formSubtitle: 'Our team will reply you within 24 hours.',
+    formFirstName: 'First Name',
+    formLastName: 'Last Name',
+    formEmail: 'Email',
+    formCompany: 'Company',
+    formMessage: 'Message',
+    formSubmit: 'Send Message',
+    contactInformation: 'Contact Information',
+    information: [
+      '9 Gul Drive, Singapore 629460',
+      '+65 82884238'
+    ]
+  },
 }
