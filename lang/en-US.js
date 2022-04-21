@@ -8,8 +8,8 @@ export default {
     awards: 'Awards',
     customers: 'Customers',
     company: 'Company',
-    aboutUs: 'About Us',
-    contactUs: 'Contact Us',
+    aboutUs: 'About',
+    contactUs: 'Contact',
   },
   company: {
     aboutUs: {

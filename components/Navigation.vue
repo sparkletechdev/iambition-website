@@ -156,6 +156,7 @@ export default {
   box-shadow: 0 0 2px rgb(0 0 0 / 20%);
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: fixed;

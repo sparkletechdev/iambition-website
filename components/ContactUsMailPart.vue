@@ -280,7 +280,7 @@ export default {
   background-clip: padding-box;
   border: 1px solid #273244;
   border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, border-width 0.15s ease-in-out;
+  transition: border-color 0.05s linear, border-width 0.05s linear;
 }
 .form-input:focus {
   color: #273244;

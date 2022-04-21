@@ -8,8 +8,8 @@ export default {
     awards: '獎項',
     customers: '顧客',
     company: '公司',
-    aboutUs: '關於我們',
-    contactUs: '聯繫我們',
+    aboutUs: '關於',
+    contactUs: '聯繫',
   },
   company: {
     aboutUs: {

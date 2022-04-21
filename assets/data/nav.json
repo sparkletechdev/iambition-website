@@ -33,17 +33,13 @@
     "items": []
   },
   {
-    "title": "navbar.company",
+    "title": "navbar.aboutUs",
     "route": "company/about-us",
-    "items": [
-      {
-        "title": "navbar.aboutUs",
-        "route": "company/about-us"
-      },
-      {
-        "title": "navbar.contactUs",
-        "route": "company/contact-us"
-      }
-    ]
+    "items": []
+  },
+  {
+    "title": "navbar.contactUs",
+    "route": "company/contact-us",
+    "items": []
   }
 ]
