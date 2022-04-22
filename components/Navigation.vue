@@ -1,27 +1,36 @@
 <template>
   <header ref="headerContainer" class="header-container">
-    <Logo />
-    <div v-for="post in posts" :key="post.title" class="header-link">
-      <div v-if="post.title !== 'navbar.index'" :key="post.title" class="title">
-        <nuxt-link :to="localePath(`/${post.route}`)">
-          {{ $t(post.title) }}
-        </nuxt-link>
-        <div v-if="post.items.length != '0'" :key="post.title">
-          <fa :icon="['fas', 'angle-down']" class="chevron-icon" />
-        </div>
-        <div class="subtitle-container">
-          <div v-for="item in post.items" :key="item.id" class="subtitle">
-            <nuxt-link
-              v-if="item.title != 'none'"
-              :to="localePath(`/${item.route}`)"
-            >
-              {{ $t(item.title) }}
-            </nuxt-link>
+    <div></div>
+    <div class="links">
+      <Logo />
+      <div v-for="post in posts" :key="post.title" class="header-link">
+        <div
+          v-if="post.title !== 'navbar.index'"
+          :key="post.title"
+          class="title"
+        >
+          <nuxt-link :to="localePath(`/${post.route}`)">
+            {{ $t(post.title) }}
+          </nuxt-link>
+          <div v-if="post.items.length != '0'" :key="post.title">
+            <fa :icon="['fas', 'angle-down']" class="chevron-icon" />
+          </div>
+          <div class="subtitle-container">
+            <div v-for="item in post.items" :key="item.id" class="subtitle">
+              <nuxt-link
+                v-if="item.title != 'none'"
+                :to="localePath(`/${item.route}`)"
+              >
+                {{ $t(item.title) }}
+              </nuxt-link>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <LanguageSwitcher />
+
     <Hamburger
       class="hamburger-border"
       @click.native="hiddenHeaderContainerMove()"
@@ -157,7 +166,7 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -165,10 +174,15 @@ export default {
   transition: 1s;
   z-index: 5;
 }
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 .header-link {
   /* border: 1px solid black; */
-  margin: 0 40px 0 0;
   display: flex;
+  margin: 0 3rem 0 0;
   align-items: center;
 }
 .title {
@@ -183,7 +197,21 @@ export default {
 .title:hover {
   color: #0cf;
 }
-
+.contact-link {
+  /* border: 1px solid black; */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: 0.4s;
+  position: relative;
+  background: #333;
+  padding: 12px;
+  margin-right: 3rem;
+}
+.contact-link:hover {
+  color: #0cf;
+}
 .chevron-icon {
   margin: 5px 0 0 5px;
 }
@@ -196,7 +224,6 @@ export default {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding-bottom: 8px;
 }
 .subtitle {
   /* border: 1px solid black; */
