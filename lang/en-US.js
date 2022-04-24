@@ -1,4 +1,14 @@
 export default {
+  locale: {
+    names: {
+      sg: 'Singapore',
+      tw: 'Taiwan',
+    },
+    flags: {
+      sg: '🇸🇬',
+      tw: '🇹🇼',
+    },
+  },
   navbar: {
     index: 'Index',
     solutions: 'Solutions',
@@ -116,7 +126,9 @@ export default {
   },
   contact: {
     landingTitle: 'Contact',
-    landingContent: ['Drop us a message using the form below or through any of our social media accounts!'],
+    landingContent: [
+      'Drop us a message using the form below or through any of our social media accounts!',
+    ],
     formTitle: 'Get in touch!',
     formSubtitle: 'Our team will reply you within 24 hours.',
     formFirstName: 'First Name',
@@ -126,9 +138,6 @@ export default {
     formMessage: 'Message',
     formSubmit: 'Send Message',
     contactInformation: 'Contact Information',
-    information: [
-      '9 Gul Drive, Singapore 629460',
-      '+65 82884238'
-    ]
+    information: ['9 Gul Drive, Singapore 629460', '+65 82884238'],
   },
 }

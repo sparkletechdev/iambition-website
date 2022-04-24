@@ -85,13 +85,13 @@ export default {
       {
         code: 'en',
         iso: 'en-US',
-        name: 'English',
+        name: 'sg',
         file: 'en-US.js',
       },
       {
         code: 'zh',
         iso: 'zh-TW',
-        name: '繁體中文',
+        name: 'tw',
         file: 'zh-TW.js',
       },
     ],

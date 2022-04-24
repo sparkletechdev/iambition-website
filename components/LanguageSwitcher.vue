@@ -1,14 +1,23 @@
 <template>
   <div class="language">
-    <fa :icon="['fas', 'random']" class="language-switch-icon" />
-    <a
-      v-for="locale in availableLocales"
-      :key="locale.code"
-      href="#"
-      @click.prevent.stop="$i18n.setLocale(locale.code)"
-    >
-      {{ locale.name }}
+    <fa :icon="['fas', 'globe']" class="language-switch-icon" />
+    <a class="locale">
+      {{ currentLocale }}
     </a>
+    <div class="language-list">
+      <div
+        v-for="locale in availableLocales"
+        :key="locale.code"
+        href="#"
+        class="subtitle"
+        @click.prevent.stop="$i18n.setLocale(locale.code)"
+      >
+        <div class="list-content">
+          <div class="flag">{{ $t(`locale.flags.${locale.name}`) }}</div>
+          <div>{{ $t(`locale.names.${locale.name}`) }}</div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,7 +25,13 @@
 export default {
   computed: {
     availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+      return this.$i18n.locales
+    },
+    currentLocale() {
+      const code = this.$i18n.locales.filter(
+        (i) => i.code === this.$i18n.locale
+      )[0].name
+      return this.$t(`locale.names.${code}`)
     },
   },
 }
@@ -29,6 +44,8 @@ export default {
   align-items: center;
   justify-content: center;
   font-size: 0.8rem;
+  position: relative;
+  cursor: pointer;
 }
 
 .language:hover {
@@ -39,6 +56,46 @@ export default {
   margin: 0 5px 0 0;
 }
 
+.language-list {
+  position: absolute;
+  left: 0%;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: white;
+
+  /* align-items: center;
+  justify-content: center;
+  font-size: 0.8rem; */
+}
+
+.list-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.flag {
+  margin-right: 1rem;
+}
+
+.subtitle {
+  white-space: nowrap;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 320px;
+  color: #333;
+  display: none;
+}
+
+.subtitle :hover {
+  color: #0cf;
+}
+
+.language:hover .subtitle {
+  display: block;
+}
 @media screen and (max-width: 768px) {
   .language {
     display: none;

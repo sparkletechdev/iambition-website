@@ -217,7 +217,6 @@ export default {
 }
 
 .subtitle-container {
-  /* border: 1px solid black; */
   position: absolute;
   left: 0%;
   top: 100%;
@@ -226,7 +225,6 @@ export default {
   background-color: #fff;
 }
 .subtitle {
-  /* border: 1px solid black; */
   white-space: nowrap;
   margin-bottom: 10px;
   margin-top: 15px;

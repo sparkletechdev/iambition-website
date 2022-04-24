@@ -1,4 +1,14 @@
 export default {
+  locale: {
+    names: {
+      sg: '新加坡',
+      tw: '台灣',
+    },
+    flags: {
+      sg: '🇸🇬',
+      tw: '🇹🇼',
+    },
+  },
   navbar: {
     index: 'Index',
     solutions: '解決方案',
@@ -125,9 +135,6 @@ export default {
     formMessage: '信息',
     formSubmit: '發信息',
     contactInformation: '聯繫信息',
-    information: [
-      '9 Gul Drive, Singapore 629460',
-      '+65 82884238'
-    ]
+    information: ['9 Gul Drive, Singapore 629460', '+65 82884238'],
   },
 }
