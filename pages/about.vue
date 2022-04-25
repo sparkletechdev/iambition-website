@@ -19,7 +19,7 @@ export default {}
   overflow: hidden;
 }
 
-::v-deep .company-part-container {
+::v-deep .landing-container {
   background-image: linear-gradient(
       rgba(51, 102, 153, 0.75),
       rgba(39, 50, 68, 1)

@@ -10,7 +10,7 @@ export default {
     },
   },
   navbar: {
-    index: 'Index',
+    index: 'Home',
     solutions: 'Solutions',
     dedicatedTeams: 'Dedicated Teams',
     staffAugmentation: 'Staff Augmentation',

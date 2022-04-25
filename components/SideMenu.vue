@@ -12,7 +12,6 @@
       @click="onClick"
     >
       <div
-        v-if="item.title !== 'navbar.index'"
         :key="item.title"
         class="hidden-header-container-title-border"
       >

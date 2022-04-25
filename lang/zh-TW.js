@@ -10,7 +10,7 @@ export default {
     },
   },
   navbar: {
-    index: 'Index',
+    index: '家',
     solutions: '解決方案',
     dedicatedTeams: 'Dedicated Teams',
     staffAugmentation: 'Staff Augmentation',

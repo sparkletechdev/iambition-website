@@ -1,5 +1,5 @@
 <template>
-  <div class="company-part-container">
+  <div class="landing-container">
     <h1 class="splash-title">{{ title }}</h1>
     <p v-for="(content, index) in contents" :key="index" class="splash-content">
       {{ content }}
@@ -48,7 +48,7 @@ export default {
   padding: 0 25%;
 }
 
-.company-part-container {
+.landing-container {
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -80,7 +80,7 @@ export default {
 }
 
 @media screen and (max-width: 1200px) {
-  .company-part-container {
+  .landing-container {
     background-size: 150%;
   }
   .splash-content {
@@ -88,7 +88,7 @@ export default {
   }
 }
 @media screen and (max-width: 992px) {
-  .company-part-container {
+  .landing-container {
     background-size: 200%;
   }
   .splash-content {
@@ -96,7 +96,7 @@ export default {
   }
 }
 @media screen and (max-width: 768px) {
-  .company-part-container {
+  .landing-container {
     background-size: 300%;
   }
   .splash-title {
@@ -107,7 +107,7 @@ export default {
   }
 }
 @media screen and (max-width: 576px) {
-  .company-part-container {
+  .landing-container {
     background-size: 400%;
     min-height: 320px;
   }

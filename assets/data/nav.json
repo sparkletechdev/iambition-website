@@ -34,12 +34,12 @@
   },
   {
     "title": "navbar.aboutUs",
-    "route": "company/about-us",
+    "route": "about",
     "items": []
   },
   {
     "title": "navbar.contactUs",
-    "route": "company/contact-us",
+    "route": "contact",
     "items": []
   }
 ]
