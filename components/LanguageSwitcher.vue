@@ -43,7 +43,8 @@ export default {
   color: white;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 300;
   position: relative;
   cursor: pointer;
 }
@@ -73,10 +74,12 @@ export default {
 .list-content {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .flag {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .subtitle {

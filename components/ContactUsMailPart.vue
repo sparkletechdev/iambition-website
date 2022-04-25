@@ -198,8 +198,7 @@ export default {
 .contact-us-container {
   /* border: 1px solid black; */
   width: 100%;
-  height: 600px;
-  margin-top: 4rem;
+  margin: 4rem 8%;
   align-items: center;
 }
 .content {

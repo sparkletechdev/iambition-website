@@ -50,12 +50,11 @@ export default {
 
 .company-part-container {
   width: 100%;
-  min-height: 850px;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
   padding: 8rem 0 4rem;
   background-size: cover;
 }

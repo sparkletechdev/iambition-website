@@ -25,22 +25,4 @@ export default {}
     ),
     url('~@/assets/images/contact-us.jpg');
 }
-
-@media screen and (max-width: 1200px) {
-  ::v-deep .company-part-container {
-    height: 130vh;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  ::v-deep .company-part-container {
-    height: 120vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  ::v-deep .company-part-container {
-    height: 110vh;
-  }
-}
 </style>
