@@ -21,6 +21,9 @@ export default {
     aboutUs: '關於',
     contactUs: '聯繫',
   },
+  menu: {
+    selectRegion: '選擇地區',
+  },
   company: {
     aboutUs: {
       landingTitle: '雄欣科技',

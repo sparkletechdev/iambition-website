@@ -21,6 +21,9 @@ export default {
     aboutUs: 'About',
     contactUs: 'Contact',
   },
+  menu: {
+    selectRegion: 'Select Region'
+  },
   company: {
     aboutUs: {
       landingTitle: 'iAmbition',

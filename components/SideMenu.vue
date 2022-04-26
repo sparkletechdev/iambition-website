@@ -6,47 +6,52 @@
   >
     <div class="menu">
       <div
-      v-for="item in data"
-      :key="item.title"
-      class="hidden-header-container-middle"
-      @click="onClick"
-    >
-      <div
+        v-for="item in data"
         :key="item.title"
-        class="hidden-header-container-title-border"
+        class="hidden-header-container-middle"
+        @click="onClick"
       >
-        <nuxt-link
-          :to="localePath(`/${item.route}`)"
-          class="hidden-header-container-title"
-        >
-          {{ $t(item.title) }}
-        </nuxt-link>
-        <div
-          v-for="subItem in item.items"
-          :key="subItem.id"
-          class="hidden-header-container-subtitle-border"
-        >
+        <div :key="item.title" class="hidden-header-container-title-border">
           <nuxt-link
-            v-if="subItem.title != 'none'"
-            :to="localePath(`/${subItem.route}`)"
-            class="hidden-header-container-subtitle"
+            :to="localePath(`/${item.route}`)"
+            class="hidden-header-container-title"
           >
-            {{ $t(subItem.title) }}
+            {{ $t(item.title) }}
           </nuxt-link>
+          <div
+            v-for="subItem in item.items"
+            :key="subItem.id"
+            class="hidden-header-container-subtitle-border"
+          >
+            <nuxt-link
+              v-if="subItem.title != 'none'"
+              :to="localePath(`/${subItem.route}`)"
+              class="hidden-header-container-subtitle"
+            >
+              {{ $t(subItem.title) }}
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
-    </div>
     <div class="language">
-      <fa :icon="['fas', 'random']" class="language-switch-icon" />
-      <a
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        href="#"
-        @click.prevent.stop="$i18n.setLocale(locale.code)"
-      >
-        {{ locale.name }}
-      </a>
+      <div class="region-title">{{ $t('menu.selectRegion') }}</div>
+      <div class="countries">
+        <div
+          v-for="locale in availableLocales"
+          :key="locale.code"
+          class="country"
+        >
+          <fa
+            v-if="currentLocale === locale.name"
+            :icon="['fas', 'check']"
+            class="language-switch-icon"
+          />
+          <a href="#" @click.prevent.stop="$i18n.setLocale(locale.code)">
+            {{ $t(`locale.names.${locale.name}`) }}
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -71,7 +76,13 @@ export default {
   },
   computed: {
     availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
+      return this.$i18n.locales
+    },
+    currentLocale() {
+      const code = this.$i18n.locales.filter(
+        (i) => i.code === this.$i18n.locale
+      )[0].name
+      return code
     },
     style() {
       return { top: `${this.top}px`, right: `${this.right}` }
@@ -92,26 +103,48 @@ export default {
 }
 .menu {
   padding: 0 25%;
+  overflow: scroll;
 }
 @media screen and (max-width: 768px) {
   .language {
     color: white;
-    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .region-title {
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  .countries {
     align-self: center;
+    display: flex;
+    flex-direction: row;
+    row-gap: 16px;
+    column-gap: 24px;
+  }
+  .country {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .language-switch-icon {
+    margin-right: 5px;
   }
   .hidden-header-container {
     /* background-color: rgba(23, 75, 88, 0.815); */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
     background-color: #333;
     position: fixed;
     width: 100%;
-    min-height: 750px;
     height: 100vh;
-    padding: 25% 0 25%;
-    transition: all 0.4s ease-in-out;
+    padding: 4rem 0 6rem;
+    overflow: scroll;
+    transition: all 0.3s ease-in-out;
   }
   .hidden-header-container-middle {
     width: 100%;
@@ -129,7 +162,7 @@ export default {
     margin: 3% 0 0;
   }
   .hidden-header-container-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: white;
     margin: 0.5%;
@@ -140,7 +173,7 @@ export default {
   .hidden-header-container-subtitle {
     background-clip: text;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .hidden-header-container-title:hover {
     color: #0cf;
@@ -150,7 +183,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
   .hidden-header-container-title {
     font-size: 1.2rem;
   }
@@ -160,7 +193,7 @@ export default {
   .language {
     font-size: 0.8rem;
   }
-}
+} */
 
 /* @media screen and (max-width: 414px) {
   .hidden-header-container-title {
