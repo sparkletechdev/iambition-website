@@ -66,7 +66,7 @@ export default {
   },
   methods: {
     customerscroll() {
-      if (this.$route.path === '/CUSTOMERS') {
+      if (this.$route.path === '/customers') {
         window.addEventListener('scroll', function () {
           const customercompany = document.querySelectorAll('.customercompany')
           customercompany.forEach((i) => {
