@@ -28,12 +28,10 @@ export default {
     aboutUs: {
       landingTitle: '雄欣科技',
       landingContent: [
-        `人工智慧、物聯網、5G 通訊等數位科技發展已如浪潮
-        般改變生活樣貌，傳統安全監控的作法，已經不能滿足後
-        疫情時代企業的數位轉型需求。因此，一群具備國際視
-        野、ICT 產業經驗、前瞻技術能力的菁英，基於「為生命
-         更安全 為生活更美好」的使命，在2020 年5 月創立
-        《雄欣科技》。`,
+        `全球人口結構快速高齡化，衍生出醫療照護的人力缺口、獨老化的長者安全與照護需求；另一方面，因為全球極右翼思潮與恐怖主義不斷蔓延、社會安全傷害事件與工作職場安全事件不斷攀升，這些痛點不僅是社會問題也常是國安問題。`,
+        `安全是回家的唯一一條路，雄欣科技基於「為生命更安全 為生活更美好」的使命，自主研發前瞻AI感知系統，透過專業顧問規劃，我們能在不危害隱私權的情境下，早期預防安全意外事件、即時偵測場域與人的異常狀況、全方位移動式通報。協助政府機關、公司工廠、校園、醫療照護機構、購物與展覽場域等業主，透過數位賦能與數位轉型的流程，徹底解決產業痛點，並提升「場域安全」「管理效率」與「服務品質」等ESG指標。`,
+        `雄欣科技的AI感知與照護系統，包含了去識別化3D感測技術、融合性人工智慧演算法、可視化戰情室系統平台。我們以人為本、從數位轉型的角度出發、重視ESG永續台灣的使命，領先業界推出一系列以創新價值、以人為本的「有溫度」解決方案。`,
+        `公司以客戶需求為導向，定位為一間一站式AI解決方案開發商。除了本身不斷追求技術突破及創新，更積極與各類型夥伴結盟，建立產學研智慧應用生態圈，並以誠信負責的態度與利害關係人共創、共好。未來，我們不僅要立足台灣，更希望與生態系夥伴一起以台灣之名航向國際。`
       ],
       going: {
         title: '我們去哪？',
@@ -46,25 +44,25 @@ export default {
             title: '金融服務',
             subtitle:
               'Financial Services are finding ways to collate their data at a single location so that they have a real-time overview of all the customer activity. It is allowing them to cater to the preferences of their consumer and keep a close watch on the changing digital landscape.',
-            img: 'https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/companygoingone.jpg',
+            img: 'technology.jpeg',
           },
           {
             title: '零售商',
             subtitle:
               'Retailers are innovating with the check-out technologies so that their customers can have a hassle-free experience. The industry is looking at modern data-driven technologies to create unique experiences for the consumers and fight the onslaught of e-commerce. They are refining their processes of payments, marketing, and inventory management.',
-            img: 'https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/companygoingtwo.jpg',
+            img: 'technology.jpeg',
           },
           {
             title: '製造業',
             subtitle:
               'Manufacturing has not been an early adopter of the technology but they are opening their eyes to the apparent truth. Organizations are automating the way they cater their customer needs by refining the process of quotation management, deploying media listening to generate leads and recommendation engines to optimize lifecycle management of the customers.',
-            img: 'https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/companygoingthree.jpg',
+            img: 'technology.jpeg',
           },
           {
             title: '電信',
             subtitle:
               'Telecom sector is creating Intelligent Sales and Marketing engines to enhance the process of customer acquisition, retention, cross-sell and up-sell opportunities.',
-            img: 'https://testjusttestdontdoit.s3.ap-southeast-1.amazonaws.com/companygoingfour.jpg',
+            img: 'technology.jpeg',
           },
         ],
       },

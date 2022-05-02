@@ -9,7 +9,7 @@
         :key="index"
         class="item"
       >
-        <img :src="item.img" class="item-background" />
+        <img src="@/assets/images/indexFirstBackground.jpeg" class="item-background" />
         <div class="item-blue-background"></div>
         <div class="item-content">
           <h1 class="item-content-title">

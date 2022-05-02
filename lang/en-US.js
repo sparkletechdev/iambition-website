@@ -28,13 +28,10 @@ export default {
     aboutUs: {
       landingTitle: 'iAmbition',
       landingContent: [
-        `The development of digital technologies such as artificial intelligence, 
-        Internet of Things, and 5G networks has significantly changed our way of life. 
-        Existing security monitoring methods can no longer meet the digital 
-        transformation needs of enterprises in the post-epidemic era. Therefore, 
-        a group of elites with international vision, experience in the ICT industry, 
-        and forward-looking technical capabilities established "iAmbition Technology" in 
-        May 2020 based on the mission of "safer for life and better for life".`,
+        `The rapid aging of the global population structure has created a manpower gap for medical care, and the safety and care needs of the elderly. , these pain points are not only social issues but also national security issues.`,
+        `Safety is the only way home. Based on the mission of "making life safer and better for life", Xiongxin Technology has independently developed a forward-looking AI perception system. Through professional consultant planning, we can make early Prevention of security accidents, real-time detection of abnormal conditions of fields and people, and omni-directional mobile notification. Assist the owners of government agencies, company factories, campuses, medical care institutions, shopping and exhibition venues, etc., through the process of digital empowerment and digital transformation, to completely solve industrial pain points, and improve "site safety", "management efficiency" and "" service quality” and other ESG indicators.`,
+        `Xiongxin Technology's AI perception and care system includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and visualized war situation room system platform. We are people-oriented, from the perspective of digital transformation, attach importance to the mission of ESG sustainable Taiwan, and lead the industry to launch a series of innovative value, people-oriented "warm" solutions.`,
+        `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, it also actively forms alliances with various types of partners to establish an industry-university-research smart application ecosystem, and creates and benefits with stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to sail internationally in the name of Taiwan with our ecosystem partners.`
       ],
       going: {
         title: 'Where Are We Going?',
