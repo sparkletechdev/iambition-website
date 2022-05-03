@@ -22,7 +22,7 @@ export default {
     contactUs: 'Contact',
   },
   menu: {
-    selectRegion: 'Select Region'
+    selectRegion: 'Select Region',
   },
   company: {
     aboutUs: {
@@ -31,8 +31,55 @@ export default {
         `The rapid aging of the global population structure has created a manpower gap for medical care, and the safety and care needs of the elderly. , these pain points are not only social issues but also national security issues.`,
         `Safety is the only way home. Based on the mission of "making life safer and better for life", Xiongxin Technology has independently developed a forward-looking AI perception system. Through professional consultant planning, we can make early Prevention of security accidents, real-time detection of abnormal conditions of fields and people, and omni-directional mobile notification. Assist the owners of government agencies, company factories, campuses, medical care institutions, shopping and exhibition venues, etc., through the process of digital empowerment and digital transformation, to completely solve industrial pain points, and improve "site safety", "management efficiency" and "" service quality” and other ESG indicators.`,
         `Xiongxin Technology's AI perception and care system includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and visualized war situation room system platform. We are people-oriented, from the perspective of digital transformation, attach importance to the mission of ESG sustainable Taiwan, and lead the industry to launch a series of innovative value, people-oriented "warm" solutions.`,
-        `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, it also actively forms alliances with various types of partners to establish an industry-university-research smart application ecosystem, and creates and benefits with stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to sail internationally in the name of Taiwan with our ecosystem partners.`
+        `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, it also actively forms alliances with various types of partners to establish an industry-university-research smart application ecosystem, and creates and benefits with stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to sail internationally in the name of Taiwan with our ecosystem partners.`,
       ],
+      mission: {
+        title: 'Mission',
+        content: 'Make life safer and better',
+      },
+      vision: {
+        title: 'Vision',
+        content:
+          'With forward-looking AIoT sensing technology, solve industrial safety and care problems, and become a global market leader',
+      },
+      valueProposition: {
+        title: 'Value Proposition',
+        content:
+          'With forward-looking AIoT fusion sensing technology and industry Know How, we provide smart transformation solutions for various fields such as smart cities and medical care to solve security and care problems',
+      },
+      coreValues: {
+        title: 'Our Core Values',
+        content: [
+          {
+            title: 'People Oriented',
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            image: 'people-oriented.jpg',
+          },
+          {
+            title: 'Customer First',
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            image: 'customer-first.jpg',
+          },
+          {
+            title: 'Integrity & Responsibility',
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            image: 'integrity.jpg',
+          },
+          {
+            title: 'Sustainability',
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            image: 'sustainability.jpg',
+          },
+        ],
+      },
       going: {
         title: 'Where Are We Going?',
         subtitle: `Tuple is being deployed by organizations across the globe for their

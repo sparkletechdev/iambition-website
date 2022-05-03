@@ -31,8 +31,55 @@ export default {
         `全球人口結構快速高齡化，衍生出醫療照護的人力缺口、獨老化的長者安全與照護需求；另一方面，因為全球極右翼思潮與恐怖主義不斷蔓延、社會安全傷害事件與工作職場安全事件不斷攀升，這些痛點不僅是社會問題也常是國安問題。`,
         `安全是回家的唯一一條路，雄欣科技基於「為生命更安全 為生活更美好」的使命，自主研發前瞻AI感知系統，透過專業顧問規劃，我們能在不危害隱私權的情境下，早期預防安全意外事件、即時偵測場域與人的異常狀況、全方位移動式通報。協助政府機關、公司工廠、校園、醫療照護機構、購物與展覽場域等業主，透過數位賦能與數位轉型的流程，徹底解決產業痛點，並提升「場域安全」「管理效率」與「服務品質」等ESG指標。`,
         `雄欣科技的AI感知與照護系統，包含了去識別化3D感測技術、融合性人工智慧演算法、可視化戰情室系統平台。我們以人為本、從數位轉型的角度出發、重視ESG永續台灣的使命，領先業界推出一系列以創新價值、以人為本的「有溫度」解決方案。`,
-        `公司以客戶需求為導向，定位為一間一站式AI解決方案開發商。除了本身不斷追求技術突破及創新，更積極與各類型夥伴結盟，建立產學研智慧應用生態圈，並以誠信負責的態度與利害關係人共創、共好。未來，我們不僅要立足台灣，更希望與生態系夥伴一起以台灣之名航向國際。`
+        `公司以客戶需求為導向，定位為一間一站式AI解決方案開發商。除了本身不斷追求技術突破及創新，更積極與各類型夥伴結盟，建立產學研智慧應用生態圈，並以誠信負責的態度與利害關係人共創、共好。未來，我們不僅要立足台灣，更希望與生態系夥伴一起以台灣之名航向國際。`,
       ],
+      mission: {
+        title: '公司使命',
+        content: '讓生命更安全 讓生活更美好',
+      },
+      vision: {
+        title: '公司願景',
+        content:
+          '以前瞻AIoT 感測技術，解決產業安全與照護問題，並成為全球市場的領導者',
+      },
+      valueProposition: {
+        title: '價值主張',
+        content:
+          '以前瞻AIoT 融合性感測技術，與產業Know How，提供智慧城市、醫療照護等各類型場域主智慧轉型方案，以解決安全與照護問題',
+      },
+      coreValues: {
+        title: '核心價值',
+        content: [
+          {
+            title: '以人為本',
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            image: 'people-oriented.jpg',
+          },
+          {
+            title: '客戶為先',
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            image: 'customer-first.jpg',
+          },
+          {
+            title: '誠信負責',
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            image: 'integrity.jpg',
+          },
+          {
+            title: '追求永續',
+            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            image: 'sustainability.jpg',
+          },
+        ],
+      },
       going: {
         title: '我們去哪？',
         subtitle: `Tuple 正被全球各地的組織部署，用於他們的

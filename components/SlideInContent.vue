@@ -30,9 +30,6 @@ export default {
     this.scrollItem()
   },
   methods: {
-    imagePath(name) {
-      return `require(@/assets/images/${name})`
-    },
     scrollItem() {
       window.addEventListener('scroll', function () {
         const itemContainer = document.querySelectorAll('.g-item-container')

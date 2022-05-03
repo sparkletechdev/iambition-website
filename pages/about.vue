@@ -4,9 +4,12 @@
       :title="$t('company.aboutUs.landingTitle')"
       :contents="$t('company.aboutUs.landingContent')"
     />
-    <CompanyExistPart />
-    <CompanyDoingPart />
-    <CompanyGoingPart />
+    <Mission />
+    <CoreValues
+      :title="$t('company.aboutUs.coreValues.title')"
+      :content="$t('company.aboutUs.coreValues.content')"
+    />
+    <!-- <CompanyGoingPart /> -->
   </main>
 </template>
 
