@@ -126,6 +126,33 @@ export default {
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
     anim id est laborum.`,
     ],
+    carousel: [
+      {
+        image: 'awards/ai-day.png',
+        alt: 'AI Day'
+      },
+      {
+        image: 'awards/ai-contest.png',
+        alt: 'AI Contest'
+      },
+      {
+        image: 'awards/yue-nong-bei.png',
+        alt: 'Jonas Cup'
+      },
+      {
+        image: 'awards/future-city.png',
+        alt: 'Future City Image 1'
+      },
+      {
+        image: 'awards/future-city-2.png',
+        alt: 'Future City Image 2'
+      },
+      {
+        image: 'awards/isave.png',
+        alt: 'iSave Exhibition'
+      },
+      
+    ],
     content: [
       {
         title: 'Exhibitions',
@@ -139,7 +166,7 @@ export default {
         ‣ 桃園新創日<br/>
         ‣ 中軟智慧加速器發表會
         `,
-        img: 'image13.png',
+        img: 'awards/ai-contest.png',
       },
       {
         title: 'Competitions',
@@ -153,22 +180,22 @@ export default {
         ‣ 中科創新創業競賽 優等<br/>
         ‣ 林口新創園 新創應用場域實證<br/>
         `,
-        img: 'image12.png',
+        img: 'awards/ai-day.png',
       },
-      {
-        title: 'Media',
-        subtitle: `
-        <em>2021</em><br/>
-        ‣ 經濟部科技產業園區雜誌 報導<br/>
-        ‣ 正聲廣播 專題採訪<br/>
-        ‣ 經貿透視周刊專題 報導<br/><br/>
-        <em>2020</em><br/>
-        ‣ 工商時報 報導<br/>
-        ‣ 聯合報 報導<br/>
-        ‣ 公共電視 報導
-        `,
-        img: 'image11.png',
-      },
+      // {
+      //   title: 'Media',
+      //   subtitle: `
+      //   <em>2021</em><br/>
+      //   ‣ 經濟部科技產業園區雜誌 報導<br/>
+      //   ‣ 正聲廣播 專題採訪<br/>
+      //   ‣ 經貿透視周刊專題 報導<br/><br/>
+      //   <em>2020</em><br/>
+      //   ‣ 工商時報 報導<br/>
+      //   ‣ 聯合報 報導<br/>
+      //   ‣ 公共電視 報導
+      //   `,
+      //   img: 'awards/yue-nong-bei.png',
+      // },
     ],
   },
   contact: {

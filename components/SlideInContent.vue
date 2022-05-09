@@ -42,8 +42,8 @@ export default {
 
         itemContainer.forEach((value, index) => {
           if (
-            value.offsetTop - scrollY > 200 &&
-            value.offsetTop - scrollY < 550
+            value.offsetTop - scrollY > 600 &&
+            value.offsetTop - scrollY < 800
           ) {
             itemImage[index].classList.remove('g-item-image-active')
             itemContentContainer[index].classList.remove(
@@ -63,6 +63,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 25%;
 }
 .g-item-container {
   display: flex;
@@ -71,7 +72,6 @@ export default {
 }
 .g-item-image {
   width: 49%;
-  max-height: 360px;
   overflow: hidden;
   opacity: 1;
   transform: translateX(0);
@@ -100,7 +100,7 @@ export default {
 }
 .g-item-title {
   color: #369;
-  font-size: 1.74rem;
+  font-size: 2.8rem;
   line-height: 2.5;
   font-weight: 500;
   position: relative;
@@ -120,7 +120,7 @@ export default {
   background: #369;
 }
 .g-item-subtitle {
-  font-size: 16px;
+  font-size: 1.1rem;
   font-weight: 300;
   opacity: 1;
   transform: translateX(0);
@@ -129,6 +129,11 @@ export default {
 .g-item-subtitle-active {
   opacity: 0;
   transform: translateX(90px);
+}
+.g-img {
+  min-width: 100%;
+  min-height: 480px;
+  object-fit: cover;
 }
 @media screen and (max-width: 1200px) {
   .g-item-container {

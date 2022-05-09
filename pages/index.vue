@@ -11,32 +11,39 @@
 <script>
 export default {}
 </script>
-
 <style>
-/* .index-container {
-  width: 100%;
-  position: relative;
-  overflow: hidden;
+.hooper-indicator {
+  margin: 0 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
 }
-
-.customerspartborder {
-    width: 100%;
-    position: relative;
+.hooper-indicator:hover,
+.hooper-indicator.is-active {
+  background-color: #0cf;
 }
-  
-.headerContainerWhite {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    transition: 1s;
+.hooper-next,
+.hooper-prev {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 2rem;
+  border: none;
+  padding: 0.5rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
-  
-.titleChangeColor {
-    color: white;
+.hooper-next {
+  right: 8px;
 }
-.triangleChange {
-    border-style: solid;
-    border-width: 10px 7px 0 7px;
-    border-color: #fff transparent transparent transparent;
-    margin: 0 0 0 5px;
-} */
+.hooper-prev {
+  left: 8px;
+}
+.hooper-next:hover,
+.hooper-prev:hover {
+  background-color: rgba(0, 204, 255, 0.4);
+}
 </style>

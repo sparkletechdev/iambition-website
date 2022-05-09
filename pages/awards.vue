@@ -3,21 +3,79 @@
     <LandingComponent
       :title="$t('awards.landingTitle')"
       :contents="$t('awards.landingContent')"
-    />
+    >
+      <hooper :settings="hooperSettings">
+        <slide v-for="(item, i) in $t('awards.carousel')" :key="i" :index="i">
+          <img
+            :src="require(`@/assets/images/${item.image}`)"
+            :alt="item.alt"
+          />
+        </slide>
+        <hooper-navigation slot="hooper-addons"></hooper-navigation>
+        <hooper-pagination slot="hooper-addons"></hooper-pagination>
+      </hooper>
+    </LandingComponent>
+
     <SlideInContent :content="$t('awards.content')" />
     <!-- <SolutionItemPart /> -->
   </main>
 </template>
 
 <script>
-export default {}
+import {
+  Hooper,
+  Slide,
+  Navigation as HooperNavigation,
+  Pagination as HooperPagination,
+} from 'hooper'
+import 'hooper/dist/hooper.css'
+
+export default {
+  components: {
+    Hooper,
+    Slide,
+    HooperNavigation,
+    HooperPagination,
+  },
+  data() {
+    return {
+      hooperSettings: {
+        centerMode: true,
+        wheelControl: false,
+        autoPlay: true,
+      },
+    }
+  },
+}
 </script>
+
+<style>
+.hooper {
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .hooper {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hooper {
+    width: 84%;
+    height: auto;
+  }
+}
+</style>
 
 <style scoped>
 .awards-container {
   overflow: hidden;
   padding-bottom: 8%;
 }
+
 ::v-deep .landing-container {
   background-image: linear-gradient(
       rgba(51, 102, 153, 0.75),
