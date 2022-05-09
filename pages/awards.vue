@@ -49,7 +49,8 @@ export default {
 }
 </script>
 
-<style>
+
+<style scoped>
 .hooper {
   width: 50%;
   height: auto;
@@ -68,9 +69,7 @@ export default {
     height: auto;
   }
 }
-</style>
 
-<style scoped>
 .awards-container {
   overflow: hidden;
   padding-bottom: 8%;
