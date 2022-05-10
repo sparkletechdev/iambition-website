@@ -1,10 +1,11 @@
 <template>
   <main class="index-container">
-    <MajorPart />
+    <!-- <MajorPart /> -->
+    <LandingComponent />
     <ProductionPart />
-    <Slider />
+    <!-- <Slider /> -->
+    <NewsComponent />
     <SliderOne />
-    <UpdatePart />
   </main>
 </template>
 
@@ -45,5 +46,15 @@ export default {}
 .hooper-next:hover,
 .hooper-prev:hover {
   background-color: rgba(0, 204, 255, 0.4);
+}
+</style>
+
+<style scoped>
+::v-deep .landing-container {
+  background-image: linear-gradient(
+      rgba(51, 102, 153, 0.75),
+      rgba(39, 50, 68, 1)
+    ),
+    url('~@/assets/images/home.jpg');
 }
 </style>

@@ -56,20 +56,6 @@ export default {
   height: auto;
 }
 
-@media screen and (max-width: 1200px) {
-  .hooper {
-    width: 70%;
-    height: auto;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hooper {
-    width: 84%;
-    height: auto;
-  }
-}
-
 .awards-container {
   overflow: hidden;
   padding-bottom: 8%;
@@ -95,6 +81,18 @@ export default {
   ::v-deep .g-img {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .hooper {
+    width: 70%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hooper {
+    width: 84%;
+    height: auto;
   }
 }
 </style>

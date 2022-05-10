@@ -214,4 +214,33 @@ export default {
     contactInformation: 'Contact Information',
     information: ['9 Gul Drive, Singapore 629460', '+65 82884238'],
   },
+  index: {
+    news: {
+      title: 'Latest news on iAmbition',
+      items: [
+        {
+          title: '台北 COMPUTEX 2022',
+          description: `雄欣科技將在 台北 COMPUTEX 2022 國際電腦展中展出，時間為 May 24 to 27, 2022
+          相關資訊可以 參閱`,
+          link: 'https://www.computextaipei.com.tw/en/'
+        },
+        {
+          title: '車庫精神 in TAICHUNG',
+          description: '創業工作坊 演講演講主題：ESG 從觀念到行動',
+          link: '/taichung.png'
+        },
+        {
+          title: 'AIHub',
+          description: 'AIHub AIHub AIHub AIHub AIHub AIHub AIHub AIHub AIHub ',
+          link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a'
+        },
+        {
+          title: '日本電波新聞社',
+          description: '日本電波新聞社 日本電波新聞社 日本電波新聞社 日本電波新聞社',
+          link: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html'
+        },
+        
+      ]
+    }
+  }
 }
