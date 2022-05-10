@@ -5,11 +5,12 @@
     <ProductionPart />
     <!-- <Slider /> -->
     <NewsComponent />
-    <SliderOne />
+    <!-- <SliderOne /> -->
   </main>
 </template>
 
 <script>
+import 'hooper/dist/hooper.css'
 export default {}
 </script>
 <style>
