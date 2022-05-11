@@ -3,23 +3,11 @@
     <!-- <CustomerPart /> -->
     <LandingComponent />
     <CustomerIntroducePart />
-    <SliderOne />
   </main>
 </template>
 
 <script>
-export default {
-  mounted() {
-    this.sliderpartbackgroundchange()
-  },
-  methods: {
-    sliderpartbackgroundchange() {
-        const sliderbackground = document.getElementById('slideronepart')
-        sliderbackground.style.background = '#e2e2e2'
-      
-    },
-  },
-}
+export default {}
 </script>
 
 <style scoped>
@@ -34,6 +22,6 @@ export default {
       rgba(39, 50, 68, 1)
     ),
     url('~@/assets/images/client.jpg');
-    background-position: 50%;
+  background-position: 50%;
 }
 </style>
