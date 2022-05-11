@@ -129,29 +129,28 @@ export default {
     carousel: [
       {
         image: 'awards/ai-day.png',
-        alt: 'AI Day'
+        alt: 'AI Day',
       },
       {
         image: 'awards/ai-contest.png',
-        alt: 'AI Contest'
+        alt: 'AI Contest',
       },
       {
         image: 'awards/yue-nong-bei.png',
-        alt: 'Jonas Cup'
+        alt: 'Jonas Cup',
       },
       {
         image: 'awards/future-city.png',
-        alt: 'Future City Image 1'
+        alt: 'Future City Image 1',
       },
       {
         image: 'awards/future-city-2.png',
-        alt: 'Future City Image 2'
+        alt: 'Future City Image 2',
       },
       {
         image: 'awards/isave.png',
-        alt: 'iSave Exhibition'
+        alt: 'iSave Exhibition',
       },
-      
     ],
     content: [
       {
@@ -222,25 +221,87 @@ export default {
           title: '台北 COMPUTEX 2022',
           description: `雄欣科技將在 台北 COMPUTEX 2022 國際電腦展中展出，時間為 May 24 to 27, 2022
           相關資訊可以 參閱`,
-          link: 'https://www.computextaipei.com.tw/en/'
+          link: 'https://www.computextaipei.com.tw/en/',
         },
         {
           title: '車庫精神 in TAICHUNG',
           description: '創業工作坊 演講演講主題：ESG 從觀念到行動',
-          link: '/taichung.png'
+          link: '/taichung.png',
         },
         {
           title: 'AIHub',
           description: 'AIHub AIHub AIHub AIHub AIHub AIHub AIHub AIHub AIHub ',
-          link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a'
+          link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
         },
         {
           title: '日本電波新聞社',
-          description: '日本電波新聞社 日本電波新聞社 日本電波新聞社 日本電波新聞社',
-          link: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html'
+          description:
+            '日本電波新聞社 日本電波新聞社 日本電波新聞社 日本電波新聞社',
+          link: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html',
         },
-        
-      ]
-    }
-  }
+      ],
+    },
+  },
+  clients: {
+    landingTitle: 'Our Clients',
+    landingContent: [
+      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+    anim id est laborum.`,
+    ],
+    data: [
+      {
+        id: 'tunghai',
+        clientName: 'Tunghai University',
+        description: [
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+        ],
+        images: [
+          {
+            path: '/clients/tunghai/1.jpg',
+            alt: 'Image 1',
+          },
+          {
+            path: '/clients/tunghai/2.jpg',
+            alt: 'Image 2',
+          },
+          {
+            path: '/clients/tunghai/3.jpg',
+            alt: 'Image 3',
+          },
+        ],
+        video: [],
+      },
+      {
+        id:'ksph',
+        clientName: 'Kai-Syuan Psychiatric Hospital',
+        description: [
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+        ],
+        images: [
+          {
+            path: '/clients/ksph/1.jpg',
+            alt: 'KSPH 1',
+          },
+          {
+            path: '/clients/ksph/2.jpg',
+            alt: 'KSPH 2',
+          },
+          {
+            path: '/clients/ksph/3.jpg',
+            alt: 'KSPH 3',
+          },
+        ],
+        video: [],
+      },
+    ],
+  },
 }
