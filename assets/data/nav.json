@@ -28,8 +28,8 @@
     "items": []
   },
   {
-    "title": "navbar.customers",
-    "route": "customers",
+    "title": "navbar.clients",
+    "route": "clients",
     "items": []
   },
   {

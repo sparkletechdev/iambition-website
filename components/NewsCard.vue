@@ -29,9 +29,11 @@ a {
   background: rgba(39, 50, 68, 0.75);
   padding: 2rem;
   align-items: center;
+  border-left: 1px solid #369;
+  border-right: 1px solid #369;
 }
 .news-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #369;
 }

@@ -66,17 +66,15 @@ export default {
   },
   methods: {
     customerscroll() {
-      if (this.$route.path === '/customers') {
-        window.addEventListener('scroll', function () {
-          const customercompany = document.querySelectorAll('.customercompany')
-          customercompany.forEach((i) => {
-            if (i.offsetTop - scrollY > 650 && i.offsetTop - scrollY < 850) {
-              i.classList.add('customercompanyactive')
-              // console.log(i.offsetTop - scrollY);
-            }
-          })
+      window.addEventListener('scroll', function () {
+        const customercompany = document.querySelectorAll('.customercompany')
+        customercompany.forEach((i) => {
+          if (i.offsetTop - scrollY > 650 && i.offsetTop - scrollY < 850) {
+            i.classList.add('customercompanyactive')
+            // console.log(i.offsetTop - scrollY);
+          }
         })
-      }
+      })
     },
   },
 }

@@ -16,7 +16,7 @@ export default {
     staffAugmentation: 'Staff Augmentation',
     softwareOutsourcing: 'Software Outsourcing',
     awards: 'Awards',
-    customers: 'Customers',
+    clients: 'Clients',
     company: 'Company',
     aboutUs: 'About',
     contactUs: 'Contact',

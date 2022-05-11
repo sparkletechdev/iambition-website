@@ -39,7 +39,6 @@ export default {
   data() {
     return {
       hooperSettings: {
-        centerMode: true,
         wheelControl: false,
         autoPlay: true,
       },

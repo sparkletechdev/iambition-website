@@ -5,7 +5,6 @@
       <slide v-for="(news, i) in $t('index.news.items')" :key="i" :index="i">
         <NewsCard :news-item="news" />
       </slide>
-      <hooper-navigation slot="hooper-addons"></hooper-navigation>
       <hooper-pagination slot="hooper-addons"></hooper-pagination>
     </hooper>
   </div>
@@ -16,21 +15,23 @@ import {
   Hooper,
   Slide,
   Pagination as HooperPagination,
-  Navigation as HooperNavigation,
 } from 'hooper'
 export default {
   components: {
     Hooper,
     Slide,
     HooperPagination,
-    HooperNavigation,
   },
   data() {
     return {
       hooperSettings: {
         centerMode: true,
-        itemsToShow: 1.75,
+        itemsToShow: 2,
+        wheelControl: false,
         autoPlay: 'true',
+        playSpeed: 4000,
+        trimWhiteSpace: true
+        
       },
     }
   },
@@ -40,7 +41,7 @@ export default {
 <style scoped>
 .news-container {
   width: 100%;
-  padding: 4% 25%;
+  padding: 4% 15%;
   background-image: linear-gradient(
       rgba(51, 102, 153, 0.5),
       rgba(39, 50, 68, 1)

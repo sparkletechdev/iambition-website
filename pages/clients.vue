@@ -14,10 +14,9 @@ export default {
   },
   methods: {
     sliderpartbackgroundchange() {
-      if (this.$route.path === '/customers') {
         const sliderbackground = document.getElementById('slideronepart')
         sliderbackground.style.background = '#e2e2e2'
-      }
+      
     },
   },
 }

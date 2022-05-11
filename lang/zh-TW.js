@@ -16,7 +16,7 @@ export default {
     staffAugmentation: 'Staff Augmentation',
     softwareOutsourcing: 'Software Outsourcing',
     awards: '獎項',
-    customers: '顧客',
+    clients: '客戶',
     company: '公司',
     aboutUs: '關於',
     contactUs: '聯繫',
