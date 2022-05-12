@@ -2,14 +2,13 @@
   <div class="client-container">
     <div :id="client.id" class="client-name">{{ client.clientName }}</div>
     <div class="client-description">
-      <p
-        v-for="(desc, i) in client.description"
-        :key="i"
-      >
+      <p v-for="(desc, i) in client.description" :key="i">
         {{ desc }}
       </p>
     </div>
-
+    <video v-if="client.video" controls autoplay muted class="client-video">
+      <source :src="client.video" type="video/mp4" />
+    </video>
     <stack
       :column-min-width="300"
       :gutter-width="8"
@@ -47,5 +46,8 @@ export default {
 
 .client-description {
   margin: 1.5rem 0;
+}
+.client-video {
+  margin-bottom: 1.5rem;
 }
 </style>

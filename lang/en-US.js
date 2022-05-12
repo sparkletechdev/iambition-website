@@ -277,7 +277,7 @@ export default {
             alt: 'Image 3',
           },
         ],
-        video: [],
+        video: '',
       },
       {
         id:'ksph',
@@ -300,7 +300,7 @@ export default {
             alt: 'KSPH 3',
           },
         ],
-        video: [],
+        video: '/clients/ksph/media1.mp4',
       },
     ],
   },

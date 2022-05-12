@@ -260,19 +260,19 @@ export default {
         ],
         images: [
           {
-            path: '1.jpg',
-            alt: '',
+            path: '/clients/tunghai/1.jpg',
+            alt: 'Image 1',
           },
           {
-            path: '2.jpg',
-            alt: '',
+            path: '/clients/tunghai/2.jpg',
+            alt: 'Image 2',
           },
           {
-            path: '3.jpg',
-            alt: '',
+            path: '/clients/tunghai/3.jpg',
+            alt: 'Image 3',
           },
         ],
-        video: [],
+        video: '',
       },
       {
         clientName: '高雄市立凱旋醫院',
@@ -282,19 +282,19 @@ export default {
         ],
         images: [
           {
-            path: '1.jpg',
-            alt: '',
+            path: '/clients/ksph/1.jpg',
+            alt: 'KSPH 1',
           },
           {
-            path: '2.jpg',
-            alt: '',
+            path: '/clients/ksph/2.jpg',
+            alt: 'KSPH 2',
           },
           {
-            path: '3.jpg',
-            alt: '',
+            path: '/clients/ksph/3.jpg',
+            alt: 'KSPH 3',
           },
         ],
-        video: [],
+        video: '/clients/ksph/media1.mp4',
       },
     ],
   },
