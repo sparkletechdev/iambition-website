@@ -7,7 +7,7 @@
       </p>
     </div>
     <video v-if="client.video" controls autoplay muted class="client-video">
-      <source :src="client.video" type="video/mp4" />
+      <source :src="$store.state.baseUrl + client.video" type="video/mp4" />
     </video>
     <stack
       :column-min-width="300"
@@ -16,8 +16,8 @@
       :monitor-images-loaded="true"
     >
       <stack-item v-for="(image, i) in client.images" :key="i">
-        <a :href="image.path" target="_blank">
-          <img :src="image.path" :alt="image.alt" />
+        <a :href="$store.state.baseUrl + image.path" target="_blank">
+          <img :src="$store.state.baseUrl + image.path" :alt="image.alt" />
         </a>
       </stack-item>
     </stack>

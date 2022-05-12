@@ -265,15 +265,15 @@ export default {
         ],
         images: [
           {
-            path: '/clients/tunghai/1.jpg',
+            path: 'clients/tunghai/1.jpg',
             alt: 'Image 1',
           },
           {
-            path: '/clients/tunghai/2.jpg',
+            path: 'clients/tunghai/2.jpg',
             alt: 'Image 2',
           },
           {
-            path: '/clients/tunghai/3.jpg',
+            path: 'clients/tunghai/3.jpg',
             alt: 'Image 3',
           },
         ],
@@ -288,19 +288,19 @@ export default {
         ],
         images: [
           {
-            path: '/clients/ksph/1.jpg',
+            path: 'clients/ksph/1.jpg',
             alt: 'KSPH 1',
           },
           {
-            path: '/clients/ksph/2.jpg',
+            path: 'clients/ksph/2.jpg',
             alt: 'KSPH 2',
           },
           {
-            path: '/clients/ksph/3.jpg',
+            path: 'clients/ksph/3.jpg',
             alt: 'KSPH 3',
           },
         ],
-        video: '/clients/ksph/media1.mp4',
+        video: 'clients/ksph/media1.mp4',
       },
     ],
   },

@@ -3,6 +3,7 @@
 export const strict = false
 // state
 export const state = () => ({
+  baseUrl: '/iambition-website/',
   major: {
     data: {
       id: 1,
