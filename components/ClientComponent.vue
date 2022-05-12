@@ -9,18 +9,20 @@
     <video v-if="client.video" controls autoplay muted class="client-video">
       <source :src="$store.state.baseUrl + client.video" type="video/mp4" />
     </video>
-    <stack
-      :column-min-width="300"
-      :gutter-width="8"
-      :gutter-height="8"
-      :monitor-images-loaded="true"
-    >
-      <stack-item v-for="(image, i) in client.images" :key="i">
-        <a :href="$store.state.baseUrl + image.path" target="_blank">
-          <img :src="$store.state.baseUrl + image.path" :alt="image.alt" />
-        </a>
-      </stack-item>
-    </stack>
+    <client-only>
+      <stack
+        :column-min-width="300"
+        :gutter-width="8"
+        :gutter-height="8"
+        :monitor-images-loaded="true"
+      >
+        <stack-item v-for="(image, i) in client.images" :key="i">
+          <a :href="$store.state.baseUrl + image.path" target="_blank">
+            <img :src="$store.state.baseUrl + image.path" :alt="image.alt" />
+          </a>
+        </stack-item>
+      </stack>
+    </client-only>
   </div>
 </template>
 <script>
