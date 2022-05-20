@@ -12,9 +12,8 @@ export default {
   navbar: {
     index: 'Home',
     solutions: 'Solutions',
-    dedicatedTeams: 'Dedicated Teams',
-    staffAugmentation: 'Staff Augmentation',
-    softwareOutsourcing: 'Software Outsourcing',
+    aiCare: 'AI Care System',
+    aiSafe: 'AI Safe System',
     awards: 'Awards',
     clients: 'Clients',
     company: 'Company',

@@ -9,16 +9,12 @@
     "route": "services",
     "items": [
       {
-        "title": "navbar.dedicatedTeams",
+        "title": "navbar.aiCare",
         "route": "subPage/dedicated teams"
       },
       {
-        "title": "navbar.staffAugmentation",
+        "title": "navbar.aiSafe",
         "route": "subPage/staff augmentation"
-      },
-      {
-        "title": "navbar.softwareOutsourcing",
-        "route": "subPage/software outsourcing"
       }
     ]
   },
