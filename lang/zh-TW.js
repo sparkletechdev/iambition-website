@@ -211,6 +211,13 @@ export default {
     information: ['9 Gul Drive, Singapore 629460', '+65 82884238'],
   },
   index: {
+    landingTitle: '追求企業永續',
+    landingContent: [
+      `雄欣科技深切明瞭在公司持續成長的過程中，業務規模的擴展雖然帶來財務穩定與成功，同時也對社會與環境帶來衝擊。
+      因此，公司實踐「讓生命更安全，讓生活更美好」的永續精神，以科技力、創新力、影響力推動企業社會責任。`,
+      `我們也透過追求「淨正向影響」（Net Positive Impact）極大化、降低對環境與社會的負向影響（Negative Impact），
+      連結生態圈夥伴共同參與，發揮合作的力量，打造善的正向循環，一起用科技的力量行善。`,
+    ],
     news: {
       title: 'Latest news on iAmbition',
       items: [

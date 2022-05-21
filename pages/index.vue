@@ -1,7 +1,7 @@
 <template>
   <main class="index-container">
     <!-- <MajorPart /> -->
-    <LandingComponent />
+    <LandingComponent :title="$t('index.landingTitle')" :contents="$t('index.landingContent')"/>
     <ProductionPart />
     <!-- <Slider /> -->
     <NewsComponent />
@@ -15,6 +15,6 @@
       rgba(51, 102, 153, 0.75),
       rgba(39, 50, 68, 1)
     ),
-    url('~@/assets/images/home.jpg');
+    url('~@/assets/images/home2.jpg');
 }
 </style>

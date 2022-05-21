@@ -213,6 +213,17 @@ export default {
     information: ['9 Gul Drive, Singapore 629460', '+65 82884238'],
   },
   index: {
+    landingTitle: 'Pursuing corporate sustainability',
+    landingContent: [
+      `Xiongxin Technology deeply understands that in the process of continuous growth of the company, 
+      although the expansion of business scale brings financial stability and success, it also has an 
+      impact on society and the environment. Therefore, the company implements the sustainable spirit 
+      of "making life safer and making life better", and promotes corporate social responsibility with technology, 
+      innovation and influence.`,
+      `We also pursue the "Net Positive Impact" (Net Positive Impact) to maximize and reduce the negative impact 
+      on the environment and society (Negative Impact), connect the partners of the ecosystem to participate together, 
+      exert the power of cooperation, and create a positive cycle of goodness , and use the power of technology to do good together.`,
+    ],
     news: {
       title: 'Latest news on iAmbition',
       items: [
@@ -279,7 +290,7 @@ export default {
         video: '',
       },
       {
-        id:'ksph',
+        id: 'ksph',
         clientName: 'Kai-Syuan Psychiatric Hospital',
         description: [
           `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
