@@ -1,16 +1,15 @@
 <template>
   <div
     v-if="button"
-    :ref="button.buttonName"
-    :class="button.buttonName"
-    :style="button.buttonStyles"
+    ref="solutionButton"
+    class="solution-button"
     @mouseenter="show(button.buttonName)"
-    @mouseleave="hidde(button.buttonName)"
+    @mouseleave="hide(button.buttonName)"
     @click="reload"
   >
     <nuxt-link :to="localePath(`${button.buttonLink}`)">
       <button type="button">
-        {{ button.buttonTitle }}
+        {{ button.button }}
       </button>
     </nuxt-link>
   </div>
@@ -27,18 +26,18 @@ export default {
   methods: {
     show(buttonName) {
       const ref = this.$refs
-      ref[buttonName].style.backgroundPosition = 'left bottom'
-      ref[buttonName].style.cursor = 'pointer'
+      ref.solutionButton.style.backgroundPosition = 'left bottom'
+      ref.solutionButton.style.cursor = 'pointer'
 
-      ref[buttonName].style.color = 'white'
+      ref.solutionButton.style.color = 'white'
     },
-    hidde(buttonName) {
+    hide(buttonName) {
       const ref = this.$refs
-      ref[buttonName].style.backgroundPosition = 'right bottom'
-      ref[buttonName].style.cursor = 'pointer'
+      ref.solutionButton.style.backgroundPosition = 'right bottom'
+      ref.solutionButton.style.cursor = 'pointer'
 
-      ref[buttonName].style.color = '#114a6e'
-      ref[buttonName].style.transition = '.2s'
+      ref.solutionButton.style.color = '#114a6e'
+      ref.solutionButton.style.transition = '.2s'
     },
     reload() {
       setTimeout(() => {
@@ -50,17 +49,17 @@ export default {
 </script>
 
 <style>
-/* .productionbutton{
-    z-index: 1;
-    font-size: 16px;
-    background: linear-gradient(to right, #145484 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    color: #114a6e;
-    padding: 10px 50px;
-    border-radius: 30px;
-    font-weight: 800;
-    margin: 10px 0 18px 0;
-    transition: .4s;
-  } */
+.solution-button {
+  z-index: 1;
+  font-size: 16px;
+  background: linear-gradient(to right, #145484 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  color: #114a6e;
+  padding: 10px 50px;
+  border-radius: 30px;
+  font-weight: 800;
+  margin: 10px 0 18px 0;
+  transition: 0.4s;
+}
 </style>

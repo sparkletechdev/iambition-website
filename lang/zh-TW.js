@@ -12,8 +12,8 @@ export default {
   navbar: {
     index: '家',
     solutions: '解決方案',
-    aiCare: 'AI照護感知系統',
-    aiSafe: 'AI 安全感知',
+    aiCare: 'AI照護感知',
+    aiSafe: 'AI安全感知',
     awards: '獎項',
     clients: '客戶',
     company: '公司',
@@ -218,6 +218,29 @@ export default {
       `我們也透過追求「淨正向影響」（Net Positive Impact）極大化、降低對環境與社會的負向影響（Negative Impact），
       連結生態圈夥伴共同參與，發揮合作的力量，打造善的正向循環，一起用科技的力量行善。`,
     ],
+    solution: {
+      title: 'Effective, Efficient and Elegant',
+      description:
+        'Big Data and Artificial Intelligence for all, as it should be',
+      solutions: [
+        {
+          title: 'Fall Detection And Vitals Monitoring',
+          description:
+            'Nash360 can efficiently process any data in any format through any database using Distributed Computing with Spark',
+          button: 'Explore AI Care',
+          image: 'solutions/ai-care.jpg',
+          link: '/subPage/Dedicated Teams',
+        },
+        {
+          title: 'Predictive Behavioral Intelligence',
+          description:
+            'Predict provides accurate behavioral forecasts for each customer using Automated Machine Learning',
+          button: 'Explore AI Safe',
+          image: 'technology.jpeg',
+          link: '/subPage/staff augmentation',
+        },
+      ],
+    },
     news: {
       title: 'Latest news on iAmbition',
       items: [
@@ -228,13 +251,26 @@ export default {
           link: 'https://www.computextaipei.com.tw/en/',
         },
         {
-          title: '車庫精神 in TAICHUNG',
-          description: '創業工作坊 演講演講主題：ESG 從觀念到行動',
+          title: '亞洲矽谷攜手台杉首度前進高雄 培育獨角獸放眼全球',
+          description:
+            '後疫情商機湧現，亞洲．矽谷計畫執行中心與台杉投資合辦的「VS Talk」，23日首次前進南台灣，與高雄市政府共同主辦「立足南方 航向國際」活動，鼓勵新創企業立足南台灣，放眼國際市場。',
           link: '/taichung.png',
         },
         {
-          title: 'AIHub',
-          description: 'AIHub AIHub AIHub AIHub AIHub AIHub AIHub AIHub AIHub ',
+          title: '車庫精神 in TAICHUNG',
+          description: '創業工作坊 演講演講主題：ESG 從觀念到行動',
+          link: 'https://www.asvda.org/Message/MessageView?itemid=414&mid=News2',
+        },
+        {
+          title: '高雄 5G AIOT 記者會',
+          description:
+            '高雄亞灣區中華電信5G AIoT智慧醫療正式落地　國發會5G高雄榮家智慧長照計畫案',
+          link: 'https://www.cht.com.tw/zh-tw/home/cht/messages/2021/1018-1420',
+        },
+        {
+          title: 'AI+智慧眼鏡 雄欣科技鎖定智慧照護市場 讓老者住得安心安全',
+          description:
+            '在小小的照護房內，年逾8旬的王伯伯正激烈地咳嗽著，護理人員輕輕地拿著吸痰器幫他抽痰，希望讓他舒服一點，可是，眼尖的家人發現，護理人員鼻樑上戴著一副智慧眼鏡，此時，另一端醫生一邊整理手上的病歷報告，一邊即時透過螢幕了解王伯伯的狀況......，隨著精準照護的普及，在不久的將來，醫生在遠端即時掌握被照護者重要生理資訊，將是照護市場的一大福音。',
           link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
         },
         {
@@ -303,5 +339,20 @@ export default {
         video: '/clients/ksph/media1.mp4',
       },
     ],
+  },
+  solutions: {
+    aiCare: {
+      landingTitle: 'AI照護感知',
+      landingContent: [
+        `有鑒於後疫情時代及人口高齡化現象，各醫療照護機構普遍有醫護人力短缺及遠距照護的需求，為了提升安全照護的主動性、
+      即時性與安全性，針對各類型醫院及需要24小時照護的各類型安養院、公托中心的數位轉型。`,
+        `我們開發出一款結合 3D 深度感測技術，在受照護者不須攜帶穿戴式裝置，並且注重病患隱私的基礎上，以AI的方式偵測人體姿態動作，當受照護者發生安全意外事件時，能瞬間向照護人員發出異常通報的全方位系統。`,
+        `AI照護感知系統，採用AI模組化架構設計，如果機構未來想要額外增加購買其他特殊異常行為的偵測通報時，可以在原系統持續增加AI模型，發展出更多類型的異常行為偵測。`,
+      ],
+    },
+    aiSafe: {
+      landingTitle: 'AI安全感知',
+      landingContent: [],
+    },
   },
 }

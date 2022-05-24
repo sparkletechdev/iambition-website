@@ -1,23 +1,18 @@
 <template>
-  <div
-    v-if="production.productionStyle"
-    :id="production.productionStyle[0].styleName"
-    :class="production.productionStyle[0].styleName"
-    :style="production.productionStyle[0].style"
-  >
-    <ElementHone
+  <div v-if="production.productionStyle" class="solution-main-container">
+    <!-- <ElementHone
       v-if="production.productionStyle[1]"
       :hone="production.productionStyle[1]"
       :honetitle="production.production[0]"
-    />
-    <ElementHthree
-      v-if="production.productionStyle[2]"
-      :hthree="production.productionStyle[2]"
-      :hthreetitle="production.production[0]"
-    />
+    /> -->
+    <div class="solution-title">
+      {{ $t('index.solution.title') }}
+    </div>
+    <div class="solution-desc">
+      {{ $t('index.solution.description') }}
+    </div>
     <ElementProductionBorder
-      v-if="production.productionBorderAndButton"
-      :production="production.productionBorderAndButton"
+      :production="$t('index.solution.solutions')"
     />
   </div>
 </template>
@@ -45,11 +40,36 @@ export default {
     align-items: center;
     justify-items: end;
   } */
+
+.solution-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: end;
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 780px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.solution-title {
+  margin-top: 80px;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.solution-desc {
+  margin-top: 10px;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
 @media screen and (max-width: 1700px) {
-  .productionContainer {
+  .solution-main-container{
     height: auto !important;
   }
-  .ProductionBorder {
+  .solution-banners-container {
     width: 80% !important;
     display: flex;
     flex-direction: column;
@@ -57,7 +77,7 @@ export default {
     height: 800px !important;
     margin-top: 3% !important;
   }
-  .honetitle {
+  .solution-title {
     font-size: 1rem !important;
   }
 }
