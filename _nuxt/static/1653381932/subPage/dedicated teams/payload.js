@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/subPage/dedicated%20teams", {data:[{}],fetch:{},mutations:[]});
