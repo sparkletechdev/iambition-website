@@ -10,7 +10,7 @@
     "items": [
       {
         "title": "navbar.aiCare",
-        "route": "subPage/dedicated teams"
+        "route": "solutions/aicare"
       },
       {
         "title": "navbar.aiSafe",

@@ -11,7 +11,7 @@
     <div class="solution-desc">
       {{ $t('index.solution.description') }}
     </div>
-    <ElementProductionBorder
+    <HomeSolution
       :production="$t('index.solution.solutions')"
     />
   </div>

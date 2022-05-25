@@ -235,7 +235,7 @@ export default {
             'Nash360 can efficiently process any data in any format through any database using Distributed Computing with Spark',
           button: 'Explore AI Care',
           image: 'solutions/ai-care.jpg',
-          link: '/subPage/Dedicated Teams',
+          link: '/solutions/aicare',
         },
         {
           title: 'Predictive Behavioral Intelligence',

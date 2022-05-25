@@ -13,7 +13,7 @@
         <div class="banner-title">{{ product.title }}</div>
         <div class="banner-desc">{{ product.description }}</div>
 
-        <ElementDeepElementProductionButton :button="product" />
+        <SolutionButton :button="product" />
       </div>
     </div>
   </div>

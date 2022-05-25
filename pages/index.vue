@@ -2,7 +2,7 @@
   <main class="index-container">
     <!-- <MajorPart /> -->
     <LandingComponent :title="$t('index.landingTitle')" :contents="$t('index.landingContent')"/>
-    <ProductionPart />
+    <HomeSolutions />
     <!-- <Slider /> -->
     <NewsComponent />
     <!-- <SliderOne /> -->
