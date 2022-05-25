@@ -242,8 +242,8 @@ export default {
           description:
             'Predict provides accurate behavioral forecasts for each customer using Automated Machine Learning',
           button: 'Explore AI Safe',
-          image: 'technology.jpeg',
-          link: '/subPage/staff augmentation',
+          image: 'solutions/ai-safe.jpg',
+          link: '/solutions/aisafe',
         },
       ],
     },
@@ -361,7 +361,11 @@ export default {
     },
     aiSafe: {
       landingTitle: 'AI Safe',
-      landingContent: [],
+      landingContent: [
+        `對於追求營運卓越的餐廳來說，熟客的經營與店內安全是在美食外最在意的二件事。`,
+        `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器等技術所建立i熟客與顧客安全感知系統，在全球新冠肺炎肆虐之際，取代人力量測，
+        第一時間完成防疫與健康管理的工作，讓顧客能安心享用美食，更有一份客製化的款待與尊榮。`
+      ],
     },
   },
 }

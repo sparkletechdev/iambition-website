@@ -1,5 +1,5 @@
 <template>
-  <div v-if="production.productionStyle" class="solution-main-container">
+  <div class="solution-main-container">
     <!-- <ElementHone
       v-if="production.productionStyle[1]"
       :hone="production.productionStyle[1]"
@@ -11,21 +11,12 @@
     <div class="solution-desc">
       {{ $t('index.solution.description') }}
     </div>
-    <HomeSolution
-      :production="$t('index.solution.solutions')"
-    />
+    <HomeSolution :production="$t('index.solution.solutions')" />
   </div>
 </template>
 
 <script>
-import production from '@/assets/data/production.json'
-export default {
-  data() {
-    return {
-      production,
-    }
-  },
-}
+export default {}
 </script>
 
 <style scoped>
@@ -66,7 +57,7 @@ export default {
 }
 
 @media screen and (max-width: 1700px) {
-  .solution-main-container{
+  .solution-main-container {
     height: auto !important;
   }
   .solution-banners-container {

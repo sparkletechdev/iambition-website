@@ -14,7 +14,7 @@
       },
       {
         "title": "navbar.aiSafe",
-        "route": "subPage/staff augmentation"
+        "route": "solutions/aisafe"
       }
     ]
   },

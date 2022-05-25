@@ -80,7 +80,7 @@ export default {
   z-index: 1;
   width: 100%;
   padding-top: 1rem;
-  background: rgba(51, 51, 51, 0.3);
+  background: rgba(51, 51, 51, 0.45);
 }
 
 /* .productionborder{
