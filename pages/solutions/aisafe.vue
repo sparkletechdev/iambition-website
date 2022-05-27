@@ -1,9 +1,21 @@
 <template>
-  <main class="staffaugmentationborder">
-    <LandingComponent :title="$t('solutions.aiSafe.landingTitle')" :contents="$t('solutions.aiSafe.landingContent')"/>
-    <StaffAugmentationExtraTalentPart />
-    <StaffAugmentationDifferencePart />
-    <UpdatePart />
+  <main class="ai-safe-container">
+    <LandingComponent
+      :title="$t('solutions.aiSafe.landingTitle')"
+      :contents="$t('solutions.aiSafe.landingContent')"
+    />
+    <ImageLeftCol
+      v-for="(item, index) in $t('solutions.aiSafe.sections')"
+      :key="index"
+      :section="item"
+      :align-left="index % 2 === 0"
+    />
+    <!-- <p
+      v-for="(content, index) in $t('solutions.aiSafe.sections')"
+      :key="index"
+    >
+      {{ content.title }}
+    </p> -->
   </main>
 </template>
 
@@ -12,7 +24,7 @@ export default {}
 </script>
 
 <style scoped>
-.staffaugmentationborder {
+.ai-safe-container {
   overflow: hidden;
 }
 
