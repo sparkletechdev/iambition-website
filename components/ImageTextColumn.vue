@@ -45,16 +45,11 @@ export default {
 </script>
 
 <style>
-.left {
-  order: 0;
-}
-.right {
-  order: 1;
-}
 .ilc-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  padding: 4rem 10%;
 }
 .ilc-content {
   display: flex;
@@ -100,14 +95,9 @@ export default {
   opacity: 1;
   transition: all 0.4s ease-in-out;
 }
-@media screen and (max-width: 1500px) {
-  .ilc-container {
-    padding: 100px 150px 100px;
-  }
-}
 @media screen and (max-width: 1200px) {
   .ilc-container {
-    padding: 100px 50px 100px;
+    padding: 3rem 8%;
   }
   .ilc-title {
     font-size: 2.5rem;
@@ -140,7 +130,7 @@ export default {
 }
 @media screen and (max-width: 576px) {
   .ilc-container {
-    padding: 50px 10px 50px;
+    padding: 2rem 10%;
   }
 }
 </style>

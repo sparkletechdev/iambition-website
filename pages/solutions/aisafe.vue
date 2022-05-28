@@ -4,7 +4,7 @@
       :title="$t('solutions.aiSafe.landingTitle')"
       :contents="$t('solutions.aiSafe.landingContent')"
     />
-    <ImageLeftCol
+    <ImageTextColumn
       v-for="(item, index) in $t('solutions.aiSafe.sections')"
       :key="index"
       :section="item"

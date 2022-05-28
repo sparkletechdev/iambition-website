@@ -6,7 +6,6 @@
     <DedicatedTeamsBenefitsPart />
     <DedicatedTeamsComparePart />
     <DedicatedTeamsComparePartTwo />
-    <UpdatePart />
   </main>
 </template>
 
