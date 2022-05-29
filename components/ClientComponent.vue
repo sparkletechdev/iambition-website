@@ -1,5 +1,6 @@
 <template>
   <div class="client-container">
+    <FsLightbox :toggler="toggler" :sources="lightboxImages()" />
     <div :id="client.id" class="client-name">{{ client.clientName }}</div>
     <div class="client-description">
       <p v-for="(desc, i) in client.description" :key="i">
@@ -17,20 +18,39 @@
         :monitor-images-loaded="true"
       >
         <stack-item v-for="(image, i) in client.images" :key="i">
-          <a :href="$store.state.baseUrl + image.path" target="_blank">
-            <img :src="$store.state.baseUrl + image.path" :alt="image.alt" />
-          </a>
+          <!-- <a :href="$store.state.baseUrl + image.path" target="_blank"> -->
+          <img
+            :src="$store.state.baseUrl + image.path"
+            :alt="image.alt"
+            @click="toggler = !toggler"
+          />
+          <!-- </a> -->
         </stack-item>
       </stack>
     </client-only>
   </div>
 </template>
 <script>
+import FsLightbox from 'fslightbox-vue'
 export default {
+  components: { FsLightbox },
   props: {
     client: {
       default: null,
       type: Object,
+    },
+  },
+  data() {
+    return {
+      toggler: false,
+    }
+  },
+  methods: {
+    lightboxImages() {
+      const newArr = this.client.images.map(
+        (image) => this.$store.state.baseUrl + image.path
+      )
+      return newArr
     },
   },
 }
