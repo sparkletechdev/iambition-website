@@ -8,7 +8,7 @@
       </p>
     </div>
     <video v-if="client.video" controls autoplay muted class="client-video">
-      <source :src="$store.state.baseUrl + client.video" type="video/mp4" />
+      <source :src="staticPath(client.video)" type="video/mp4" />
     </video>
     <client-only>
       <stack
@@ -20,7 +20,7 @@
         <stack-item v-for="(image, i) in client.images" :key="i">
           <!-- <a :href="$store.state.baseUrl + image.path" target="_blank"> -->
           <img
-            :src="$store.state.baseUrl + image.path"
+            :src="staticPath(image.path)"
             :alt="image.alt"
             class="client-image"
             @click="toggler = !toggler"
@@ -48,8 +48,8 @@ export default {
   },
   methods: {
     lightboxImages() {
-      const newArr = this.client.images.map(
-        (image) => this.$store.state.baseUrl + image.path
+      const newArr = this.client.images.map((image) =>
+        this.staticPath(image.path)
       )
       return newArr
     },
