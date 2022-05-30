@@ -22,6 +22,7 @@
           <img
             :src="$store.state.baseUrl + image.path"
             :alt="image.alt"
+            class="client-image"
             @click="toggler = !toggler"
           />
           <!-- </a> -->
@@ -71,5 +72,18 @@ export default {
 }
 .client-video {
   margin-bottom: 1.5rem;
+}
+.client-image {
+  cursor: zoom-in;
+}
+.client-image:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.client-image:not(:hover) {
+  box-shadow: none;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
 }
 </style>
