@@ -1,5 +1,6 @@
 <template>
   <div class="ilc-container">
+    <FsLightbox :toggler="toggler" :sources="lightboxImages()" />
     <div class="ilc-content">
       <h1 class="ilc-title">{{ section.title }}</h1>
       <div class="ilc-text-container">
@@ -14,9 +15,29 @@
         </div>
         <div class="ilc-image-container">
           <img
-            :src="require(`@/assets/images/${section.image}`)"
+            v-if="section.images.length === 1"
+            :src="staticPath(section.images[0])"
             class="ilc-image"
+            @click="toggler = !toggler"
           />
+          <stack
+            v-else-if="section.images.length > 0"
+            :column-min-width="480"
+            :gutter-width="8"
+            :gutter-height="8"
+            :monitor-images-loaded="true"
+          >
+            <stack-item v-for="(image, i) in section.images" :key="i">
+              <!-- <a :href="$store.state.baseUrl + image.path" target="_blank"> -->
+              <img
+                :src="staticPath(image)"
+                :alt="image.alt"
+                class="ilc-image"
+                @click="toggler = !toggler"
+              />
+              <!-- </a> -->
+            </stack-item>
+          </stack>
         </div>
       </div>
     </div>
@@ -24,21 +45,36 @@
 </template>
 
 <script>
+import FsLightbox from 'fslightbox-vue'
 export default {
+  components: { FsLightbox },
   props: {
     section: {
-      default: () => [],
-      type: Array,
+      default: () => {},
+      type: Object,
     },
     alignLeft: {
       default: Number,
       type: Boolean,
     },
   },
+  data() {
+    return {
+      toggler: false,
+    }
+  },
   computed: {
     order() {
       const newOrder = this.alignLeft ? 0 : 2
       return { order: `${newOrder}` }
+    },
+  },
+  methods: {
+    lightboxImages() {
+      const newArr = this.section.images.map((image) =>
+        this.staticPath(image)
+      )
+      return newArr
     },
   },
 }

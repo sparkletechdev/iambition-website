@@ -374,7 +374,7 @@ export default {
             `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器等技術所建立i熟客與顧客安全感知系統，在全球新冠肺炎肆虐之際，
               取代人力量測，第一時間完成防疫與健康管理的工作，讓顧客能安心享用美食，更有一份客製化的款待與尊榮。`,
           ],
-          image: 'solutions/ai-safe-restaurant.jpg',
+          images: ['solutions/ai-safe/restaurant.jpg'],
         },
         {
           title: '智慧餐廳類型',
@@ -383,7 +383,7 @@ export default {
             `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器、4G/5G/數位攝影機等技術，
             所建立的安全感知系統與智慧戰情室系統，在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
           ],
-          image: 'solutions/ai-safe-school.jpg',
+          images: ['solutions/ai-safe/school.jpg'],
         },
         {
           title: '智慧停車場類型',
@@ -392,7 +392,7 @@ export default {
             `雄欣科技為解決上述問題，運用AI、熱成像人臉測溫感測器、數位攝影機、毫米波雷達等技術，所建立的安全感知系統與智慧戰情室系統，
             在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
           ],
-          image: 'solutions/ai-safe-carpark.jpg',
+          images: ['solutions/ai-safe/carpark.jpg', 'solutions/ai-safe/carpark2.jpg'],
         },
       ],
     },
