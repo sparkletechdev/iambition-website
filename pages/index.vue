@@ -1,7 +1,11 @@
 <template>
   <main class="index-container">
     <!-- <MajorPart /> -->
-    <LandingComponent :title="$t('index.landingTitle')" :contents="$t('index.landingContent')"/>
+    <LandingComponent
+      :title="$t('index.landingTitle')"
+      :contents="$t('index.landingContent')"
+      image="home2.jpg"
+    />
     <HomeSolutions />
     <!-- <Slider /> -->
     <NewsComponent />
@@ -10,11 +14,8 @@
 </template>
 
 <style scoped>
-::v-deep .landing-container {
-  background-image: linear-gradient(
-      rgba(51, 102, 153, 0.75),
-      rgba(39, 50, 68, 1)
-    ),
+/* ::v-deep .landing-container {
+  background-image: linear-gradient(#336699bf, #273244),
     url('~@/assets/images/home2.jpg');
-}
+} */
 </style>

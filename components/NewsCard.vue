@@ -25,7 +25,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 250px;
+  height: 20rem;
   background: rgba(39, 50, 68, 0.75);
   padding: 2rem;
   align-items: center;
@@ -38,7 +38,10 @@ a {
   color: #369;
 }
 .news-desc {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0.5rem 0;
 }
 </style>

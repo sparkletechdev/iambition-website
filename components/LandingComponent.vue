@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-container">
+  <div class="landing-container" :style="inlineStyle">
     <h1 class="splash-title">{{ title }}</h1>
     <p v-for="(content, index) in contents" :key="index" class="splash-content">
       {{ content }}
@@ -21,10 +21,22 @@ export default {
         return ['{content} props needed']
       },
     },
+    image: {
+      type: String,
+      default: 'home.jpg',
+    },
   },
   computed: {
     background() {
-      return {}
+      return require('~/assets/images/' + this.image)
+    },
+    inlineStyle() {
+      return {
+        'background-image': `linear-gradient(
+      #336699bf,
+      #273244
+    ),url(${this.background})`,
+      }
     },
   },
 }

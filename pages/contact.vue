@@ -3,6 +3,7 @@
     <LandingComponent
       :title="$t('contact.landingTitle')"
       :contents="$t('contact.landingContent')"
+      image="contact-us.jpg"
     >
       <ContactForm
     /></LandingComponent>
@@ -16,13 +17,5 @@ export default {}
 <style scoped>
 .contact-us-border {
   overflow: hidden;
-}
-
-::v-deep .landing-container {
-  background-image: linear-gradient(
-      rgba(51, 102, 153, 0.75),
-      rgba(39, 50, 68, 1)
-    ),
-    url('~@/assets/images/contact-us.jpg');
 }
 </style>

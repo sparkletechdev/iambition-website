@@ -3,6 +3,7 @@
     <LandingComponent
       :title="$t('awards.landingTitle')"
       :contents="$t('awards.landingContent')"
+      image="awards.jpg"
     >
       <hooper :settings="hooperSettings">
         <slide v-for="(item, i) in $t('awards.carousel')" :key="i" :index="i">
@@ -57,14 +58,6 @@ export default {
 .awards-container {
   overflow: hidden;
   padding-bottom: 8%;
-}
-
-::v-deep .landing-container {
-  background-image: linear-gradient(
-      rgba(51, 102, 153, 0.75),
-      rgba(39, 50, 68, 1)
-    ),
-    url('~@/assets/images/awards.jpg');
 }
 
 ::v-deep .g-item-container:nth-child(even) > .g-item-image {

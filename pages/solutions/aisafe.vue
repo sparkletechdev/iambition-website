@@ -3,6 +3,7 @@
     <LandingComponent
       :title="$t('solutions.aiSafe.landingTitle')"
       :contents="$t('solutions.aiSafe.landingContent')"
+      image="solutions/ai-safe.jpg"
     />
     <ImageTextColumn
       v-for="(item, index) in $t('solutions.aiSafe.sections')"
@@ -29,11 +30,6 @@ export default {}
 }
 
 ::v-deep .landing-container {
-  background-image: linear-gradient(
-      rgba(51, 102, 153, 0.75),
-      rgba(39, 50, 68, 1)
-    ),
-    url('~@/assets/images/solutions/ai-safe.jpg');
   background-position: 50%;
 }
 </style>

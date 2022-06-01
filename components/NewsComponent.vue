@@ -29,9 +29,8 @@ export default {
         itemsToShow: 2,
         wheelControl: false,
         autoPlay: 'true',
-        playSpeed: 4000,
+        playSpeed: 2000,
         trimWhiteSpace: true
-        
       },
     }
   },

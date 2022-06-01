@@ -245,10 +245,13 @@ export default {
       title: 'Latest news on iAmbition',
       items: [
         {
-          title: '台北 COMPUTEX 2022',
-          description: `雄欣科技將在 台北 COMPUTEX 2022 國際電腦展中展出，時間為 May 24 to 27, 2022
-          相關資訊可以 參閱`,
-          link: 'https://www.computextaipei.com.tw/en/',
+          title: '從智慧手臂到偵測打哈欠 工業局於Computex展現業者AI成果',
+          description: `Computex台北國際電腦展於今年5月24日正式回歸實體展，成果豐碩!經濟部工業局於展會中打造
+          「工業局AI生活館」，以「AI一日生活圈」為主軸規劃三大展出主題：智慧製造、智慧交通、智慧生活，匯集14家參與AI
+          產推計畫的大廠及新創業者之AI成果，開展首日即盛大邀請經濟部王美花部長、工業局呂正華局長等政界代表，
+          以及台北市電腦公會理事長暨友達光電彭双浪董事長、利凌企業許家雄執行長、鈺立微電子王鏡戎策略長等業界貴賓
+          親臨AI主題館進行合影及觀摩體驗各項實際落地的計畫輔導成果及研發結晶。`,
+          link: 'https://money.udn.com/money/amp/story/11799/6336818',
         },
         {
           title: '亞洲矽谷攜手台杉首度前進高雄 培育獨角獸放眼全球',
@@ -383,7 +386,10 @@ export default {
             `雄欣科技為解決上述問題，運用AI、熱成像人臉測溫感測器、數位攝影機、毫米波雷達等技術，所建立的安全感知系統與智慧戰情室系統，
               在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
           ],
-          images: ['solutions/ai-safe/carpark.jpg', 'solutions/ai-safe/carpark2.jpg'],
+          images: [
+            'solutions/ai-safe/carpark.jpg',
+            'solutions/ai-safe/carpark2.jpg',
+          ],
         },
       ],
     },

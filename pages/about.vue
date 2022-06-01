@@ -3,6 +3,7 @@
     <LandingComponent
       :title="$t('company.aboutUs.landingTitle')"
       :contents="$t('company.aboutUs.landingContent')"
+      image="about-us.jpg"
     />
     <Mission />
     <CoreValues
@@ -20,14 +21,6 @@ export default {}
 <style scoped>
 .about-us-part-border {
   overflow: hidden;
-}
-
-::v-deep .landing-container {
-  background-image: linear-gradient(
-      rgba(51, 102, 153, 0.75),
-      rgba(39, 50, 68, 1)
-    ),
-    url('~@/assets/images/about-us.jpg');
 }
 
 @media screen and (max-width: 768px) {

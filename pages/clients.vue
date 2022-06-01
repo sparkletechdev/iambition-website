@@ -4,6 +4,7 @@
     <LandingComponent
       :title="$t('clients.landingTitle')"
       :contents="$t('clients.landingContent')"
+      image="client.jpg"
     >
       <!-- <div
         v-for="(client, i) in $t('clients.data')"
@@ -37,11 +38,6 @@ export default {}
 }
 
 ::v-deep .landing-container {
-  background-image: linear-gradient(
-      rgba(51, 102, 153, 0.75),
-      rgba(39, 50, 68, 1)
-    ),
-    url('~@/assets/images/client.jpg');
   background-position: 50%;
 }
 </style>
