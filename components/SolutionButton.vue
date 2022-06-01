@@ -59,7 +59,7 @@ export default {
   padding: 10px 50px;
   border-radius: 30px;
   font-weight: 800;
-  margin: 10px 0 18px 0;
+  margin: 10px 0 10px 0;
   transition: 0.4s;
 }
 </style>

@@ -377,7 +377,7 @@ export default {
           images: ['solutions/ai-safe/restaurant.jpg'],
         },
         {
-          title: '智慧餐廳類型',
+          title: '智慧校園類型',
           content: [
             `對於追求營運卓越的學校來說，校園與師生的安全是最重要的事。`,
             `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器、4G/5G/數位攝影機等技術，

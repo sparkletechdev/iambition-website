@@ -85,7 +85,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 4rem 10%;
+  padding: 4rem 15%;
 }
 .ilc-content {
   display: flex;
@@ -100,6 +100,7 @@ export default {
 }
 .ilc-text-container {
   display: flex;
+  gap: 1rem;
 }
 .ilc-text {
   width: 50%;
@@ -119,17 +120,18 @@ export default {
 }
 .ilc-image {
   /* border: 1px solid black; */
-  width: 90%;
+  width: 100%;
+  cursor: zoom-in;
 }
 .ilc-image:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   opacity: 0.8;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .ilc-image:not(:hover) {
   box-shadow: none;
   opacity: 1;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
   .ilc-container {

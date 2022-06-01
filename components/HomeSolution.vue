@@ -34,8 +34,8 @@ export default {
 .solution-banners-container {
   display: flex;
   justify-content: space-around;
+  row-gap: 0.5rem;
   align-items: center;
-  width: 90%;
   height: 60%;
   margin-top: 80px;
 }
@@ -71,6 +71,7 @@ export default {
   font-size: 1rem;
   color: white;
   z-index: 1;
+  text-align: center;
 }
 
 .text-container {
@@ -79,7 +80,7 @@ export default {
   align-items: center;
   z-index: 1;
   width: 100%;
-  padding-top: 1rem;
+  padding: 1rem;
   background: rgba(51, 51, 51, 0.45);
 }
 

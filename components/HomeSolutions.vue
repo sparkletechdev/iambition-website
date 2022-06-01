@@ -46,13 +46,14 @@ export default {}
 
 .solution-title {
   margin-top: 80px;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   font-weight: 600;
+  color: #369;
 }
 
 .solution-desc {
   margin-top: 10px;
-  font-size: 1em;
+  font-size: 1rem;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -67,9 +68,6 @@ export default {}
     justify-content: space-between;
     height: 800px !important;
     margin-top: 3% !important;
-  }
-  .solution-title {
-    font-size: 1rem !important;
   }
 }
 </style>
