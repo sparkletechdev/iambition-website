@@ -213,16 +213,47 @@ export default {
     information: ['9 Gul Drive, Singapore 629460', '+65 82884238'],
   },
   index: {
-    landingTitle: 'Pursuing corporate sustainability',
-    landingContent: [
-      `Xiongxin Technology deeply understands that in the process of continuous growth of the company, 
+    landing: [
+      {
+        landingTitle: 'Pursuing corporate sustainability',
+        landingContent: [
+          `Xiongxin Technology deeply understands that in the process of continuous growth of the company, 
       although the expansion of business scale brings financial stability and success, it also has an 
       impact on society and the environment. Therefore, the company implements the sustainable spirit 
       of "making life safer and making life better", and promotes corporate social responsibility with technology, 
       innovation and influence.`,
-      `We also pursue the "Net Positive Impact" (Net Positive Impact) to maximize and reduce the negative impact 
+          `We also pursue the "Net Positive Impact" (Net Positive Impact) to maximize and reduce the negative impact 
       on the environment and society (Negative Impact), connect the partners of the ecosystem to participate together, 
       exert the power of cooperation, and create a positive cycle of goodness , and use the power of technology to do good together.`,
+        ],
+        image: 'home2.jpg',
+      },
+      {
+        landingTitle: 'iAmbition @ Computex 2022',
+        landingContent: [
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+          anim id est laborum.`,
+        ],
+        image: 'home3.jpg',
+      },
+      {
+        landingTitle: 'iAmbition @ Computex 2022',
+        landingContent: [
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+          anim id est laborum.`,
+        ],
+        image: 'home3.jpg',
+      },
     ],
     solution: {
       title: 'Effective, Efficient and Elegant',

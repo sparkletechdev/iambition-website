@@ -170,7 +170,7 @@ export default {
   align-items: center;
   position: fixed;
   width: 100%;
-  background-color: #333;
+  background-color: rgb(51, 51, 51);
   transition: 1s;
   z-index: 5;
 }
@@ -295,7 +295,7 @@ export default {
 }
 .header-container-white {
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(51, 51, 51, 0.5);
   transition: 1s;
 }
 .title-change-color {

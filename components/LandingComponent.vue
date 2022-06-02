@@ -1,5 +1,5 @@
 <template>
-  <div class="landing-container" :style="inlineStyle">
+  <div id="landing" class="landing-container" :style="inlineStyle">
     <h1 class="splash-title">{{ title }}</h1>
     <p v-for="(content, index) in contents" :key="index" class="splash-content">
       {{ content }}
@@ -62,14 +62,19 @@ export default {
 
 .landing-container {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   padding: 8rem 0 4rem;
   background-size: cover;
+  overflow: auto;
 }
+
+/* .landing-container::-webkit-scrollbar {
+  display: none;
+} */
 
 @keyframes fadeIn {
   0% {
@@ -125,7 +130,6 @@ export default {
   }
   .splash-title {
     font-size: 3rem;
-    text-align: left;
   }
   .splash-content {
     padding: 0 8%;
