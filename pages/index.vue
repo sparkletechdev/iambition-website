@@ -40,7 +40,6 @@ export default {
         autoPlay: true,
         playSpeed: 2000,
         infiniteScroll: true,
-        hoverPause: false
       },
     }
   },

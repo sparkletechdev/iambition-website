@@ -22,7 +22,7 @@
           />
           <stack
             v-else-if="section.images.length > 0"
-            :column-min-width="480"
+            :column-min-width="300"
             :gutter-width="8"
             :gutter-height="8"
             :monitor-images-loaded="true"
@@ -90,6 +90,7 @@ export default {
 .ilc-content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .ilc-title {
   text-align: center;
