@@ -392,6 +392,11 @@ export default {
         `我們開發出一款結合 3D 深度感測技術，在受照護者不須攜帶穿戴式裝置，並且注重病患隱私的基礎上，以AI的方式偵測人體姿態動作，當受照護者發生安全意外事件時，能瞬間向照護人員發出異常通報的全方位系統。`,
         `AI照護感知系統，採用AI模組化架構設計，如果機構未來想要額外增加購買其他特殊異常行為的偵測通報時，可以在原系統持續增加AI模型，發展出更多類型的異常行為偵測。`,
       ],
+      videos: [
+        { path: 'solutions/ai-care/media2.MP4', type: 'video/mp4' },
+        { path: 'solutions/ai-care/media3.MOV', type: 'video/mp4' },
+      ],
+
       sections: [
         {
           title: '門禁型辨識與身份辨識、健康偵測',
@@ -421,11 +426,9 @@ export default {
             `- 廁所久留`,
             `- 房間人容`,
             `- 遠距且主動式的心跳呼吸偵測`,
-            `- 等各種行為智慧感知偵測，及各別住民的異常風險評估分析。`
+            `- 等各種行為智慧感知偵測，及各別住民的異常風險評估分析。`,
           ],
-          images: [
-            'solutions/ai-care/tof1.jpg',
-          ],
+          images: ['solutions/ai-care/tof1.jpg'],
         },
       ],
     },

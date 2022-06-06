@@ -21,17 +21,17 @@
             @click="toggler = !toggler"
           />
           <stack
-            v-else-if="section.images.length > 0"
+            v-else
             :column-min-width="300"
             :gutter-width="8"
             :gutter-height="8"
             :monitor-images-loaded="true"
           >
-            <stack-item v-for="(image, i) in section.images" :key="i">
+            <stack-item v-for="(media, i) in section.images" :key="i">
               <!-- <a :href="$store.state.baseUrl + image.path" target="_blank"> -->
               <img
-                :src="staticPath(image)"
-                :alt="image.alt"
+                :src="staticPath(media)"
+                :alt="media.alt"
                 class="ilc-image"
                 @click="toggler = !toggler"
               />
@@ -71,9 +71,7 @@ export default {
   },
   methods: {
     lightboxImages() {
-      const newArr = this.section.images.map((image) =>
-        this.staticPath(image)
-      )
+      const newArr = this.section.images.map((image) => this.staticPath(image))
       return newArr
     },
   },
@@ -85,7 +83,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 4rem 15%;
+  padding: 4rem 15% 0;
 }
 .ilc-content {
   display: flex;
@@ -124,27 +122,35 @@ export default {
   width: 100%;
   cursor: zoom-in;
 }
+.ilc-video {
+  cursor: pointer;
+}
+.ilc-video:hover,
 .ilc-image:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
   opacity: 0.8;
   transition: all 0.2s ease-in-out;
 }
-.ilc-image:not(:hover) {
+.ilc-image:not(:hover),
+.ilc-video:not(:hover) {
   box-shadow: none;
   opacity: 1;
   transition: all 0.2s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
   .ilc-container {
-    padding: 3rem 8%;
+    padding: 3rem 8% 0;
   }
   .ilc-title {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 992px) {
+  .ilc-container {
+    padding: 3rem 8% 0;
+  }
   .ilc-title {
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
   }
   .ilc-text-container {
     display: flex;
@@ -159,17 +165,19 @@ export default {
     width: 90%;
   }
 }
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .ilc-title {
     font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
   .ilc-image {
     width: 90%;
   }
-}
-@media screen and (max-width: 576px) {
+  .ilc-image-container {
+    margin-bottom: 0;
+  }
   .ilc-container {
-    padding: 2rem 10%;
+    padding: 1.5rem 5% 0;
   }
 }
 </style>
