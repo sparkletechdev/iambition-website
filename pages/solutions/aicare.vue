@@ -11,16 +11,19 @@
       :section="item"
       :align-left="index % 2 === 0"
     />
-    <div class="videos">
-      <video
-        v-for="(video, index) in $t('solutions.aiCare.videos')"
-        :key="index"
-        controls
-        class="client-video"
-      >
-        <source :src="staticPath(video.path)" :type="video.type" />
-      </video>
+    <div class="video-container">
+      <div class="videos">
+        <video
+          v-for="(video, index) in $t('solutions.aiCare.videos')"
+          :key="index"
+          controls
+          class="client-video"
+        >
+          <source :src="staticPath(video.path)" :type="video.type" />
+        </video>
+      </div>
     </div>
+
     <!-- <DedicatedTeamsSolutionPart />
     <DedicatedTeamsStructurePart />
     <DedicatedTeamsBenefitsPart />
@@ -37,9 +40,11 @@ export default {}
 .ai-care-container {
   overflow: hidden;
 }
-
+.video-container {
+  background-color: #273244;
+  padding: 2rem 15% 4%;
+}
 .videos {
-  margin: 2rem 15% 4%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -50,29 +55,46 @@ export default {}
   margin-bottom: 1.5rem;
 }
 
+::v-deep .ilc-container:nth-child(odd) {
+  background-color: #273244;
+}
+
+::v-deep .ilc-container:nth-child(odd) > .ilc-content > .ilc-text-container {
+  color: white;
+}
+
 ::v-deep .landing-container {
   background-position: 50%;
 }
 
 @media screen and (max-width: 2048px) {
   .videos {
-    margin: 2rem 15% 4%;
+    margin: 1rem 15% 4%;
     flex-direction: column;
     row-gap: 1rem;
+  }
+  .video-container {
+    padding: 1rem 0 4%;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .videos {
-    margin: 1rem 8% 4%;
+    margin: 0 8%;
     row-gap: 1rem;
+  }
+  .video-container {
+    padding: 0 0 4%;
   }
 }
 
 @media screen and (max-width: 576px) {
   .videos {
-    margin: 0 5% 4%;
+    margin: 0 5%;
     row-gap: 0.5rem;
+  }
+  .video-container {
+    padding: 0 0 4%;
   }
 }
 </style>
