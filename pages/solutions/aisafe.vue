@@ -28,7 +28,12 @@ export default {}
 .ai-safe-container {
   overflow: hidden;
 }
-
+::v-deep .ilc-container:nth-child(odd) {
+  background-color: #273244;
+}
+::v-deep .ilc-container:nth-child(odd) > .ilc-content > .ilc-text-container {
+  color: white;
+}
 ::v-deep .landing-container {
   background-position: 50%;
 }

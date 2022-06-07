@@ -83,7 +83,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 4rem 15% 0;
+  padding: 4rem 15% 4rem;
 }
 .ilc-content {
   display: flex;
@@ -139,16 +139,13 @@ export default {
 }
 @media screen and (max-width: 1200px) {
   .ilc-container {
-    padding: 3rem 8% 0;
+    padding: 2.5rem 8% 2.5rem;
   }
   .ilc-title {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 992px) {
-  .ilc-container {
-    padding: 3rem 8% 0;
-  }
   .ilc-title {
     margin-bottom: 2rem;
   }
@@ -175,9 +172,6 @@ export default {
   }
   .ilc-image-container {
     margin-bottom: 0;
-  }
-  .ilc-container {
-    padding: 1.5rem 5% 0;
   }
 }
 </style>

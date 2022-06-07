@@ -254,8 +254,8 @@ export default {
           description:
             'Predict provides accurate behavioral forecasts for each customer using Automated Machine Learning',
           button: 'Explore AI Safe',
-          image: 'technology.jpeg',
-          link: '/subPage/staff augmentation',
+          image: 'solutions/ai-safe.jpg',
+          link: '/solutions/aisafe',
         },
       ],
     },
@@ -372,8 +372,9 @@ export default {
       ],
       videos: [
         { path: 'solutions/ai-care/media2.MP4', type: 'video/mp4' },
-        { path: 'solutions/ai-care/media3.MOV', type: 'video/mov' },
+        { path: 'solutions/ai-care/media3.MOV', type: 'video/mp4' },
       ],
+
       sections: [
         {
           title: '門禁型辨識與身份辨識、健康偵測',
@@ -402,14 +403,15 @@ export default {
             `- 離床中、床上無人`,
             `- 廁所久留`,
             `- 房間人容`,
-            `- 遠距且主動式的心跳呼吸偵測``- 等各種行為智慧感知偵測，及各別住民的異常風險評估分析。`,
+            `- 遠距且主動式的心跳呼吸偵測`,
+            `- 等各種行為智慧感知偵測，及各別住民的異常風險評估分析。`,
           ],
           images: ['solutions/ai-care/tof1.jpg'],
         },
       ],
     },
     aiSafe: {
-      landingTitle: 'AI安全感知',
+      landingTitle: 'AI Safe',
       landingContent: [
         `對於追求營運卓越的餐廳來說，熟客的經營與店內安全是在美食外最在意的二件事。`,
         `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器等技術所建立i熟客與顧客安全感知系統，在全球新冠肺炎肆虐之際，取代人力量測，
@@ -430,7 +432,7 @@ export default {
           content: [
             `對於追求營運卓越的學校來說，校園與師生的安全是最重要的事。`,
             `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器、4G/5G/數位攝影機等技術，
-              所建立的安全感知系統與智慧戰情室系統，在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
+            所建立的安全感知系統與智慧戰情室系統，在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
           ],
           images: ['solutions/ai-safe/school.jpg'],
         },
@@ -439,7 +441,7 @@ export default {
           content: [
             `對於追求營運卓越的停車場來說，擁有眾多智慧化系統已經是常態，但是每套系統獨立且超做複雜室眾多管理人員的痛。`,
             `雄欣科技為解決上述問題，運用AI、熱成像人臉測溫感測器、數位攝影機、毫米波雷達等技術，所建立的安全感知系統與智慧戰情室系統，
-              在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
+            在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
           ],
           images: [
             'solutions/ai-safe/carpark.jpg',
