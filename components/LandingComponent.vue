@@ -33,8 +33,8 @@ export default {
     inlineStyle() {
       return {
         'background-image': `linear-gradient(
-      #336699bf,
-      #273244
+      #336699af,
+      #273244ee
     ),url(${this.background})`,
       }
     },

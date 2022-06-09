@@ -15,6 +15,7 @@ export default {
     aiCare: 'AI照護感知',
     aiSafe: 'AI安全感知',
     awards: '獎項',
+    capabilities: '核心技術',
     clients: '客戶',
     company: '公司',
     aboutUs: '關於',
@@ -450,5 +451,66 @@ export default {
         },
       ],
     },
+  },
+  technologies: {
+    landingTitle: 'Our Key Technologies',
+    landingContent: [
+      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+    anim id est laborum.`,
+    ],
+    sections: [
+      {
+        title: '飛時測距感測裝置 (Time of Flight / ToF)',
+        image: 'technologies/tof.jpg',
+        content: `<p>有別於一般的RGB影像數位攝影機以真實影像錄製。</p><br>
+          <p>飛時測距感測技術，是利用發光二極體（LED：Light Emitting Diode）或 雷射二極體 （LD：Laser Diode）發射出紅外光，照射到物體不同深度的表面，反射回來的時間，藉由數學模型計算出物體不同位置的距離，再藉由運算晶片描繪出物體的點雲資訊或深度資訊。</p><br>
+          <p>因此，能在無隱私權疑慮下，識別物體的深度、距離、方位，也可以在完全黑暗無任何光線下，精準的進行人體或物體的行為姿態偵測。</p>`,
+      },
+      {
+        title: '毫米波生理雷達感測裝置 (Bio-Sense mmWave)',
+        image: 'technologies/mmwave.jpg',
+        content: `<p>雷 達 (Radar) 的全名是「Radio Detection and Ranging」( 無線電偵測和定距 )，旨在藉電磁能量以定向方式計算空間中標的物之方向、高度、速度，進而推估形態。將它嵌入感測器中，可在三維空間定位目標並衍生應用功能。</p><br>
+          <p>而毫米波雷達，指的是工作在毫米波波段（millimeter wave）的雷達，完全不受光線與天氣因素影響。也因為毫米波雷達在物體距離檢測中可以提供毫米(mm)等級的精度，因而可以成為生理訊號的理想感測晶片。</p><br>
+          <p>而雄欣科技設計出，業界高的精度、高速訊號處理能力、增強的距離檢測，以及將雷達整合到小尺寸晶片組中，提供非接觸式的連續偵測能力，將可能極大地推動醫療照護應用的發展，如人類活動偵測、生命體徵（心跳、呼吸）偵測等。</p>`,
+      },
+      {
+        title: 'Artificial Intelligence',
+        content: `<p>在AI的能量上，雄欣科技獲得110年度經濟部工業局「AI新銳選拔最大獎項」，與多項競賽優勝，並且解決方案協助凱旋醫院獲得110年度全球智慧城市 Go Smart 第二名的大獎。</p>
+        <br>
+          <p>所擁有的多重的深度學習技術，已經達到輕薄短小、善盡ESG企業追求環境友善的責任：</p>
+          <ol class="list-decimal list-inside">
+          <li>演算法可以運作在 Edge AI 攝影機、工業用主機、雲端主機或混合式架構中。</li> 
+          <li>支援 人工智慧晶片、VPU、NVIDIA GPU</li> 
+          <li>架構所使用的耗電量，為其他AI業者的30%。</li> 
+          </ol>`,
+      },
+      {
+        title: '物聯網平台與設備',
+        content: `<p>物聯網平台可以支援各類型物聯網設備：</p>
+        <br>
+          <ol class="list-decimal list-inside">
+          <li>符合 ONVIF協定攝影機
+            <ul class="list-disc ml-8">
+              <li>Edge AI 攝影機</li>
+              <li>槍型或球型IP數位攝影機</li>
+              <li>180度廣角攝影機</li>
+              <li>360度魚眼攝影機</li>
+              <li>LTE或5G攝影機</li>
+              <li>數位門禁對講機</li>
+              <li>熱成像攝影機</li>
+            </ul>
+          </li>
+          <li>智慧眼鏡</li> 
+          <li>ToF 飛時測距感測器</li> 
+          <li>mmWave毫米波雷達</li> 
+          <li>空氣品質感測器</li>
+          </ol>`,
+      },
+    ],
   },
 }
