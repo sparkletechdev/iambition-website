@@ -15,7 +15,7 @@ export default {
     aiCare: 'AI照護感知',
     aiSafe: 'AI安全感知',
     awards: '獎項',
-    capabilities: '核心技術',
+    technologies: '核心技術',
     clients: '客戶',
     company: '公司',
     aboutUs: '關於',
