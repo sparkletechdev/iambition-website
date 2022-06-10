@@ -214,6 +214,19 @@ export default {
   index: {
     landing: [
       {
+        landingTitle: 'iAmbition Joins Microsoft Startups Founders Hub',
+        landingContent: [
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
+          anim id est laborum.`,
+        ],
+        image: 'home1.jpg',
+      },
+      {
         landingTitle: '追求企業永續',
         landingContent: [
           `雄欣科技深切明瞭在公司持續成長的過程中，業務規模的擴展雖然帶來財務穩定與成功，同時也對社會與環境帶來衝擊。
