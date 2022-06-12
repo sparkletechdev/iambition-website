@@ -10,7 +10,6 @@ export default {
     },
   },
   navbar: {
-    index: '家',
     solutions: '解決方案',
     aiCare: 'AI照護感知',
     aiSafe: 'AI安全感知',
@@ -214,6 +213,15 @@ export default {
   index: {
     landing: [
       {
+        landingTitle: 'iAmbition @ Computex 2022',
+        landingContent: [
+          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+        ],
+        image: 'home3.jpg',
+        video: 'computex.mp4',
+      },
+      {
         landingTitle: 'iAmbition Joins Microsoft Startups Founders Hub',
         landingContent: [
           `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -235,19 +243,6 @@ export default {
       連結生態圈夥伴共同參與，發揮合作的力量，打造善的正向循環，一起用科技的力量行善。`,
         ],
         image: 'home2.jpg',
-      },
-      {
-        landingTitle: 'iAmbition @ Computex 2022',
-        landingContent: [
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-          anim id est laborum.`,
-        ],
-        image: 'home3.jpg',
       },
     ],
     solution: {

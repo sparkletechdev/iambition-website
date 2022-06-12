@@ -12,6 +12,7 @@
         :key="index"
         :item="tech"
         :section-index="index"
+        class="technology"
       />
     </div>
     <div class=bottom-spacer></div>
@@ -30,5 +31,8 @@ export default {}
 }
 .top-spacer {
   height: 2rem;
+}
+.technology {
+  padding: 4rem 25% 0;
 }
 </style>

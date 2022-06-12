@@ -1,8 +1,8 @@
 <template>
   <header ref="headerContainer" class="header-container">
-    <div></div>
+    <!-- <div></div> -->
+    <Logo />
     <div class="links">
-      <Logo />
       <div v-for="post in posts" :key="post.title" class="header-link">
         <div
           v-if="post.title !== 'navbar.index'"
@@ -127,7 +127,7 @@ export default {
       const gsap = this.$gsap
       this.$ScrollTrigger.matchMedia({
         // eslint-disable-next-line object-shorthand
-        '(min-width: 768px)': function () {
+        '(min-width: 992px)': function () {
           gsap.to('.header-container', {
             scrollTrigger: {
               trigger: '.header-container',
@@ -159,17 +159,17 @@ export default {
   },
 }
 </script>
-
-<style>
+<style scoped>
 .header-container {
   box-shadow: 0 0 2px rgb(0 0 0 / 20%);
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   position: fixed;
   width: 100%;
+  padding: 0.25rem 3rem;
   background-color: rgb(51, 51, 51);
   transition: 1s;
   z-index: 5;
@@ -177,12 +177,15 @@ export default {
 .links {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  row-gap: 0.25rem;
+  margin: 0 3rem 0 3rem;
 }
 .header-link {
   /* border: 1px solid black; */
   display: flex;
-  margin: 0 3rem 0 0;
   align-items: center;
 }
 .title {
@@ -195,21 +198,6 @@ export default {
   position: relative;
 }
 .title:hover {
-  color: #0cf;
-}
-.contact-link {
-  /* border: 1px solid black; */
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  color: white;
-  transition: 0.4s;
-  position: relative;
-  background: #333;
-  padding: 12px;
-  margin-right: 3rem;
-}
-.contact-link:hover {
   color: #0cf;
 }
 .chevron-icon {
@@ -246,12 +234,13 @@ export default {
     color: #fff;
   }
 }
-@media screen and (max-width: 992px) {
+
+/* @media screen and (max-width: 992px) {
   .title-change-color {
     color: #fff;
   }
-}
-@media screen and (max-width: 768px) {
+} */
+@media screen and (max-width: 992px) {
   .header-container {
     width: 100%;
     display: flex;

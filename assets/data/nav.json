@@ -1,10 +1,5 @@
 [
   {
-    "title": "navbar.index",
-    "route": "/",
-    "items": []
-  },
-  {
     "title": "navbar.solutions",
     "route": "services",
     "items": [

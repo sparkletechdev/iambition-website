@@ -99,7 +99,7 @@ export default {
 .language:hover .subtitle {
   display: block;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .language {
     display: none;
   }

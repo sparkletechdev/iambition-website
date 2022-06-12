@@ -7,7 +7,14 @@
           :title="item.landingTitle"
           :contents="item.landingContent"
           :image="item.image"
-        />
+        >
+          <div class="video">
+            <video v-if="item.video" controls width="1080px">
+              <source :src="staticPath(item.video)" type="video/mp4" />
+              <p>Sorry, there's a problem playing this video. Please try using a different browser.</p>
+            </video>
+          </div>
+        </LandingComponent>
       </slide>
       <hooper-navigation slot="hooper-addons"></hooper-navigation>
       <hooper-progress slot="hooper-addons"></hooper-progress>
@@ -38,7 +45,7 @@ export default {
       hooperSettings: {
         wheelControl: false,
         autoPlay: true,
-        playSpeed: 2000,
+        playSpeed: 2500,
         infiniteScroll: true,
       },
     }
@@ -50,6 +57,22 @@ export default {
 .hooper {
   width: 100%;
   height: auto;
+}
+
+.video {
+  margin: 0 25%;
+}
+
+@media screen and (max-width: 1200px) {
+  .video {
+    margin: 0 15%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video {
+    margin: 0 8%;
+  }
 }
 </style>
 

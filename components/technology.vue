@@ -1,14 +1,18 @@
 <template>
   <section id="tof" class="section-container" :class="bgColor">
     <h1 class="section-title">{{ item.title }}</h1>
-    <img
-      v-if="item.image"
-      :class="float"
-      :src="require(`@/assets/images/${item.image}`)"
-    />
-    <!-- eslint-disable vue/no-v-html -->
-    <div class="tech-content" :class="textColor" v-html="item.content" />
-    <!--eslint-enable-->
+    <div class="tech-content">
+      <img
+        v-if="item.image"
+        class="tech-img"
+        :class="float"
+        :src="require(`@/assets/images/${item.image}`)"
+      />
+      <!-- eslint-disable vue/no-v-html -->
+      <div :class="textColor" v-html="item.content" />
+      <div class="spacer"></div>
+      <!--eslint-enable-->
+    </div>
   </section>
 </template>
 <script>
@@ -50,13 +54,13 @@ export default {
 .float-right {
   float: right;
   margin: 0 1rem 1rem;
-  max-height: 240px;
+  max-height: 300px;
 }
 
 .float-left {
   float: left;
   margin: 0 1rem 1rem;
-  max-height: 240px;
+  max-height: 300px;
 }
 
 .bg-light {
@@ -75,7 +79,9 @@ export default {
   color: black;
 }
 
-.section-container {
-  padding: 4rem 25%;
+.spacer {
+  clear: both;
+  height: 4rem;
 }
+
 </style>
