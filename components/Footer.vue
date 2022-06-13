@@ -3,17 +3,32 @@
     <div class="footer-border">
       <div class="footer-top-border">
         <div class="footer-top-partners-border">
-          <p class="footer-partners">Our Partners</p>
+          <p class="footer-partners">{{ $t('footer.partners') }}</p>
           <span class="footer-partners-line-hidden"></span>
           <div class="footer-partners-icon">
-            <fa :icon="['fas', 'apple-alt']" class="partner-icon" />
-            <fa :icon="['fas', 'chess-knight']" class="partner-icon" />
+            <img
+              :src="require('@/assets/images/partners/intel.png')"
+              class="partner-icon"
+            />
+            <img
+              :src="require('@/assets/images/partners/nvidia.png')"
+              class="partner-icon"
+            />
+            <img
+              :src="require('@/assets/images/partners/microsoft.png')"
+              class="partner-icon"
+            />
+            <img
+              :src="require('@/assets/images/partners/hitachi.png')"
+              class="partner-icon"
+            />
+            <!-- <fa :icon="['fas', 'chess-knight']" class="partner-icon" />
             <fa :icon="['fas', 'dice-d20']" class="partner-icon" />
             <fa :icon="['fas', 'dice']" class="partner-icon" />
-            <fa :icon="['fas', 'wind']" class="partner-icon" />
+            <fa :icon="['fas', 'wind']" class="partner-icon" /> -->
           </div>
         </div>
-        <div class="footer-top-partners-border">
+        <div class="footer-social-container">
           <a href="https://www.instagram.com">
             <div class="social-icon">
               <fa :icon="['fab', 'instagram-square']" />
@@ -44,13 +59,13 @@
       <!-- <span class="footerspan"></span> -->
       <div class="footer-bottom-border">
         <div class="footer-bottom-privacy-border">
-          <p class="company-privacy">© 2022 iAmbition Technology Pte. Ltd.</p>
+          <p class="company-privacy">{{ $t('footer.privacy') }}</p>
           <!-- <nuxt-link to="/privacy" class="privacy-link">
             Privacy Policy
           </nuxt-link> -->
         </div>
         <div class="footer-bottom-location">
-          <p class="location">Singapore | Taiwan</p>
+          <p class="location">{{ $t('footer.location') }}</p>
         </div>
       </div>
     </div>
@@ -85,6 +100,11 @@ export default {}
   max-width: 1140px;
   width: 1140px;
 }
+.footer-top-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer-border .footer-top-border {
   width: 100%;
   display: flex;
@@ -92,27 +112,43 @@ export default {}
   padding: 15px 0;
   border-bottom: 0.4px solid #c9c9c9;
 }
-.footer-top-border .footer-top-partners-border {
+
+.footer-top-partners-border {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-direction: row;
+  gap: 1rem
+}
+
+.footer-social-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
 }
 .footer-partners {
   font-size: 16px;
   color: white;
   font-weight: 400;
-  margin-right: 25px;
   opacity: 0.85;
+  align-content: center;
 }
+
+.footer-partners-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
 .partner-icon {
-  color: white;
-  font-size: 2rem;
+  max-height: 1.25rem;
   margin-right: 32px;
 }
 .social-icon {
   color: white;
   font-size: 1.5rem;
-  margin-left: 18px;
 }
 .social-icon :hover {
   color: #0cf;
@@ -181,7 +217,7 @@ export default {}
 @media screen and (max-width: 576px) {
   .footer-top-border .footer-top-partners-border {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
@@ -189,6 +225,7 @@ export default {}
     margin-bottom: 20px;
   }
   .partner-icon {
+    max-height: 24px;
     margin: 0 10px;
   }
 }

@@ -521,4 +521,9 @@ export default {
       },
     ],
   },
+  footer: {
+    privacy: 'Copyright © 2022 iAmbition Technology Pte. Ltd.',
+    location: '新加坡 | 台灣',
+    partners: '合作夥伴',
+  },
 }

@@ -531,4 +531,9 @@ export default {
       },
     ],
   },
+  footer: {
+    privacy: 'Copyright © 2022 iAmbition Technology Pte. Ltd.',
+    location: 'Singapore | Taiwan',
+    partners: 'Our Partners'
+  }
 }
