@@ -10,25 +10,16 @@
     <video v-if="client.video" controls autoplay muted class="client-video">
       <source :src="staticPath(client.video)" type="video/mp4" />
     </video>
-    <client-only>
-      <stack
-        :column-min-width="300"
-        :gutter-width="8"
-        :gutter-height="8"
-        :monitor-images-loaded="true"
-      >
-        <stack-item v-for="(image, i) in client.images" :key="i">
-          <!-- <a :href="$store.state.baseUrl + image.path" target="_blank"> -->
-          <img
-            :src="staticPath(image.path)"
-            :alt="image.alt"
-            class="client-image"
-            @click="toggler = !toggler"
-          />
-          <!-- </a> -->
-        </stack-item>
-      </stack>
-    </client-only>
+    <div class="client-image-grid">
+      <img
+        v-for="(image, i) in client.images"
+        :key="i"
+        :src="staticPath(image.path)"
+        :alt="image.alt"
+        class="client-image"
+        @click="toggler = !toggler"
+      />
+    </div>
   </div>
 </template>
 <script>
@@ -75,6 +66,8 @@ export default {
 }
 .client-image {
   cursor: zoom-in;
+  height: 100%;
+  width: 100%;
 }
 .client-image:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
@@ -85,5 +78,12 @@ export default {
   box-shadow: none;
   opacity: 1;
   transition: all 0.2s ease-in-out;
+}
+
+.client-image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 300px;
+  gap: 1rem;
 }
 </style>
