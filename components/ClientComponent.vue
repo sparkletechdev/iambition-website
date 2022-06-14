@@ -1,6 +1,6 @@
 <template>
   <div class="client-container">
-    <FsLightbox :toggler="toggler" :sources="lightboxImages()" />
+    <FsLightbox :toggler="toggler" :slide="lbIndex" :sources="lightboxImages()" />
     <div :id="client.id" class="client-name">{{ client.clientName }}</div>
     <div class="client-description">
       <p v-for="(desc, i) in client.description" :key="i">
@@ -17,7 +17,7 @@
         :src="staticPath(image.path)"
         :alt="image.alt"
         class="client-image"
-        @click="toggler = !toggler"
+        @click="showLightbox(i)"
       />
     </div>
   </div>
@@ -35,6 +35,7 @@ export default {
   data() {
     return {
       toggler: false,
+      lbIndex: 1
     }
   },
   methods: {
@@ -44,6 +45,10 @@ export default {
       )
       return newArr
     },
+    showLightbox(index) {
+      this.lbIndex = index+1
+      this.toggler = !this.toggler
+    }
   },
 }
 </script>
@@ -66,6 +71,7 @@ export default {
 }
 .client-image {
   cursor: zoom-in;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -85,5 +91,19 @@ export default {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
   gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .client-image-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .client-image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 300px;
+  }
 }
 </style>

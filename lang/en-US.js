@@ -344,11 +344,11 @@ export default {
             alt: 'Image 1',
           },
           {
-            path: 'clients/tunghai/2.jpg',
+            path: 'clients/tunghai/4.jpeg',
             alt: 'Image 2',
           },
           {
-            path: 'clients/tunghai/3.jpg',
+            path: 'clients/tunghai/6.jpeg',
             alt: 'Image 3',
           },
         ],
