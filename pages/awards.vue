@@ -10,6 +10,7 @@
           <img
             :src="require(`@/assets/images/${item.image}`)"
             :alt="item.alt"
+            class="landing-img"
           />
         </slide>
         <hooper-navigation slot="hooper-addons"></hooper-navigation>
@@ -55,13 +56,18 @@ export default {
   height: auto;
 }
 
+.landing-img {
+  width: 100%;
+  height: 100%;
+}
+
 .awards-container {
   overflow: hidden;
   padding-bottom: 8%;
 }
 
-::v-deep .g-item-container:nth-child(even) > .g-item-image {
-  order: 0;
+::v-deep .g-item-container:nth-child(even) > .g-item-left {
+  order: 1;
 }
 
 @media screen and (max-width: 1200px) {

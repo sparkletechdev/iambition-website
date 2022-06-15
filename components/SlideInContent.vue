@@ -1,10 +1,10 @@
 <template>
   <div class="items-container">
     <div v-for="(item, index) in content" :key="index" class="g-item-container">
-      <div class="g-item-image g-item-image-active">
+      <div class="g-item-left g-item-left-active">
         <img :src="require(`@/assets/images/${item.img}`)" class="g-img" />
       </div>
-      <div class="g-item-content-container g-item-content-container-active">
+      <div class="g-item-right-container g-item-right-container-active">
         <h1 class="g-item-title g-item-title-active">
           {{ item.title }}
         </h1>
@@ -33,9 +33,9 @@ export default {
     scrollItem() {
       window.addEventListener('scroll', function () {
         const itemContainer = document.querySelectorAll('.g-item-container')
-        const itemImage = document.querySelectorAll('.g-item-image')
+        const itemImage = document.querySelectorAll('.g-item-left')
         const itemContentContainer = document.querySelectorAll(
-          '.g-item-content-container'
+          '.g-item-right-container'
         )
         const itemTitle = document.querySelectorAll('.g-item-title')
         const itemSubtitle = document.querySelectorAll('.g-item-subtitle')
@@ -45,9 +45,9 @@ export default {
             value.offsetTop - scrollY > 600 &&
             value.offsetTop - scrollY < 800
           ) {
-            itemImage[index].classList.remove('g-item-image-active')
+            itemImage[index].classList.remove('g-item-left-active')
             itemContentContainer[index].classList.remove(
-              'g-item-content-container-active'
+              'g-item-right-container-active'
             )
             itemTitle[index].classList.remove('g-item-title-active')
             itemSubtitle[index].classList.remove('g-item-subtitle-active')
@@ -70,19 +70,19 @@ export default {
   justify-content: space-between;
   padding-top: 8rem;
 }
-.g-item-image {
-  width: 49%;
+.g-item-left {
+  width: 69%;
   overflow: hidden;
   opacity: 1;
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
   justify-content: center;
 }
-.g-item-container:nth-child(even) > .g-item-image {
+.g-item-container:nth-child(even) > .g-item-left {
   order: 2;
 }
-.g-item-content-container {
-  width: 49%;
+.g-item-right-container {
+  width: 29%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -90,17 +90,17 @@ export default {
   transform: translateX(0);
   transition: all 0.6s ease-in-out;
 }
-.g-item-image-active {
+.g-item-left-active {
   opacity: 0;
   transform: translateX(-270px);
 }
-.g-item-content-container-active {
+.g-item-right-container-active {
   opacity: 0;
   transform: translateX(270px);
 }
 .g-item-title {
   color: #369;
-  font-size: 2.8rem;
+  font-size: 1.8rem;
   line-height: 2.5;
   font-weight: 500;
   position: relative;
@@ -150,12 +150,12 @@ export default {
     width: 0;
     height: 3px;
   }
-  .g-item-image {
+  .g-item-left {
     width: 100%;
     order: 1;
     align-items: center;
   }
-  .g-item-content-container {
+  .g-item-right-container {
     width: 100%;
     order: 2;
     align-items: center;
