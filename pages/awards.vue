@@ -5,8 +5,15 @@
       :contents="$t('awards.landingContent')"
       image="awards.jpg"
     >
+    </LandingComponent>
+
+    <SlideInContent
+      v-for="(content, index) in $t('awards.content')"
+      :key="index"
+      :content="content"
+    >
       <hooper :settings="hooperSettings">
-        <slide v-for="(item, i) in $t('awards.carousel')" :key="i" :index="i">
+        <slide v-for="(item, i) in content.img" :key="i" :index="i">
           <img
             :src="require(`@/assets/images/${item.image}`)"
             :alt="item.alt"
@@ -14,11 +21,8 @@
           />
         </slide>
         <hooper-navigation slot="hooper-addons"></hooper-navigation>
-        <hooper-pagination slot="hooper-addons"></hooper-pagination>
-      </hooper>
-    </LandingComponent>
-
-    <SlideInContent :content="$t('awards.content')" />
+        <hooper-pagination slot="hooper-addons"></hooper-pagination> </hooper
+    ></SlideInContent>
     <!-- <SolutionItemPart /> -->
   </main>
 </template>
@@ -52,8 +56,8 @@ export default {
 
 <style scoped>
 .hooper {
-  width: 50%;
-  height: auto;
+  width: 720px;
+  height: 480px;
 }
 
 .landing-img {
@@ -66,6 +70,12 @@ export default {
   padding-bottom: 8%;
 }
 
+.g-img {
+  min-width: 100%;
+  min-height: 480px;
+  object-fit: cover;
+}
+
 ::v-deep .g-item-container:nth-child(even) > .g-item-left {
   order: 1;
 }
@@ -75,14 +85,14 @@ export default {
     align-items: center;
   }
 
-  ::v-deep .g-img {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .hooper {
     width: 70%;
     height: auto;
+  }
+
+  .g-img {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

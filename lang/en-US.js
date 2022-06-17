@@ -125,32 +125,6 @@ export default {
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
     anim id est laborum.`,
     ],
-    carousel: [
-      {
-        image: 'awards/ai-day.png',
-        alt: 'AI Day',
-      },
-      {
-        image: 'awards/ai-contest.png',
-        alt: 'AI Contest',
-      },
-      {
-        image: 'awards/yue-nong-bei.png',
-        alt: 'Jonas Cup',
-      },
-      {
-        image: 'awards/future-city.png',
-        alt: 'Future City Image 1',
-      },
-      {
-        image: 'awards/future-city-2.png',
-        alt: 'Future City Image 2',
-      },
-      {
-        image: 'awards/isave.png',
-        alt: 'iSave Exhibition',
-      },
-    ],
     content: [
       {
         title: 'Exhibitions',
@@ -164,7 +138,20 @@ export default {
         ‣ 桃園新創日<br/>
         ‣ 中軟智慧加速器發表會
         `,
-        img: 'awards/ai-contest.png',
+        img: [
+          {
+            image: 'awards/future-city.png',
+            alt: 'Future City Image 1',
+          },
+          {
+            image: 'awards/future-city-2.png',
+            alt: 'Future City Image 2',
+          },
+          {
+            image: 'awards/isave.png',
+            alt: 'iSave Exhibition',
+          },
+        ],
       },
       {
         title: 'Competitions',
@@ -178,7 +165,20 @@ export default {
         ‣ 中科創新創業競賽 優等<br/>
         ‣ 林口新創園 新創應用場域實證<br/>
         `,
-        img: 'awards/ai-day.png',
+        img: [
+          {
+            image: 'awards/ai-day.png',
+            alt: 'AI Day',
+          },
+          {
+            image: 'awards/ai-contest.png',
+            alt: 'AI Contest',
+          },
+          {
+            image: 'awards/yue-nong-bei.png',
+            alt: 'Jonas Cup',
+          },
+        ],
       },
       // {
       //   title: 'Media',
@@ -534,6 +534,6 @@ export default {
   footer: {
     privacy: 'Copyright © 2022 iAmbition Technology Pte. Ltd.',
     location: 'Singapore | Taiwan',
-    partners: 'Our Partners'
-  }
+    partners: 'Our Partners',
+  },
 }

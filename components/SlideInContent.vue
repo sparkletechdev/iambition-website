@@ -1,17 +1,17 @@
 <template>
   <div class="items-container">
-    <div v-for="(item, index) in content" :key="index" class="g-item-container">
+    <div class="g-item-container">
       <div class="g-item-left g-item-left-active">
-        <img :src="require(`@/assets/images/${item.img}`)" class="g-img" />
+        <slot></slot>
       </div>
       <div class="g-item-right-container g-item-right-container-active">
         <h1 class="g-item-title g-item-title-active">
-          {{ item.title }}
+          {{ content.title }}
         </h1>
         <!-- eslint-disable vue/no-v-html -->
         <p
           class="g-item-subtitle g-item-subtitle-active"
-          v-html="item.subtitle"
+          v-html="content.subtitle"
         ></p>
         <!--eslint-enable-->
       </div>
@@ -22,8 +22,8 @@
 export default {
   props: {
     content: {
-      default: () => [],
-      type: Array,
+      default: () => {},
+      type: Object,
     },
   },
   mounted() {
@@ -130,11 +130,7 @@ export default {
   opacity: 0;
   transform: translateX(90px);
 }
-.g-img {
-  min-width: 100%;
-  min-height: 480px;
-  object-fit: cover;
-}
+
 @media screen and (max-width: 1200px) {
   .g-item-container {
     width: 100%;
@@ -159,10 +155,6 @@ export default {
     width: 100%;
     order: 2;
     align-items: center;
-  }
-  .g-img {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 </style>
