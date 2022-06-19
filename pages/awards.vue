@@ -45,8 +45,12 @@ export default {
   data() {
     return {
       hooperSettings: {
+        centerMode: false,
+        itemsToShow: 1,
         wheelControl: false,
         autoPlay: true,
+        playSpeed: 2000,
+        trimWhiteSpace: true
       },
     }
   },
@@ -55,14 +59,15 @@ export default {
 
 
 <style scoped>
+
 .hooper {
   width: 720px;
   height: 480px;
 }
 
 .landing-img {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 .awards-container {
@@ -86,8 +91,8 @@ export default {
   }
 
   .hooper {
-    width: 70%;
-    height: auto;
+    width: 100%;
+    height: 320px;
   }
 
   .g-img {
@@ -96,10 +101,12 @@ export default {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .hooper {
-    width: 84%;
-    height: auto;
+
+@media screen and (max-width: 992px) {
+    .hooper {
+    width: 100%;
+    height: 240px;
   }
 }
+
 </style>

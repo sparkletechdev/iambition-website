@@ -71,7 +71,7 @@ export default {
   padding-top: 8rem;
 }
 .g-item-left {
-  width: 69%;
+  width: 75%;
   overflow: hidden;
   opacity: 1;
   transform: translateX(0);
@@ -82,7 +82,7 @@ export default {
   order: 2;
 }
 .g-item-right-container {
-  width: 29%;
+  width: 22.5%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
