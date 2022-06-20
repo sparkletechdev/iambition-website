@@ -57,7 +57,23 @@ export default {}
   color: rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1200px) {
+  .solution-main-container {
+    height: auto !important;
+  }
+  .solution-banners-container {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px !important;
+    margin-top: 3% !important;
+  }
+  .solution-title {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992) {
   .solution-main-container {
     height: auto !important;
   }

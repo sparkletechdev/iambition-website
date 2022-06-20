@@ -115,7 +115,7 @@ export default {
     },
   },
   awards: {
-    landingTitle: '獎項和認可',
+    landingTitle: 'Awards and Recognition',
     landingContent: [
       `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -124,32 +124,6 @@ export default {
     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
     anim id est laborum.`,
-    ],
-    carousel: [
-      {
-        image: 'awards/ai-day.png',
-        alt: 'AI Day',
-      },
-      {
-        image: 'awards/ai-contest.png',
-        alt: 'AI Contest',
-      },
-      {
-        image: 'awards/yue-nong-bei.png',
-        alt: 'Jonas Cup',
-      },
-      {
-        image: 'awards/future-city.png',
-        alt: 'Future City Image 1',
-      },
-      {
-        image: 'awards/future-city-2.png',
-        alt: 'Future City Image 2',
-      },
-      {
-        image: 'awards/isave.png',
-        alt: 'iSave Exhibition',
-      },
     ],
     content: [
       {
@@ -164,7 +138,20 @@ export default {
         ‣ 桃園新創日<br/>
         ‣ 中軟智慧加速器發表會
         `,
-        img: 'awards/ai-contest.png',
+        img: [
+          {
+            image: 'awards/future-city.png',
+            alt: 'Future City Image 1',
+          },
+          {
+            image: 'awards/future-city-2.png',
+            alt: 'Future City Image 2',
+          },
+          {
+            image: 'awards/isave.png',
+            alt: 'iSave Exhibition',
+          },
+        ],
       },
       {
         title: 'Competitions',
@@ -178,7 +165,20 @@ export default {
         ‣ 中科創新創業競賽 優等<br/>
         ‣ 林口新創園 新創應用場域實證<br/>
         `,
-        img: 'awards/ai-day.png',
+        img: [
+          {
+            image: 'awards/ai-day.png',
+            alt: 'AI Day',
+          },
+          {
+            image: 'awards/ai-contest.png',
+            alt: 'AI Contest',
+          },
+          {
+            image: 'awards/yue-nong-bei.png',
+            alt: 'Jonas Cup',
+          },
+        ],
       },
       // {
       //   title: 'Media',
@@ -192,7 +192,7 @@ export default {
       //   ‣ 聯合報 報導<br/>
       //   ‣ 公共電視 報導
       //   `,
-      //   img: 'awards/yue-nong-bei.png',
+      //   img: 'image11.png',
       // },
     ],
   },
@@ -213,24 +213,18 @@ export default {
   index: {
     landing: [
       {
-        landingTitle: 'iAmbition @ Computex 2022',
+        landingTitle: '台北國際電腦展 Computex 2022',
         landingContent: [
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+          `台北國際電腦展是亞洲最具代表性之資訊產業專業展，定位為建構全球科技生態系，聚焦開創運算、智慧驅動、數位韌性、無限體驗、創新與新創、創新與新創等主題，提供全球創業先鋒產業知識碰撞與交流之平臺、創造更多技術革新的火花。
+          雄欣科技榮獲經濟部的邀請，參與工業局生活館的展區活動，展示智慧生活與智慧安全的解決方案。 `,
         ],
         image: 'home3.jpg',
         video: 'computex.mp4',
       },
       {
-        landingTitle: 'iAmbition Joins Microsoft Startups Founders Hub',
+        landingTitle: '雄欣科技 獲選為 亞灣雲平台-微軟新創加速器 重點培育新創',
         landingContent: [
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-          anim id est laborum.`,
+          `開展一個新事業，創意只是起點，雄欣科技藉由微軟的以大帶小，藉由微軟全球豐富的新創育成經驗、產業專家與技術顧問的諮詢，以及全球夥伴生態體系。讓雄欣科技更容易從1到N快速成長、更容易將解決方案帶給全球客戶，躍向全球市場。`,
         ],
         image: 'home1.jpg',
       },
@@ -246,22 +240,22 @@ export default {
       },
     ],
     solution: {
-      title: 'Effective, Efficient and Elegant',
+      title: '有效、高效、以人為本',
       description:
-        'Big Data and Artificial Intelligence for all, as it should be',
+        '大數據和人工智能應有盡有',
       solutions: [
         {
-          title: 'Fall Detection And Vitals Monitoring',
+          title: '預測行為智能和生命體徵監測',
           description:
-            'Nash360 can efficiently process any data in any format through any database using Distributed Computing with Spark',
+            '藉由自主研發的3D感測與生理雷達裝置、融合式演算法，將各類型異常行為與生理數值，進行集中式通報。',
           button: 'Explore AI Care',
           image: 'solutions/ai-care.jpg',
           link: '/solutions/aicare',
         },
         {
-          title: 'Predictive Behavioral Intelligence',
+          title: '互動式智慧看板',
           description:
-            'Predict provides accurate behavioral forecasts for each customer using Automated Machine Learning',
+            '使用各類型感測器、人工智慧技術提供新一代具備互動式能力的AI智慧看板。',
           button: 'Explore AI Safe',
           image: 'solutions/ai-safe.jpg',
           link: '/solutions/aisafe',

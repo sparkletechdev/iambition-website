@@ -109,12 +109,12 @@ export default {
     transform: translateY(-50%);
     width: 100%;
   } */
-@media screen and (max-width: 1700px) {
+@media screen and (max-width: 1200px) {
   .solution-banners-container {
     width: 80% !important;
     margin-bottom: 5%;
   }
-  .solution-banners-container .deephthreetitle {
+  .solution-banners-container .banner-title {
     width: 80% !important;
     text-align: center;
   }
