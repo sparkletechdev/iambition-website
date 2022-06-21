@@ -11,8 +11,8 @@ export default {
   },
   navbar: {
     solutions: 'Solutions',
-    aiCare: 'AI Care',
-    aiSafe: 'AI Safe',
+    aiCare: 'iCare',
+    aiSafe: 'iSafe',
     technologies: 'Our Technologies',
     awards: 'Awards',
     clients: 'Clients',
@@ -320,23 +320,16 @@ export default {
   clients: {
     landingTitle: 'Our Clients',
     landingContent: [
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-    anim id est laborum.`,
+      `數位轉型AI化－預見數位轉型，體現安全新世代`,
+      `透過AI、物聯網、大數據、雲端、邊緣運算等技術所提供的解決方案，將場域與人的安全管理代入智慧化模式，根據客戶需求隨選隨用，進行可客製化解決方案，已經是AI應用的主流。`,
+      `雄欣科技的解決方案，已經榮獲多家業者所使用，在高雄市立凱旋醫院的解決方案，更是榮獲Smart City 的Go Smart 獎項，並且成為高雄市智慧城市的代表作。`
     ],
     data: [
       {
         id: 'tunghai',
         clientName: 'Tunghai University',
         description: [
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+          `360度無死角打造安全的智慧校園`,
         ],
         images: [
           {
@@ -358,8 +351,7 @@ export default {
         id: 'ksph',
         clientName: 'Kai-Syuan Psychiatric Hospital',
         description: [
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+          `以人為本的精神，打造安全的智慧醫療與照護場域`,
         ],
         images: [
           {
@@ -381,7 +373,7 @@ export default {
   },
   solutions: {
     aiCare: {
-      landingTitle: 'AI Care',
+      landingTitle: 'iCare',
       landingContent: [
         `有鑒於後疫情時代及人口高齡化現象，各醫療照護機構普遍有醫護人力短缺及遠距照護的需求，為了提升安全照護的主動性、
       即時性與安全性，針對各類型醫院及需要24小時照護的各類型安養院、公托中心的數位轉型。`,
@@ -429,7 +421,7 @@ export default {
       ],
     },
     aiSafe: {
-      landingTitle: 'AI Safe',
+      landingTitle: 'iSafe',
       landingContent: [
         `對於追求營運卓越的餐廳來說，熟客的經營與店內安全是在美食外最在意的二件事。`,
         `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器等技術所建立i熟客與顧客安全感知系統，在全球新冠肺炎肆虐之際，取代人力量測，
@@ -508,26 +500,15 @@ export default {
       },
       {
         title: 'Internet of Things Platform',
-        content: `<p>物聯網平台可以支援各類型物聯網設備：</p>
+        content: `<p>平台中的感知層，可以佈署符合 ONVIF協定的數位槍型攝影機、球型IP數位攝影機、180度廣角攝影機、
+        360度魚眼攝影機、LTE或5G攝影機、Edge AI 攝影機、熱成像攝影機、數位影音門禁對講機。也可以佈署3D感測器，例如：ToF 
+        飛時測距感測器、mmWave毫米波雷達。更可以佈署智慧眼鏡、空氣品質感測器…等智慧物件。</p>
         <br>
-          <ol class="list-decimal list-inside">
-          <li>符合 ONVIF協定攝影機
-            <ul class="list-disc ml-8">
-              <li>Edge AI 攝影機</li>
-              <li>槍型或球型IP數位攝影機</li>
-              <li>180度廣角攝影機</li>
-              <li>360度魚眼攝影機</li>
-              <li>LTE或5G攝影機</li>
-              <li>數位門禁對講機</li>
-              <li>熱成像攝影機</li>
-            </ul>
-          </li>
-          </li>
-          <li>智慧眼鏡</li> 
-          <li>ToF 飛時測距感測器</li> 
-          <li>mmWave毫米波雷達</li> 
-          <li>空氣品質感測器</li>
-          </ol>`,
+        <p>就網路層而言，IoT中的智慧物件具有聯網能力，能夠將感測資訊傳遞至網際網路，透過混合雲雲端技術的AI辨識、儲存、
+        處理及分享機制，轉化為人們所需要的加值服務。</p>
+        <br>
+        <p>這些透過感知與物件聯網、雲端科技及語言與語意交換與分析的技術，將實體世界中眾多的物體聯結成一巨大的IoT，提供智慧生活、
+        智慧醫療與健康照護、智慧節能等多個領域的應用服務。改善我們的生活品質與安全。</p>`,
       },
     ],
   },
