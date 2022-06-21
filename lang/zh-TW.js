@@ -251,7 +251,7 @@ export default {
           title: '預測行為智能和生命體徵監測',
           description:
             '藉由自主研發的3D感測與生理雷達裝置、融合式演算法，將各類型異常行為與生理數值，進行集中式通報。',
-          button: 'Explore AI Care',
+          button: 'Explore iCare',
           image: 'solutions/ai-care.jpg',
           link: '/solutions/aicare',
         },
@@ -259,7 +259,7 @@ export default {
           title: '互動式智慧看板',
           description:
             '使用各類型感測器、人工智慧技術提供新一代具備互動式能力的AI智慧看板。',
-          button: 'Explore AI Safe',
+          button: 'Explore iSafe',
           image: 'solutions/ai-safe.jpg',
           link: '/solutions/aisafe',
         },
@@ -370,17 +370,25 @@ export default {
         { path: 'solutions/ai-care/media2.MP4', type: 'video/mp4' },
         { path: 'solutions/ai-care/media3.MOV', type: 'video/mp4' },
       ],
-
       sections: [
         {
-          title: '門禁型辨識與身份辨識、健康偵測',
+          title: '異常跌倒 與 生命跡象偵測 模組',
           content: [
-            `緊急對講需求`,
-            `門禁與入侵偵測`,
-            `體溫量測`,
-            `電子圍籬`,
-            `主動性且即時通報`,
-            `統計與分析`,
+            `以 TOF 及 mmWave 結合 AI 深度學習邊緣運算技術，來進行各類型的行為智慧感知偵測及通報，及各別住民的異常風險評估分析。例如：`,
+            `1) 跌倒（行進間、變換姿態間、床上摔下、輪椅上跌落）`,
+            `2) 離床中與離床後`,
+            `3) 廁所久留`,
+            `4) 離開房間`,
+            `5) 遠距且主動式的心跳呼吸偵測`,
+          ],
+          images: ['solutions/ai-care/tof1.jpg', 'solutions/ai-care/tof2.jpg'],
+        },
+        {
+          title: '門禁型辨識與身份辨識、健康類模組',
+          content: [
+            `打造智慧場域系統，自動化連接各項設備，包含門磁偵測
+            、監視器、影像式對講機等裝置，有效即時進行AI監控及通報管理。`,
+            `針對Covid-19疫情，雄欣科技也代理了Hitachi 負壓艙設備。`,
           ],
           images: [
             'solutions/ai-care/safety1.jpg',
@@ -389,20 +397,15 @@ export default {
           ],
         },
         {
-          title: '去識別化照護感知',
+          title: '早期火災預警偵測 類模組',
           content: [
-            `早期照護需求的通知`,
-            `更精準的分險評估`,
-            `主動性且即時通報`,
-            `以 TOF （飛時測距感測器）及 mmWave（毫米波雷達） 結合 AI 深度學習邊緣運算技術 ～提供各類型`,
-            `- 跌倒（行進間、變換姿態間、床上摔下、輪椅上跌落）`,
-            `- 離床中、床上無人`,
-            `- 廁所久留`,
-            `- 房間人容`,
-            `- 遠距且主動式的心跳呼吸偵測`,
-            `- 等各種行為智慧感知偵測，及各別住民的異常風險評估分析。`,
+            `市面上的火警自動警報設備，包含了偵煙式探測器、自動撒水、水霧或泡沫滅火設備，這是建築物的標準救災配備，主要是偵測火災所產生的濃煙為主要來源依據。`,
+            `我們提供透過攝影機、空氣品質偵測器為主的小火時的AI預警，可以及早發現火災的可能性，可以更及早的消滅火源。`,
           ],
-          images: ['solutions/ai-care/tof1.jpg'],
+          images: [
+            'solutions/ai-care/fire1.jpg',
+            'solutions/ai-care/fire2.jpg',
+          ],
         },
       ],
     },
@@ -486,6 +489,7 @@ export default {
       },
       {
         title: '物聯網平台與設備',
+        image: 'technologies/iot.jpg',
         content: `<p>平台中的感知層，可以佈署符合 ONVIF協定的數位槍型攝影機、球型IP數位攝影機、180度廣角攝影機、
         360度魚眼攝影機、LTE或5G攝影機、Edge AI 攝影機、熱成像攝影機、數位影音門禁對講機。也可以佈署3D感測器，例如：ToF 
         飛時測距感測器、mmWave毫米波雷達。更可以佈署智慧眼鏡、空氣品質感測器…等智慧物件。</p>

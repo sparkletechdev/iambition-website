@@ -121,7 +121,7 @@
             {{ content }}
           </p>
           <div class="social-media-container">
-            <a href="https://www.instagram.com">
+            <!-- <a href="https://www.instagram.com">
               <div class="social-icon">
                 <fa :icon="['fab', 'instagram-square']" />
               </div>
@@ -135,8 +135,8 @@
               <div class="social-icon">
                 <fa :icon="['fab', 'twitter-square']" />
               </div>
-            </a>
-            <a href="https://tw.linkedin.com">
+            </a> -->
+            <a href="linkedin.com/in/股份有限公司-雄欣科技-623699242">
               <div class="social-icon">
                 <fa :icon="['fab', 'linkedin']" />
               </div>

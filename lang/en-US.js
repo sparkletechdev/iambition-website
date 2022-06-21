@@ -260,7 +260,7 @@ export default {
           title: 'Fall Detection And Vitals Monitoring',
           description:
             'Nash360 can efficiently process any data in any format through any database using Distributed Computing with Spark',
-          button: 'Explore AI Care',
+          button: 'Explore iCare',
           image: 'solutions/ai-care.jpg',
           link: '/solutions/aicare',
         },
@@ -268,7 +268,7 @@ export default {
           title: 'Predictive Behavioral Intelligence',
           description:
             'Predict provides accurate behavioral forecasts for each customer using Automated Machine Learning',
-          button: 'Explore AI Safe',
+          button: 'Explore iSafe',
           image: 'solutions/ai-safe.jpg',
           link: '/solutions/aisafe',
         },
@@ -322,15 +322,13 @@ export default {
     landingContent: [
       `數位轉型AI化－預見數位轉型，體現安全新世代`,
       `透過AI、物聯網、大數據、雲端、邊緣運算等技術所提供的解決方案，將場域與人的安全管理代入智慧化模式，根據客戶需求隨選隨用，進行可客製化解決方案，已經是AI應用的主流。`,
-      `雄欣科技的解決方案，已經榮獲多家業者所使用，在高雄市立凱旋醫院的解決方案，更是榮獲Smart City 的Go Smart 獎項，並且成為高雄市智慧城市的代表作。`
+      `雄欣科技的解決方案，已經榮獲多家業者所使用，在高雄市立凱旋醫院的解決方案，更是榮獲Smart City 的Go Smart 獎項，並且成為高雄市智慧城市的代表作。`,
     ],
     data: [
       {
         id: 'tunghai',
         clientName: 'Tunghai University',
-        description: [
-          `360度無死角打造安全的智慧校園`,
-        ],
+        description: [`360度無死角打造安全的智慧校園`],
         images: [
           {
             path: 'clients/tunghai/1.jpg',
@@ -350,9 +348,7 @@ export default {
       {
         id: 'ksph',
         clientName: 'Kai-Syuan Psychiatric Hospital',
-        description: [
-          `以人為本的精神，打造安全的智慧醫療與照護場域`,
-        ],
+        description: [`以人為本的精神，打造安全的智慧醫療與照護場域`],
         images: [
           {
             path: 'clients/ksph/1.jpg',
@@ -384,17 +380,25 @@ export default {
         { path: 'solutions/ai-care/media2.MP4', type: 'video/mp4' },
         { path: 'solutions/ai-care/media3.MOV', type: 'video/mp4' },
       ],
-
       sections: [
         {
-          title: '門禁型辨識與身份辨識、健康偵測',
+          title: '異常跌倒 與 生命跡象偵測 模組',
           content: [
-            `緊急對講需求`,
-            `門禁與入侵偵測`,
-            `體溫量測`,
-            `電子圍籬`,
-            `主動性且即時通報`,
-            `統計與分析`,
+            `以 TOF 及 mmWave 結合 AI 深度學習邊緣運算技術，來進行各類型的行為智慧感知偵測及通報，及各別住民的異常風險評估分析。例如：`,
+            `1) 跌倒（行進間、變換姿態間、床上摔下、輪椅上跌落）`,
+            `2) 離床中與離床後`,
+            `3) 廁所久留`,
+            `4) 離開房間`,
+            `5) 遠距且主動式的心跳呼吸偵測`,
+          ],
+          images: ['solutions/ai-care/tof1.jpg', 'solutions/ai-care/tof2.jpg'],
+        },
+        {
+          title: '門禁型辨識與身份辨識、健康類模組',
+          content: [
+            `打造智慧場域系統，自動化連接各項設備，包含門磁偵測
+            、監視器、影像式對講機等裝置，有效即時進行AI監控及通報管理。`,
+            `針對Covid-19疫情，雄欣科技也代理了Hitachi 負壓艙設備。`,
           ],
           images: [
             'solutions/ai-care/safety1.jpg',
@@ -403,20 +407,15 @@ export default {
           ],
         },
         {
-          title: '去識別化照護感知',
+          title: '早期火災預警偵測 類模組',
           content: [
-            `早期照護需求的通知`,
-            `更精準的分險評估`,
-            `主動性且即時通報`,
-            `以 TOF （飛時測距感測器）及 mmWave（毫米波雷達） 結合 AI 深度學習邊緣運算技術 ～提供各類型`,
-            `- 跌倒（行進間、變換姿態間、床上摔下、輪椅上跌落）`,
-            `- 離床中、床上無人`,
-            `- 廁所久留`,
-            `- 房間人容`,
-            `- 遠距且主動式的心跳呼吸偵測`,
-            `- 等各種行為智慧感知偵測，及各別住民的異常風險評估分析。`,
+            `市面上的火警自動警報設備，包含了偵煙式探測器、自動撒水、水霧或泡沫滅火設備，這是建築物的標準救災配備，主要是偵測火災所產生的濃煙為主要來源依據。`,
+            `我們提供透過攝影機、空氣品質偵測器為主的小火時的AI預警，可以及早發現火災的可能性，可以更及早的消滅火源。`,
           ],
-          images: ['solutions/ai-care/tof1.jpg'],
+          images: [
+            'solutions/ai-care/fire1.jpg',
+            'solutions/ai-care/fire2.jpg',
+          ],
         },
       ],
     },
@@ -500,6 +499,7 @@ export default {
       },
       {
         title: 'Internet of Things Platform',
+        image: 'technologies/iot.jpg',
         content: `<p>平台中的感知層，可以佈署符合 ONVIF協定的數位槍型攝影機、球型IP數位攝影機、180度廣角攝影機、
         360度魚眼攝影機、LTE或5G攝影機、Edge AI 攝影機、熱成像攝影機、數位影音門禁對講機。也可以佈署3D感測器，例如：ToF 
         飛時測距感測器、mmWave毫米波雷達。更可以佈署智慧眼鏡、空氣品質感測器…等智慧物件。</p>

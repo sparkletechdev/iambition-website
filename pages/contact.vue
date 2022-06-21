@@ -5,8 +5,8 @@
       :contents="$t('contact.landingContent')"
       image="contact-us.jpg"
     >
-      <ContactForm
-    /></LandingComponent>
+      <ContactForm />
+    </LandingComponent>
   </main>
 </template>
 
