@@ -376,10 +376,6 @@ export default {
         `我們開發出一款結合 3D 深度感測技術，在受照護者不須攜帶穿戴式裝置，並且注重病患隱私的基礎上，以AI的方式偵測人體姿態動作，當受照護者發生安全意外事件時，能瞬間向照護人員發出異常通報的全方位系統。`,
         `AI照護感知系統，採用AI模組化架構設計，如果機構未來想要額外增加購買其他特殊異常行為的偵測通報時，可以在原系統持續增加AI模型，發展出更多類型的異常行為偵測。`,
       ],
-      videos: [
-        { path: 'solutions/ai-care/media2.MP4', type: 'video/mp4' },
-        { path: 'solutions/ai-care/media3.MOV', type: 'video/mp4' },
-      ],
       sections: [
         {
           title: '異常跌倒 與 生命跡象偵測 模組',
@@ -391,7 +387,14 @@ export default {
             `4) 離開房間`,
             `5) 遠距且主動式的心跳呼吸偵測`,
           ],
-          images: ['solutions/ai-care/tof1.jpg', 'solutions/ai-care/tof2.jpg'],
+          images: [
+            { path: 'solutions/ai-care/tof1.jpg' },
+            { path: 'solutions/ai-care/tof2.jpg' },
+          ],
+          videos: [
+            { path: 'solutions/ai-care/media2.MP4', type: 'video/mp4' },
+            { path: 'solutions/ai-care/media3.MOV', type: 'video/mp4' },
+          ],
         },
         {
           title: '門禁型辨識與身份辨識、健康類模組',
@@ -401,9 +404,19 @@ export default {
             `針對Covid-19疫情，雄欣科技也代理了Hitachi 負壓艙設備。`,
           ],
           images: [
-            'solutions/ai-care/safety1.jpg',
-            'solutions/ai-care/safety2.jpg',
-            'solutions/ai-care/safety3.jpg',
+            {
+              path: 'solutions/ai-care/safety1.jpg',
+              caption: '人臉辨識門禁功能模組',
+            },
+            {
+              path: 'solutions/ai-care/safety2.jpg',
+              caption: '日立負壓艙模組',
+            },
+            { path: 'solutions/ai-care/safety3.jpg', caption: '電子圍籬模組' },
+            {
+              path: 'solutions/ai-care/safety4.jpg',
+              caption: '影像式對講機模組',
+            },
           ],
         },
         {
@@ -413,8 +426,8 @@ export default {
             `我們提供透過攝影機、空氣品質偵測器為主的小火時的AI預警，可以及早發現火災的可能性，可以更及早的消滅火源。`,
           ],
           images: [
-            'solutions/ai-care/fire1.jpg',
-            'solutions/ai-care/fire2.jpg',
+            { path: 'solutions/ai-care/fire1.jpg' },
+            { path: 'solutions/ai-care/fire2.jpg' },
           ],
         },
       ],
@@ -434,7 +447,7 @@ export default {
             `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器等技術所建立i熟客與顧客安全感知系統，在全球新冠肺炎肆虐之際，
               取代人力量測，第一時間完成防疫與健康管理的工作，讓顧客能安心享用美食，更有一份客製化的款待與尊榮。`,
           ],
-          images: ['solutions/ai-safe/restaurant.jpg'],
+          images: [{ path: 'solutions/ai-safe/restaurant.jpg' }],
         },
         {
           title: '智慧校園類型',
@@ -443,7 +456,7 @@ export default {
             `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器、4G/5G/數位攝影機等技術，
             所建立的安全感知系統與智慧戰情室系統，在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
           ],
-          images: ['solutions/ai-safe/school.jpg'],
+          images: [{ path: 'solutions/ai-safe/school.jpg' }],
         },
         {
           title: '智慧停車場類型',
@@ -453,8 +466,8 @@ export default {
             在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
           ],
           images: [
-            'solutions/ai-safe/carpark.jpg',
-            'solutions/ai-safe/carpark2.jpg',
+            { path: 'solutions/ai-safe/carpark.jpg' },
+            { path: 'solutions/ai-safe/carpark2.jpg' },
           ],
         },
       ],

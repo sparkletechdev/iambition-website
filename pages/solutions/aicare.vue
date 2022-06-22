@@ -5,22 +5,23 @@
       :contents="$t('solutions.aiCare.landingContent')"
       image="solutions/ai-care.jpg"
     />
-    <ImageTextColumn
+    <div
       v-for="(item, index) in $t('solutions.aiCare.sections')"
       :key="index"
-      :section="item"
-      :align-left="index % 2 === 0"
-    />
-    <div class="video-container">
-      <div class="videos">
-        <video
-          v-for="(video, index) in $t('solutions.aiCare.videos')"
-          :key="index"
-          controls
-          class="client-video"
-        >
-          <source :src="staticPath(video.path)" :type="video.type" />
-        </video>
+      class="section-container"
+    >
+      <ImageTextColumn :section="item" :align-left="index % 2 === 0" />
+      <div class="video-container">
+        <div v-if="item.videos" class="videos">
+          <video
+            v-for="(video, i) in item.videos"
+            :key="i"
+            controls
+            class="client-video"
+          >
+            <source :src="staticPath(video.path)" :type="video.type" />
+          </video>
+        </div>
       </div>
     </div>
 
@@ -41,7 +42,7 @@ export default {}
   overflow: hidden;
 }
 .video-container {
-  background-color: #273244;
+  background-color: transparent;
   padding: 2rem 15% 4%;
 }
 .videos {
@@ -55,12 +56,17 @@ export default {}
   margin-bottom: 1.5rem;
 }
 
-::v-deep .ilc-container:nth-child(odd) {
-  background-color: #273244;
+.section-container {
+  background-color: white;
 }
 
-::v-deep .ilc-container:nth-child(odd) > .ilc-content > .ilc-text-container {
+.section-container:nth-child(odd) {
+  background-color: #273244;
   color: white;
+}
+
+::v-deep .ilc-container {
+  background-color: transparent;
 }
 
 ::v-deep .landing-container {

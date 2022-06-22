@@ -13,7 +13,24 @@
             {{ item }}
           </p>
         </div>
-        <div class="ilc-image-container">
+        <div class="ilc-image-grid">
+          <div
+            v-for="(image, i) in section.images"
+            :key="i"
+            class="image-caption"
+          >
+            <img
+              :src="staticPath(image.path)"
+              :alt="image.alt"
+              class="ilc-image"
+              @click="showLightbox(i)"
+            />
+            <p v-if="image.caption">
+              {{ image.caption }}
+            </p>
+          </div>
+        </div>
+        <!-- <div class="ilc-image-container">
           <img
             v-if="section.images.length === 1"
             :src="staticPath(section.images[0])"
@@ -28,17 +45,15 @@
             :monitor-images-loaded="true"
           >
             <stack-item v-for="(media, i) in section.images" :key="i">
-              <!-- <a :href="$store.state.baseUrl + image.path" target="_blank"> -->
               <img
                 :src="staticPath(media)"
                 :alt="media.alt"
                 class="ilc-image"
                 @click="toggler = !toggler"
               />
-              <!-- </a> -->
             </stack-item>
           </stack>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -73,6 +88,10 @@ export default {
     lightboxImages() {
       const newArr = this.section.images.map((image) => this.staticPath(image))
       return newArr
+    },
+    showLightbox(index) {
+      this.lbIndex = index + 1
+      this.toggler = !this.toggler
     },
   },
 }
@@ -120,6 +139,7 @@ export default {
 .ilc-image {
   /* border: 1px solid black; */
   width: 100%;
+  height: 100%;
   cursor: zoom-in;
 }
 .ilc-video {
@@ -136,6 +156,21 @@ export default {
   box-shadow: none;
   opacity: 1;
   transition: all 0.2s ease-in-out;
+}
+.ilc-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 300px;
+  row-gap: 2.5rem;
+  column-gap: 1rem;
+}
+.image-caption {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 @media screen and (max-width: 1200px) {
   .ilc-container {
