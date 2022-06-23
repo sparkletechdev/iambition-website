@@ -5,7 +5,6 @@
       <img
         v-if="item.image"
         class="tech-img"
-        :class="float"
         :src="require(`@/assets/images/${item.image}`)"
       />
       <!-- eslint-disable vue/no-v-html -->
@@ -49,6 +48,10 @@ export default {
   text-align: center;
   margin-bottom: 1rem;
   color: #369;
+}
+
+.tech-img {
+  margin-bottom: 2rem;
 }
 
 .float-right {
