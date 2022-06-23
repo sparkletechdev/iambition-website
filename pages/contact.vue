@@ -3,6 +3,7 @@
     <LandingComponent
       :title="$t('contact.landingTitle')"
       :contents="$t('contact.landingContent')"
+      :show-arrow=false
       image="contact-us.jpg"
     >
       <ContactForm />

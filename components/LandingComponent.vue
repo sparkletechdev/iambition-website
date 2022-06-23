@@ -1,10 +1,18 @@
 <template>
   <div id="landing" class="landing-container" :style="inlineStyle">
     <h1 class="splash-title">{{ title }}</h1>
-    <p v-for="(content, index) in contents" :key="index" class="splash-content">
-      {{ content }}
-    </p>
+    <div content-container>
+      <p
+        v-for="(content, index) in contents"
+        :key="index"
+        class="splash-content"
+      >
+        {{ content }}
+      </p>
+    </div>
+
     <slot class="slot-container"></slot>
+    <span v-if="showArrow" class="arrow"></span>
   </div>
 </template>
 
@@ -25,6 +33,10 @@ export default {
       type: String,
       default: 'home.jpg',
     },
+    showArrow: {
+      type: Boolean,
+      default: true,
+    },
   },
   computed: {
     background() {
@@ -43,6 +55,48 @@ export default {
 </script>
 
 <style scoped>
+.arrow {
+  position: absolute;
+  bottom: 4rem;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+
 .splash-title {
   font-weight: 600;
   font-size: 4.5rem;
@@ -60,12 +114,16 @@ export default {
   padding: 0 25%;
 }
 
+.content-container {
+  height: 100%;
+}
+
 .landing-container {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   padding: 8rem 0 4rem;
   background-size: cover;

@@ -118,6 +118,10 @@ export default {
     width: 80% !important;
     text-align: center;
   }
+
+  .solution-banner {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 992px) {
   .solution-banners-container {

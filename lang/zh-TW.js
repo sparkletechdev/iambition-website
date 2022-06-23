@@ -267,6 +267,7 @@ export default {
     },
     news: {
       title: 'Latest news on iAmbition',
+      readMore: '閱讀更多',
       items: [
         {
           title: '從智慧手臂到偵測打哈欠 工業局於Computex展現業者AI成果',

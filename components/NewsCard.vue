@@ -2,7 +2,7 @@
   <div class="news-card">
     <div class="news-title">{{ newsItem.title }}</div>
     <div class="news-desc">{{ newsItem.description }}</div>
-    <a :href="newsItem.link" target="_blank" class="read-more">Read More</a>
+    <a :href="newsItem.link" target="_blank" class="read-more">{{ $t('index.news.readMore') }}</a>
   </div>
 </template>
 

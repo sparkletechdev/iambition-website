@@ -11,11 +11,7 @@
 </template>
 
 <script>
-import {
-  Hooper,
-  Slide,
-  Pagination as HooperPagination,
-} from 'hooper'
+import { Hooper, Slide, Pagination as HooperPagination } from 'hooper'
 export default {
   components: {
     Hooper,
@@ -30,7 +26,7 @@ export default {
         wheelControl: false,
         autoPlay: 'true',
         playSpeed: 2000,
-        trimWhiteSpace: true
+        trimWhiteSpace: true,
       },
     }
   },
@@ -57,5 +53,11 @@ export default {
 }
 .hooper {
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .news-container {
+    padding: 4 8%;
+  }
 }
 </style>
