@@ -55,9 +55,15 @@ export default {
   height: auto;
 }
 
+@media screen and (max-width: 1200px) {
+  .news-container {
+    padding: 4% 8%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .news-container {
-    padding: 4 8%;
+    padding: 4% 4%;
   }
 }
 </style>
