@@ -5,7 +5,6 @@
     class="solution-button"
     @mouseenter="show()"
     @mouseleave="hide()"
-    @click="reload"
   >
     <nuxt-link :to="localePath(`${button.link}`)">
       <button type="button">
@@ -38,11 +37,6 @@ export default {
 
       ref.solutionButton.style.color = '#369'
       ref.solutionButton.style.transition = '.2s'
-    },
-    reload() {
-      setTimeout(() => {
-        window.location.reload()
-      }, 500)
     },
   },
 }
