@@ -1,10 +1,10 @@
 <template>
   <div class="ilc-container">
-    <FsLightbox :toggler="toggler" :sources="lightboxImages()" />
+    <FsLightbox :toggler="toggler" :slide="lbIndex" :sources="lightboxImages()" />
     <div class="ilc-content">
       <h1 class="ilc-title">{{ section.title }}</h1>
       <div class="ilc-text-container">
-        <div class="ilc-text" :style="order">
+        <div class="ilc-text" :class="order">
           <p
             v-for="(item, index) in section.content"
             :key="index"
@@ -13,7 +13,7 @@
             {{ item }}
           </p>
         </div>
-        <div class="ilc-image-grid">
+        <div v-if="section.images.length > 1" class="ilc-image-grid">
           <div
             v-for="(image, i) in section.images"
             :key="i"
@@ -30,6 +30,13 @@
             </p>
           </div>
         </div>
+        <img
+          v-else
+          :src="staticPath(section.images[0].path)"
+          :alt="section.images[0].alt"
+          class="ilc-image"
+          @click="showLightbox(0)"
+        />
         <!-- <div class="ilc-image-container">
           <img
             v-if="section.images.length === 1"
@@ -76,17 +83,17 @@ export default {
   data() {
     return {
       toggler: false,
+      lbIndex: 1
     }
   },
   computed: {
     order() {
-      const newOrder = this.alignLeft ? 0 : 2
-      return { order: `${newOrder}` }
+      return this.alignLeft ? 'align-left' : 'align-right'
     },
   },
   methods: {
     lightboxImages() {
-      const newArr = this.section.images.map((image) => this.staticPath(image))
+      const newArr = this.section.images.map((image) => this.staticPath(image.path))
       return newArr
     },
     showLightbox(index) {
@@ -129,17 +136,10 @@ export default {
   line-height: 1.7;
   margin-bottom: 20px;
 }
-.ilc-image-container {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  order: 1;
-}
 .ilc-image {
   /* border: 1px solid black; */
   width: 100%;
-  height: 100%;
+  height: 300px;
   cursor: zoom-in;
 }
 .ilc-video {
@@ -172,17 +172,19 @@ export default {
   font-size: 0.8rem;
   font-weight: 400;
 }
+
+.align-left {
+  order: 0;
+}
+.align-right {
+  order: 2;
+}
 @media screen and (max-width: 1200px) {
   .ilc-container {
     padding: 2.5rem 8% 2.5rem;
   }
   .ilc-title {
     font-size: 2.5rem;
-  }
-}
-@media screen and (max-width: 992px) {
-  .ilc-title {
-    margin-bottom: 2rem;
   }
   .ilc-text-container {
     display: flex;
@@ -192,9 +194,17 @@ export default {
   .ilc-text {
     width: 90%;
   }
-  .ilc-image-container {
+  .ilc-image-grid {
     margin-bottom: 45px;
     width: 90%;
+  }
+  .align-right {
+    order: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ilc-title {
+    margin-bottom: 2rem;
   }
 }
 @media screen and (max-width: 768px) {
@@ -207,6 +217,18 @@ export default {
   }
   .ilc-image-container {
     margin-bottom: 0;
+  }
+  .ilc-image-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 300px;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ilc-image-grid {
+    grid-auto-rows: 150px;
+    gap: 0.8rem;
   }
 }
 </style>

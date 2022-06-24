@@ -31,10 +31,16 @@ export default {}
 ::v-deep .ilc-container:nth-child(odd) {
   background-color: #273244;
 }
+::v-deep .ilc-text-container {
+  justify-content: center;
+}
 ::v-deep .ilc-container:nth-child(odd) > .ilc-content > .ilc-text-container {
   color: white;
 }
 ::v-deep .landing-container {
   background-position: 50%;
+}
+::v-deep .ilc-image {
+  width: auto;
 }
 </style>
