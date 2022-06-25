@@ -121,9 +121,8 @@ export default {
   height: 100%;
   transition: all 0.3s ease;
   background: linear-gradient(
-    rgba(39, 50, 68, 0) 0%,
-    rgba(39, 50, 68, 0) 75%,
-    rgba(51, 102, 153, 0.85) 80%
+    rgba(51, 51, 51, 0) 75%,
+    rgba(51, 51, 51, 0.55) 80%
   );
 }
 .item-content {

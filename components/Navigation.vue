@@ -244,10 +244,13 @@ export default {
   .header-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #333;
   }
   .header-link {
+    display: none;
+  }
+  .links {
     display: none;
   }
   .hamburger-border {
@@ -256,7 +259,6 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10rem;
   }
   @keyframes animate {
     0% {
@@ -265,16 +267,6 @@ export default {
     100% {
       width: 100%;
     }
-  }
-}
-@media screen and (max-width: 576px) {
-  .hamburger-border {
-    margin-left: 100px;
-  }
-}
-@media screen and (max-width: 414px) {
-  .hamburger-border {
-    margin-left: 70px;
   }
 }
 .index-container {
