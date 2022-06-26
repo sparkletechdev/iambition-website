@@ -73,17 +73,21 @@ export default {}
     text-align: center;
   }
 }
-@media screen and (max-width: 992) {
+@media screen and (max-width: 992px) {
   .solution-main-container {
     height: auto !important;
   }
   .solution-banners-container {
-    width: 80% !important;
+    width: 100% !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 800px !important;
     margin-top: 3% !important;
+  }
+  .solution-title {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
   }
 }
 </style>

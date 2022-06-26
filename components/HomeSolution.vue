@@ -146,5 +146,9 @@ export default {
   .predict {
     margin-bottom: 15% !important;
   }
+  .text-container {
+    justify-content: flex-end;
+    height: 100%;
+  }
 }
 </style>

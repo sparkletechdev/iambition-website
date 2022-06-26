@@ -66,9 +66,15 @@ export default {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .news-container {
-    padding: 4% 4%;
+    padding: 4% 0;
+  }
+  .news-container-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    padding: 1rem 1rem;
   }
 }
 </style>

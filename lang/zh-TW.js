@@ -462,13 +462,7 @@ export default {
   technologies: {
     landingTitle: 'Our Key Technologies',
     landingContent: [
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-    anim id est laborum.`,
+      `雄欣科技的核心技術，包含了去識別化3D感測技術、融合性人工智慧演算法、可視化戰情室系統平台。我們以人為本、從數位轉型的角度出發、重視ESG永續台灣的使命，領先業界推出一系列以創新價值、以人為本的「有溫度」解決方案。`,
     ],
     sections: [
       {
