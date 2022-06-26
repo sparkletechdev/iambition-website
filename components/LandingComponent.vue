@@ -166,7 +166,7 @@ export default {
   .landing-container {
     background-size: 200%;
   }
-  .splash-content {
+  .splash-content, .splash-title {
     padding: 0 15%;
   }
 }
@@ -175,9 +175,9 @@ export default {
     background-size: 300%;
   }
   .splash-title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
-  .splash-content {
+  .splash-content, .splash-title {
     padding: 0 8%;
   }
 }
@@ -187,10 +187,10 @@ export default {
     min-height: 320px;
   }
   .splash-title {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
   .splash-content {
-    padding: 0 8%;
+    font-size: 1rem;
   }
 }
 </style>

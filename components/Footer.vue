@@ -2,7 +2,7 @@
   <div class="footer-container">
     <div class="footer-border">
       <div class="footer-top-border">
-        <div class="footer-top-partners-border">
+        <!-- <div class="footer-top-partners-border">
           <p class="footer-partners">{{ $t('footer.partners') }}</p>
           <span class="footer-partners-line-hidden"></span>
           <div class="footer-partners-icon">
@@ -11,7 +11,7 @@
               class="partner-icon"
             />
             <img
-              :src="require('@/assets/images/partners/nvidia.png')"
+              :src="require('@/assets/images/partners/lilin2.png')"
               class="partner-icon"
             />
             <img
@@ -22,12 +22,12 @@
               :src="require('@/assets/images/partners/hitachi.png')"
               class="partner-icon"
             />
-            <!-- <fa :icon="['fas', 'chess-knight']" class="partner-icon" />
+            <fa :icon="['fas', 'chess-knight']" class="partner-icon" />
             <fa :icon="['fas', 'dice-d20']" class="partner-icon" />
             <fa :icon="['fas', 'dice']" class="partner-icon" />
-            <fa :icon="['fas', 'wind']" class="partner-icon" /> -->
+            <fa :icon="['fas', 'wind']" class="partner-icon" />
           </div>
-        </div>
+        </div> -->
         <div class="footer-social-container">
           <a href="https://www.instagram.com">
             <div class="social-icon">

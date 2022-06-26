@@ -22,11 +22,16 @@ export default {
     return {
       hooperSettings: {
         centerMode: true,
-        itemsToShow: 2,
+        itemsToShow: 1,
         wheelControl: false,
         autoPlay: 'true',
         playSpeed: 2000,
         trimWhiteSpace: true,
+        breakpoints: {
+          1000: {
+            itemsToShow: 2,
+          },
+        },
       },
     }
   },
