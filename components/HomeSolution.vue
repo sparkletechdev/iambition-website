@@ -125,7 +125,7 @@ export default {
 }
 @media screen and (max-width: 992px) {
   .solution-banners-container {
-    width: 500px !important;
+    width: 100% !important;
     height: 700px !important;
   }
   .nash {
@@ -137,7 +137,6 @@ export default {
 }
 @media screen and (max-width: 576px) {
   .solution-banners-container {
-    width: 350px !important;
     height: 600px !important;
   }
   .nash {
