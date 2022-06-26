@@ -117,13 +117,8 @@ export default {
   awards: {
     landingTitle: 'Awards and Recognition',
     landingContent: [
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-    anim id est laborum.`,
+      `雄欣科技創立至今，已經獲得多項的獎項與榮耀，例如：AI 新銳、桃園千里馬創業、約農盃創業、中科創新創業。`,
+      `同時也獲得多家媒體的報導，是台灣崛起最快、最受注目的新創業者`,
     ],
     content: [
       {
@@ -266,7 +261,7 @@ export default {
       ],
     },
     news: {
-      title: 'Latest news on iAmbition',
+      title: '最新消息',
       readMore: '閱讀更多',
       items: [
         {

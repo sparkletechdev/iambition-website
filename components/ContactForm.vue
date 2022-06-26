@@ -136,7 +136,7 @@
                 <fa :icon="['fab', 'twitter-square']" />
               </div>
             </a> -->
-            <a href="linkedin.com/in/股份有限公司-雄欣科技-623699242">
+            <a href="https://linkedin.com/in/股份有限公司-雄欣科技-623699242">
               <div class="social-icon">
                 <fa :icon="['fab', 'linkedin']" />
               </div>
