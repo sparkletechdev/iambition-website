@@ -23,6 +23,10 @@ export default {}
   overflow: hidden;
 }
 
+::v-deep .landing-container {
+  justify-content: flex-start;
+}
+
 @media screen and (max-width: 768px) {
   ::v-deep .splash-content:lang(en) {
     font-size: 1rem;
