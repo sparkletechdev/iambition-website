@@ -23,17 +23,16 @@ export default {}
   overflow: hidden;
 }
 
-::v-deep .landing-container {
-  justify-content: flex-start;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   ::v-deep .splash-content:lang(en) {
     font-size: 1rem;
   }
 
   ::v-deep .splash-title:lang(zh) {
     font-size: 4rem;
+  }
+  ::v-deep .landing-container {
+    justify-content: flex-start;
   }
 }
 

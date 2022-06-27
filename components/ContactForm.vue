@@ -136,7 +136,7 @@
                 <fa :icon="['fab', 'twitter-square']" />
               </div>
             </a> -->
-            <a href="https://linkedin.com/in/股份有限公司-雄欣科技-623699242">
+            <a href="http://www.linkedin.com/in/科技-雄欣-bb741a243">
               <div class="social-icon">
                 <fa :icon="['fab', 'linkedin']" />
               </div>
@@ -334,6 +334,7 @@ export default {
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
+  margin-bottom: 1.5rem;
 }
 .information-content {
   color: white;
@@ -370,9 +371,12 @@ export default {
     padding: 50px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .content {
     width: 480px;
+  }
+  .right-container {
+    padding: 4rem 8% 0;
   }
 }
 @media screen and (max-width: 576px) {

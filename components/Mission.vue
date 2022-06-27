@@ -100,6 +100,10 @@ export default {}
   .main-container {
     padding: 4% 15%;
   }
+  .company-exist-title {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

@@ -180,12 +180,24 @@ export default {
 }
 @media screen and (max-width: 1440px) {
   .main-container {
-    padding: 4% 20%;
+    padding: 4rem 20%;
   }
 }
 @media screen and (max-width: 1200px) {
   .main-container {
-    padding: 4% 10%;
+    padding: 4rem 8%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .company-doing-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .item {
+    height: 300px;
   }
 }
 </style>
