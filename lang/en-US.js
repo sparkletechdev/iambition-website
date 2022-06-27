@@ -393,8 +393,8 @@ export default {
             { path: 'solutions/ai-care/tof2.jpg' },
           ],
           videos: [
-            { path: 'solutions/ai-care/media2.MP4', type: 'video/mp4' },
-            { path: 'solutions/ai-care/media3.MOV', type: 'video/mp4' },
+            { path: 'https://www.youtube.com/embed/cNnQvx6PLrE?autoplay=0&mute=0'},
+            { path: 'https://www.youtube.com/embed/7JFaUcUaeUw?autoplay=0&mute=0'},
           ],
         },
         {

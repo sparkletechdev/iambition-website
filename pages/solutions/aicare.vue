@@ -13,14 +13,22 @@
       <ImageTextColumn :section="item" :align-left="index % 2 === 0" />
       <div class="video-container">
         <div v-if="item.videos" class="videos">
-          <video
+          <!-- <video
             v-for="(video, i) in item.videos"
             :key="i"
             controls
             class="client-video"
           >
             <source :src="staticPath(video.path)" :type="video.type" />
-          </video>
+          </video> -->
+          <iframe
+            v-for="(video, i) in item.videos"
+            :key="i"
+            width="1080"
+            height="608"
+            :src="video.path"
+          >
+          </iframe>
         </div>
       </div>
     </div>

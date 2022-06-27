@@ -8,11 +8,17 @@
           :contents="item.landingContent"
           :image="item.image"
         >
-          <div class="video">
-            <video v-if="item.video" controls width="1080px">
+          <div v-if="item.video" class="video">
+            <!-- <video v-if="item.video" controls width="1080px">
               <source :src="staticPath(item.video)" type="video/mp4" />
               <p>Sorry, there's a problem playing this video. Please try using a different browser.</p>
-            </video>
+            </video> -->
+            <iframe
+              width="1080"
+              height="608"
+              src="https://www.youtube.com/embed/0IGsRsBHu2c?autoplay=1&mute=1"
+            >
+            </iframe>
           </div>
         </LandingComponent>
       </slide>
