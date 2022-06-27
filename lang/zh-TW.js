@@ -265,24 +265,21 @@ export default {
       readMore: '閱讀更多',
       items: [
         {
-          title: '從智慧手臂到偵測打哈欠 工業局於Computex展現業者AI成果',
+          title: '雄欣科技於Computex 展示人體監測AI方案',
           description: `Computex台北國際電腦展於今年5月24日正式回歸實體展，成果豐碩!經濟部工業局於展會中打造
-          「工業局AI生活館」，以「AI一日生活圈」為主軸規劃三大展出主題：智慧製造、智慧交通、智慧生活，匯集14家參與AI
-          產推計畫的大廠及新創業者之AI成果，開展首日即盛大邀請經濟部王美花部長、工業局呂正華局長等政界代表，
-          以及台北市電腦公會理事長暨友達光電彭双浪董事長、利凌企業許家雄執行長、鈺立微電子王鏡戎策略長等業界貴賓
-          親臨AI主題館進行合影及觀摩體驗各項實際落地的計畫輔導成果及研發結晶。`,
+          「經濟部工業局呂正華局長蒞臨工業局AI生活館，與多家資通訊大廠及AI新創代表合影，攜手展現台灣AI技術能量`,
           link: 'https://money.udn.com/money/amp/story/11799/6336818',
         },
         {
           title: '亞洲矽谷攜手台杉首度前進高雄 培育獨角獸放眼全球',
           description:
             '後疫情商機湧現，亞洲．矽谷計畫執行中心與台杉投資合辦的「VS Talk」，23日首次前進南台灣，與高雄市政府共同主辦「立足南方 航向國際」活動，鼓勵新創企業立足南台灣，放眼國際市場。',
-          link: '/taichung.png',
+          link: 'https://www.asvda.org/Message/MessageView?itemid=414&mid=News2',
         },
         {
           title: '車庫精神 in TAICHUNG',
           description: '創業工作坊 演講演講主題：ESG 從觀念到行動',
-          link: 'https://www.asvda.org/Message/MessageView?itemid=414&mid=News2',
+          link: '/taichung.png',
         },
         {
           title: '高雄 5G AIOT 記者會',

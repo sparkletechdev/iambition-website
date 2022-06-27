@@ -43,8 +43,8 @@ export default {
 }
 
 .hamburger .line {
-  width: 45px;
-  height: 5px;
+  width: 28px;
+  height: 2px;
   background-color: white;
   display: block;
   margin: 8px auto;
@@ -64,17 +64,17 @@ export default {
 }
 
 #hamburger-1.active .line:nth-child(1) {
-  -webkit-transform: translateY(13px) rotate(45deg);
-  -ms-transform: translateY(13px) rotate(45deg);
-  -o-transform: translateY(13px) rotate(45deg);
-  transform: translateY(13px) rotate(45deg);
+  -webkit-transform: translateY(10px) rotate(45deg);
+  -ms-transform: translateY(10px) rotate(45deg);
+  -o-transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 #hamburger-1.active .line:nth-child(3) {
-  -webkit-transform: translateY(-13px) rotate(-45deg);
-  -ms-transform: translateY(-13px) rotate(-45deg);
-  -o-transform: translateY(-13px) rotate(-45deg);
-  transform: translateY(-13px) rotate(-45deg);
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
+  -o-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg);
 }
 
 @media screen and (max-width: 768px) {
