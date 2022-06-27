@@ -29,7 +29,7 @@ export default {
           { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
           {
             rel: 'stylesheet',
-            href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC&display=swap',
+            href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap',
           },
           ...i18nHead.link,
         ],
@@ -65,9 +65,4 @@ export default {
 html:lang(en) {
   font-family: 'Montserrat', sans-serif;
 }
-html:lang(zh) {
-  font-family: 'Noto Sans TC', sans-serif;
-}
-
-
 </style>

@@ -2,7 +2,9 @@
   <div class="news-card">
     <div class="news-title">{{ newsItem.title }}</div>
     <div class="news-desc">{{ newsItem.description }}</div>
-    <a :href="newsItem.link" target="_blank" class="read-more">{{ $t('index.news.readMore') }}</a>
+    <a :href="newsItem.link" target="_blank" class="read-more">{{
+      $t('index.news.readMore')
+    }}</a>
   </div>
 </template>
 
@@ -43,5 +45,13 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 992px) {
+  .news-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #369;
+  }
 }
 </style>

@@ -9,9 +9,10 @@
           :key="post.title"
           class="title"
         >
-          <nuxt-link :to="localePath(`/${post.route}`)">
+          <nuxt-link v-if="post.route" :to="localePath(`/${post.route}`)">
             {{ $t(post.title) }}
           </nuxt-link>
+          <div v-else class="not-link">{{ $t(post.title) }}</div>
           <div v-if="post.items.length != '0'" :key="post.title">
             <fa :icon="['fas', 'angle-down']" class="chevron-icon" />
           </div>
@@ -227,6 +228,10 @@ export default {
 }
 .title:hover .subtitle {
   display: block;
+}
+
+.not-link {
+  cursor: default;
 }
 
 @media screen and (max-width: 1200px) {
