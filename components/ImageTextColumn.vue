@@ -1,6 +1,10 @@
 <template>
   <div class="ilc-container">
-    <FsLightbox :toggler="toggler" :slide="lbIndex" :sources="lightboxImages()" />
+    <FsLightbox
+      :toggler="toggler"
+      :slide="lbIndex"
+      :sources="lightboxImages()"
+    />
     <div class="ilc-content">
       <h1 class="ilc-title">{{ section.title }}</h1>
       <div class="ilc-text-container">
@@ -83,7 +87,7 @@ export default {
   data() {
     return {
       toggler: false,
-      lbIndex: 1
+      lbIndex: 1,
     }
   },
   computed: {
@@ -93,7 +97,9 @@ export default {
   },
   methods: {
     lightboxImages() {
-      const newArr = this.section.images.map((image) => this.staticPath(image.path))
+      const newArr = this.section.images.map((image) =>
+        this.staticPath(image.path)
+      )
       return newArr
     },
     showLightbox(index) {
@@ -132,8 +138,6 @@ export default {
 }
 .ilc-paragraph {
   font-size: 1.2rem;
-  font-weight: bold;
-  line-height: 1.7;
   margin-bottom: 20px;
 }
 .ilc-image {
@@ -209,8 +213,11 @@ export default {
 }
 @media screen and (max-width: 768px) {
   .ilc-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+  .ilc-paragraph {
+    font-size: 1rem;
   }
   .ilc-image {
     width: 90%;

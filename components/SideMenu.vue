@@ -112,6 +112,7 @@ export default {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 8rem;
   }
   .region-title {
     margin-bottom: 1rem;

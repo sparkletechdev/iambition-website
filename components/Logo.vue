@@ -87,4 +87,11 @@ export default {}
 .company-logo:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 992px) {
+  .company-logo {
+    height: 24px;
+    margin: 12px 0 12px 0;
+  }
+}
 </style>
