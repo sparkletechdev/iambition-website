@@ -1,8 +1,8 @@
 <template>
   <div class="media-container">
     <LandingComponent
-      :title="$t('awards.landingTitle')"
-      :contents="$t('awards.landingContent')"
+      :title="$t('media.landingTitle')"
+      :contents="$t('media.landingContent')"
       image="awards.jpg"
     >
     </LandingComponent>
@@ -19,6 +19,11 @@
 export default {}
 </script>
 <style scoped>
+
+::v-deep .splash-content {
+    padding: 0;
+}
+
 .media-container {
   overflow: hidden;
   padding-bottom: 4rem;

@@ -192,7 +192,7 @@ export default {
     ],
   },
   media: {
-    landingTitle: 'Media',
+    landingTitle: '媒體報導',
     landingContent: [
       `雄欣科技創立至今，已經獲得多項的獎項與榮耀，例如：AI 新銳、桃園千里馬創業、約農盃創業、中科創新創業。`,
       `同時也獲得多家媒體的報導，是台灣崛起最快、最受注目的新創業者。`,
