@@ -14,8 +14,7 @@
               <p>Sorry, there's a problem playing this video. Please try using a different browser.</p>
             </video> -->
             <iframe
-              width="1080"
-              height="608"
+              class="yt-vid"
               src="https://www.youtube.com/embed/0IGsRsBHu2c?autoplay=1&mute=1"
             >
             </iframe>
@@ -89,13 +88,19 @@ export default {
 .hooper-prev {
   left: 2rem;
 }
-
+.yt-vid {
+  aspect-ratio: 16 / 9;
+  width: 1080px;
+}
 @media screen and (max-width: 1200px) {
   .hooper-next {
     right: 1rem;
   }
   .hooper-prev {
     left: 1rem;
+  }
+  .yt-vid {
+    width: 720px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -104,6 +109,30 @@ export default {
   }
   .hooper-prev {
     display: none;
+  }
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 640px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 240px;
   }
 }
 </style>

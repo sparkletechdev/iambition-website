@@ -11,9 +11,19 @@
         {{ desc }}
       </p>
     </div>
-    <video v-if="client.video" controls autoplay muted class="client-video">
+    <!-- <video v-if="client.video" controls autoplay muted class="client-video">
       <source :src="staticPath(client.video)" type="video/mp4" />
-    </video>
+    </video> -->
+    <div v-if="client.video" class="client-video">
+      <iframe
+        class="yt-vid"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+        allowfullscreen
+        :src="client.video"
+      ></iframe>
+    </div>
+
     <div class="client-image-grid">
       <img
         v-for="(image, i) in client.images"

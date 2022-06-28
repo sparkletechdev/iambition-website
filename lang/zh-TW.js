@@ -346,7 +346,7 @@ export default {
             alt: 'KSPH 3',
           },
         ],
-        video: '/clients/ksph/media1.mp4',
+        video: 'https://www.youtube.com/embed/kMYTtH4a1yo?autoplay=1&mute=1',
       },
     ],
   },

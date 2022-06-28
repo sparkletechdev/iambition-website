@@ -24,8 +24,10 @@
           <iframe
             v-for="(video, i) in item.videos"
             :key="i"
-            width="1080"
-            height="608"
+            class="yt-vid"
+            frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope;"
+            allowfullscreen
             :src="video.path"
           >
           </iframe>

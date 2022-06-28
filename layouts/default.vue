@@ -65,4 +65,8 @@ export default {
 html:lang(en) {
   font-family: 'Montserrat', sans-serif;
 }
+.yt-vid {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
 </style>
