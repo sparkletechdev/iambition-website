@@ -13,7 +13,7 @@ export default {
     solutions: '解決方案',
     aiCare: 'AI照護感知系統',
     aiSafe: 'AI智慧感知系統',
-    awards: '獎項',
+    media: '媒體報導',
     technologies: '核心技術',
     clients: '客戶',
     company: '公司',
@@ -189,6 +189,69 @@ export default {
       //   `,
       //   img: 'image11.png',
       // },
+    ],
+  },
+  media: {
+    landingTitle: 'Media',
+    landingContent: [
+      `雄欣科技創立至今，已經獲得多項的獎項與榮耀，例如：AI 新銳、桃園千里馬創業、約農盃創業、中科創新創業。`,
+      `同時也獲得多家媒體的報導，是台灣崛起最快、最受注目的新創業者。`,
+    ],
+    content: [
+      {
+        title: 'AI+智慧眼鏡 雄欣科技鎖定智慧照護市場 讓老者住得安心安全',
+        url: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
+        image: 'media/aihub.jpg',
+        alt: '',
+      },
+      {
+        title: '雄欣科技受邀智慧城市展 以優異的AI影像辨識技術 備受青睞',
+        url: 'https://www.google.com.tw/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjs4Iiig8v4AhWVC94KHUWBCWUQFnoECAIQAQ&url=https%3A%2F%2Fwww.epza.gov.tw%2Fdownloadfile.aspx%3Ffid%3D07473487ca8d28e1&usg=AOvVaw13ibAfYjbJ58Ij',
+        image: 'media/epza.jpg',
+        alt: '',
+      },
+      {
+        title: '真正解決產業痛點雄欣科技i熟客系統',
+        url: 'https://www.trademag.org.tw/page/itemsd/?id=779069&no=41',
+        image: 'media/trademag.jpg',
+        alt: '',
+      },
+      {
+        title: '疫後餐廳服務升級- i熟客系統',
+        url: 'https://www.find.org.tw/index/knowledge/browse/6612eb223cdf9d84c6f09da25efd2824/',
+        image: 'media/find.png',
+        alt: '',
+      },
+      {
+        title: 'Meet大南方10日開展 鏈結產業航向世界',
+        url: 'https://money.udn.com/money/story/11799/5950656',
+        image: 'media/greater.jpg',
+        alt: '',
+      },
+      {
+        title: '南台灣新創淘金 打造獨角獸',
+        url: 'https://ctee.com.tw/news/policy/570243.html',
+        image: 'media/vstalk.jpg',
+        alt: '',
+      },
+      {
+        title: 'AI人工智慧帶動產業創新',
+        url: 'https://hubbub.top/podcast/15661/4746603',
+        image: 'media/podcast.jpg',
+        alt: '',
+      },
+      {
+        title: '日台連携新時代の共創・協働事業戦略',
+        url: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html',
+        image: 'media/dempa.jpg',
+        alt: '',
+      },
+      {
+        title: '靠影像辨識打天下，長照、工安都難不倒雄欣科技',
+        url: 'https://meet.bnext.com.tw/articles/view/48544',
+        image: 'media/meet.jpg',
+        alt: '',
+      },
     ],
   },
   contact: {
@@ -375,8 +438,12 @@ export default {
             { path: 'solutions/ai-care/tof2.jpg' },
           ],
           videos: [
-            { path: 'https://www.youtube.com/embed/cNnQvx6PLrE?autoplay=0&mute=0'},
-            { path: 'https://www.youtube.com/embed/7JFaUcUaeUw?autoplay=0&mute=0'},
+            {
+              path: 'https://www.youtube.com/embed/cNnQvx6PLrE?autoplay=0&mute=0',
+            },
+            {
+              path: 'https://www.youtube.com/embed/7JFaUcUaeUw?autoplay=0&mute=0',
+            },
           ],
         },
         {
