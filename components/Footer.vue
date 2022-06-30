@@ -1,7 +1,7 @@
 <template>
   <div class="footer-container">
     <div class="footer-border">
-      <div class="footer-top-border">
+      <!-- <div class="footer-top-border"> -->
         <!-- <div class="footer-top-partners-border">
           <p class="footer-partners">{{ $t('footer.partners') }}</p>
           <span class="footer-partners-line-hidden"></span>
@@ -28,8 +28,11 @@
             <fa :icon="['fas', 'wind']" class="partner-icon" />
           </div>
         </div> -->
+      <!-- </div> -->
+      <!-- <span class="footerspan"></span> -->
+      <div class="footer-bottom-border">
         <div class="footer-social-container">
-          <a href="https://www.instagram.com">
+          <!-- <a href="https://www.instagram.com">
             <div class="social-icon">
               <fa :icon="['fab', 'instagram-square']" />
             </div>
@@ -43,21 +46,18 @@
             <div class="social-icon">
               <fa :icon="['fab', 'twitter-square']" />
             </div>
-          </a>
-          <a href="https://tw.linkedin.com">
+          </a> -->
+          <a href="http://www.linkedin.com/in/科技-雄欣-bb741a243">
             <div class="social-icon">
               <fa :icon="['fab', 'linkedin']" />
             </div>
           </a>
-          <a href="https://www.youtube.com">
+          <a href="https://www.youtube.com/channel/UCD7fQKEgy_n1YG7BgrzC2_w">
             <div class="social-icon">
               <fa :icon="['fab', 'youtube-square']" />
             </div>
           </a>
         </div>
-      </div>
-      <!-- <span class="footerspan"></span> -->
-      <div class="footer-bottom-border">
         <div class="footer-bottom-privacy-border">
           <p class="company-privacy">{{ $t('footer.privacy') }}</p>
           <!-- <nuxt-link to="/privacy" class="privacy-link">
@@ -109,15 +109,15 @@ export default {}
   width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 15px 0;
-  border-bottom: 0.4px solid #c9c9c9;
+  padding: 0;
+  border-bottom: 0 solid #c9c9c9;
 }
 
 .footer-top-partners-border {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  gap: 1rem
+  gap: 1rem;
 }
 
 .footer-social-container {
@@ -162,7 +162,7 @@ export default {}
 .footer-bottom-border .footer-bottom-privacy-border {
   width: 40%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 15px 0;
 }
 .company-privacy {

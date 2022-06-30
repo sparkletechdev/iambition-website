@@ -574,4 +574,8 @@ export default {
     location: '新加坡 | 台灣',
     partners: '合作夥伴',
   },
+  document: {
+    title: '雄欣科技',
+    favicon: '/favicon2.ico'
+  }
 }

@@ -11,7 +11,7 @@ export default {
     if (this.$nuxtI18nHead) {
       const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
       return {
-        title: 'iAmbition Technology',
+        title: this.$t('head.title'),
         htmlAttrs: {
           lang: this.$i18n.locale,
         },
@@ -26,7 +26,7 @@ export default {
           ...i18nHead.meta,
         ],
         link: [
-          { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+          { rel: 'icon', type: 'image/x-icon', href: this.$t('head.favicon') },
           {
             rel: 'stylesheet',
             href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap',
@@ -36,7 +36,7 @@ export default {
       }
     } else {
       return {
-        title: 'iAmbition Technology',
+        title: this.$t('head.title'),
         htmlAttrs: {
           lang: this.$i18n.locale,
         },
@@ -50,7 +50,7 @@ export default {
           { name: 'format-detection', content: 'telephone=no' },
         ],
         link: [
-          { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+          { rel: 'icon', type: 'image/x-icon', href: this.$t('head.favicon') },
           {
             rel: 'stylesheet',
             href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC&display=swap',
@@ -58,7 +58,7 @@ export default {
         ],
       }
     }
-  }
+  },
 }
 </script>
 <style>

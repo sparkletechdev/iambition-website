@@ -598,4 +598,8 @@ export default {
     location: 'Singapore | Taiwan',
     partners: 'Our Partners',
   },
+  head: {
+    title: 'iAmbition Technology',
+    favicon: '/favicon.ico'
+  }
 }

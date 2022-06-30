@@ -194,10 +194,10 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
 .contact-us-container {
   /* border: 1px solid black; */
-  width: 100%;
   margin: 4rem 8%;
   align-items: center;
 }

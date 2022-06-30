@@ -20,10 +20,6 @@ export default {}
 </script>
 <style scoped>
 
-::v-deep .splash-content {
-    padding: 0;
-}
-
 .media-container {
   overflow: hidden;
   padding-bottom: 4rem;

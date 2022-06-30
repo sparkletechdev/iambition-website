@@ -3,7 +3,7 @@
     <LandingComponent
       :title="$t('contact.landingTitle')"
       :contents="$t('contact.landingContent')"
-      :show-arrow=false
+      :show-arrow="false"
       image="contact-us.jpg"
     >
       <ContactForm />
@@ -18,5 +18,9 @@ export default {}
 <style scoped>
 .contact-us-border {
   overflow: hidden;
+}
+
+::v-deep .splash-content {
+  text-align: center;
 }
 </style>

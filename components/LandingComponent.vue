@@ -124,7 +124,8 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
   padding: 8rem 0 4rem;
   background-size: cover;
   overflow: auto;
@@ -166,7 +167,8 @@ export default {
   .landing-container {
     background-size: 200%;
   }
-  .splash-content, .splash-title {
+  .splash-content,
+  .splash-title {
     padding: 0 15%;
   }
 }
@@ -177,7 +179,8 @@ export default {
   .splash-title {
     font-size: 2.5rem;
   }
-  .splash-content, .splash-title {
+  .splash-content,
+  .splash-title {
     padding: 0 8%;
   }
 }
