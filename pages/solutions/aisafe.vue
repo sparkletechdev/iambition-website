@@ -9,7 +9,6 @@
       v-for="(item, index) in $t('solutions.aiSafe.sections')"
       :key="index"
       :section="item"
-      :align-left="index % 2 === 0"
     />
     <!-- <p
       v-for="(content, index) in $t('solutions.aiSafe.sections')"

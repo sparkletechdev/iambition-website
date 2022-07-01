@@ -10,7 +10,7 @@
       :key="index"
       class="section-container"
     >
-      <ImageTextColumn :section="item" :align-left="index % 2 === 0" />
+      <ImageTextColumn :section="item" />
       <div class="video-container">
         <div v-if="item.videos" class="videos">
           <!-- <video

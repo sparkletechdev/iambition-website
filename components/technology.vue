@@ -1,5 +1,5 @@
 <template>
-  <section id="tof" class="section-container" :class="bgColor">
+  <section class="section-container" :class="bgColor">
     <h1 class="section-title">{{ item.title }}</h1>
     <div class="tech-content">
       <img

@@ -8,7 +8,7 @@
     <div class="ilc-content">
       <h1 class="ilc-title">{{ section.title }}</h1>
       <div class="ilc-text-container">
-        <div class="ilc-text" :class="order">
+        <div class="ilc-text">
           <p
             v-for="(item, index) in section.content"
             :key="index"
@@ -38,7 +38,7 @@
           v-else
           :src="staticPath(section.images[0].path)"
           :alt="section.images[0].alt"
-          class="ilc-image"
+          class="ilc-image-single"
           @click="showLightbox(0)"
         />
         <!-- <div class="ilc-image-container">
@@ -79,21 +79,12 @@ export default {
       default: () => {},
       type: Object,
     },
-    alignLeft: {
-      default: Number,
-      type: Boolean,
-    },
   },
   data() {
     return {
       toggler: false,
       lbIndex: 1,
     }
-  },
-  computed: {
-    order() {
-      return this.alignLeft ? 'align-left' : 'align-right'
-    },
   },
   methods: {
     lightboxImages() {
@@ -131,10 +122,11 @@ export default {
 }
 .ilc-text-container {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 .ilc-text {
-  width: 50%;
+  width: 100%;
 }
 .ilc-paragraph {
   font-size: 1.2rem;
@@ -143,7 +135,13 @@ export default {
 .ilc-image {
   /* border: 1px solid black; */
   width: 100%;
-  height: 300px;
+  height: 100%;
+  cursor: zoom-in;
+}
+.ilc-image-single {
+  height: 480px;
+  aspect-ratio: 16/9;
+  align-self: center;
   cursor: zoom-in;
 }
 .ilc-video {
@@ -164,7 +162,7 @@ export default {
 .ilc-image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 300px;
+  grid-auto-rows: auto;
   row-gap: 2.5rem;
   column-gap: 1rem;
 }
@@ -177,12 +175,6 @@ export default {
   font-weight: 400;
 }
 
-.align-left {
-  order: 0;
-}
-.align-right {
-  order: 2;
-}
 @media screen and (max-width: 1200px) {
   .ilc-container {
     padding: 2.5rem 8% 2.5rem;
@@ -198,27 +190,6 @@ export default {
   .ilc-text {
     width: 90%;
   }
-  .ilc-image-grid {
-    margin-bottom: 45px;
-    width: 90%;
-  }
-  .align-right {
-    order: 0;
-  }
-}
-@media screen and (max-width: 992px) {
-  .ilc-title {
-    margin-bottom: 2rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .ilc-title {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  .ilc-paragraph {
-    font-size: 1rem;
-  }
   .ilc-image {
     width: 90%;
   }
@@ -227,8 +198,23 @@ export default {
   }
   .ilc-image-grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 300px;
+    grid-auto-rows: auto;
     gap: 1rem;
+  }
+  .ilc-image-single {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .ilc-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .ilc-paragraph {
+    font-size: 1rem;
+  }
+  .ilc-image-single {
+    height: 320px;
   }
 }
 
@@ -236,6 +222,11 @@ export default {
   .ilc-image-grid {
     grid-auto-rows: 150px;
     gap: 0.8rem;
+  }
+  .ilc-image-single {
+    width: 100%;
+    height: 120px;
+    padding: 0 0.8rem;
   }
 }
 </style>
