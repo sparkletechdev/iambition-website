@@ -600,6 +600,6 @@ export default {
   },
   head: {
     title: 'iAmbition Technology',
-    favicon: '/favicon.ico'
+    favicon: '/favicon-sg.ico'
   }
 }

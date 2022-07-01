@@ -1,6 +1,7 @@
 <template>
   <nuxt-link :to="localePath('/')"
     ><svg
+      v-if="$i18n.locale === 'en'"
       id="Layer_1"
       class="company-logo"
       data-name="Layer 1"
@@ -71,8 +72,15 @@
       <g class="cls-3"><rect class="cls-4" width="90.86" height="122.7" /></g>
       <g class="cls-5">
         <rect class="cls-6" x="55.98" y="0.41" width="105.26" height="122.89" />
-      </g></svg
-  ></nuxt-link>
+      </g>
+    </svg>
+    <img
+      v-else
+      class="company-logo"
+      :src="require('@/assets/images/logo-tw.png')"
+      alt="Taiwan Company Logo"
+    />
+  </nuxt-link>
 </template>
 
 <script>
