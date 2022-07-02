@@ -11,7 +11,7 @@
               'send-success-show': show,
             }"
           >
-            Sending Mail Success
+            {{ $t('contact.sendSuccess') }}
           </h1>
           <form
             ref="contactUsForm"
@@ -20,76 +20,74 @@
               'contact-form': true,
               'contact-form-none': show,
             }"
+            @submit.prevent="onSubmit"
           >
             <div class="name-inputs-container">
               <div class="name-container">
-                <label for="first-name-input" class="form-label">
+                <label for="first-name" class="form-label">
                   {{ $t('contact.formFirstName') }}
                 </label>
                 <input
-                  id="first-name-input"
                   v-model="firstName"
+                  name="first-name"
                   class="form-input"
                   type="text"
                   required
                   pattern="[a-zA-Z]{3,}"
-                  oninvalid="this.setCustomValidity('Please Enter a Valid Name.')"
+                  oninvalid="this.setCustomValidity('Please enter a valid first name')"
                   oninput="this.setCustomValidity('')"
                 />
               </div>
               <div class="name-container">
-                <label for="last-name-input" class="form-label">
+                <label for="last-name" class="form-label">
                   {{ $t('contact.formLastName') }}
                 </label>
                 <input
-                  id="last-name-input"
                   v-model="lastName"
+                  name="last-name"
                   class="form-input"
                   type="text"
                   required
                   pattern="[a-zA-Z]{2,}"
-                  oninvalid="this.setCustomValidity('Please Enter a Valid Last Name.')"
+                  oninvalid="this.setCustomValidity('Please enter a valid last name')"
                   oninput="this.setCustomValidity('')"
                 />
               </div>
             </div>
             <div class="input-container">
-              <label for="mail-input" class="form-label">
+              <label for="reply-email" class="form-label">
                 {{ $t('contact.formEmail') }}
               </label>
               <input
-                id="mail-input"
                 v-model="email"
+                name="reply-email"
                 class="form-input"
                 type="email"
                 required
-                pattern="^\w.+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(.+)$"
-                oninvalid="this.setCustomValidity('Please Enter Business Email Only.')"
+                pattern="^\w.+@(.+)$"
+                oninvalid="this.setCustomValidity('Please enter a valid email address')"
                 oninput="this.setCustomValidity('')"
               />
             </div>
             <div class="input-container">
-              <label for="company-input" class="form-label">
+              <label for="company" class="form-label">
                 {{ $t('contact.formCompany') }}
               </label>
               <input
-                id="company-input"
                 v-model="company"
+                name="company"
                 class="form-input"
                 type="text"
                 required
-                pattern="[A-Za-z ]{3,}"
-                oninvalid="this.setCustomValidity('Please Enter a Valid Company Name.')"
-                oninput="this.setCustomValidity('')"
               />
             </div>
             <div class="input-container">
-              <label for="message-input" class="form-label">
+              <label for="enquiry-message" class="form-label">
                 {{ $t('contact.formMessage') }}
               </label>
               <textarea
-                id="message-input"
                 v-model="message"
+                name="enquiry-message"
                 class="form-input message-text-area"
                 rows="5"
                 required
@@ -97,11 +95,7 @@
               </textarea>
             </div>
             <div class="submit-container">
-              <button
-                type="submit"
-                class="submit-button"
-                @click="onSubmit($event)"
-              >
+              <button type="submit" value="Send" class="submit-button">
                 {{ $t('contact.formSubmit') }}
               </button>
             </div>
@@ -149,6 +143,7 @@
 </template>
 
 <script>
+import { sendForm } from '@emailjs/browser'
 export default {
   data() {
     return {
@@ -162,27 +157,40 @@ export default {
   },
   methods: {
     onSubmit(e) {
-      const ref = this.$refs
-
       if (this.message) {
-        e.preventDefault()
-        this.show = true
-        setTimeout(() => {
-          this.show = false
-          ref.contactUsForm.style.transform = 'translateY(80px)'
-        }, 3000)
-        setTimeout(() => {
-          ref.contactUsForm.style.transform = 'translateY(0px)'
-        }, 3050)
-        this.message = ''
+        const ref = this.$refs
+        sendForm(
+          'service_sr0rmqz',
+          'template-contact-sg',
+          ref.contactUsForm,
+          'SJgARiRUgNbPJMLhs'
+        ).then(
+          (result) => {
+            this.show = true
+            setTimeout(() => {
+              this.show = false
+              ref.contactUsForm.style.transform = 'translateY(80px)'
+            }, 3000)
+            setTimeout(() => {
+              ref.contactUsForm.style.transform = 'translateY(0px)'
+            }, 3050)
+            this.message = ''
+          },
+          (error) => {
+            // eslint-disable-next-line no-console
+            console.log('FAILED...', error.text)
+          }
+        )
+        // e.preventDefault()
+
         // fetch("http://localhost:3003/getMailInformation",{
         //   method: 'PUT',
         //   body: JSON.stringify({
-        //     mail: mail-input,
-        //     firstname: first-name-input,
-        //     lastname: last-name-input,
-        //     company: company-input,
-        //     massage: message-input,
+        //     mail: reply-email,
+        //     firstname: first-name,
+        //     lastname: last-name,
+        //     company: company,
+        //     massage: enquiry-message,
         //   }),
         //   headers: new Headers({
         //     'Content-Type': 'application/json'
@@ -195,7 +203,6 @@ export default {
 </script>
 
 <style scoped>
-
 .contact-us-container {
   /* border: 1px solid black; */
   margin: 4rem 8%;
@@ -297,6 +304,10 @@ export default {
   flex-direction: column;
   margin-bottom: 0.5em;
 }
+.submit-container {
+  display: flex;
+  justify-content: flex-start;
+}
 .submit-button {
   color: white;
   text-align: center;
@@ -380,12 +391,26 @@ export default {
   }
 }
 @media screen and (max-width: 576px) {
+  .name-inputs-container {
+    flex-direction: column;
+  }
+  .name-container {
+    width: 100%;
+  }
   .content {
-    width: 320px;
+    width: 100%;
     top: -10%;
+  }
+
+  .contact-us-container {
+    /* border: 1px solid black; */
+    margin: 2rem 0;
   }
   .mail-form-container {
     padding: 20px;
+  }
+  .submit-container {
+    justify-content: center;
   }
 }
 </style>

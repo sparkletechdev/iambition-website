@@ -23,4 +23,8 @@ export default {}
 ::v-deep .splash-content {
   text-align: center;
 }
+
+::v-deep .landing-container {
+  justify-content: flex-start;
+}
 </style>

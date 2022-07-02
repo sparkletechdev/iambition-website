@@ -271,6 +271,10 @@ export default {
       '高雄辦事處：高雄市前鎮區成功二路25號3樓',
       '連絡窗口：李先生：886-908-478928',
     ],
+    sendSuccess: '消息已成功發送！',
+    invalidFirstName: '請輸入一個有效的名字',
+    invalidLastName: '請輸入有效的姓氏',
+    invalidEmail: '請輸入有效的電子郵件地址'
   },
   index: {
     landing: [

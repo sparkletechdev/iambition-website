@@ -274,6 +274,10 @@ export default {
     formSubmit: 'Send Message',
     contactInformation: 'Contact Information',
     information: ['9 Gul Drive, Singapore 629460', '+65 82884238'],
+    sendSuccess: 'Message sent successfully!',
+    invalidFirstName: 'Please enter a valid first name',
+    invalidLastName: 'Please enter a valid last name',
+    invalidEmail: 'Please enter a valid email address'
   },
   index: {
     landing: [
