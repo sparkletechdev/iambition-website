@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/en/solutions/aicare", {data:[{}],fetch:{},mutations:[]});
