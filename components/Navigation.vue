@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <LanguageSwitcher />
+    <LanguageSwitcher class="invisible"/>
 
     <Hamburger
       class="hamburger-border"

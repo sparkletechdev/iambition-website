@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <div class="language">
+    <div class="language invisible">
       <div class="region-title">{{ $t('menu.selectRegion') }}</div>
       <div class="countries">
         <div
@@ -105,7 +105,7 @@ export default {
   padding: 0 25%;
   overflow: scroll;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .language {
     color: white;
     display: flex;
