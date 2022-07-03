@@ -2,7 +2,7 @@
   <div class="footer-container">
     <div class="footer-border">
       <!-- <div class="footer-top-border"> -->
-        <!-- <div class="footer-top-partners-border">
+      <!-- <div class="footer-top-partners-border">
           <p class="footer-partners">{{ $t('footer.partners') }}</p>
           <span class="footer-partners-line-hidden"></span>
           <div class="footer-partners-icon">
@@ -47,12 +47,18 @@
               <fa :icon="['fab', 'twitter-square']" />
             </div>
           </a> -->
-          <a href="http://www.linkedin.com/in/科技-雄欣-bb741a243">
+          <a
+            href="http://www.linkedin.com/in/科技-雄欣-bb741a243"
+            target="_blank"
+          >
             <div class="social-icon">
               <fa :icon="['fab', 'linkedin']" />
             </div>
           </a>
-          <a href="https://www.youtube.com/channel/UCD7fQKEgy_n1YG7BgrzC2_w">
+          <a
+            href="https://www.youtube.com/channel/UCD7fQKEgy_n1YG7BgrzC2_w"
+            target="_blank"
+          >
             <div class="social-icon">
               <fa :icon="['fab', 'youtube-square']" />
             </div>

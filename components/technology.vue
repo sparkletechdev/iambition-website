@@ -42,6 +42,7 @@ export default {
 }
 </script>
 <style scoped>
+
 .section-title {
   font-size: 2.5rem;
   font-weight: 600;
@@ -52,18 +53,6 @@ export default {
 
 .tech-img {
   margin-bottom: 2rem;
-}
-
-.float-right {
-  float: right;
-  margin: 0 1rem 1rem;
-  max-height: 300px;
-}
-
-.float-left {
-  float: left;
-  margin: 0 1rem 1rem;
-  max-height: 300px;
 }
 
 .bg-light {

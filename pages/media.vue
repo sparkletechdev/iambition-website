@@ -3,7 +3,7 @@
     <LandingComponent
       :title="$t('media.landingTitle')"
       :contents="$t('media.landingContent')"
-      image="awards.jpg"
+      image="media.jpg"
     >
     </LandingComponent>
     <div class="media-grid">
@@ -19,7 +19,6 @@
 export default {}
 </script>
 <style scoped>
-
 .media-container {
   overflow: hidden;
   padding-bottom: 4rem;
