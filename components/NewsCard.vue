@@ -40,9 +40,8 @@ a {
   color: #369;
 }
 .news-desc {
-  font-size: 0.8rem;
   color: white;
-  overflow: hidden;
+  overflow: auto;
   text-overflow: ellipsis;
   margin: 0.5rem 0;
 }

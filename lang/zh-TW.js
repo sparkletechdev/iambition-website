@@ -51,30 +51,22 @@ export default {
         content: [
           {
             title: '以人為本',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            description: `我們系統設計思考是以人為本的設計精神與方法，考慮人的感受與需求、行為，也考量科技或商業的可行性。`,
             image: 'people-oriented.jpg',
           },
           {
             title: '客戶為先',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            description: `服務是體驗，體驗是旅程，而旅程必須經過設計，我們以客戶為中心，藉由先進科技優化客戶現有服務流程，協助客戶數位賦能與轉型。`,
             image: 'customer-first.jpg',
           },
           {
             title: '誠信負責',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            description: `對合作企業誠信、公司內部透明治理、多元與包容文化和服務精神的承諾，是公司業務發展的基礎。`,
             image: 'integrity.jpg',
           },
           {
             title: '追求永續',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            description: `對友善環境、實現對社會與老人的照護、公平貿易和企業可持續發展，是我們對所有利害關係人的承諾。`,
             image: 'sustainability.jpg',
           },
         ],
@@ -333,6 +325,12 @@ export default {
       readMore: '閱讀更多',
       items: [
         {
+          title: '雄欣科技獲選進入TACC Pus 加速器 Create 第八期',
+          description: `Taiwan Accelerator Plus（TAcc+）是台灣最新型的國際級加速器，透過焦點產業之全球市場與科技發展資訊的蒐集、商機分析工具的建立、新創團隊的扶植輔導與資源串接、
+          科研補助資金的提供等，加速科技新創事業躍升發展。`,
+          link: 'https://taccplus.com/tacc_batch_8/',
+        },
+        {
           title: '雄欣科技於Computex 展示人體監測AI方案',
           description: `Computex台北國際電腦展於今年5月24日正式回歸實體展，成果豐碩!經濟部工業局於展會中打造
           「經濟部工業局呂正華局長蒞臨工業局AI生活館，與多家資通訊大廠及AI新創代表合影，攜手展現台灣AI技術能量`,
@@ -361,12 +359,12 @@ export default {
             '在小小的照護房內，年逾8旬的王伯伯正激烈地咳嗽著，護理人員輕輕地拿著吸痰器幫他抽痰，希望讓他舒服一點，可是，眼尖的家人發現，護理人員鼻樑上戴著一副智慧眼鏡，此時，另一端醫生一邊整理手上的病歷報告，一邊即時透過螢幕了解王伯伯的狀況......，隨著精準照護的普及，在不久的將來，醫生在遠端即時掌握被照護者重要生理資訊，將是照護市場的一大福音。',
           link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
         },
-        {
-          title: '日本電波新聞社',
-          description:
-            '日本電波新聞社 日本電波新聞社 日本電波新聞社 日本電波新聞社',
-          link: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html',
-        },
+        // {
+        //   title: '日本電波新聞社',
+        //   description:
+        //     '日本電波新聞社',
+        //   link: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html',
+        // },
       ],
     },
   },
