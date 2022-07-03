@@ -90,7 +90,6 @@ export default {
   },
   methods: {
     onClick() {
-      // eslint-disable-next-line no-console
       this.$emit('sideMenuClick')
       this.$store.commit('toggleHamburger')
     },

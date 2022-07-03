@@ -1,7 +1,7 @@
 <template>
   <header ref="headerContainer" class="header-container">
     <!-- <div></div> -->
-    <Logo />
+    <Logo @logoClick="hiddenHeaderContainerClose()" />
     <div class="links">
       <div v-for="post in posts" :key="post.title" class="header-link">
         <div
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <LanguageSwitcher class="invisible"/>
+    <LanguageSwitcher class="invisible" />
 
     <Hamburger
       class="hamburger-border"
@@ -123,6 +123,9 @@ export default {
     },
     hiddenHeaderContainerMove() {
       this.right = this.right === '0%' ? '-100%' : '0%'
+    },
+    hiddenHeaderContainerClose() {
+      this.right = '-100%'
     },
     animationHeaderContainerBackground() {
       const gsap = this.$gsap
