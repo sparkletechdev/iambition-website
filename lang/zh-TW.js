@@ -194,8 +194,9 @@ export default {
   media: {
     landingTitle: '媒體報導',
     landingContent: [
-      `雄欣科技創立至今，已經獲得多項的獎項與榮耀，例如：AI 新銳、桃園千里馬創業、約農盃創業、中科創新創業。`,
-      `同時也獲得多家媒體的報導，是台灣崛起最快、最受注目的新創業者。`,
+      `雄欣科技創立至今，已經獲得多項的獎項與榮耀，例如：AI 新銳選拔首獎、桃園千里馬創業、約農盃創業冠軍、中科創新創業競賽等。`,
+      `更榮獲高雄亞灣新創園、微軟新創加速器、TACC Plus..等台灣最重要的新創加速器重點培育新創廠商。`,
+      `也因為我們的優異表現，我們已獲得多家媒體的報導，可以說是台灣近期崛起最快、最受注目的新創廠商。`,
     ],
     content: [
       {
@@ -274,7 +275,7 @@ export default {
     sendSuccess: '消息已成功發送！',
     invalidFirstName: '請輸入一個有效的名字',
     invalidLastName: '請輸入有效的姓氏',
-    invalidEmail: '請輸入有效的電子郵件地址'
+    invalidEmail: '請輸入有效的電子郵件地址',
   },
   index: {
     landing: [
@@ -528,7 +529,7 @@ export default {
     },
   },
   technologies: {
-    landingTitle: 'Our Key Technologies',
+    landingTitle: '核心技術',
     landingContent: [
       `雄欣科技的核心技術，包含了去識別化3D感測技術、融合性人工智慧演算法、可視化戰情室系統平台。我們以人為本、從數位轉型的角度出發、重視ESG永續台灣的使命，領先業界推出一系列以創新價值、以人為本的「有溫度」解決方案。`,
     ],
@@ -543,7 +544,7 @@ export default {
       {
         title: '毫米波生理雷達感測裝置 (Bio-Sense mmWave)',
         image: 'technologies/mmwave.jpg',
-        content: `<p>雷 達 (Radar) 的全名是「Radio Detection and Ranging」( 無線電偵測和定距 )，旨在藉電磁能量以定向方式計算空間中標的物之方向、高度、速度，進而推估形態。將它嵌入感測器中，可在三維空間定位目標並衍生應用功能。</p><br>
+        content: `<p>雷達 (Radar) 的全名是「Radio Detection and Ranging」( 無線電偵測和定距 )，旨在藉電磁能量以定向方式計算空間中標的物之方向、高度、速度，進而推估形態。將它嵌入感測器中，可在三維空間定位目標並衍生應用功能。</p><br>
           <p>而毫米波雷達，指的是工作在毫米波波段（millimeter wave）的雷達，完全不受光線與天氣因素影響。也因為毫米波雷達在物體距離檢測中可以提供毫米(mm)等級的精度，因而可以成為生理訊號的理想感測晶片。</p><br>
           <p>而雄欣科技設計出，業界高的精度、高速訊號處理能力、增強的距離檢測，以及將雷達整合到小尺寸晶片組中，提供非接觸式的連續偵測能力，將可能極大地推動醫療照護應用的發展，如人類活動偵測、生命體徵（心跳、呼吸）偵測等。</p>`,
       },
@@ -580,6 +581,6 @@ export default {
   },
   head: {
     title: '雄欣科技',
-    favicon: '/favicon-tw.ico'
-  }
+    favicon: '/favicon-tw.ico',
+  },
 }

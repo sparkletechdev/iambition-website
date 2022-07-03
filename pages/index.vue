@@ -75,6 +75,9 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  ::v-deep .landing-container {
+    justify-content: flex-start;
+  }
   .video {
     margin: 0 8%;
   }
@@ -91,8 +94,11 @@ export default {
 .yt-vid {
   aspect-ratio: 16 / 9;
   width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 1440px) {
   .hooper-next {
     right: 1rem;
   }
@@ -101,6 +107,15 @@ export default {
   }
   .yt-vid {
     width: 720px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hooper-next {
+    right: 1rem;
+  }
+  .hooper-prev {
+    left: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
