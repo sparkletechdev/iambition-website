@@ -23,15 +23,17 @@
             :key="i"
             class="image-caption"
           >
-            <img
-              :src="staticPath(image.path)"
-              :alt="image.alt"
-              class="ilc-image"
-              @click="showLightbox(i)"
-            />
-            <p v-if="image.caption">
-              {{ image.caption }}
-            </p>
+            <div class="grid-cell">
+              <img
+                :src="staticPath(image.path)"
+                :alt="image.alt"
+                class="ilc-image"
+                @click="showLightbox(i)"
+              />
+              <p v-if="image.caption">
+                {{ image.caption }}
+              </p>
+            </div>
           </div>
         </div>
         <img
@@ -162,7 +164,7 @@ export default {
 .ilc-image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
+  grid-auto-rows: 480px;
   row-gap: 2.5rem;
   column-gap: 1rem;
 }
@@ -171,8 +173,14 @@ export default {
   flex-direction: column;
   row-gap: 0.5rem;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 400;
+  text-align: center;
+}
+
+.grid-cell {
+  height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -188,18 +196,18 @@ export default {
     align-items: center;
   }
   .ilc-text {
-    width: 90%;
+    width: 100%;
   }
   .ilc-image {
-    width: 90%;
+    width: 100%;
   }
   .ilc-image-container {
     margin-bottom: 0;
   }
   .ilc-image-grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: auto;
-    gap: 1rem;
+    grid-auto-rows: 360px;
+    row-gap: 2rem;
   }
   .ilc-image-single {
     width: 90%;
@@ -220,8 +228,8 @@ export default {
 
 @media screen and (max-width: 425px) {
   .ilc-image-grid {
-    grid-auto-rows: 150px;
-    gap: 0.8rem;
+    grid-auto-rows: 180px;
+    gap: 2rem;
   }
   .ilc-image-single {
     width: 100%;
