@@ -1,6 +1,8 @@
 <template>
   <div id="landing" class="landing-container" :style="inlineStyle">
-    <h1 class="splash-title">{{ title }}</h1>
+    <!-- eslint-disable vue/no-v-html -->
+    <h1 class="splash-title" v-html="title"></h1>
+    <!--eslint-enable-->
     <div content-container>
       <p
         v-for="(content, index) in contents"

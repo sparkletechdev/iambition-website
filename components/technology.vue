@@ -87,4 +87,15 @@ export default {
   height: 4rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
 </style>
