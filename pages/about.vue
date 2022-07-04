@@ -10,7 +10,6 @@
       :title="$t('company.aboutUs.coreValues.title')"
       :content="$t('company.aboutUs.coreValues.content')"
     />
-    <!-- <CompanyGoingPart /> -->
   </main>
 </template>
 

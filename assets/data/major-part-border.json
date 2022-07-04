@@ -1,7 +1,0 @@
-{
-  "idName": "majorPartBordercomponent",
-  "className": "majorPartBordercomponent",
-  "idStyle": "",
-  "classStyle": "\n          width: 100%;\n          height: 100vh;\n          min-height: 860px;\n          position: relative;\n        ",
-  "style": "none"
-}

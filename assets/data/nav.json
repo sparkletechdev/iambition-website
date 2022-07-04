@@ -4,11 +4,11 @@
     "items": [
       {
         "title": "navbar.aiCare",
-        "route": "solutions/aicare"
+        "route": "solutions/icare"
       },
       {
         "title": "navbar.aiSafe",
-        "route": "solutions/aisafe"
+        "route": "solutions/isafe"
       }
     ]
   },

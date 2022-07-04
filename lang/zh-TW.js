@@ -281,7 +281,8 @@ export default {
         video: 'computex.mp4',
       },
       {
-        landingTitle: '雄欣科技 獲選為 亞灣雲平台<br>微軟新創加速器 重點培育新創',
+        landingTitle:
+          '雄欣科技 獲選為 亞灣雲平台<br>微軟新創加速器 重點培育新創',
         landingContent: [
           `開展一個新事業，創意只是起點，雄欣科技藉由微軟的以大帶小，藉由微軟全球豐富的新創育成經驗、產業專家與技術顧問的諮詢，以及全球夥伴生態體系。讓雄欣科技更容易從1到N快速成長、更容易將解決方案帶給全球客戶，躍向全球市場。`,
         ],
@@ -308,7 +309,7 @@ export default {
             '藉由自主研發的3D感測與生理雷達裝置、融合式演算法，將各類型異常行為與生理數值，進行集中式通報。',
           button: 'Explore iCare',
           image: 'solutions/ai-care.jpg',
-          link: '/solutions/aicare',
+          link: '/solutions/icare',
         },
         {
           title: '互動式智慧看板',
@@ -316,7 +317,7 @@ export default {
             '使用各類型感測器、人工智慧技術提供新一代具備互動式能力的AI智慧看板。',
           button: 'Explore iSafe',
           image: 'solutions/ai-safe.jpg',
-          link: '/solutions/aisafe',
+          link: '/solutions/isafe',
         },
       ],
     },

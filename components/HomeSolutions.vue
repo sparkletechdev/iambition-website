@@ -1,10 +1,5 @@
 <template>
   <div class="solution-main-container">
-    <!-- <ElementHone
-      v-if="production.productionStyle[1]"
-      :hone="production.productionStyle[1]"
-      :honetitle="production.production[0]"
-    /> -->
     <div class="solution-title">
       {{ $t('index.solution.title') }}
     </div>
@@ -20,17 +15,6 @@ export default {}
 </script>
 
 <style scoped>
-/* .productionContainer{
-    position: relative;
-    width: 100%;
-    height: 85vh;
-    min-height: 780px;
-    background-color: rgba(255,255,255,1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: end;
-  } */
 
 .solution-main-container {
   display: flex;

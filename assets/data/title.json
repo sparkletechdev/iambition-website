@@ -1,7 +1,0 @@
-{
-  "idName": "titlecomponent",
-  "className": "titlecomponent",
-  "idStyle": "",
-  "classStyle": "\n          font-weight: bold;\n          color: white;\n          font-size: 2em;\n        ",
-  "style": "none"
-}

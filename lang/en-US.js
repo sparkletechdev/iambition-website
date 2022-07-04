@@ -277,7 +277,7 @@ export default {
     sendSuccess: 'Message sent successfully!',
     invalidFirstName: 'Please enter a valid first name',
     invalidLastName: 'Please enter a valid last name',
-    invalidEmail: 'Please enter a valid email address'
+    invalidEmail: 'Please enter a valid email address',
   },
   index: {
     landing: [
@@ -329,7 +329,7 @@ export default {
             'Nash360 can efficiently process any data in any format through any database using Distributed Computing with Spark',
           button: 'Explore iCare',
           image: 'solutions/ai-care.jpg',
-          link: '/solutions/aicare',
+          link: '/solutions/icare',
         },
         {
           title: 'Predictive Behavioral Intelligence',
@@ -337,7 +337,7 @@ export default {
             'Predict provides accurate behavioral forecasts for each customer using Automated Machine Learning',
           button: 'Explore iSafe',
           image: 'solutions/ai-safe.jpg',
-          link: '/solutions/aisafe',
+          link: '/solutions/isafe',
         },
       ],
     },
@@ -604,6 +604,6 @@ export default {
   },
   head: {
     title: 'iAmbition Technology',
-    favicon: '/favicon-sg.ico'
-  }
+    favicon: '/favicon-sg.ico',
+  },
 }
