@@ -13,11 +13,13 @@
       >
         <div :key="item.title" class="hidden-header-container-title-border">
           <nuxt-link
+            v-if="item.route"
             :to="localePath(`/${item.route}`)"
             class="hidden-header-container-title"
           >
             {{ $t(item.title) }}
           </nuxt-link>
+          <div v-else class="not-link">{{ $t(item.title) }}</div>
           <div
             v-for="subItem in item.items"
             :key="subItem.id"
@@ -103,6 +105,10 @@ export default {
 .menu {
   padding: 0 25%;
   overflow: scroll;
+}
+.not-link {
+  color: white;
+  cursor: default;
 }
 @media screen and (max-width: 992px) {
   .language {
