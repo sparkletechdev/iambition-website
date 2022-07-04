@@ -42,8 +42,4 @@ export default {}
 ::v-deep .ilc-image {
   width: auto;
 }
-
-::v-deep .ilc-image-grid {
-  grid-auto-rows: auto;
-}
 </style>

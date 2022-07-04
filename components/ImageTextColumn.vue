@@ -167,6 +167,8 @@ export default {
   grid-auto-rows: 480px;
   row-gap: 2.5rem;
   column-gap: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 .image-caption {
   display: flex;
@@ -181,6 +183,13 @@ export default {
 .grid-cell {
   height: 100%;
   width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1440px) {
+  .ilc-image-grid {
+    grid-auto-rows: 320px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -206,7 +215,7 @@ export default {
   }
   .ilc-image-grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 360px;
+    grid-auto-rows: 320px;
     row-gap: 2rem;
   }
   .ilc-image-single {
@@ -222,7 +231,7 @@ export default {
     font-size: 1rem;
   }
   .ilc-image-single {
-    height: 320px;
+    height: 280px;
   }
 }
 
