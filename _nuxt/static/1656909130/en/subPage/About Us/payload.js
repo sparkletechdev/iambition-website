@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/en/subPage/About%20Us", {data:[{}],fetch:{},mutations:[]});

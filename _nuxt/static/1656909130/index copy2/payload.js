@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/index%20copy2", (function(a){return {data:[{}],fetch:{"0":{_error:{message:"request to http:\u002F\u002Flocalhost:3003\u002Fcomponent\u002FMajorPart failed, reason: connect ECONNREFUSED 127.0.0.1:3003",type:"system",errno:a,code:a,statusCode:500}}},mutations:[]}}("ECONNREFUSED")));

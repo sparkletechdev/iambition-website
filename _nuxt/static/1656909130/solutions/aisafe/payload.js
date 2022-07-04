@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/solutions/aisafe", {data:[{}],fetch:{},mutations:[]});
