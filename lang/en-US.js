@@ -25,11 +25,11 @@ export default {
   },
   company: {
     aboutUs: {
-      landingTitle: 'iAmbition',
+      landingTitle: 'iAmbition Technology',
       landingContent: [
-        `The rapid aging of the global population structure has created a manpower gap for medical care, and the safety and care needs of the elderly. , these pain points are not only social issues but also national security issues.`,
-        `Safety is the only way home. Based on the mission of "making life safer and better for life", Xiongxin Technology has independently developed a forward-looking AI perception system. Through professional consultant planning, we can make early Prevention of security accidents, real-time detection of abnormal conditions of fields and people, and omni-directional mobile notification. Assist the owners of government agencies, company factories, campuses, medical care institutions, shopping and exhibition venues, etc., through the process of digital empowerment and digital transformation, to completely solve industrial pain points, and improve "site safety", "management efficiency" and "" service quality” and other ESG indicators.`,
-        `Xiongxin Technology's AI perception and care system includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and visualized war situation room system platform. We are people-oriented, from the perspective of digital transformation, attach importance to the mission of ESG sustainable Taiwan, and lead the industry to launch a series of innovative value, people-oriented "warm" solutions.`,
+        `The rapid aging global population has led to a shortage of healthcare workers, unable to meet the safety and care needs of the elderly. On the other hand, due to the continuous spread of far-right ideology and terrorism, injuries caused by social unrest and workplace safety incidents are on the rise. These pain points are not only social problems but also often national security issues.`,
+        `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI perception system. Through professional consultancy, we can make early prevention of security accidents, real-time detection of abnormal conditions of fields and people, and omni-directional mobile notification. Assist the owners of government agencies, company factories, campuses, medical care institutions, shopping and exhibition venues, etc., through the process of digital empowerment and digital transformation, to completely solve industrial pain points, and improve "site safety", "management efficiency" and "service quality” and other ESG indicators.`,
+        `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and visualized war situation room system platform. We are people-oriented, from the perspective of digital transformation, attach importance to the mission of ESG sustainable Taiwan, and lead the industry to launch a series of innovative value, people-oriented "warm" solutions.`,
         `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, it also actively forms alliances with various types of partners to establish an industry-university-research smart application ecosystem, and creates and benefits with stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to sail internationally in the name of Taiwan with our ecosystem partners.`,
       ],
       mission: {
@@ -39,76 +39,41 @@ export default {
       vision: {
         title: 'Vision',
         content:
-          'With forward-looking AIoT sensing technology, solve industrial safety and care problems, and become a global market leader',
+          'To become a global leader at solving industrial safety and healthcare problems by developing forward-looking Artificial Intelligence of Things sensing technology.',
       },
       valueProposition: {
         title: 'Value Proposition',
-        content:
-          'With forward-looking AIoT fusion sensing technology and industry Know How, we provide smart transformation solutions for various fields such as smart cities and medical care to solve security and care problems',
+        content: `Using forward-looking Artificial Intelligence of Things sensor fusion and industry know-how, we provide smart transformation solutions for various fields such as smart cities and healthcare to solve security and healthcare problems.`,
       },
       coreValues: {
         title: 'Our Core Values',
         content: [
           {
             title: 'People Oriented',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            description: `By adopting a human-centered approach to system design, 
+            our solutions take into consideration people's feeling, needs and behaviors, 
+            as well as the feasibility of the technology or business.`,
             image: 'people-oriented.jpg',
           },
           {
             title: 'Customer First',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            description: `Service is an experience, an experience is a journey, and the journey 
+            must be designed. We focus on the customer, optimize the customer's existing service 
+            process with advanced technology, and assist customers in digital empowerment and transformation.`,
             image: 'customer-first.jpg',
           },
           {
             title: 'Integrity & Responsibility',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            description: `Commitment to the integrity of partner companies, transparent governance 
+            within the company, promote a culture of diversity and inclusion, and a spirit of service are 
+            the foundation of the company's business development.`,
             image: 'integrity.jpg',
           },
           {
             title: 'Sustainability',
-            description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi `,
+            description: `To be environmentally friendly, achieving social and elderly care, fair trade and 
+            corporate sustainability are our commitments to all stakeholders.`,
             image: 'sustainability.jpg',
-          },
-        ],
-      },
-      going: {
-        title: 'Where Are We Going?',
-        subtitle: `Tuple is being deployed by organizations across the globe for their
-        most critical operations. Businesses are finding their best customers,
-        designing the best customer experiences and developing exciting new
-        products with Tuple.`,
-        data: [
-          {
-            title: 'Financial Services',
-            subtitle:
-              'Financial Services are finding ways to collate their data at a single location so that they have a real-time overview of all the customer activity. It is allowing them to cater to the preferences of their consumer and keep a close watch on the changing digital landscape.',
-            img: 'technology.jpeg',
-          },
-          {
-            title: 'Retailers',
-            subtitle:
-              'Retailers are innovating with the check-out technologies so that their customers can have a hassle-free experience. The industry is looking at modern data-driven technologies to create unique experiences for the consumers and fight the onslaught of e-commerce. They are refining their processes of payments, marketing, and inventory management.',
-            img: 'technology.jpeg',
-          },
-          {
-            title: 'Manufacturing',
-            subtitle:
-              'Manufacturing has not been an early adopter of the technology but they are opening their eyes to the apparent truth. Organizations are automating the way they cater their customer needs by refining the process of quotation management, deploying media listening to generate leads and recommendation engines to optimize lifecycle management of the customers.',
-            img: 'technology.jpeg',
-          },
-          {
-            title: 'Telecom',
-            subtitle:
-              'Telecom sector is creating Intelligent Sales and Marketing engines to enhance the process of customer acquisition, retention, cross-sell and up-sell opportunities.',
-            img: 'technology.jpeg',
           },
         ],
       },
@@ -199,8 +164,9 @@ export default {
   media: {
     landingTitle: 'Media',
     landingContent: [
-      `雄欣科技創立至今，已經獲得多項的獎項與榮耀，例如：AI 新銳、桃園千里馬創業、約農盃創業、中科創新創業。`,
-      `同時也獲得多家媒體的報導，是台灣崛起最快、最受注目的新創業者。`,
+      `Since our establishment, iAmbition Technology has won a number of awards and honors, at several contest such as AI 新銳選拔首獎, 桃園千里馬創業, 約農盃創業冠軍, 中科創新創業競賽.`,
+      `We have also joined the most important startup accelerators in Taiwan, including Taiwan Startup Terrace, Microsoft for Startups Founders Hub, and Taiwan Accelerator Plus(TAcc+).`,
+      `Due to our excellent performance, we have garnered a lot of media attention and can be said to be the fastest growing and most notable startup in Taiwan recently.`,
     ],
     content: [
       {
@@ -284,57 +250,57 @@ export default {
       {
         landingTitle: 'iAmbition @ Computex 2022',
         landingContent: [
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. `,
+          `Computex is the leading ICT and IoT show in Asia. It is positioned to help build a global technology ecosystem, 
+          focusing on areas such as 開創運算, 智慧驅動, digital resiliency, 無限體驗, innovation and startups
+          etc. Computex provides a platform for entrepreneurs around the globe to exchange ideas and knowledge, sparking technological innovation.
+          `,
+          `iAmbition Technology was invited by the Ministry of Economic Affairs R.O.C to display our smart life and smart security solutions in the 
+          "AI Life Hall" section, which was organized by Taiwan's Industrial Development Bureau.`,
         ],
         image: 'home3.jpg',
         video: 'computex.mp4',
       },
       {
-        landingTitle: 'iAmbition Joins Microsoft Startups Founders Hub',
+        landingTitle: 'iAmbition joins Microsoft for Startups Founders Hub',
         landingContent: [
-          `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-          ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-          anim id est laborum.`,
+          `To start a new business, creativity is only the starting point. iAmbition Technology will now be able to accelerate our growth globally 
+          by leveraging on Microsoft's experience in nurturing new ventures, their guidance and support from industry experts and their global partner ecosystem.
+          `,
         ],
         image: 'home1.jpg',
       },
       {
         landingTitle: 'Pursuing corporate sustainability',
         landingContent: [
-          `Xiongxin Technology deeply understands that in the process of continuous growth of the company, 
-      although the expansion of business scale brings financial stability and success, it also has an 
-      impact on society and the environment. Therefore, the company implements the sustainable spirit 
-      of "making life safer and making life better", and promotes corporate social responsibility with technology, 
+          `iAmbition Technology deeply understands that as we continue to grow, 
+      it brings financial stability and success, but it also has an 
+      impact on society and the environment. Therefore, we implement the spirit of sustainability
+      of "make life safer and better", and promotes corporate social responsibility with technology, 
       innovation and influence.`,
-          `We also pursue the "Net Positive Impact" (Net Positive Impact) to maximize and reduce the negative impact 
-      on the environment and society (Negative Impact), connect the partners of the ecosystem to participate together, 
-      exert the power of cooperation, and create a positive cycle of goodness , and use the power of technology to do good together.`,
+          `We also greatly reduce the negative impact on the environment and society by pursuing "Net Positive Impact". Together 
+          with our ecosystem partners, using technology to collaboratively generate beneficial social and environment impact.`,
         ],
         image: 'home2.jpg',
       },
     ],
     solution: {
-      title: 'Effective, Efficient and Elegant',
+      title: 'Effective, Efficient, People-oriented',
       description:
         'Big Data and Artificial Intelligence for all, as it should be',
       solutions: [
         {
-          title: 'Fall Detection And Vitals Monitoring',
+          title:
+            'Predictive Behavioral Intelligence and Vital Signs Monitoring',
           description:
-            'Nash360 can efficiently process any data in any format through any database using Distributed Computing with Spark',
+            'Proprietary 3D sensing and physiological radar equipment and 融合式演算法, various types of abnormal behaviors and vital signs are collated and visualized centrally.',
           button: 'Explore iCare',
           image: 'solutions/ai-care.jpg',
           link: '/solutions/icare',
         },
         {
-          title: 'Predictive Behavioral Intelligence',
+          title: 'Interactive Smart Board',
           description:
-            'Predict provides accurate behavioral forecasts for each customer using Automated Machine Learning',
+            'Using various types of sensors and AI to provide a new generation of intelligent dashboard with interactive capabilities.',
           button: 'Explore iSafe',
           image: 'solutions/ai-safe.jpg',
           link: '/solutions/isafe',
@@ -346,19 +312,22 @@ export default {
       readMore: 'Read More',
       items: [
         {
-          title: '從智慧手臂到偵測打哈欠 工業局於Computex展現業者AI成果',
+          title: '雄欣科技獲選進入TAcc Plus 加速器 Create 第八期',
+          description: `Taiwan Accelerator Plus（TAcc+）是台灣最新型的國際級加速器，透過焦點產業之全球市場與科技發展資訊的蒐集、商機分析工具的建立、新創團隊的扶植輔導與資源串接、
+          科研補助資金的提供等，加速科技新創事業躍升發展。`,
+          link: 'https://taccplus.com/tacc_batch_8/',
+        },
+        {
+          title: '雄欣科技於Computex 展示人體監測AI方案',
           description: `Computex台北國際電腦展於今年5月24日正式回歸實體展，成果豐碩!經濟部工業局於展會中打造
-          「工業局AI生活館」，以「AI一日生活圈」為主軸規劃三大展出主題：智慧製造、智慧交通、智慧生活，匯集14家參與AI
-          產推計畫的大廠及新創業者之AI成果，開展首日即盛大邀請經濟部王美花部長、工業局呂正華局長等政界代表，
-          以及台北市電腦公會理事長暨友達光電彭双浪董事長、利凌企業許家雄執行長、鈺立微電子王鏡戎策略長等業界貴賓
-          親臨AI主題館進行合影及觀摩體驗各項實際落地的計畫輔導成果及研發結晶。`,
+          「經濟部工業局呂正華局長蒞臨工業局AI生活館，與多家資通訊大廠及AI新創代表合影，攜手展現台灣AI技術能量`,
           link: 'https://money.udn.com/money/amp/story/11799/6336818',
         },
         {
           title: '亞洲矽谷攜手台杉首度前進高雄 培育獨角獸放眼全球',
           description:
             '後疫情商機湧現，亞洲．矽谷計畫執行中心與台杉投資合辦的「VS Talk」，23日首次前進南台灣，與高雄市政府共同主辦「立足南方 航向國際」活動，鼓勵新創企業立足南台灣，放眼國際市場。',
-          link: '/taichung.png',
+          link: 'https://www.asvda.org/Message/MessageView?itemid=414&mid=News2',
         },
         {
           title: '車庫精神 in TAICHUNG',
@@ -372,15 +341,10 @@ export default {
           link: 'https://www.cht.com.tw/zh-tw/home/cht/messages/2021/1018-1420',
         },
         {
-          title: 'AIHub',
-          description: 'AIHub AIHub AIHub AIHub AIHub AIHub AIHub AIHub AIHub ',
-          link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
-        },
-        {
-          title: '日本電波新聞社',
+          title: 'AI+智慧眼鏡 雄欣科技鎖定智慧照護市場 讓老者住得安心安全',
           description:
-            '日本電波新聞社 日本電波新聞社 日本電波新聞社 日本電波新聞社',
-          link: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html',
+            '在小小的照護房內，年逾8旬的王伯伯正激烈地咳嗽著，護理人員輕輕地拿著吸痰器幫他抽痰，希望讓他舒服一點，可是，眼尖的家人發現，護理人員鼻樑上戴著一副智慧眼鏡，此時，另一端醫生一邊整理手上的病歷報告，一邊即時透過螢幕了解王伯伯的狀況......，隨著精準照護的普及，在不久的將來，醫生在遠端即時掌握被照護者重要生理資訊，將是照護市場的一大福音。',
+          link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
         },
       ],
     },
