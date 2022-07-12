@@ -45,7 +45,7 @@ export default {
             hid: 'og:image',
             name: 'og:image',
             content:
-              'https://sparkletechdev.github.io/iambition-website/og-image-tw.png',
+              '/taichung.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
           ...i18nHead.meta,
@@ -95,7 +95,7 @@ export default {
             hid: 'og:image',
             name: 'og:image',
             content:
-              'https://sparkletechdev.github.io/iambition-website/og-image-tw.png',
+              '/taichung.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
         ],
