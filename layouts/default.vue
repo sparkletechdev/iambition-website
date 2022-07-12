@@ -44,7 +44,7 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content: '/logo-tw.png',
+            content: 'https://sparkletechdev.github.io/iambition-website/_nuxt/img/logo-tw.2a86fb3.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
           ...i18nHead.meta,
@@ -93,7 +93,7 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content: '/logo-tw.png',
+            content: 'https://sparkletechdev.github.io/iambition-website/_nuxt/img/logo-tw.2a86fb3.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
         ],
