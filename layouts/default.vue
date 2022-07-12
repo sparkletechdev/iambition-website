@@ -31,7 +31,11 @@ export default {
             name: 'apple-mobile-web-app-title',
             content: '雄欣科技官方網站',
           },
-          { hid: 'og:title', name: 'og:title', content: 'iAMBITION TECHNOLOGY CO., LTD' },
+          {
+            hid: 'og:title',
+            name: 'og:title',
+            content: 'iAMBITION TECHNOLOGY CO., LTD',
+          },
           {
             hid: 'og:description',
             name: 'og:description',
@@ -40,7 +44,8 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content: '/og-image-tw.png',
+            content:
+              'https://sparkletechdev.github.io/iambition-website/og-image-tw.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
           ...i18nHead.meta,
@@ -89,7 +94,8 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content: '/og-image-tw.png',
+            content:
+              'https://sparkletechdev.github.io/iambition-website/og-image-tw.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
         ],
