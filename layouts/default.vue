@@ -21,7 +21,17 @@ export default {
             name: 'viewport',
             content: 'width=device-width, initial-scale=1, user-scalable=yes',
           },
-          { hid: 'description', name: 'description', content: '' },
+          { hid: 'og:title', name: 'og:title', content: '欣科技股份有限公司' },
+          {
+            hid: 'og:description',
+            name: 'og:description',
+            content: 'iAmbition',
+          },
+          {
+            hid: 'og:image',
+            name: 'og:image',
+            content: this.$t('head.favicon'),
+          },
           { name: 'format-detection', content: 'telephone=no' },
           ...i18nHead.meta,
         ],
@@ -46,11 +56,21 @@ export default {
             name: 'viewport',
             content: 'width=device-width, initial-scale=1, user-scalable=yes',
           },
-          { hid: 'description', name: 'description', content: '' },
+          { hid: 'og:title', name: 'og:title', content: '欣科技股份有限公司' },
+          {
+            hid: 'og:description',
+            name: 'og:description',
+            content: 'iAmbition',
+          },
+          {
+            hid: 'og:image',
+            name: 'og:image',
+            content: this.$t('head.favicon'),
+          },
           { name: 'format-detection', content: 'telephone=no' },
         ],
         link: [
-          { rel: 'icon', type: 'image/x-icon', href: this.$t('head.favicon') },
+          { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
           {
             rel: 'stylesheet',
             href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500&family=Noto+Serif+TC&display=swap',
