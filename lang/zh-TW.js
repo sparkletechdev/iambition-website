@@ -427,11 +427,11 @@ export default {
           images: [
             {
               path: 'solutions/ai-care/safety1.jpg',
-              caption: '人臉辨識門禁功能模組',
+              caption: '日立負壓艙模組',
             },
             {
               path: 'solutions/ai-care/safety2.jpg',
-              caption: '日立負壓艙模組',
+              caption: '人臉辨識門禁功能模組',
             },
             { path: 'solutions/ai-care/safety3.jpg', caption: '電子圍籬模組' },
             {

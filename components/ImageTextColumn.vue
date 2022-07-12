@@ -137,7 +137,7 @@ export default {
 .ilc-image {
   /* border: 1px solid black; */
   width: 100%;
-  height: 100%;
+  height: 95%;
   cursor: zoom-in;
 }
 .ilc-image-single {
@@ -173,7 +173,7 @@ export default {
 .image-caption {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
+  row-gap: 1rem;
   align-items: center;
   font-size: 0.9rem;
   font-weight: 400;

@@ -352,15 +352,19 @@ export default {
   clients: {
     landingTitle: 'Our Clients',
     landingContent: [
-      `數位轉型AI化－預見數位轉型，體現安全新世代`,
-      `透過AI、物聯網、大數據、雲端、邊緣運算等技術所提供的解決方案，將場域與人的安全管理代入智慧化模式，根據客戶需求隨選隨用，進行可客製化解決方案，已經是AI應用的主流。`,
-      `雄欣科技的解決方案，已經榮獲多家業者所使用，在高雄市立凱旋醫院的解決方案，更是榮獲Smart City 的Go Smart 獎項，並且成為高雄市智慧城市的代表作。`,
+      `AI for digital transformation - foreseeing digital transformation and embodying a new era of smart security solutions.`,
+      `By leveraging solutions provided by AI, IoT, big data, cloud computing, edge computing and other technologies, security and safety management of areas and people 
+      can be performed intelligently and customized according to the customer needs.`,
+      `iAmbition Technology solutions have been used by many companies. Our iCare solution, used in Kaohsiung Municipal Kai-Syuan Psychiatric Hospital has won the Global Organization of Smart Cities (GO SMART) Award, 
+      and has become a symbol of Kaohsiung Smart City.`,
     ],
     data: [
       {
         id: 'tunghai',
         clientName: 'Tunghai University',
-        description: [`360度無死角打造安全的智慧校園`],
+        description: [
+          `360 degrees security coverage without any dead zones to create a safe and smart campus`,
+        ],
         images: [
           {
             path: 'clients/tunghai/1.jpg',
@@ -380,7 +384,9 @@ export default {
       {
         id: 'ksph',
         clientName: 'Kai-Syuan Psychiatric Hospital',
-        description: [`以人為本的精神，打造安全的智慧醫療與照護場域`],
+        description: [
+          `People-oriented approach to create a safe and smart healthcare field`,
+        ],
         images: [
           {
             path: 'clients/ksph/1.jpg',
@@ -403,21 +409,24 @@ export default {
     aiCare: {
       landingTitle: 'iCare',
       landingContent: [
-        `有鑒於後疫情時代及人口高齡化現象，各醫療照護機構普遍有醫護人力短缺及遠距照護的需求，為了提升安全照護的主動性、
-      即時性與安全性，針對各類型醫院及需要24小時照護的各類型安養院、公托中心的數位轉型。`,
-        `我們開發出一款結合 3D 深度感測技術，在受照護者不須攜帶穿戴式裝置，並且注重病患隱私的基礎上，以AI的方式偵測人體姿態動作，當受照護者發生安全意外事件時，能瞬間向照護人員發出異常通報的全方位系統。`,
-        `AI照護感知系統，採用AI模組化架構設計，如果機構未來想要額外增加購買其他特殊異常行為的偵測通報時，可以在原系統持續增加AI模型，發展出更多類型的異常行為偵測。`,
+        `In view of the post-pandemic era and aging population, healthcare institutions in general, have a shortage of healthcare workers and there is an increasing need for remote care. 
+        In order to improve initiative and safety, there is a need for hospitals, nursing homes and public care centers that provides 24-hour care to undergo digital transformation.`,
+        `We have developed a comprehensive system that combines 3D depth sensing technology to detect posture changes using AI that does not require the care recipient to 
+        carry wearable devices and also protect the care recipient privacy. In the event a care recipient have an accident, caregivers will instantly be notified by the system.`,
+        `The iCare system is designed with modularity in mind. If the healthcare institution requires detection of additional abnormal behaviors 
+        in the future, it can simply add new AI models to the existing system to extend its capabilities.`,
       ],
       sections: [
         {
-          title: '異常跌倒 與 生命跡象偵測 模組',
+          title: 'Abnormal Falls Detection and Vital Signs Sensing Module',
           content: [
-            `以 TOF 及 mmWave 結合 AI 深度學習邊緣運算技術，來進行各類型的行為智慧感知偵測及通報，及各別住民的異常風險評估分析。例如：`,
-            `1) 跌倒（行進間、變換姿態間、床上摔下、輪椅上跌落）`,
-            `2) 離床中與離床後`,
-            `3) 廁所久留`,
-            `4) 離開房間`,
-            `5) 遠距且主動式的心跳呼吸偵測`,
+            `Using ToF and mmWave sensors, in combination with AI deep learning and edge computing, iCare can perform various types of behavioral analytics, 
+            as well as risk assessment and analysis of individual resident, including the following`,
+            `1) Falls (while moving, while changing posture, from bed, from wheelchair)`,
+            `2) Attempting to exit bed and also after exiting bed`,
+            `3) Toilet duration`,
+            `4) Exiting a room`,
+            `5) Remote and real time heart and respiration rate`,
           ],
           images: [
             { path: 'solutions/ai-care/tof1.jpg' },
@@ -433,33 +442,38 @@ export default {
           ],
         },
         {
-          title: '門禁型辨識與身份辨識、健康類模組',
+          title: 'Access Control, Identity Management and Health modules',
           content: [
-            `打造智慧場域系統，自動化連接各項設備，包含門磁偵測
-            、監視器、影像式對講機等裝置，有效即時進行AI監控及通報管理。`,
-            `針對Covid-19疫情，雄欣科技也代理了Hitachi 負壓艙設備。`,
+            `Developed a smart 場域 system that automatically connects various devices including door sensors, monitors, 
+            video walkie-talkies etc, and uses AI to perform real time monitoring and notification management.`,
+            `In response to the COVID-19 pandemic, iAmbition Technology also distributed Hitachi Negative Pressure Clean Booth.`,
           ],
           images: [
             {
               path: 'solutions/ai-care/safety1.jpg',
-              caption: '人臉辨識門禁功能模組',
+              caption: 'Hitachi Negative Pressure Clean Booth module',
             },
             {
               path: 'solutions/ai-care/safety2.jpg',
-              caption: '日立負壓艙模組',
+              caption: 'Face recognition access control module',
             },
-            { path: 'solutions/ai-care/safety3.jpg', caption: '電子圍籬模組' },
+            {
+              path: 'solutions/ai-care/safety3.jpg',
+              caption: 'Electronic Fence Module',
+            },
             {
               path: 'solutions/ai-care/safety4.jpg',
-              caption: '影像式對講機模組',
+              caption: 'Video walkie-talkie module',
             },
           ],
         },
         {
-          title: '早期火災預警偵測 類模組',
+          title: 'Early fire warning and detection module',
           content: [
-            `市面上的火警自動警報設備，包含了偵煙式探測器、自動撒水、水霧或泡沫滅火設備，這是建築物的標準救災配備，主要是偵測火災所產生的濃煙為主要來源依據。`,
-            `我們提供透過攝影機、空氣品質偵測器為主的小火時的AI預警，可以及早發現火災的可能性，可以更及早的消滅火源。`,
+            `Existing automatic fire alarm equipment on the market includes smoke detectors, automatic sprinkler, water mist or foam fire extinguisher. 
+            These standard fire-prevention equipments for buildings, are triggered by the smoke after the fire has started.`,
+            `Using a combination of cameras and air quality detectors, powered by our AI model, we are able to detect and eliminate
+            the source of the fire earlier than existing solutions in the market.`,
           ],
           images: [
             { path: 'solutions/ai-care/fire1.jpg' },
@@ -512,52 +526,56 @@ export default {
   technologies: {
     landingTitle: 'Our Key Technologies',
     landingContent: [
-      `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
-    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit 
-    anim id est laborum.`,
+      `iAmbition Technology core technology includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, 
+      and visualized command center platform. We are a people-oriented company, that focuses on helping our clients with digital transformation,
+      ESG and sustainability. We aim to lead the industry in launching a range of innovative and people-oriented solutions.`,
     ],
     sections: [
       {
         title: 'Time of Flight (ToF)',
         image: 'technologies/tof.jpg',
-        content: `<p>有別於一般的RGB影像數位攝影機以真實影像錄製。</p><br>
-          <p>飛時測距感測技術，是利用發光二極體（LED：Light Emitting Diode）或 雷射二極體 （LD：Laser Diode）發射出紅外光，照射到物體不同深度的表面，反射回來的時間，藉由數學模型計算出物體不同位置的距離，再藉由運算晶片描繪出物體的點雲資訊或深度資訊。</p><br>
-          <p>因此，能在無隱私權疑慮下，識別物體的深度、距離、方位，也可以在完全黑暗無任何光線下，精準的進行人體或物體的行為姿態偵測。</p>`,
+        content: `<p>Unlike ordinary digital cameras, ToF does not record videos in the Red Green Blue(RGB) format.</p><br>
+          <p>ToF sensor uses LED or laser to emit light, and using the round trip time to resolves the distances 
+          of different positions of the object through a mathematical model which can then generate the point cloud data or depth information of object.</p><br>
+          <p>ToF can determine the depth, distance and orientation of objects without any light source and in complete darkness allowing for accurate 
+          detection of behavior and posture of human bodies or objects without any privacy concerns.</p>`,
       },
       {
         title: ' Bio-Sense Millimeter Wave (mmWave)',
         image: 'technologies/mmwave.jpg',
-        content: `<p>雷 達 (Radar) 的全名是「Radio Detection and Ranging」( 無線電偵測和定距 )，旨在藉電磁能量以定向方式計算空間中標的物之方向、高度、速度，進而推估形態。將它嵌入感測器中，可在三維空間定位目標並衍生應用功能。</p><br>
-          <p>而毫米波雷達，指的是工作在毫米波波段（millimeter wave）的雷達，完全不受光線與天氣因素影響。也因為毫米波雷達在物體距離檢測中可以提供毫米(mm)等級的精度，因而可以成為生理訊號的理想感測晶片。</p><br>
-          <p>而雄欣科技設計出，業界高的精度、高速訊號處理能力、增強的距離檢測，以及將雷達整合到小尺寸晶片組中，提供非接觸式的連續偵測能力，將可能極大地推動醫療照護應用的發展，如人類活動偵測、生命體徵（心跳、呼吸）偵測等。</p>`,
+        content: `<p>Radar(radio detection and ranging) uses radio waves to calculate the direction, height, and speed of objects relative to the site, and can be use to estimate the shape. 
+        By embedding a radar sensor, it enable us to locate a target in space and opens up many possibilities for different kinds applications.</p><br>
+          <p>The millimeter wave radar refers to the radar working in the millimeter wave band, which is completely unaffected by light and weather factors. Also, because 
+          millimeter-wave radar can provide millimeter-level accuracy in distance detection, it is ideal sensor for vital signs detection and monitoring.</p><br>
+          <p>iAmbition Technology has designed the industry's highest precision, high-speed signal processing capability and enhanced distance detection, that is integrated into a compact
+          chipset to provide non-contact continuous detection capabilities, which may greatly promote development of healthcare applications such as human activity detection and vital signs 
+          (heartbeat, respiration) detection.</p>`,
       },
       {
         title: 'Artificial Intelligence',
-        content: `<p>在AI的能量上，雄欣科技獲得110年度經濟部工業局「AI新銳選拔最大獎項」，與多項競賽優勝，並且解決方案協助凱旋醫院獲得110年度全球智慧城市 Go Smart 第二名的大獎。</p>
+        content: `<p>iAmbition Technology won the 2021 AI+新銳選拔賽 organized by the Industrial Development Bureau, Ministry of Economic Affairs, as well as several other competitions.
+        Our iCare solution also helped Kai-Syuan Psychiatric Hospital secure 2nd place in the 2021 Global Organization of Smart Cities (GO SMART) Award.</p>
         <br>
-          <p>所擁有的多重的深度學習技術，已經達到輕薄短小、善盡ESG企業追求環境友善的責任：</p>
+          <p>Our deep learning technologies are lightweight and efficient, and fulfilling the responsibilities of an ESG enterprises pursuing of environmental friendliness:</p>
           <ol class="list-decimal list-inside">
-          <li>演算法可以運作在 Edge AI 攝影機、工業用主機、雲端主機或混合式架構中。</li> 
-          <li>支援 人工智慧晶片、VPU、NVIDIA GPU</li> 
-          <li>架構所使用的耗電量，為其他AI業者的30%。</li> 
+          <li>Algorithms can run on Edge AI cameras, data center, the cloud, or using an hybrid architectures.</li> 
+          <li>Supports AI chip, VPU, NVIDIA GPU</li> 
+          <li>Power consumption of our architecture is at 30% of our competition.</li> 
           </ol>`,
       },
       {
         title: 'Internet of Things Platform',
         image: 'technologies/iot.jpg',
-        content: `<p>平台中的感知層，可以佈署符合 ONVIF協定的數位槍型攝影機、球型IP數位攝影機、180度廣角攝影機、
-        360度魚眼攝影機、LTE或5G攝影機、Edge AI 攝影機、熱成像攝影機、數位影音門禁對講機。也可以佈署3D感測器，例如：ToF 
-        飛時測距感測器、mmWave毫米波雷達。更可以佈署智慧眼鏡、空氣品質感測器…等智慧物件。</p>
+        content: `<p>iAmbition Technology IoT platform supports ONVIF compliant digital cameras, spherical IP digital cameras, 180-degree wide-angle cameras, 360-degree fisheye cameras, 
+        LTE or 5G cameras, Edge AI cameras, thermal imaging cameras, digital video and audio access control intercom. 3D sensors such as ToF or mmWave radar as well as 
+        other smart devices such as smart glasses, air quality sensors etc, are also supported.</p>
         <br>
-        <p>就網路層而言，IoT中的智慧物件具有聯網能力，能夠將感測資訊傳遞至網際網路，透過混合雲雲端技術的AI辨識、儲存、
-        處理及分享機制，轉化為人們所需要的加值服務。</p>
+        <p>As far as the network layer is concerned, IoT devices have the ability to transmit sensor information to the Internet and transform them 
+        into the value-added services that people need through the AI辨識, storage, processing and sharing mechanism of hybrid cloud technology.</p>
         <br>
-        <p>這些透過感知與物件聯網、雲端科技及語言與語意交換與分析的技術，將實體世界中眾多的物體聯結成一巨大的IoT，提供智慧生活、
-        智慧醫療與健康照護、智慧節能等多個領域的應用服務。改善我們的生活品質與安全。</p>`,
+        <p>Connecting many smart devices into a huge IoT platform and together with 感知與物件聯網, cloud technology, language translation and semantic analysis,
+        we can provide application services in many fields such as smart life, smart medical care and healthcare, intelligent energy conservation etc.
+        These services will improve our quality of life and well-being.</p>`,
       },
     ],
   },
