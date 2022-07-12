@@ -21,6 +21,16 @@ export default {
             name: 'viewport',
             content: 'width=device-width, initial-scale=1, user-scalable=yes',
           },
+          {
+            hid: 'og:site_name',
+            name: 'og:site_name',
+            content: '雄欣科技官方网站',
+          },
+          {
+            hid: 'apple-mobile-web-app-title',
+            name: 'apple-mobile-web-app-title',
+            content: '雄欣科技官方网站',
+          },
           { hid: 'og:title', name: 'og:title', content: '欣科技股份有限公司' },
           {
             hid: 'og:description',
@@ -30,7 +40,7 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content: this.$t('head.favicon'),
+            content: 'https://www.i-ambition.com/_nuxt/img/logo-tw.2a86fb3.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
           ...i18nHead.meta,
@@ -56,7 +66,21 @@ export default {
             name: 'viewport',
             content: 'width=device-width, initial-scale=1, user-scalable=yes',
           },
-          { hid: 'og:title', name: 'og:title', content: '欣科技股份有限公司' },
+          {
+            hid: 'og:site_name',
+            name: 'og:site_name',
+            content: '雄欣科技官方网站',
+          },
+          {
+            hid: 'apple-mobile-web-app-title',
+            name: 'apple-mobile-web-app-title',
+            content: '雄欣科技官方网站',
+          },
+          {
+            hid: 'og:title',
+            name: 'og:title',
+            content: '雄欣科技股份有限公司',
+          },
           {
             hid: 'og:description',
             name: 'og:description',
@@ -65,7 +89,7 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content: this.$t('head.favicon'),
+            content: 'https://www.i-ambition.com/_nuxt/img/logo-tw.2a86fb3.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
         ],
