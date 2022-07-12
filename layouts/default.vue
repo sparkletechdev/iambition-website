@@ -44,7 +44,7 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content: '',
+            content: require(`@/assets/images/og-image-tw.png`),
           },
           { name: 'format-detection', content: 'telephone=no' },
           ...i18nHead.meta,
@@ -93,7 +93,7 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content: '',
+            content: require(`@/assets/images/og-image-tw.png`),
           },
           { name: 'format-detection', content: 'telephone=no' },
         ],
