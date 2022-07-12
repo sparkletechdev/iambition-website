@@ -44,8 +44,7 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content:
-              '/taichung.png',
+            content: '/logo-tw.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
           ...i18nHead.meta,
@@ -94,8 +93,7 @@ export default {
           {
             hid: 'og:image',
             name: 'og:image',
-            content:
-              '/taichung.png',
+            content: '/logo-tw.png',
           },
           { name: 'format-detection', content: 'telephone=no' },
         ],
