@@ -27,10 +27,20 @@ export default {
     aboutUs: {
       landingTitle: 'iAmbition Technology',
       landingContent: [
-        `The rapid aging global population has led to a shortage of healthcare workers, unable to meet the safety and care needs of the elderly. On the other hand, due to the continuous spread of far-right ideology and terrorism, injuries caused by social unrest and workplace safety incidents are on the rise. These pain points are not only social problems but also often national security issues.`,
-        `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI perception system. Through professional consultancy, we can make early prevention of security accidents, real-time detection of abnormal conditions of fields and people, and omni-directional mobile notification. Assist the owners of government agencies, company factories, campuses, medical care institutions, shopping and exhibition venues, etc., through the process of digital empowerment and digital transformation, to completely solve industrial pain points, and improve "site safety", "management efficiency" and "service quality” and other ESG indicators.`,
-        `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and visualized war situation room system platform. We are people-oriented, from the perspective of digital transformation, attach importance to the mission of ESG sustainable Taiwan, and lead the industry to launch a series of innovative value, people-oriented "warm" solutions.`,
-        `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, it also actively forms alliances with various types of partners to establish an industry-university-research smart application ecosystem, and creates and benefits with stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to sail internationally in the name of Taiwan with our ecosystem partners.`,
+        `The rapidly aging global population has led to a shortage of healthcare workers, unable to meet the safety and care needs of the elderly. 
+        On the other hand, due to the continuous spread of far-right ideology and terrorism, injuries caused by social unrest and workplace safety incidents are on the rise. 
+        These pain points are not only social problems but also often national security issues.`,
+        `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI perception system. 
+        Through professional consultancy, we can make early prevention of security accidents, real-time detection of abnormal conditions of fields and people, 
+        and omni-directional mobile notification. Assist the owners of government agencies, company factories, campuses, medical care institutions, shopping and exhibition venues, etc., 
+        through the process of digital empowerment and digital transformation, to completely solve industrial pain points, and improve "site safety", "management efficiency" 
+        and "service quality” and other ESG indicators.`,
+        `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and visualized war situation 
+        room system platform. We are people-oriented, from the perspective of digital transformation, attach importance to the mission of ESG sustainable Taiwan, and lead the 
+        industry to launch a series of innovative value, people-oriented "warm" solutions.`,
+        `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, 
+        it also actively forms alliances with various types of partners to establish an industry-university-research smart application ecosystem, and creates and benefits with 
+        stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to sail internationally in the name of Taiwan with our ecosystem partners.`,
       ],
       mission: {
         title: 'Mission',
