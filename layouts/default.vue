@@ -37,11 +37,6 @@ export default {
             content: 'iAMBITION TECHNOLOGY CO., LTD',
           },
           {
-            hid: 'og:description',
-            name: 'og:description',
-            content: '',
-          },
-          {
             hid: 'og:image',
             name: 'og:image',
             content: require(`@/assets/images/og-image-tw.png`),
@@ -84,11 +79,6 @@ export default {
             hid: 'og:title',
             name: 'og:title',
             content: 'iAMBITION TECHNOLOGY CO., LTD',
-          },
-          {
-            hid: 'og:description',
-            name: 'og:description',
-            content: '',
           },
           {
             hid: 'og:image',
