@@ -24,7 +24,7 @@ export default {
           {
             hid: 'og:site_name',
             name: 'og:site_name',
-            content: '雄欣科技官方網站',
+            content: '雄欣科技股份有限公司',
           },
           {
             hid: 'apple-mobile-web-app-title',
@@ -39,7 +39,7 @@ export default {
           {
             hid: 'og:description',
             name: 'og:description',
-            content: '雄欣科技股份有限公司',
+            content: '',
           },
           {
             hid: 'og:image',
@@ -73,7 +73,7 @@ export default {
           {
             hid: 'og:site_name',
             name: 'og:site_name',
-            content: '雄欣科技官方网站',
+            content: '雄欣科技股份有限公司',
           },
           {
             hid: 'apple-mobile-web-app-title',
@@ -88,7 +88,7 @@ export default {
           {
             hid: 'og:description',
             name: 'og:description',
-            content: '雄欣科技股份有限公司',
+            content: '',
           },
           {
             hid: 'og:image',
