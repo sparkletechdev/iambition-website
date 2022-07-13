@@ -30,14 +30,13 @@ export default {
         `The rapidly aging global population has led to a shortage of healthcare workers, compromising the ability to provide sufficient care for the elderly as well as keeping them safe. 
         On the other hand, due to the continuous spread of far-right ideology and terrorism, injuries caused by social unrest and workplace safety incidents are on the rise. 
         These are not only social problems but also often national security issues.`,
-
         `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI感知系統. 
         Through professional consulting, we can provide early prevention of security incidents, real-time detection of abnormal situation of field and people, 
-        and comprehensive 移動式 notification. This is done without compromising privacy. Our solutions can assist government agencies, factories, campuses, healthcare institutions, shopping and exhibition venues and other owners 
-        to completely solve industrial pain points through the process of digital empowerment and digital transformation, and improve ESG indicators such as "field safety", "management efficiency" 
-        and "service quality".`,
-        `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and visualized command center platform. 
-        We are people-oriented, from the perspective of digital transformation, attach importance to the mission of ESG, and lead the industry to launch a series of innovative, people-oriented "warm" solutions.`,
+        and comprehensive 移動式 notification. All of this is done without compromising privacy. Our solutions will assist government agencies, factories, campuses, healthcare institutions, 
+        shopping and exhibition venues and other industry to completely solve pain points through the process of digital empowerment and digital transformation, and improve ESG indicators 
+        such as "field safety", "management efficiency" and "service quality".`,
+        `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and a visualized command center platform. 
+        We are a people-oriented company, coming from the perspective of digital transformation and attach importance to the mission of ESG, leading the industry to launch a series of innovative, people-oriented "有溫度" solutions.`,
         `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, 
         it also actively forms alliances with various types of partners to establish an industry-university-research smart application ecosystem, that creates and benefits with 
         stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to 以台灣之名航向國際。`,
@@ -49,7 +48,7 @@ export default {
       vision: {
         title: 'Vision',
         content:
-          'To become a global leader at solving industrial safety and healthcare problems by developing forward-looking Artificial Intelligence of Things sensing technology.',
+          'To become a global leader at solving 產業 safety and healthcare problems by developing forward-looking Artificial Intelligence of Things sensing technology.',
       },
       valueProposition: {
         title: 'Value Proposition',
