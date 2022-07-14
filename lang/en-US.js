@@ -33,7 +33,7 @@ export default {
         `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI感知系統. 
         Through professional consulting, we can provide early prevention of security incidents, real-time detection of abnormal situation of field and people, 
         and comprehensive 移動式 notification. All of this is done without compromising privacy. Our solutions will assist government agencies, factories, campuses, healthcare institutions, 
-        shopping and exhibition venues and other industry to completely solve pain points through the process of digital empowerment and digital transformation, and improve ESG indicators 
+        shopping and exhibition venues and other industries to completely solve pain points through the process of digital empowerment and digital transformation, and improve ESG indicators 
         such as "field safety", "management efficiency" and "service quality".`,
         `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and a visualized command center platform. 
         We are a people-oriented company, coming from the perspective of digital transformation and attach importance to the mission of ESG, leading the industry to launch a series of innovative, people-oriented "有溫度" solutions.`,
@@ -494,35 +494,40 @@ export default {
     aiSafe: {
       landingTitle: 'iSafe',
       landingContent: [
-        `對於追求營運卓越的餐廳來說，熟客的經營與店內安全是在美食外最在意的二件事。`,
-        `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器等技術所建立i熟客與顧客安全感知系統，在全球新冠肺炎肆虐之際，取代人力量測，
-        第一時間完成防疫與健康管理的工作，讓顧客能安心享用美食，更有一份客製化的款待與尊榮。`,
+        `Outside of serving up delicious food, the management of regular customers and in-store safety are the two most important things in a restaurant pursuit of operation excellency.`,
+        `In order to achieve these goals, iAmbition Technology uses AI, thermal imaging face temperature measurement and other technologies to establish a safety 感知 system. 
+        When the global coronavirus is raging, it replaces manual temperature measurement allowing for faster detection and prevention. 
+        By establishing a system for health management as soon as possible, customers can enjoy delicious food with a peace of mind, 更有一份客製化的款待與尊榮.`,
       ],
       sections: [
         {
-          title: '智慧餐廳類型',
+          title: 'Smart Restaurant',
           content: [
-            `對於追求營運卓越的餐廳來說，熟客的經營與店內安全是在美食外最在意的二件事。`,
-            `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器等技術所建立i熟客與顧客安全感知系統，在全球新冠肺炎肆虐之際，
-              取代人力量測，第一時間完成防疫與健康管理的工作，讓顧客能安心享用美食，更有一份客製化的款待與尊榮。`,
+            `Outside of serving up delicious food, the management of regular customers and in-store safety are the two most important things in a restaurant pursuit of operation excellency.`,
+            `In order to achieve these goals, iAmbition Technology uses AI, thermal imaging face temperature measurement and other technologies to establish a safety 感知 system. 
+            When the global coronavirus is raging, it replaces manual temperature measurement allowing for faster detection and prevention. 
+            By establishing a system for health management as soon as possible, customers can enjoy delicious food with a peace of mind, 更有一份客製化的款待與尊榮.`,
           ],
           images: [{ path: 'solutions/ai-safe/restaurant.jpg' }],
         },
         {
-          title: '智慧校園類型',
+          title: 'Smart Campus',
           content: [
-            `對於追求營運卓越的學校來說，校園與師生的安全是最重要的事。`,
-            `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器、4G/5G/數位攝影機等技術，
-            所建立的安全感知系統與智慧戰情室系統，在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
+            `For schools pursuing operational excellence, the safety of campuses, teachers and students is paramount.`,
+            `In order to achieve the above goals, iAmbition Technology uses AI, thermal imaging face temperature sensor, 
+            4G/5G/digital camera and other technologies to establish a security 感知 system and intelligent command center. 
+            During the COVID-19 pandemic, our total campus safety management help optimize management performance and effective 
+            use of manpower in a fully automated system in a timely manner.`,
           ],
           images: [{ path: 'solutions/ai-safe/school.jpg' }],
         },
         {
-          title: '智慧停車場類型',
+          title: 'Smart Carpark',
           content: [
-            `對於追求營運卓越的停車場來說，擁有眾多智慧化系統已經是常態，但是每套系統獨立且超做複雜室眾多管理人員的痛。`,
-            `雄欣科技為解決上述問題，運用AI、熱成像人臉測溫感測器、數位攝影機、毫米波雷達等技術，所建立的安全感知系統與智慧戰情室系統，
-            在全球新冠肺炎肆虐之際，以全自動化的方式優化管理效能、有效運用安全管理人力，在第一時間完成校園安全管理的工作。`,
+            `對於追求營運卓越的停車場來說, it is the norm to have many intelligent systems, but as there isn't an integrated system, operating multiple independant system quickly becomes complex and tedious.`,
+            `In order to streamline operation, iAmbition Technology uses AI, thermal imaging face temperature sensor, digital camera, millimeter wave radar and other technologies to establish a 
+            security 感知 system and a smart command center. When the coronavirus is raging around the world, our solution optimize the management efficiency and effective use of manpower in a fully automated system 
+            , and completed 校園 safety management work as soon as possible.`,
           ],
           images: [
             { path: 'solutions/ai-safe/carpark.jpg' },
