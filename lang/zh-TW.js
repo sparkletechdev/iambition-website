@@ -301,7 +301,7 @@ export default {
         {
           title: '雄欣科技於Computex 展示人體監測AI方案',
           description: `Computex台北國際電腦展於今年5月24日正式回歸實體展，成果豐碩!經濟部工業局於展會中打造
-          「經濟部工業局呂正華局長蒞臨工業局AI生活館，與多家資通訊大廠及AI新創代表合影，攜手展現台灣AI技術能量`,
+          「經濟部工業局呂正華局長蒞臨工業局AI生活館」，與多家資通訊大廠及AI新創代表合影，攜手展現台灣AI技術能量`,
           link: 'https://money.udn.com/money/amp/story/11799/6336818',
         },
         {

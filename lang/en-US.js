@@ -321,38 +321,52 @@ export default {
       readMore: 'Read More',
       items: [
         {
-          title: '雄欣科技獲選進入TAcc Plus 加速器 Create 第八期',
-          description: `Taiwan Accelerator Plus（TAcc+）是台灣最新型的國際級加速器，透過焦點產業之全球市場與科技發展資訊的蒐集、商機分析工具的建立、新創團隊的扶植輔導與資源串接、
-          科研補助資金的提供等，加速科技新創事業躍升發展。`,
+          title:
+            'iAmbition Technology was selected to enter the eighth phase of the TAcc Plus accelerator "Create"',
+          description: `Taiwan Accelerator Plus（TAcc+) is the latest international accelerator in Taiwan. 
+          It accelerates the rapid development of science and technology start-ups through the collection of information 
+          on the global market and scientific and technological development of the focus industry, 
+          the establishment of business opportunity analysis tools, the support and counselling of new creative 
+          teams and the connection of resources, and the provision of scientific research subsidies.`,
           link: 'https://taccplus.com/tacc_batch_8/',
         },
         {
-          title: '雄欣科技於Computex 展示人體監測AI方案',
-          description: `Computex台北國際電腦展於今年5月24日正式回歸實體展，成果豐碩!經濟部工業局於展會中打造
-          「經濟部工業局呂正華局長蒞臨工業局AI生活館，與多家資通訊大廠及AI新創代表合影，攜手展現台灣AI技術能量`,
+          title:
+            'iAmbition Technology demonstrates human monitoring AI solution at Computex',
+          description: `Computex Taipei International Computer Exhibition officially returned to the physical exhibition on May 24 this year, 
+          with fruitful results! The Industry Development Bureau, Ministry of Economy Affairs created "Director Lu Zhenghua of the Bureau of 
+          Industry of the Ministry of Economy visited the AI Life Hall of the Bureau of Industry" during the exhibition. 
+          A group photo of representatives of AI startups to show the capabilities of Taiwan's AI technology.`,
           link: 'https://money.udn.com/money/amp/story/11799/6336818',
         },
         {
-          title: '亞洲矽谷攜手台杉首度前進高雄 培育獨角獸放眼全球',
-          description:
-            '後疫情商機湧現，亞洲．矽谷計畫執行中心與台杉投資合辦的「VS Talk」，23日首次前進南台灣，與高雄市政府共同主辦「立足南方 航向國際」活動，鼓勵新創企業立足南台灣，放眼國際市場。',
+          title:
+            'Asia Silicon Valley joins hands with Taishan Investment and enter Kaohsiung for the first time, cultivating unicorns and 放眼全球',
+          description: `Post-pandemic business opportunities emerged, Asia. The "VS Talk" co-organized by the Silicon Valley Project Execution Center and 
+            Taishan Investment made its first trip to southern Taiwan on the 23rd, and co-hosted the activity "Based on Southern China, Go 
+            International" with the Kaohsiung Municipal Government to encourage new start-ups to establish themselves in southern Taiwan and focus on the international market.`,
           link: 'https://www.asvda.org/Message/MessageView?itemid=414&mid=News2',
         },
         {
           title: '車庫精神 in TAICHUNG',
-          description: '創業工作坊 演講演講主題：ESG 從觀念到行動',
+          description:
+            'Entrepreneurship Workshop Speech Topic: ESG From Concept to Action',
           link: '/taichung.png',
         },
         {
-          title: '高雄 5G AIOT 記者會',
+          title: 'Kaohsiung 5G AIOT Press Conference',
           description:
-            '高雄亞灣區中華電信5G AIoT智慧醫療正式落地　國發會5G高雄榮家智慧長照計畫案',
+            'Chunghwa Telecom in Kaohsiung Yawan District officially launched 5G AIoT smart healthcare National Development Council 5G Kaohsiung 榮家智慧長照計畫案',
           link: 'https://www.cht.com.tw/zh-tw/home/cht/messages/2021/1018-1420',
         },
         {
-          title: 'AI+智慧眼鏡 雄欣科技鎖定智慧照護市場 讓老者住得安心安全',
-          description:
-            '在小小的照護房內，年逾8旬的王伯伯正激烈地咳嗽著，護理人員輕輕地拿著吸痰器幫他抽痰，希望讓他舒服一點，可是，眼尖的家人發現，護理人員鼻樑上戴著一副智慧眼鏡，此時，另一端醫生一邊整理手上的病歷報告，一邊即時透過螢幕了解王伯伯的狀況......，隨著精準照護的普及，在不久的將來，醫生在遠端即時掌握被照護者重要生理資訊，將是照護市場的一大福音。',
+          title:
+            'AI + smart glasses iAmbition Technology locks in the smart care market, allowing the elderly to live with peace of mind',
+          description: `In the small nursing room, Uncle Wang, who is over 80 years old, was coughing violently. The nursing staff gently held a sputum suction device to help him suck phlegm, 
+            hoping to make him feel more comfortable. However, the sharp-eyed family noticed that the nursing staff is wearing a pair of smart glasses on the bridge of the nose. 
+            At this time, the doctor at the other end is sorting out the medical record report in his hand and instantly understands the condition of Uncle Wang through the screen... 
+            With the popularization of precise care, in the near future, it will be a great blessing for the nursing market that doctors can instantly grasp the vital medical information 
+            of the care recipients remotely.`,
           link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
         },
       ],
