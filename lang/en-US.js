@@ -32,8 +32,8 @@ export default {
         These are not only social problems but also often national security issues.`,
         `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI感知系統. 
         Through professional consulting, we can provide early prevention of security incidents, real-time detection of abnormal situation of field and people, 
-        and comprehensive 移動式 notification. All of this is done without compromising privacy. Our solutions will assist government agencies, factories, campuses, healthcare institutions, 
-        shopping and exhibition venues and other industries to completely solve pain points through the process of digital empowerment and digital transformation, and improve ESG indicators 
+        with comprehensive 移動式 notification. All of this is done without compromising privacy. Our solutions will assist government agencies, factories, campuses, healthcare institutions, 
+        shopping malls, exhibition venues and other industries to completely solve pain points through the process of digital empowerment and digital transformation, and improve ESG indicators 
         such as "field safety", "management efficiency" and "service quality".`,
         `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and a visualized command center platform. 
         We are a people-oriented company, coming from the perspective of digital transformation and attach importance to the mission of ESG, leading the industry to launch a series of innovative, people-oriented "有溫度" solutions.`,
@@ -263,8 +263,8 @@ export default {
           focusing on areas such as 開創運算, 智慧驅動, digital resiliency, 無限體驗, innovation and startups
           etc. Computex provides a platform for entrepreneurs around the globe to exchange ideas and knowledge, sparking technological innovation.
           `,
-          `iAmbition Technology was invited by the Ministry of Economic Affairs R.O.C to display our smart life and smart security solutions in the 
-          "AI Life Hall" section, which was organized by Taiwan's Industrial Development Bureau.`,
+          `iAmbition Technology was invited by the Ministry of Economic Affairs of Taiwan to display our smart life and smart security solutions in the 
+          "AI Life Hall" section, which was organized by Industrial Development Bureau.`,
         ],
         image: 'home3.jpg',
         video: 'computex.mp4',
@@ -282,12 +282,12 @@ export default {
         landingTitle: 'Pursuing corporate sustainability',
         landingContent: [
           `iAmbition Technology deeply understands that as we continue to grow, 
-      it brings financial stability and success, but it also has an 
+      it brings about financial stability and success, but it also has an 
       impact on society and the environment. Therefore, we implement the spirit of sustainability
-      of "make life safer and better", and promotes corporate social responsibility with technology, 
+      through our mission of "make life safer and better", and promotes corporate social responsibility with technology, 
       innovation and influence.`,
           `We also greatly reduce the negative impact on the environment and society by pursuing "Net Positive Impact". Together 
-          with our ecosystem partners, using technology to collaboratively generate beneficial social and environment impact.`,
+          with our ecosystem partners, we uses technology to collaboratively generate beneficial social and environment impact.`,
         ],
         image: 'home2.jpg',
       },
@@ -364,6 +364,7 @@ export default {
             'AI + smart glasses iAmbition Technology locks in the smart care market, allowing the elderly to live with peace of mind',
           description: `In the small nursing room, Uncle Wang, who is over 80 years old, was coughing violently. The nursing staff gently held a sputum suction device to help him suck phlegm, 
             hoping to make him feel more comfortable. However, the sharp-eyed family noticed that the nursing staff is wearing a pair of smart glasses on the bridge of the nose. 
+
             At this time, the doctor at the other end is sorting out the medical record report in his hand and instantly understands the condition of Uncle Wang through the screen... 
             With the popularization of precise care, in the near future, it will be a great blessing for the nursing market that doctors can instantly grasp the vital medical information 
             of the care recipients remotely.`,
@@ -563,8 +564,8 @@ export default {
         title: 'Time of Flight (ToF)',
         image: 'technologies/tof.jpg',
         content: `<p>Unlike ordinary digital cameras, ToF does not record videos in the Red Green Blue(RGB) format.</p><br>
-          <p>ToF sensor uses LED or laser to emit light, and using the round trip time to resolves the distances 
-          of different positions of the object through a mathematical model which can then generate the point cloud data or depth information of object.</p><br>
+          <p>ToF sensor uses LED or laser to emit light, and using the round trip time to resolve the distances 
+          of different positions of an object through a mathematical model which then generate the point cloud data or depth information of the object.</p><br>
           <p>ToF can determine the depth, distance and orientation of objects without any light source and in complete darkness allowing for accurate 
           detection of behavior and posture of human bodies or objects without any privacy concerns.</p>`,
       },
@@ -584,10 +585,10 @@ export default {
         content: `<p>iAmbition Technology won the 2021 AI+新銳選拔賽 organized by the Industrial Development Bureau, Ministry of Economic Affairs, as well as several other competitions.
         Our iCare solution also helped Kai-Syuan Psychiatric Hospital secure 2nd place in the 2021 Global Organization of Smart Cities (GO SMART) Award.</p>
         <br>
-          <p>Our deep learning technologies are lightweight and efficient, and fulfilling the responsibilities of an ESG enterprises pursuing of environmental friendliness:</p>
+          <p>Our deep learning technologies are lightweight and efficient, fulfilling the responsibilities of an ESG enterprises pursuing of environmental friendliness:</p>
           <ol class="list-decimal list-inside">
           <li>Algorithms can run on Edge AI cameras, data center, the cloud, or using an hybrid architectures.</li> 
-          <li>Supports AI chip, VPU, NVIDIA GPU</li> 
+          <li>Supports AI chip, VPU, NVIDIA GPU.</li> 
           <li>Power consumption of our architecture is at 30% of our competition.</li> 
           </ol>`,
       },
