@@ -346,6 +346,11 @@ export default {
       readMore: 'Read More',
       items: [
         {
+          title: '雄欣在8/19台南、8/26 台中，受電子時報的邀請各有30鐘的專題演講。',
+          description: `新冠疫情，永久改變許多人的生活模式：從遠距上班、網路購物、身分驗證，到健康維護……應用場景結合新科技賦能，醫療產業將迎接爆發式成長的智慧年代！「明日世界的醫療」，帶給我們何種智慧生活新面貌？`,
+          link: 'https://www.digitimes.com.tw/seminar/DForum_20220826/'
+        },
+        {
           title: '從智慧手臂到偵測打哈欠 工業局於Computex展現業者AI成果',
           description: `Computex台北國際電腦展於今年5月24日正式回歸實體展，成果豐碩!經濟部工業局於展會中打造
           「工業局AI生活館」，以「AI一日生活圈」為主軸規劃三大展出主題：智慧製造、智慧交通、智慧生活，匯集14家參與AI
@@ -382,11 +387,6 @@ export default {
             '日本電波新聞社 日本電波新聞社 日本電波新聞社 日本電波新聞社',
           link: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html',
         },
-        {
-          title: '雄欣在8/19台南、8/26 台中，受電子時報的邀請各有30鐘的專題演講。',
-          description: `新冠疫情，永久改變許多人的生活模式：從遠距上班、網路購物、身分驗證，到健康維護……應用場景結合新科技賦能，醫療產業將迎接爆發式成長的智慧年代！「明日世界的醫療」，帶給我們何種智慧生活新面貌？`,
-          link: 'https://www.digitimes.com.tw/seminar/DForum_20220826/'
-        }
       ],
     },
   },
