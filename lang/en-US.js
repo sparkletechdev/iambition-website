@@ -370,6 +370,13 @@ export default {
             of the care recipients remotely.`,
           link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
         },
+        {
+          title: 'iAmbition Technology was invited by Digitimes to give a 30-minute special speech in Tainan on 8/19 and Taichung on 8/26.',
+          description: `The COVID-19 pandemic has permanently changed the way of life of many people: from remote work, online shopping, identity verification, to health maintenance... 
+          Application scenarios combined with new technology advances, the medical industry will usher in an era of explosive growth! What kind of smart future
+          will "medicine in the world of tomorrow" bring us?`,
+          link: 'https://www.digitimes.com.tw/seminar/DForum_20220826/'
+        }
       ],
     },
   },
