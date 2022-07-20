@@ -342,7 +342,7 @@ export default {
     },
   },
   clients: {
-    landingTitle: 'Our Clients',
+    landingTitle: '我們的客戶',
     landingContent: [
       `數位轉型AI化－預見數位轉型，體現安全新世代`,
       `透過AI、物聯網、大數據、雲端、邊緣運算等技術所提供的解決方案，將場域與人的安全管理代入智慧化模式，根據客戶需求隨選隨用，進行可客製化解決方案，已經是AI應用的主流。`,
