@@ -31,14 +31,14 @@ export default {
         On the other hand, due to the continuous spread of far-right ideology and terrorism, injuries caused by social unrest and workplace safety incidents are on the rise. 
         These are not only social problems but also often national security issues.`,
         `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI感知系統. 
-        Through professional consulting, we can provide early prevention of security incidents, real-time detection of abnormal situation of field and people, 
+        Through our professional consultation, we can provide early prevention of security incidents, real-time detection of abnormal situation of 場域 and people, 
         with comprehensive 移動式 notification. All of this is done without compromising privacy. Our solutions will assist government agencies, factories, campuses, healthcare institutions, 
         shopping malls, exhibition venues and other industries to completely solve pain points through the process of digital empowerment and digital transformation, and improve ESG indicators 
         such as "field safety", "management efficiency" and "service quality".`,
         `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and a visualized command center platform. 
         We are a people-oriented company, coming from the perspective of digital transformation and attach importance to the mission of ESG, leading the industry to launch a series of innovative, people-oriented "有溫度" solutions.`,
         `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, 
-        it also actively forms alliances with various types of partners to establish an industry-university-research smart application ecosystem, that creates and benefits with 
+        it also actively form alliances with various types of partners to establish an industry-university-research smart application ecosystem (建立產學研智慧應用生態圈), that creates and benefits with 
         stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to 以台灣之名航向國際。`,
       ],
       mission: {
@@ -225,13 +225,15 @@ export default {
         alt: '',
       },
       {
-        title: 'Co-creation and collaborative business strategy in the new era of Japan-Taiwan collaboration',
+        title:
+          'Co-creation and collaborative business strategy in the new era of Japan-Taiwan collaboration',
         url: 'https://dempa-digital.com/taiwantechstage2021/company/d2.html',
         image: 'media/dempa.jpg',
         alt: '',
       },
       {
-        title: 'Relying on image recognition to conquer the world, long-term care and industrial safety are not a problem for iAmbition Technology',
+        title:
+          'Relying on image recognition to conquer the world, long-term care and industrial safety are not a problem for iAmbition Technology',
         url: 'https://meet.bnext.com.tw/articles/view/48544',
         image: 'media/meet.jpg',
         alt: '',
