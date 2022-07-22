@@ -30,16 +30,15 @@ export default {
         `The rapidly aging global population has led to a shortage of healthcare workers, compromising the ability to provide sufficient care for the elderly as well as keeping them safe. 
         On the other hand, due to the continuous spread of far-right ideology and terrorism, injuries caused by social unrest and workplace safety incidents are on the rise. 
         These are not only social problems but also often national security issues.`,
-        `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI感知系統. 
-        Through our professional consultation, we can provide early prevention of security incidents, real-time detection of abnormal situation of 場域 and people, 
-        with comprehensive 移動式 notification. All of this is done without compromising privacy. Our solutions will assist government agencies, factories, campuses, healthcare institutions, 
-        shopping malls, exhibition venues and other industries to completely solve pain points through the process of digital empowerment and digital transformation, and improve ESG indicators 
+        `Safety is the only way home. Based on the mission of "make life safer and better", iAmbition Technology has independently developed a forward-looking AI sensing system. 
+        Through our professional consultation, we can provide early prevention of security incidents, real time detection of abnormal situation occurring in the field and with people, 
+        with comprehensive mobile notification. All of this is done without compromising privacy. Our solutions will assist government agencies, factories, campuses, healthcare institutions, 
+        shopping malls, exhibition venues and other industries to solve pain points through the process of digital empowerment and digital transformation, and improve ESG indicators 
         such as "field safety", "management efficiency" and "service quality".`,
-        `iAmbition Technology's iSafe and iCare systems includes de-identified 3D sensing technology, integrated artificial intelligence algorithm, and a visualized command center platform. 
-        We are a people-oriented company, coming from the perspective of digital transformation and attach importance to the mission of ESG, leading the industry to launch a series of innovative, people-oriented "有溫度" solutions.`,
+        `iAmbition Technology's iSafe and iCare systems includes 3D de-identified sensing technology, integrated artificial intelligence models, and a visualized situation center platform. 
+        We are a people-oriented company, coming from the perspective of digital transformation and attach importance to the mission of ESG, leading the industry to launch a series of innovative, people-oriented solutions.`,
         `The company is customer-oriented and positioned as a one-stop AI solution developer. In addition to its own continuous pursuit of technological breakthroughs and innovations, 
-        it also actively form alliances with various types of partners to establish an industry-university-research smart application ecosystem (建立產學研智慧應用生態圈), that creates and benefits with 
-        stakeholders in an honest and responsible attitude. In the future, we will not only be based in Taiwan, but also hope to 以台灣之名航向國際。`,
+        it also actively form alliances with a variety of partners to establish an smart life and smart safety ecosystem, that benefit stakeholders in an honest and responsible attitude.`,
       ],
       mission: {
         title: 'Mission',
@@ -48,7 +47,7 @@ export default {
       vision: {
         title: 'Vision',
         content:
-          'To become a global leader at solving 產業 safety and healthcare problems by developing forward-looking Artificial Intelligence of Things sensing technology.',
+          'To become a global leader at solving industry safety and healthcare problems by developing forward-looking Artificial Intelligence of Things sensing technology.',
       },
       valueProposition: {
         title: 'Value Proposition',
@@ -173,7 +172,7 @@ export default {
   media: {
     landingTitle: 'Media',
     landingContent: [
-      `Since our establishment, iAmbition Technology has won a number of awards and honors, at several contest such as AI 新銳選拔首獎, 桃園千里馬創業, 約農盃創業冠軍, 中科創新創業競賽.`,
+      `Since our establishment, iAmbition Technology has won a number of awards and honors, at several contest.`,
       `We have also joined the most important startup accelerators in Taiwan, including Taiwan Startup Terrace, Microsoft for Startups Founders Hub, and Taiwan Accelerator Plus(TAcc+).`,
       `Due to our excellent performance, we have garnered a lot of media attention and can be said to be the fastest growing and most notable startup in Taiwan in recent times.`,
     ],
@@ -194,13 +193,14 @@ export default {
       },
       {
         title:
-          'Truly solving the pain point of the industry, iAmbition Technology i熟客 system',
+          'Truly solving the pain point of the industry, iAmbition Technology AI regular customer system',
         url: 'https://www.trademag.org.tw/page/itemsd/?id=779069&no=41',
         image: 'media/trademag.jpg',
         alt: '',
       },
       {
-        title: 'Post pandemic restaurant service upgrade - i熟客 System',
+        title:
+          'Post pandemic restaurant service upgrade - AI regular customer System',
         url: 'https://www.find.org.tw/index/knowledge/browse/6612eb223cdf9d84c6f09da25efd2824/',
         image: 'media/find.png',
         alt: '',
@@ -266,11 +266,11 @@ export default {
         landingTitle: 'iAmbition @ Computex 2022',
         landingContent: [
           `Computex is the leading ICT and IoT show in Asia. It is positioned to help build a global technology ecosystem, 
-          focusing on areas such as 開創運算, 智慧驅動, digital resiliency, 無限體驗, innovation and startups
+          focusing on areas such as digital resiliency, innovation and startups
           etc. Computex provides a platform for entrepreneurs around the globe to exchange ideas and knowledge, sparking technological innovation.
           `,
           `iAmbition Technology was invited by the Ministry of Economic Affairs of Taiwan to display our smart life and smart security solutions in the 
-          "AI Life Hall" section, which was organized by Industrial Development Bureau.`,
+          "AI Smart Life" section, which was organized by Industrial Development Bureau.`,
         ],
         image: 'home3.jpg',
         video: 'computex.mp4',
@@ -307,7 +307,7 @@ export default {
           title:
             'Predictive Behavioral Intelligence and Vital Signs Monitoring',
           description:
-            'Proprietary 3D sensing and physiological radar equipment and 融合式演算法, various types of abnormal behaviors and vital signs are collated and visualized centrally.',
+            'Proprietary 3D sensing and physiological radar equipment and fusion AI modeling, various types of abnormal behaviors and vital signs are collated and visualized centrally.',
           button: 'Explore iCare',
           image: 'solutions/ai-care.jpg',
           link: '/solutions/icare',
@@ -326,6 +326,14 @@ export default {
       title: 'Latest news on iAmbition',
       readMore: 'Read More',
       items: [
+        {
+          title:
+            'iAmbition Technology was invited by Digitimes to give a 30-minute special speech in Tainan on 8/19 and Taichung on 8/26.',
+          description: `The COVID-19 pandemic has permanently changed the way of life of many people: from remote work, online shopping, identity verification, to health maintenance... 
+          Application scenarios combined with new technology advances, the medical industry will usher in an era of explosive growth! What kind of smart future
+          will "medicine in the world of tomorrow" bring us?`,
+          link: 'https://www.digitimes.com.tw/seminar/DForum_20220826/',
+        },
         {
           title:
             'iAmbition Technology was selected to enter the eighth phase of the TAcc Plus accelerator "Create"',
@@ -356,13 +364,13 @@ export default {
         {
           title: '車庫精神 in TAICHUNG',
           description:
-            'Entrepreneurship Workshop Speech Topic: ESG From Concept to Action',
+            'Entrepreneurship Workshop Speech Topic: ESG From Concept to Action.',
           link: '/taichung.png',
         },
         {
           title: 'Kaohsiung 5G AIOT Press Conference',
           description:
-            'Chunghwa Telecom in Kaohsiung Yawan District officially launched 5G AIoT smart healthcare National Development Council 5G Kaohsiung 榮家智慧長照計畫案',
+            'Chunghwa System Integration, Jorjin Technologies and iAmbiton Technologies jointly set up a R&D team focusing on 5G smart long-term healthcare system.',
           link: 'https://www.cht.com.tw/zh-tw/home/cht/messages/2021/1018-1420',
         },
         {
@@ -375,14 +383,6 @@ export default {
             With the popularization of precise care, in the near future, it will be a great blessing for the nursing market that doctors can instantly grasp the vital medical information 
             of the care recipients remotely.`,
           link: 'https://aihub.org.tw/ai_case/522bf3ed693810eb047488d318f3136a',
-        },
-        {
-          title:
-            'iAmbition Technology was invited by Digitimes to give a 30-minute special speech in Tainan on 8/19 and Taichung on 8/26.',
-          description: `The COVID-19 pandemic has permanently changed the way of life of many people: from remote work, online shopping, identity verification, to health maintenance... 
-          Application scenarios combined with new technology advances, the medical industry will usher in an era of explosive growth! What kind of smart future
-          will "medicine in the world of tomorrow" bring us?`,
-          link: 'https://www.digitimes.com.tw/seminar/DForum_20220826/',
         },
       ],
     },
@@ -439,7 +439,7 @@ export default {
             alt: 'KSPH 3',
           },
         ],
-        video: 'https://www.youtube.com/embed/kMYTtH4a1yo?autoplay=1&mute=1',
+        video: 'https://www.youtube.com/embed/B5dqLrQGEbc?autoplay=1&mute=1',
       },
     ],
   },
@@ -448,7 +448,7 @@ export default {
       landingTitle: 'iCare',
       landingContent: [
         `With a global aging population in the post-pandemic era, healthcare institutions in general, have a shortage of healthcare workers and there is an increasing need for remote care. 
-        In order to improve proactiveness and safety, there is a need for hospitals, nursing homes and public care centers that provides 24-hour care to undergo digital transformation.`,
+        In order to improve proactiveness and safety, there is a need for hospitals, nursing homes and public care centers to undergo digital transformation.`,
         `We have developed a comprehensive system that combines 3D depth sensing technology to detect posture changes using AI that does not require the care recipient to 
         carry wearable devices and also protect the care recipient privacy. In the event a care recipient have an accident, caregivers will instantly be notified by the system.`,
         `The iCare system is designed with modularity in mind. If the healthcare institution requires detection of additional abnormal behaviors 
@@ -456,7 +456,7 @@ export default {
       ],
       sections: [
         {
-          title: '異常跌倒 and Vital Signs Sensing Module',
+          title: 'Abnormal Behavior and Vital Signs Sensing Module',
           content: [
             `Using ToF and mmWave sensors, in combination with AI deep learning and edge computing, iCare can perform various types of behavioral analytics, 
             as well as risk assessment and analysis of individual resident, including the following`,
@@ -480,15 +480,15 @@ export default {
           ],
         },
         {
-          title: 'Access Control, Identity Management and Health modules',
+          title: 'Access Control, Identity Management and Health Modules',
           content: [
-            `Developed a smart 場域 system that automatically connects various devices including door sensors, monitors, 
+            `Developed a smart field system that automatically connects various devices including door sensors, monitors, 
             video walkie-talkies etc, and uses AI to perform real time monitoring and notification management.`,
             `In response to the COVID-19 pandemic, iAmbition Technology also distributed Hitachi Negative Pressure Clean Booth.`,
           ],
           images: [
             {
-              path: 'solutions/ai-care/safety1.jpg',
+              path: 'solutions/ai-care/hitachi.png',
               caption: 'Hitachi Negative Pressure Clean Booth module',
             },
             {
@@ -506,11 +506,11 @@ export default {
           ],
         },
         {
-          title: 'Early fire warning and detection module',
+          title: 'Early Fire Warning and Detection Module',
           content: [
             `Existing automatic fire alarm equipment on the market includes smoke detectors, automatic sprinkler, water mist or foam fire extinguisher. 
             These standard fire-prevention equipments for buildings are triggered by the smoke only after the fire has started.`,
-            `Using a combination of cameras and air quality detectors, powered by our AI model, we are able to detect and eliminate
+            `Using a combination of cameras and air quality monitors, powered by our AI model, we are able to detect and eliminate
             the source of the fire earlier than existing solutions in the market.`,
           ],
           images: [
@@ -523,19 +523,21 @@ export default {
     aiSafe: {
       landingTitle: 'iSafe',
       landingContent: [
-        `Outside of serving up delicious food, the management of regular customers and in-store safety are the two most important things in a restaurant pursuit of operation excellency.`,
-        `In order to achieve these goals, iAmbition Technology uses AI, thermal imaging face temperature measurement and other technologies to establish a safety 感知 system. 
-        When the global coronavirus is raging, it replaces manual temperature measurement allowing for faster detection and prevention. 
-        By establishing a system for health management as soon as possible, customers can enjoy delicious food with a peace of mind, 更有一份客製化的款待與尊榮.`,
+        `Safety is the only way home, nothing is more important than safety.`,
+        `iAmbition Technology developed a series of intelligent sensing modules using various types of proprietary IoT sensors, 
+        3D de-identified sensors, cameras, integrated artificial intelligence models, and IoT platforms.`,
+        `After consulting with industry experts, we propose a one-stop safety improvement solution suitable for each field, 
+        so that visitors and employees can move around safely, and safety management can be conduct in an efficient and timely manner.`,
       ],
       sections: [
         {
           title: 'Smart Restaurant',
           content: [
             `Outside of serving up delicious food, the management of regular customers and store safety are the two most important things in a restaurant pursuit of operation excellency.`,
-            `In order to achieve these goals, iAmbition Technology uses AI, thermal imaging face thermometer and other technologies to establish a safety 感知 system. 
-            When COVID-19 is raging, it replaces manual temperature measurement allowing for faster detection and prevention. 
-            By establishing a system for health management in the quickest time possible, customers can enjoy delicious food with a peace of mind, 更有一份客製化的款待與尊榮.`,
+            `In order to achieve these goals, iAmbition Technology uses AI, thermal imaging face thermometer and other technologies to establish a safety sensing system. 
+            During the COVID-19 pandemic, it replaces manual temperature measurement allowing for faster detection and prevention. 
+            Through our system, the waiters can understand the customers and provide differentiated services as soon as they enter the door. 
+        Therefore，it can improve customer satisfaction.`,
           ],
           images: [{ path: 'solutions/ai-safe/restaurant.jpg' }],
         },
@@ -544,7 +546,7 @@ export default {
           content: [
             `For schools to achieve operational excellence, the safety of campuses, teachers and students is paramount.`,
             `To help schools accomplish the above goals, iAmbition Technology uses AI, thermal imaging face thermometer, 
-            4G/5G/digital camera and other technologies to establish a security 感知 system and an intelligent command center. 
+            4G/5G/digital camera and other technologies to establish a security 感知 system and an intelligent situation center. 
             During the COVID-19 pandemic, our fully automated total campus safety management system help optimize management performance and effective 
             use of manpower in a timely manner.`,
           ],
@@ -553,10 +555,10 @@ export default {
         {
           title: 'Smart Carpark',
           content: [
-            `對於追求營運卓越的停車場來說, it is the norm to have many intelligent systems, but as there isn't an integrated system, operating multiple independent system quickly becomes complex and tedious.`,
+            `It is normal for a modern carpark to have many intelligent digital systems, but as they are not integrated, operating multiple independent system quickly becomes complex and tedious.`,
             `In order to streamline operation, iAmbition Technology uses AI, thermal imaging face thermometer, digital camera, millimeter wave radar and other technologies to establish a 
-            security 感知 system and a smart command center. When COVID-19 is raging around the world, our solution optimize the management efficiency and effective use of manpower in a fully automated system 
-            , and completed 校園 safety management work as soon as possible.`,
+            security sensing system and a smart situation center. During the COVID-19 pandemic, our solution optimize the management efficiency and effective use of manpower in a fully automated system 
+            , and completed carpark safety management work as soon as possible.`,
           ],
           images: [
             { path: 'solutions/ai-safe/carpark.jpg' },
@@ -569,15 +571,15 @@ export default {
   technologies: {
     landingTitle: 'Our Key Technologies',
     landingContent: [
-      `iAmbition Technology core technology includes 去識別化 (anonymized / de-identified) 3D sensing technology, integrated artificial intelligence algorithm, 
-      and visualized command center platform. We are a people-oriented company, that focuses on helping our clients with digital transformation,
+      `iAmbition Technology core technology includes 3D de-identified sensing technology, integrated artificial intelligence models, 
+      and visualized situation center platform. We are a people-oriented company, that focuses on helping our clients with digital transformation,
       ESG and sustainability. We aim to lead the industry in launching a range of innovative and people-oriented solutions.`,
     ],
     sections: [
       {
         title: 'Time of Flight (ToF)',
         image: 'technologies/tof.jpg',
-        content: `<p>Unlike ordinary digital cameras, ToF does not record videos using visible light and does not save the video into the common RGB format.</p><br>
+        content: `
           <p>ToF sensor uses LED or laser to emit light, and using the round trip time to resolve the distances 
           of different positions of an object through a mathematical model which then generate the point cloud data or depth information of the object.</p><br>
           <p>ToF can determine the depth, distance and orientation of objects without any light source and in complete darkness allowing for accurate 
@@ -590,16 +592,16 @@ export default {
         By embedding a radar sensor, it enable us to locate a target in space and opens up many possibilities for different kinds applications.</p><br>
           <p>The millimeter wave radar refers to the radar working in the millimeter wave band, which is completely unaffected by light and weather factors. It is ideal sensor for vital signs detection 
           and monitoring because millimeter-wave radar can provide millimeter-level accuracy in distance detection.</p><br>
-          <p>iAmbition Technology proprietary design is the industry's highest precision, with high-speed signal processing capability, enhanced distance detection, and integrated into a compact
-          chipset to provide non-contact continuous detection capabilities, which may greatly promote development of healthcare applications such as human activity detection and vital signs 
+          <p>iAmbition Technology proprietary design has highest precision in the industry's, with high-speed signal processing capability, enhanced distance detection, and integrated into a compact
+          chipset to provide non-contact continuous detection capabilities, promoting development of healthcare applications such as human activity detection and vital signs 
           (heartbeat, respiration) detection.</p>`,
       },
       {
         title: 'Artificial Intelligence',
-        content: `<p>iAmbition Technology won the 2021 AI+新銳選拔賽 organized by the Industrial Development Bureau, Ministry of Economic Affairs, as well as several other competitions.
+        content: `<p>iAmbition Technology won the 2021 AI+ Startup Competition organized by the Industrial Development Bureau, Ministry of Economic Affairs, as well as several other competitions.
         Our iCare solution also helped Kai-Syuan Psychiatric Hospital secure 2nd place in the 2021 Global Organization of Smart Cities (GO SMART) Award.</p>
         <br>
-          <p>Our deep learning technologies are lightweight and efficient, fulfilling the responsibilities of an ESG enterprises pursuing of environmental friendliness:</p>
+          <p>Our deep learning technologies are lightweight and efficient, fulfilling the responsibilities of an ESG enterprise in pursuit of environmental friendliness:</p>
           <ol class="list-decimal list-inside">
           <li>Algorithms can run on Edge AI cameras, data center, the cloud, or using an hybrid architectures.</li> 
           <li>Supports AI chip, VPU, NVIDIA GPU.</li> 
@@ -613,12 +615,12 @@ export default {
         LTE or 5G cameras, Edge AI cameras, thermal imaging cameras, digital video and audio access control intercom. 3D sensors such as ToF or mmWave radar as well as 
         other smart devices such as smart glasses, air quality sensors are also supported.</p>
         <br>
-        <p>IoT devices have the ability to transmit sensor information to the Internet and transform them 
-        into the value-added services that people need through the AI辨識, storage, processing and using the sharing mechanism of 混合雲雲端技術 (hybrid cloud architecture).</p>
+        <p>Using a hybrid cloud architecture, IoT devices can transmit and store sensor data over the cloud. Using AI models, these data can be transformed
+        into value-added services that people need.</p>
         <br>
-        <p>Connecting many smart devices into a huge IoT platform and together with 感知與物件聯網, cloud technology, language translation and semantic analysis,
-        we can provide application services in many fields such as smart life, smart medical care and healthcare, intelligent energy conservation.
-        These services will improve our quality of life and well-being.</p>`,
+        <p>Connecting many smart devices into a huge IoT platform and using technologies like mesh network, cloud technology, language translation and semantic analysis,
+        we can provide application services in many fields, such as smart life, smart healthcare and intelligent energy conservation, 
+        leading to improvement in our quality of life and well-being.</p>`,
       },
     ],
   },
