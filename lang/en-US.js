@@ -42,7 +42,7 @@ export default {
       ],
       mission: {
         title: 'Mission',
-        content: 'Make life safer and better',
+        content: 'Make life safer and better.',
       },
       vision: {
         title: 'Vision',
