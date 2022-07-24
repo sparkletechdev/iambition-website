@@ -30,9 +30,9 @@
                 class="ilc-image"
                 @click="showLightbox(i)"
               />
-              <!-- <p v-if="image.caption">
+              <p v-if="image.caption" class="caption">
                 {{ image.caption }}
-              </p> -->
+              </p>
             </div>
           </div>
         </div>
@@ -183,7 +183,10 @@ export default {
 .grid-cell {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+}
+
+.caption {
+  margin-top: 0.25rem;
 }
 
 @media screen and (max-width: 1440px) {
@@ -214,8 +217,8 @@ export default {
     margin-bottom: 0;
   }
   .ilc-image-grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 320px;
+    display: flex;
+    flex-direction: column;
     row-gap: 2rem;
   }
   .ilc-image-single {
@@ -236,10 +239,6 @@ export default {
 }
 
 @media screen and (max-width: 425px) {
-  .ilc-image-grid {
-    grid-auto-rows: 180px;
-    gap: 2rem;
-  }
   .ilc-image-single {
     width: 100%;
     height: 120px;
