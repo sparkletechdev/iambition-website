@@ -5,7 +5,9 @@
       :src="require(`@/assets/images/${media.image}`)"
       :alt="media.alt"
     />
-    <a class="media-link" :href="media.url" target="_blank">{{ media.title }}</a>
+    <a class="media-link" :href="media.url" target="_blank">{{
+      media.title
+    }}</a>
   </div>
 </template>
 <script>

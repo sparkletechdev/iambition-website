@@ -109,6 +109,8 @@ export default {
 .not-link {
   color: white;
   cursor: default;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 @media screen and (max-width: 992px) {
   .language {

@@ -27,9 +27,16 @@ export default {}
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 300px;
-  row-gap: 6rem;
   column-gap: 2rem;
   padding: 4rem 25%;
+}
+
+.media-grid:lang(zh) {
+  row-gap: 6rem;
+}
+
+.media-grid:lang(en) {
+  row-gap: 10rem;
 }
 
 @media screen and (max-width: 1680px) {
@@ -61,7 +68,7 @@ export default {}
 
 @media screen and (max-width: 576px) {
   .media-grid {
-    padding: 4rem 8%;
+    padding: 4rem 8% 10rem;
     grid-auto-rows: 200px;
   }
 }
