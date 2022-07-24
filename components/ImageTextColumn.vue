@@ -30,9 +30,9 @@
                 class="ilc-image"
                 @click="showLightbox(i)"
               />
-              <p v-if="image.caption">
+              <!-- <p v-if="image.caption">
                 {{ image.caption }}
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
