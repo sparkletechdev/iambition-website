@@ -59,17 +59,10 @@ export default {}
 
 @media screen and (max-width: 992px) {
   .media-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 300px;
-    padding: 4rem 12%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .media-grid {
-    padding: 4rem 8% 10rem;
-    grid-auto-rows: 200px;
+    display: flex;
+    padding: 4rem 8%;
+    row-gap: 2rem !important;
+    flex-direction: column;
   }
 }
 </style>
