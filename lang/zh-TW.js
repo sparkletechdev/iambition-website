@@ -71,39 +71,6 @@ export default {
           },
         ],
       },
-      going: {
-        title: '我們去哪？',
-        subtitle: `Tuple 正被全球各地的組織部署，用於他們的
-        最關鍵的操作。 企業正在尋找他們最好的客戶，
-        設計最佳客戶體驗並開發令人興奮的新產品
-        帶有元組的產品。`,
-        data: [
-          {
-            title: '金融服務',
-            subtitle:
-              'Financial Services are finding ways to collate their data at a single location so that they have a real-time overview of all the customer activity. It is allowing them to cater to the preferences of their consumer and keep a close watch on the changing digital landscape.',
-            img: 'technology.jpeg',
-          },
-          {
-            title: '零售商',
-            subtitle:
-              'Retailers are innovating with the check-out technologies so that their customers can have a hassle-free experience. The industry is looking at modern data-driven technologies to create unique experiences for the consumers and fight the onslaught of e-commerce. They are refining their processes of payments, marketing, and inventory management.',
-            img: 'technology.jpeg',
-          },
-          {
-            title: '製造業',
-            subtitle:
-              'Manufacturing has not been an early adopter of the technology but they are opening their eyes to the apparent truth. Organizations are automating the way they cater their customer needs by refining the process of quotation management, deploying media listening to generate leads and recommendation engines to optimize lifecycle management of the customers.',
-            img: 'technology.jpeg',
-          },
-          {
-            title: '電信',
-            subtitle:
-              'Telecom sector is creating Intelligent Sales and Marketing engines to enhance the process of customer acquisition, retention, cross-sell and up-sell opportunities.',
-            img: 'technology.jpeg',
-          },
-        ],
-      },
     },
   },
   awards: {
@@ -326,9 +293,10 @@ export default {
       readMore: '閱讀更多',
       items: [
         {
-          title: '雄欣在8/19台南、8/26 台中，受電子時報的邀請各有30鐘的專題演講。',
+          title:
+            '雄欣在8/19台南、8/26 台中，受電子時報的邀請各有30鐘的專題演講。',
           description: `新冠疫情，永久改變許多人的生活模式：從遠距上班、網路購物、身分驗證，到健康維護……應用場景結合新科技賦能，醫療產業將迎接爆發式成長的智慧年代！「明日世界的醫療」，帶給我們何種智慧生活新面貌？`,
-          link: 'https://www.digitimes.com.tw/seminar/DForum_20220826/'
+          link: 'https://www.digitimes.com.tw/seminar/DForum_20220826/',
         },
         {
           title: '雄欣科技獲選進入TACC Pus 加速器 Create 第八期',
@@ -339,7 +307,7 @@ export default {
         {
           title: '雄欣科技於Computex 展示人體監測AI方案',
           description: `Computex台北國際電腦展於今年5月24日正式回歸實體展，成果豐碩!經濟部工業局於展會中打造
-          「經濟部工業局呂正華局長蒞臨工業局AI生活館，與多家資通訊大廠及AI新創代表合影，攜手展現台灣AI技術能量`,
+          「經濟部工業局呂正華局長蒞臨工業局AI生活館」，與多家資通訊大廠及AI新創代表合影，攜手展現台灣AI技術能量`,
           link: 'https://money.udn.com/money/amp/story/11799/6336818',
         },
         {
@@ -375,7 +343,7 @@ export default {
     },
   },
   clients: {
-    landingTitle: 'Our Clients',
+    landingTitle: '我們的客戶',
     landingContent: [
       `數位轉型AI化－預見數位轉型，體現安全新世代`,
       `透過AI、物聯網、大數據、雲端、邊緣運算等技術所提供的解決方案，將場域與人的安全管理代入智慧化模式，根據客戶需求隨選隨用，進行可客製化解決方案，已經是AI應用的主流。`,
@@ -418,7 +386,7 @@ export default {
             alt: 'KSPH 3',
           },
         ],
-        video: 'https://www.youtube.com/embed/kMYTtH4a1yo?autoplay=1&mute=1',
+        video: 'https://www.youtube.com/embed/B5dqLrQGEbc?autoplay=1&mute=1',
       },
     ],
   },
@@ -464,12 +432,12 @@ export default {
           ],
           images: [
             {
-              path: 'solutions/ai-care/safety1.jpg',
-              caption: '人臉辨識門禁功能模組',
+              path: 'solutions/ai-care/hitachi.png',
+              caption: '日立負壓艙模組',
             },
             {
               path: 'solutions/ai-care/safety2.jpg',
-              caption: '日立負壓艙模組',
+              caption: '人臉辨識門禁功能模組',
             },
             { path: 'solutions/ai-care/safety3.jpg', caption: '電子圍籬模組' },
             {
@@ -493,10 +461,11 @@ export default {
     },
     aiSafe: {
       landingTitle: 'AI智慧感知系統',
+
       landingContent: [
-        `對於追求營運卓越的餐廳來說，熟客的經營與店內安全是在美食外最在意的二件事。`,
-        `為達到上述目標，雄欣科技運用AI、熱成像人臉測溫感測器等技術所建立i熟客與顧客安全感知系統，在全球新冠肺炎肆虐之際，取代人力量測，
-        第一時間完成防疫與健康管理的工作，讓顧客能安心享用美食，更有一份客製化的款待與尊榮。`,
+        `安全是回家的唯一一條路，沒有什麼事情比安全更重要。`,
+        `雄欣科技藉由自主開發的各類型IOT傳感器、去識別化3D感測器、攝影機、融合式人工智慧演算法、物聯網平台，發展出一系列的智慧感知功能模組。`,
+        `藉由產業的專家經驗，提出適合各場域的一站式安全提升方案，讓訪客與勞動人力可以安全的活動、安全管理人員也可以有效率且即時性的進行安全管理。`,
       ],
       sections: [
         {

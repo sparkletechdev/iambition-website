@@ -68,6 +68,10 @@ export default {
   margin: 0 25%;
 }
 
+::v-deep .splash-content {
+  font-size: 1.8rem;
+}
+
 @media screen and (max-width: 1200px) {
   .video {
     margin: 0 15%;
