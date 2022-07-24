@@ -328,7 +328,7 @@ export default {
       items: [
         {
           title:
-            'iAmbition Technology was invited by Digitimes to give a 30-minute special speech in Tainan on 8/19 and Taichung on 8/26.',
+            'iAmbition Technology to give a special speech in Tainan on 8/19 and Taichung on 8/26.',
           description: `The COVID-19 pandemic has permanently changed the way of life of many people: from remote work, online shopping, identity verification, to health maintenance... 
           Application scenarios combined with new technology advances, the medical industry will usher in an era of explosive growth! What kind of smart future
           will "medicine in the world of tomorrow" bring us?`,
@@ -336,7 +336,7 @@ export default {
         },
         {
           title:
-            'iAmbition Technology was selected to enter the eighth phase of the TAcc Plus accelerator "Create"',
+            'iAmbition Technology was selected to enter TAcc Plus accelerator "Create"',
           description: `Taiwan Accelerator Plus（TAcc+) is the latest international accelerator in Taiwan. 
           It accelerates the rapid development of science and technology start-ups through the collection of information 
           on the global market and scientific and technological development of the focus industry, 
@@ -355,14 +355,14 @@ export default {
         },
         {
           title:
-            'Asia Silicon Valley joins hands with Taishan Investment and enter Kaohsiung for the first time, cultivating unicorns and 放眼全球',
+            'Asia Silicon Valley joins hands with Taishan Investment and enter Kaohsiung',
           description: `Post-pandemic business opportunities emerged, Asia. The "VS Talk" co-organized by the Silicon Valley Project Execution Center and 
             Taishan Investment made its first trip to southern Taiwan on the 23rd, and co-hosted the activity "Based on Southern China, Go 
             International" with the Kaohsiung Municipal Government to encourage new start-ups to establish themselves in southern Taiwan and focus on the international market.`,
           link: 'https://www.asvda.org/Message/MessageView?itemid=414&mid=News2',
         },
         {
-          title: '車庫精神 in TAICHUNG',
+          title: 'ESG workshop in TAICHUNG',
           description:
             'Entrepreneurship Workshop Speech Topic: ESG From Concept to Action.',
           link: '/taichung.png',
