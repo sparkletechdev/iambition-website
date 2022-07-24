@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <div class="language invisible">
+    <div class="language">
       <div class="region-title">{{ $t('menu.selectRegion') }}</div>
       <div class="countries">
         <div

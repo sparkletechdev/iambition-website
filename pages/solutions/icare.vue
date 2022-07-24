@@ -104,6 +104,12 @@ export default {}
   }
 }
 
+@media screen and (max-width: 768px) {
+  ::v-deep .landing-container {
+    justify-content: flex-start;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .videos {
     margin: 0 5%;
