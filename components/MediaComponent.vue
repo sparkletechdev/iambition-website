@@ -27,12 +27,18 @@ export default {
 .media-img {
   width: 100%;
   height: 100%;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .media-link {
   color: #369;
   font-weight: 600;
   text-align: start;
+}
+
+@media screen and (max-width: 576px) {
+  .media-img {
+  height: 200px;
+}
 }
 </style>
