@@ -375,7 +375,7 @@ export default {
         },
         {
           title:
-            'AI + smart glasses iAmbition Technology locks in the smart care market, allowing the elderly to live with peace of mind',
+            'AI + smart glasses iAmbition Technology locks in the smart care market',
           description: `In the small nursing room, Uncle Wang, who is over 80 years old, was coughing violently. The nursing staff gently held a sputum suction device to help him suck phlegm, 
             hoping to make him feel more comfortable. However, the sharp-eyed family noticed that the nursing staff is wearing a pair of smart glasses on the bridge of the nose. 
 

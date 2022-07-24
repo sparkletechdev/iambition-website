@@ -82,8 +82,15 @@ export default {
   ::v-deep .landing-container {
     justify-content: flex-start;
   }
+
   .video {
     margin: 0 8%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  ::v-deep .splash-content {
+    font-size: 1rem;
   }
 }
 </style>

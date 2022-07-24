@@ -15,7 +15,6 @@ export default {}
 </script>
 
 <style scoped>
-
 .solution-main-container {
   display: flex;
   flex-direction: column;
@@ -29,14 +28,14 @@ export default {}
 }
 
 .solution-title {
-  margin-top: 80px;
+  margin: 80px 4% 0 4%;
   font-size: 2.5rem;
   font-weight: 600;
   color: #369;
 }
 
 .solution-desc {
-  margin-top: 10px;
+  margin: 10px 4% 0 4%;
   font-size: 1rem;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -72,6 +71,10 @@ export default {}
   .solution-title {
     margin-top: 0.5rem;
     font-size: 1.5rem;
+    text-align: center;
+  }
+  .solution-desc {
+    text-align: center;
   }
 }
 </style>

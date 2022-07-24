@@ -149,5 +149,16 @@ export default {
     justify-content: flex-end;
     height: 100%;
   }
+  .banner-title {
+    font-size: 1.2rem;
+  }
+
+  .banner-desc {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    z-index: 1;
+    text-align: center;
+  }
 }
 </style>
