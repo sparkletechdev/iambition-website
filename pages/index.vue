@@ -72,7 +72,7 @@ export default {
   font-size: 1.8rem;
 }
 
-::v-deep .landing-container {
+::v-deep .landing-container:lang(en) {
   justify-content: flex-start;
 }
 
