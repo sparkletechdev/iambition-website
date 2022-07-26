@@ -72,17 +72,17 @@ export default {
   font-size: 1.8rem;
 }
 
+::v-deep .landing-container {
+  justify-content: flex-start;
+}
+
 @media screen and (max-width: 1200px) {
   .video {
     margin: 0 15%;
   }
 }
 
-@media screen and (max-width: 768px) {
-  ::v-deep .landing-container {
-    justify-content: flex-start;
-  }
-
+@media screen and (max-width: 992px) {
   .video {
     margin: 0 8%;
   }
