@@ -106,6 +106,7 @@ export default {
   color: white;
   text-align: center;
   animation: fadeIn linear 2s;
+  padding: 0 25%;
 }
 
 .splash-content {
@@ -131,6 +132,12 @@ export default {
   padding: 8rem 0 4rem;
   background-size: cover;
   overflow: auto;
+  -ms-overflow-style: none; /* Edge, Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+}
+
+.landing-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 /* .landing-container::-webkit-scrollbar {
@@ -161,8 +168,13 @@ export default {
   .landing-container {
     background-size: 150%;
   }
+  .splash-title {
+    padding: 0 15%;
+    font-size: 3rem;
+  }
   .splash-content {
     padding: 0 15%;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 992px) {

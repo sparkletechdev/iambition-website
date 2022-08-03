@@ -68,6 +68,13 @@ export default {
   margin: 0 25%;
 }
 
+.yt-vid {
+  aspect-ratio: 16 / 9;
+  width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 ::v-deep .splash-content {
   font-size: 1.8rem;
 }
@@ -76,9 +83,21 @@ export default {
   justify-content: flex-start;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   .video {
     margin: 0 15%;
+  }
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 720px;
+  }
+
+  ::v-deep .splash-content {
+    font-size: 1.5rem;
+  }
+
+  ::v-deep .splash-title {
+    font-size: 3rem;
   }
 }
 
@@ -88,9 +107,43 @@ export default {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 640px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   ::v-deep .splash-content {
     font-size: 1rem;
+  }
+  ::v-deep .splash-title {
+    font-size: 1.5rem;
+  }
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 300px;
+  }
+    ::v-deep .splash-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .yt-vid {
+    aspect-ratio: 16 / 9;
+    width: 240px;
+  }
+      ::v-deep .splash-title {
+    font-size: 1.25rem;
   }
 }
 </style>
@@ -101,12 +154,6 @@ export default {
 }
 .hooper-prev {
   left: 2rem;
-}
-.yt-vid {
-  aspect-ratio: 16 / 9;
-  width: 1080px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (max-width: 1440px) {
@@ -139,26 +186,6 @@ export default {
   .yt-vid {
     aspect-ratio: 16 / 9;
     width: 640px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .yt-vid {
-    aspect-ratio: 16 / 9;
-    width: 360px;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .yt-vid {
-    aspect-ratio: 16 / 9;
-    width: 300px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .yt-vid {
-    aspect-ratio: 16 / 9;
-    width: 240px;
   }
 }
 </style>
